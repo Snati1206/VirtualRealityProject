@@ -1,0 +1,66 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "3161908922",
+    "Type": "User",
+    "GUID": "{45D8302B-19E7-418B-B7D2-CDAC15D9EA71}",
+    "Language": "SFX",
+    "Hash": "{1FE2906F-7730-B0F2-6D7F-915F070B799C}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
+    "ShortName": "Main",
+    "Path": "Main.bnk",
+    "Media": [
+     {
+      "Id": "743402601",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "S3004-01_Campagne-ambiance_diurne-pres_d_une_riviere-grenouille-grillons.wav",
+      "CachePath": "1A/{1ADEB68C-2F1D-0E77-8CDE-F26203A6E52F}.wem"
+     },
+     {
+      "Id": "819827368",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "S3004-02_Campagne-ambiance_diurne-vent_dans_les_arbres.wav",
+      "CachePath": "25/{252A9831-295D-4DEC-ED65-555E1E6D61BF}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2981377429",
+      "Name": "Ambiance",
+      "ObjectPath": "\\Events\\Default Work Unit\\Ambiance",
+      "GUID": "{0ADE0251-8EAA-45D5-87D6-CEA9F4467C9F}",
+      "DurationType": "OneShot",
+      "DurationMin": "240.26666",
+      "DurationMax": "240.26666",
+      "MediaRefs": [
+       {
+        "Id": "743402601"
+       },
+       {
+        "Id": "819827368"
+       }
+      ]
+     }
+    ],
+    "GameParameters": [
+     {
+      "Id": "2181097513",
+      "Name": "Crazyness",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Crazyness",
+      "GUID": "{8A0125EA-B17C-4A07-A2AA-F4E92A932029}"
+     }
+    ]
+   }
+  ],
+  "FileHash": "{905D81E4-BAB1-7382-287B-503FA209A780}"
+ }
+}

@@ -1,6 +1,108 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{4B7C06E9-0662-4FE5-912F-FFD8A7A89BD7}" SchemaVersion="123">
 	<AudioObjects>
-		<WorkUnit Name="Default Work Unit" ID="{4B7C06E9-0662-4FE5-912F-FFD8A7A89BD7}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{4B7C06E9-0662-4FE5-912F-FFD8A7A89BD7}" PersistMode="Standalone">
+			<ChildrenList>
+				<BlendContainer Name="Ambiance" ID="{D669405C-A95D-45A8-8155-F11A622CAA3F}" ShortID="254213867">
+					<PropertyList>
+						<Property Name="BlendBehavior" Type="int16" Value="1"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02AB0E9E-DC49-4D18-8206-2301BDC73EC0}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="S3004-01_Campagne-ambiance_diurne-pres_d_une_riviere-grenouille-grillons" ID="{5ECBBF41-0792-44FA-8172-F192CD5613FF}" ShortID="599014499">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02AB0E9E-DC49-4D18-8206-2301BDC73EC0}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="S3004-01_Campagne-ambiance_diurne-pres_d_une_riviere-grenouille-grillons" ID="{E9029C73-B9AA-4369-8480-C5403B6943DE}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimEnd" Type="Real64" Value="239.596624611771"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>S3004-01_Campagne-ambiance_diurne-pres_d_une_riviere-grenouille-grillons.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="743402601"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="S3004-01_Campagne-ambiance_diurne-pres_d_une_riviere-grenouille-grillons" ID="{E9029C73-B9AA-4369-8480-C5403B6943DE}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="S3004-02_Campagne-ambiance_diurne-vent_dans_les_arbres" ID="{D2848E8D-AD6E-49AA-B1ED-87061169D4FB}" ShortID="472266445">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02AB0E9E-DC49-4D18-8206-2301BDC73EC0}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="S3004-02_Campagne-ambiance_diurne-vent_dans_les_arbres" ID="{B30D4C32-2669-40CF-829C-5E0369A9845F}">
+									<PropertyList>
+										<Property Name="LoopBegin" Type="Real64" Value="23.5650821759076"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>S3004-02_Campagne-ambiance_diurne-vent_dans_les_arbres.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="819827368"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="S3004-02_Campagne-ambiance_diurne-vent_dans_les_arbres" ID="{B30D4C32-2669-40CF-829C-5E0369A9845F}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<BlendTrackList>
+						<BlendTrack Name="Ambiance" ID="{DAE79492-08CB-4E6E-A6E1-B9E033BC12FF}" ShortID="469598070">
+							<PropertyList>
+								<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="LayerCrossFadeControlInput">
+									<ObjectRef Name="Crazyness" ID="{8A0125EA-B17C-4A07-A2AA-F4E92A932029}" WorkUnitID="{783EED98-38D9-4575-BE3B-51AB635CB706}"/>
+								</Reference>
+							</ReferenceList>
+							<BlendTrackAssocList>
+								<BlendTrackAssoc>
+									<ItemRef Name="S3004-01_Campagne-ambiance_diurne-pres_d_une_riviere-grenouille-grillons" ID="{5ECBBF41-0792-44FA-8172-F192CD5613FF}"/>
+									<CrossfadingInfo>
+										<LeftEdgePos>0</LeftEdgePos>
+										<LeftFadingMode>Automatic</LeftFadingMode>
+										<RightEdgePos>50</RightEdgePos>
+										<RightFadingMode>Automatic</RightFadingMode>
+									</CrossfadingInfo>
+								</BlendTrackAssoc>
+								<BlendTrackAssoc>
+									<ItemRef Name="S3004-02_Campagne-ambiance_diurne-vent_dans_les_arbres" ID="{D2848E8D-AD6E-49AA-B1ED-87061169D4FB}"/>
+									<CrossfadingInfo>
+										<LeftEdgePos>49.0566037735849</LeftEdgePos>
+										<LeftFadingMode>Automatic</LeftFadingMode>
+										<RightEdgePos>100</RightEdgePos>
+										<RightFadingMode>Automatic</RightFadingMode>
+									</CrossfadingInfo>
+								</BlendTrackAssoc>
+							</BlendTrackAssocList>
+						</BlendTrack>
+					</BlendTrackList>
+				</BlendContainer>
+			</ChildrenList>
+		</WorkUnit>
 	</AudioObjects>
 </WwiseDocument>
