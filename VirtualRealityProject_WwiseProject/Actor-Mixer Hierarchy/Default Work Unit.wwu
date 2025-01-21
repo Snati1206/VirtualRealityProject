@@ -76,7 +76,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="LayerCrossFadeControlInput">
-									<ObjectRef Name="Crazyness" ID="{8A0125EA-B17C-4A07-A2AA-F4E92A932029}" WorkUnitID="{783EED98-38D9-4575-BE3B-51AB635CB706}"/>
+									<ObjectRef Name="sensor1" ID="{8A0125EA-B17C-4A07-A2AA-F4E92A932029}" WorkUnitID="{783EED98-38D9-4575-BE3B-51AB635CB706}"/>
 								</Reference>
 							</ReferenceList>
 							<BlendTrackAssocList>

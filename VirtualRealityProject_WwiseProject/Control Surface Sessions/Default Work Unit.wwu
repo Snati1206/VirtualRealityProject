@@ -26,6 +26,60 @@
 						</ControlSurfaceBindingGroup>
 					</ChildrenList>
 				</ControlSurfaceSession>
+				<ControlSurfaceSession Name="MaxMsp" ID="{5A04972C-4530-466D-9468-9A3835A43BFD}">
+					<ChildrenList>
+						<ControlSurfaceBindingGroup Name="Global" ID="{211FB2D2-8D1C-4E7F-B08B-33FA8925AB95}">
+							<ChildrenList>
+								<ControlSurfaceBinding Name="Binding" ID="{56C537E1-E00A-4AAD-8988-0B6C8BE902F9}">
+									<PropertyList>
+										<Property Name="HardwareControllerKey" Type="string" Value="MaxMsp~Ch.1~CC~1"/>
+										<Property Name="TargetClassID" Type="int32" Value="1507344"/>
+										<Property Name="TargetName" Type="string" Value="SimulationValue"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="TargetObject">
+											<ObjectRef Name="sensor1" ID="{8A0125EA-B17C-4A07-A2AA-F4E92A932029}" WorkUnitID="{783EED98-38D9-4575-BE3B-51AB635CB706}"/>
+										</Reference>
+									</ReferenceList>
+								</ControlSurfaceBinding>
+								<ControlSurfaceBinding Name="Binding" ID="{4DC6B026-CC0A-47F7-B674-21B669D274EC}">
+									<PropertyList>
+										<Property Name="HardwareControllerKey" Type="string" Value="MaxMsp~Ch.1~CC~2"/>
+										<Property Name="TargetClassID" Type="int32" Value="1507344"/>
+										<Property Name="TargetName" Type="string" Value="SimulationValue"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="TargetObject">
+											<ObjectRef Name="sensor2" ID="{64F8FD5A-7F09-4772-A48A-3629D18ECA60}" WorkUnitID="{783EED98-38D9-4575-BE3B-51AB635CB706}"/>
+										</Reference>
+									</ReferenceList>
+								</ControlSurfaceBinding>
+								<ControlSurfaceBinding Name="Binding" ID="{50BBFF72-9436-49E1-B90D-9ABAEA11B756}">
+									<PropertyList>
+										<Property Name="HardwareControllerKey" Type="string" Value="MaxMsp~Ch.1~CC~3"/>
+										<Property Name="TargetClassID" Type="int32" Value="1507344"/>
+										<Property Name="TargetName" Type="string" Value="SimulationValue"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="TargetObject">
+											<ObjectRef Name="sensor3" ID="{050AB711-2670-4DC2-B704-99F8F851564C}" WorkUnitID="{783EED98-38D9-4575-BE3B-51AB635CB706}"/>
+										</Reference>
+									</ReferenceList>
+								</ControlSurfaceBinding>
+							</ChildrenList>
+						</ControlSurfaceBindingGroup>
+						<ControlSurfaceBindingGroup Name="Current Selection" ID="{7B0681D4-38CD-46A4-8651-486D351496DD}">
+							<PropertyList>
+								<Property Name="GroupType" Type="int16" Value="4"/>
+							</PropertyList>
+						</ControlSurfaceBindingGroup>
+						<ControlSurfaceBindingGroup Name="View Groups" ID="{57C4EE62-2F9D-4A0A-9CF9-0932507247CA}">
+							<PropertyList>
+								<Property Name="GroupType" Type="int16" Value="3"/>
+							</PropertyList>
+						</ControlSurfaceBindingGroup>
+					</ChildrenList>
+				</ControlSurfaceSession>
 			</ChildrenList>
 		</WorkUnit>
 	</ControlSurfaceSessions>

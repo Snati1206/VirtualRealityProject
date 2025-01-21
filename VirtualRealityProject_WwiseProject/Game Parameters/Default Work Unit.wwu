@@ -3,7 +3,17 @@
 	<GameParameters>
 		<WorkUnit Name="Default Work Unit" ID="{783EED98-38D9-4575-BE3B-51AB635CB706}" PersistMode="Standalone">
 			<ChildrenList>
-				<GameParameter Name="Crazyness" ID="{8A0125EA-B17C-4A07-A2AA-F4E92A932029}">
+				<GameParameter Name="sensor1" ID="{8A0125EA-B17C-4A07-A2AA-F4E92A932029}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="sensor2" ID="{64F8FD5A-7F09-4772-A48A-3629D18ECA60}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="sensor3" ID="{050AB711-2670-4DC2-B704-99F8F851564C}">
 					<PropertyList>
 						<Property Name="InitialValue" Type="Real64" Value="0"/>
 					</PropertyList>
