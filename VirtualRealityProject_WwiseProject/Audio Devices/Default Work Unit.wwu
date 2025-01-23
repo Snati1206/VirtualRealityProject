@@ -3,7 +3,20 @@
 	<AudioDevices>
 		<WorkUnit Name="Default Work Unit" ID="{E8BDE8A5-FAF6-425B-A87D-75867B16A631}" PersistMode="Standalone">
 			<ChildrenList>
-				<AudioDevice Name="System" ID="{E40CC3C9-D3EC-4779-8B52-36C8C9AB88F2}" PluginName="System" CompanyID="0" PluginID="174" PluginType="7"/>
+				<AudioDevice Name="System" ID="{E40CC3C9-D3EC-4779-8B52-36C8C9AB88F2}" PluginName="System" CompanyID="0" PluginID="174" PluginType="7">
+					<PropertyList>
+						<Property Name="Allow3DAudio" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
+						<Property Name="MainMixSpeakerConfiguration" Type="Uint32">
+							<ValueList>
+								<Value>6549768</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+				</AudioDevice>
 				<AudioDevice Name="No_Output" ID="{207C5459-02E0-421E-9162-071B7EEC902A}" PluginName="No Output" CompanyID="0" PluginID="181" PluginType="7"/>
 			</ChildrenList>
 		</WorkUnit>

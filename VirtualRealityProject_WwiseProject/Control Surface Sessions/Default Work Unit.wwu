@@ -66,6 +66,43 @@
 										</Reference>
 									</ReferenceList>
 								</ControlSurfaceBinding>
+								<ControlSurfaceBinding Name="Binding" ID="{76232C77-5AC5-44E6-8631-E6A7E9D30C87}">
+									<PropertyList>
+										<Property Name="HardwareControllerKey" Type="string" Value="MaxMsp~Ch.1~CC~6"/>
+										<Property Name="TargetName" Type="string" Value="TransportPlay"/>
+										<Property Name="TargetType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="TargetObject">
+											<ObjectRef Name="Reset" ID="{98D5F919-007E-41E0-BCF2-C379723F61FA}" WorkUnitID="{8837BB41-6FC3-415B-85DD-91771863AD97}"/>
+										</Reference>
+									</ReferenceList>
+								</ControlSurfaceBinding>
+								<ControlSurfaceBinding Name="Binding" ID="{5E3D6236-7F3C-4E0D-93D3-B38330738E18}">
+									<PropertyList>
+										<Property Name="HardwareControllerKey" Type="string" Value="MaxMsp~Ch.1~CC~5"/>
+										<Property Name="TargetName" Type="string" Value="TransportPlay"/>
+										<Property Name="TargetType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="TargetObject">
+											<ObjectRef Name="Music" ID="{6C2B9CC9-47BA-48A0-A03D-F4C61BD281D3}" WorkUnitID="{8837BB41-6FC3-415B-85DD-91771863AD97}"/>
+										</Reference>
+									</ReferenceList>
+								</ControlSurfaceBinding>
+								<ControlSurfaceBinding Name="Binding" ID="{27E2D43E-16A5-4396-897A-73631439CE77}">
+									<PropertyList>
+										<Property Name="HardwareControllerKey" Type="string" Value="MaxMsp~Ch.1~CC~4"/>
+										<Property Name="TargetName" Type="string" Value="TransportPlay"/>
+										<Property Name="TargetType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="TargetObject">
+											<ObjectRef Name="Transition" ID="{FF2159BA-A7E5-4B83-9357-D0EC8F81668C}" WorkUnitID="{8837BB41-6FC3-415B-85DD-91771863AD97}"/>
+										</Reference>
+									</ReferenceList>
+								</ControlSurfaceBinding>
+								<ControlSurfaceBinding Name="Binding" ID="{4A36BE66-3D33-4EB2-A379-DB4AF2FAB527}"/>
 							</ChildrenList>
 						</ControlSurfaceBindingGroup>
 						<ControlSurfaceBindingGroup Name="Current Selection" ID="{7B0681D4-38CD-46A4-8651-486D351496DD}">

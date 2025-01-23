@@ -3,7 +3,7 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{8837BB41-6FC3-415B-85DD-91771863AD97}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="Ambiance" ID="{0ADE0251-8EAA-45D5-87D6-CEA9F4467C9F}">
+				<Event Name="AmbianceOn" ID="{0ADE0251-8EAA-45D5-87D6-CEA9F4467C9F}">
 					<ChildrenList>
 						<Action Name="" ID="{0E42BC3D-087E-44BD-8977-EC96C0C0AEB1}" ShortID="611420571">
 							<ReferenceList>
@@ -14,6 +14,13 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="AmbianceOff" ID="{04E77DEA-2479-45E7-8022-FB1161CD3052}"/>
+				<Event Name="Music" ID="{6C2B9CC9-47BA-48A0-A03D-F4C61BD281D3}"/>
+				<Event Name="Reset" ID="{98D5F919-007E-41E0-BCF2-C379723F61FA}"/>
+				<Event Name="Transition" ID="{FF2159BA-A7E5-4B83-9357-D0EC8F81668C}"/>
+				<Event Name="Sensor1Activated" ID="{5C13809D-2C9E-41EE-97E7-7D32F4B3B9D5}"/>
+				<Event Name="Sensor2Activated" ID="{C011709D-71D2-4E2C-9D32-2418092208F1}"/>
+				<Event Name="Sensor3Activated" ID="{237B9BB2-A701-4F3A-9F06-9AF3ED6FEC24}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
