@@ -94,11 +94,11 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 41bb3788c36f5b4185dd91771863ad97
     GuidInternal: 
-    m_lastTime: -8584645692460209380
+    m_lastTime: -8584639367476819011
     List:
-    - name: Ambiance
-      guid: 5102de0aaa8ed54587d6cea9f4467c9f
-      id: 2981377429
+    - name: AmbianceOff
+      guid: ea7de7047924e7458022fb1161cd3052
+      id: 2011814100
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -106,13 +106,132 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 41bb3788c36f5b4185dd91771863ad97
-      - ElementName: Ambiance
+      - ElementName: AmbianceOff
+        ObjectType: 3
+        guid: ea7de7047924e7458022fb1161cd3052
+      Path: Events\Default Work Unit\AmbianceOff
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: AmbianceOn
+      guid: 5102de0aaa8ed54587d6cea9f4467c9f
+      id: 2661120974
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 41bb3788c36f5b4185dd91771863ad97
+      - ElementName: AmbianceOn
         ObjectType: 3
         guid: 5102de0aaa8ed54587d6cea9f4467c9f
-      Path: Events\Default Work Unit\Ambiance
+      Path: Events\Default Work Unit\AmbianceOn
       maxAttenuation: 0
-      maxDuration: 240.26666
-      minDuration: 240.26666
+      maxDuration: -1
+      minDuration: -1
+    - name: Music
+      guid: c99c2b6cba47a048a03df4c61bd281d3
+      id: 3991942870
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 41bb3788c36f5b4185dd91771863ad97
+      - ElementName: Music
+        ObjectType: 3
+        guid: c99c2b6cba47a048a03df4c61bd281d3
+      Path: Events\Default Work Unit\Music
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Reset
+      guid: 19f9d5987e00e041bcf2c379723f61fa
+      id: 4017455162
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 41bb3788c36f5b4185dd91771863ad97
+      - ElementName: Reset
+        ObjectType: 3
+        guid: 19f9d5987e00e041bcf2c379723f61fa
+      Path: Events\Default Work Unit\Reset
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Sensor1Activated
+      guid: 9d80135c9e2cee4197e77d32f4b3b9d5
+      id: 2160358933
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 41bb3788c36f5b4185dd91771863ad97
+      - ElementName: Sensor1Activated
+        ObjectType: 3
+        guid: 9d80135c9e2cee4197e77d32f4b3b9d5
+      Path: Events\Default Work Unit\Sensor1Activated
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Sensor2Activated
+      guid: 9d7011c0d2712c4e9d322418092208f1
+      id: 996378512
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 41bb3788c36f5b4185dd91771863ad97
+      - ElementName: Sensor2Activated
+        ObjectType: 3
+        guid: 9d7011c0d2712c4e9d322418092208f1
+      Path: Events\Default Work Unit\Sensor2Activated
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Sensor3Activated
+      guid: b29b7b2301a73a4f9f069af3ed6fec24
+      id: 3742079315
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 41bb3788c36f5b4185dd91771863ad97
+      - ElementName: Sensor3Activated
+        ObjectType: 3
+        guid: b29b7b2301a73a4f9f069af3ed6fec24
+      Path: Events\Default Work Unit\Sensor3Activated
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Transition
+      guid: ba5921ffe5a7834b9357d0ec8f81668c
+      id: 1865857008
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 41bb3788c36f5b4185dd91771863ad97
+      - ElementName: Transition
+        ObjectType: 3
+        guid: ba5921ffe5a7834b9357d0ec8f81668c
+      Path: Events\Default Work Unit\Transition
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
