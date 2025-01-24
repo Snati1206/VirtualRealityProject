@@ -102,6 +102,32 @@
 						</BlendTrack>
 					</BlendTrackList>
 				</BlendContainer>
+				<Sound Name="TEstingAmbi" ID="{82E70897-311E-4113-99F8-3FB6CEA731AB}" ShortID="476469285">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02AB0E9E-DC49-4D18-8206-2301BDC73EC0}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="testingWwise" ID="{2ED53E4A-B32D-4A90-BAF9-6D4FD8438F90}">
+							<PropertyList>
+								<Property Name="LoopBegin" Type="Real64" Value="0"/>
+								<Property Name="LoopEnd" Type="Real64" Value="63.744"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>testingWwise.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="819470187"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="testingWwise" ID="{2ED53E4A-B32D-4A90-BAF9-6D4FD8438F90}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
