@@ -3,7 +3,14 @@
 	<MixingSessions>
 		<WorkUnit Name="Default Work Unit" ID="{04DFAEFF-324A-41BB-9A26-B3C4F5EC1BAB}" PersistMode="Standalone">
 			<ChildrenList>
-				<MixingSession Name="StandardMix" ID="{C76FD47E-70D1-4688-BEE6-0169D7A97E3B}"/>
+				<MixingSession Name="StandardMix" ID="{C76FD47E-70D1-4688-BEE6-0169D7A97E3B}">
+					<ObjectList>
+						<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+						<ObjectRef Name="Ambiance" ID="{CCCF0DF9-24CC-4600-B821-E19884B16803}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+						<ObjectRef Name="AudioObjects" ID="{CE147A78-C7F5-4AA5-8006-9CF43DE38E3E}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+						<ObjectRef Name="Music" ID="{B73C8F1D-8152-44B8-8EB7-5A9C7252A145}" WorkUnitID="{4B7C06E9-0662-4FE5-912F-FFD8A7A89BD7}"/>
+					</ObjectList>
+				</MixingSession>
 			</ChildrenList>
 		</WorkUnit>
 	</MixingSessions>

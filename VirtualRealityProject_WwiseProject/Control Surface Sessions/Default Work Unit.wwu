@@ -102,7 +102,6 @@
 										</Reference>
 									</ReferenceList>
 								</ControlSurfaceBinding>
-								<ControlSurfaceBinding Name="Binding" ID="{4A36BE66-3D33-4EB2-A379-DB4AF2FAB527}"/>
 							</ChildrenList>
 						</ControlSurfaceBindingGroup>
 						<ControlSurfaceBindingGroup Name="Current Selection" ID="{7B0681D4-38CD-46A4-8651-486D351496DD}">

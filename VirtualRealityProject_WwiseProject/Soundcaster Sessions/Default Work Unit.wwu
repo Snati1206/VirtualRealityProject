@@ -1,6 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{34271F2E-40BE-45FA-B400-14CA7C1031D1}" SchemaVersion="123">
 	<SoundcasterSessions>
-		<WorkUnit Name="Default Work Unit" ID="{34271F2E-40BE-45FA-B400-14CA7C1031D1}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{34271F2E-40BE-45FA-B400-14CA7C1031D1}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="Testing" ID="{7EB0F613-EF8D-49F9-B693-46321EA08579}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Music" ID="{B73C8F1D-8152-44B8-8EB7-5A9C7252A145}" WorkUnitID="{4B7C06E9-0662-4FE5-912F-FFD8A7A89BD7}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="TEstingAmbi" ID="{82E70897-311E-4113-99F8-3FB6CEA731AB}" WorkUnitID="{4B7C06E9-0662-4FE5-912F-FFD8A7A89BD7}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="sensor1" ID="{8A0125EA-B17C-4A07-A2AA-F4E92A932029}"/>
+							<Value>48.8188976377953</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundcasterSessions>
 </WwiseDocument>
