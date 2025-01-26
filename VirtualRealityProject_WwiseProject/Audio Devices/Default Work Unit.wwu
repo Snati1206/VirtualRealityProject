@@ -13,6 +13,15 @@
 					</PropertyList>
 				</AudioDevice>
 				<AudioDevice Name="No_Output" ID="{207C5459-02E0-421E-9162-071B7EEC902A}" PluginName="No Output" CompanyID="0" PluginID="181" PluginType="7"/>
+				<AudioDevice Name="System_VR" ID="{B63B1BDF-C198-4236-B3E3-A03E1A0EE2FC}" PluginName="System" CompanyID="0" PluginID="174" PluginType="7">
+					<PropertyList>
+						<Property Name="Allow3DAudio" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+				</AudioDevice>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioDevices>

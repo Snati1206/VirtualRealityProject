@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{7FAE9102-D772-46A8-AA69-F6DB5B0BCD91}" SchemaVersion="123" RootDocumentID="{4B7C06E9-0662-4FE5-912F-FFD8A7A89BD7}" ParentDocumentID="{4B7C06E9-0662-4FE5-912F-FFD8A7A89BD7}">
+	<AudioObjects>
+		<WorkUnit Name="amb" ID="{7FAE9102-D772-46A8-AA69-F6DB5B0BCD91}" OwnerID="{4B7C06E9-0662-4FE5-912F-FFD8A7A89BD7}" PersistMode="Nested">
+			<ChildrenList>
+				<Sound Name="amb_creek" ID="{23D4034E-1B7E-4C99-9648-4D29BA0075CE}" ShortID="169418256">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02AB0E9E-DC49-4D18-8206-2301BDC73EC0}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Ambiance Master" ID="{CCCF0DF9-24CC-4600-B821-E19884B16803}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="amb_creek" ID="{617E76F6-1568-45F7-A825-D88684497CD3}">
+							<Language>SFX</Language>
+							<AudioFile>amb_creek.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="196160818"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="amb_creek" ID="{617E76F6-1568-45F7-A825-D88684497CD3}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="amb_drone" ID="{F0433501-7106-4CD2-96F8-7AAF92B36B53}" ShortID="632705441">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02AB0E9E-DC49-4D18-8206-2301BDC73EC0}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="sfx_amb_wind_drone" ID="{1FBA8E59-D31A-405C-B640-79FC9258B495}">
+							<Language>SFX</Language>
+							<AudioFile>sfx_amb_wind_drone.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="161205952"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="sfx_amb_wind_drone" ID="{1FBA8E59-D31A-405C-B640-79FC9258B495}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

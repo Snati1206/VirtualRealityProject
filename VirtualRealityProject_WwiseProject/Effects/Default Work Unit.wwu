@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{22D8B069-5FC5-4219-A5FD-C2807912FC10}" SchemaVersion="123">
 	<Effects>
-		<WorkUnit Name="Default Work Unit" ID="{22D8B069-5FC5-4219-A5FD-C2807912FC10}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{22D8B069-5FC5-4219-A5FD-C2807912FC10}" PersistMode="Standalone">
+			<ChildrenList>
+				<Effect Name="New_iZotope_Trash_Filters" ID="{F28ACBC4-1881-44DC-9DCB-5B9E1FAF0F8B}" PluginName="iZotope Trash Filters" CompanyID="259" PluginID="6" PluginType="3"/>
+			</ChildrenList>
+		</WorkUnit>
 	</Effects>
 </WwiseDocument>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{4E140D7F-62E4-4DAF-A811-B1E5FF1E146B}" SchemaVersion="123" RootDocumentID="{4B7C06E9-0662-4FE5-912F-FFD8A7A89BD7}" ParentDocumentID="{4B7C06E9-0662-4FE5-912F-FFD8A7A89BD7}">
+	<AudioObjects>
+		<WorkUnit Name="sfx" ID="{4E140D7F-62E4-4DAF-A811-B1E5FF1E146B}" OwnerID="{4B7C06E9-0662-4FE5-912F-FFD8A7A89BD7}" PersistMode="Nested">
+			<ChildrenList>
+				<RandomSequenceContainer Name="Alarm" ID="{DD4DE8BC-A555-4EBD-83CF-2A409ED87571}" ShortID="1023699706">
+					<PropertyList>
+						<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
+						<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+						<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+						<Property Name="UserAuxSendLPF0" Type="int16">
+							<ValueList>
+								<Value>20</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02AB0E9E-DC49-4D18-8206-2301BDC73EC0}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="VRHeadset" ID="{39F54136-2FB9-4BEE-8868-4E6FDE31586A}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+						</Reference>
+						<Reference Name="UserAuxSend0">
+							<ObjectRef Name="Reverb" ID="{568A8176-882E-40FC-A572-D3004C78AC10}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+						</Reference>
+						<Reference Name="UserAuxSend1">
+							<ObjectRef Name="LFE" ID="{7A99EF7A-6B7D-43B7-B065-79464E51DCAB}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="sfx_alarm_hoa" ID="{C4FF39FD-5376-4367-A8D0-256B2224FC01}" ShortID="868281434">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-11</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02AB0E9E-DC49-4D18-8206-2301BDC73EC0}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_alarm_hoa" ID="{05F892BB-54A1-4D47-A2BA-EA94EB618A09}">
+									<PropertyList>
+										<Property Name="ChannelConfigOverride" Type="int64" Value="528"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>sfx_alarm_hoa.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="260417851"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_alarm_hoa" ID="{05F892BB-54A1-4D47-A2BA-EA94EB618A09}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<ObjectLists>
+						<ObjectList Name="Playlist">
+							<Reference>
+								<ObjectRef Name="sfx_alarm_hoa" ID="{C4FF39FD-5376-4367-A8D0-256B2224FC01}" WorkUnitID="{4E140D7F-62E4-4DAF-A811-B1E5FF1E146B}"/>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
+				</RandomSequenceContainer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

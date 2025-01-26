@@ -31,6 +31,21 @@
 				<Event Name="Sensor1Activated" ID="{5C13809D-2C9E-41EE-97E7-7D32F4B3B9D5}"/>
 				<Event Name="Sensor2Activated" ID="{C011709D-71D2-4E2C-9D32-2418092208F1}"/>
 				<Event Name="Sensor3Activated" ID="{237B9BB2-A701-4F3A-9F06-9AF3ED6FEC24}"/>
+				<Event Name="Alarm" ID="{471925B2-6CB3-45BC-8184-B20853065D36}">
+					<ChildrenList>
+						<Action Name="" ID="{DF576E5D-4404-4C49-97C7-2ADBD06A946D}" ShortID="181901360">
+							<PropertyList>
+								<Property Name="FadeInCurve" Type="int16" Value="1"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="sfx_alarm" ID="{138BDEF5-344E-4ED4-89B3-216D4EE32565}" WorkUnitID="{4B7C06E9-0662-4FE5-912F-FFD8A7A89BD7}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

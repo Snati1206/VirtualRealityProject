@@ -10,7 +10,7 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Bus Name="Ambiance" ID="{CCCF0DF9-24CC-4600-B821-E19884B16803}">
+						<Bus Name="Ambiance Master" ID="{CCCF0DF9-24CC-4600-B821-E19884B16803}">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
 								<Property Name="BusChannelConfig" Type="int32">
@@ -24,20 +24,77 @@
 								<Position Name="" ID="{2D55CB32-96A0-4643-94C9-6D2F2EAE157D}"/>
 							</PositioningInfo>
 						</Bus>
-						<Bus Name="AudioObjects" ID="{CE147A78-C7F5-4AA5-8006-9CF43DE38E3E}">
+						<AuxBus Name="Reverb" ID="{568A8176-882E-40FC-A572-D3004C78AC10}">
+							<ObjectLists>
+								<ObjectList Name="Effects">
+									<Reference>
+										<Local>
+											<EffectSlot Name="" ID="{47D2E355-F0A3-466B-B0B6-A0E260EB634C}" ShortID="665177519">
+												<ReferenceList>
+													<Reference Name="Effect" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+														<ObjectRef Name="Plate_Large" ID="{62CB7384-421D-4F9A-9CF1-E90F7336A07B}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+													</Reference>
+												</ReferenceList>
+											</EffectSlot>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</AuxBus>
+						<AuxBus Name="LFE" ID="{7A99EF7A-6B7D-43B7-B065-79464E51DCAB}">
 							<PropertyList>
-								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="BusChannelConfig" Type="int32">
+									<ValueList>
+										<Value>33025</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<PositioningInfo>
+								<Panner Name="" ID="{D36B6750-95EA-4F4C-A192-7153AA51344C}"/>
+							</PositioningInfo>
+							<ObjectLists>
+								<ObjectList Name="Effects">
+									<Reference>
+										<Local>
+											<EffectSlot Name="" ID="{0E9D8FA3-B6A4-4C58-BFA6-3D3617BC0FD5}" ShortID="463928462">
+												<ReferenceList>
+													<Reference Name="Effect" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+														<ObjectRef Name="Low_Pass_20KHz" ID="{830124FB-B9D5-4AE8-846E-E94A74652666}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+													</Reference>
+												</ReferenceList>
+											</EffectSlot>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</AuxBus>
+						<Bus Name="SFX Master" ID="{1D32FBBD-0AD3-47AA-BA1F-81C9A58A2B61}">
+							<PropertyList>
 								<Property Name="BusChannelConfig" Type="int32">
 									<ValueList>
 										<Value>528</Value>
 									</ValueList>
 								</Property>
-								<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+								<Property Name="RecoveryTime" Type="Real64" Value="0"/>
 							</PropertyList>
-							<PositioningInfo>
-								<Panner Name="" ID="{DB6733DC-2616-4525-AFE9-83D4DD9E04C8}"/>
-								<Position Name="" ID="{074934F9-E66B-4682-81A9-12289D5B16E2}"/>
-							</PositioningInfo>
+						</Bus>
+					</ChildrenList>
+				</Bus>
+				<Bus Name="Master VR Bus" ID="{85088EDF-3415-4817-BB68-1BA901F2BD37}">
+					<ReferenceList>
+						<Reference Name="AudioDevice" PluginName="System" CompanyID="0" PluginID="174" PluginType="7">
+							<ObjectRef Name="System_VR" ID="{B63B1BDF-C198-4236-B3E3-A03E1A0EE2FC}" WorkUnitID="{E8BDE8A5-FAF6-425B-A87D-75867B16A631}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Bus Name="VRHeadset" ID="{39F54136-2FB9-4BEE-8868-4E6FDE31586A}">
+							<PropertyList>
+								<Property Name="BusChannelConfig" Type="int32">
+									<ValueList>
+										<Value>528</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 						</Bus>
 					</ChildrenList>
 				</Bus>
