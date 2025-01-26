@@ -38,8 +38,42 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 4ec30404cd03cc49bfe9a6396411430e
     GuidInternal: 
-    m_lastTime: -8584648036453461979
+    m_lastTime: -8584637872424822935
     List:
+    - name: Ambiance
+      guid: f90dcfcccc240046b821e19884b16803
+      id: 2981377429
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 4ec30404cd03cc49bfe9a6396411430e
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Ambiance
+        ObjectType: 2
+        guid: f90dcfcccc240046b821e19884b16803
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Ambiance
+    - name: AudioObjects
+      guid: 787a14cef5c7a54a80069cf43de38e3e
+      id: 3149422595
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 4ec30404cd03cc49bfe9a6396411430e
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: AudioObjects
+        ObjectType: 2
+        guid: 787a14cef5c7a54a80069cf43de38e3e
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\AudioObjects
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
       id: 3803692087
@@ -94,7 +128,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 41bb3788c36f5b4185dd91771863ad97
     GuidInternal: 
-    m_lastTime: -8584639367476819011
+    m_lastTime: -8584637923386081301
     List:
     - name: AmbianceOff
       guid: ea7de7047924e7458022fb1161cd3052

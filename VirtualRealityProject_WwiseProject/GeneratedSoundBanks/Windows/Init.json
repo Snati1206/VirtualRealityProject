@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{FC3A373A-0312-E688-7D0F-4DB485E1281E}",
+    "Hash": "{2E7CB7A9-01B7-1BC5-F2D0-E56FC49AE353}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -36,6 +36,18 @@
     },
     "Busses": [
      {
+      "Id": "2981377429",
+      "Name": "Ambiance",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Ambiance",
+      "GUID": "{CCCF0DF9-24CC-4600-B821-E19884B16803}"
+     },
+     {
+      "Id": "3149422595",
+      "Name": "AudioObjects",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\AudioObjects",
+      "GUID": "{CE147A78-C7F5-4AA5-8006-9CF43DE38E3E}"
+     },
+     {
       "Id": "3803692087",
       "Name": "Master Audio Bus",
       "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus",
@@ -44,14 +56,26 @@
     ],
     "GameParameters": [
      {
-      "Id": "2181097513",
-      "Name": "Crazyness",
-      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Crazyness",
+      "Id": "3023874992",
+      "Name": "sensor1",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\sensor1",
       "GUID": "{8A0125EA-B17C-4A07-A2AA-F4E92A932029}"
+     },
+     {
+      "Id": "3023874994",
+      "Name": "sensor3",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\sensor3",
+      "GUID": "{050AB711-2670-4DC2-B704-99F8F851564C}"
+     },
+     {
+      "Id": "3023874995",
+      "Name": "sensor2",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\sensor2",
+      "GUID": "{64F8FD5A-7F09-4772-A48A-3629D18ECA60}"
      }
     ]
    }
   ],
-  "FileHash": "{6FB5D03F-8FC6-6A5F-659F-77B5064D729C}"
+  "FileHash": "{FE0E78E7-735C-2529-999F-A418D38E0B97}"
  }
 }

@@ -1,10 +1,21 @@
 Event	ID	Name			Wwise Object Path	Notes
-	2981377429	Ambiance			\Default Work Unit\Ambiance	
+	996378512	Sensor2Activated			\Default Work Unit\Sensor2Activated	
+	1865857008	Transition			\Default Work Unit\Transition	
+	2011814100	AmbianceOff			\Default Work Unit\AmbianceOff	
+	2160358933	Sensor1Activated			\Default Work Unit\Sensor1Activated	
+	2661120974	AmbianceOn			\Default Work Unit\AmbianceOn	
+	3742079315	Sensor3Activated			\Default Work Unit\Sensor3Activated	
+	3991942870	Music			\Default Work Unit\Music	
+	4017455162	Reset			\Default Work Unit\Reset	
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
-	2181097513	Crazyness			\Default Work Unit\Crazyness	
+	3023874992	sensor1			\Default Work Unit\sensor1	
+
+Effect plug-ins	ID	Name	Type				Notes
+	1990128658	Room_Medium	Wwise RoomVerb			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	743402601	S3004-01_Campagne-ambiance_diurne-pres_d_une_riviere-grenouille-grillons	C:\Users\joseb\Documents\GitHub\VirtualRealityProject\VirtualRealityProject_WwiseProject\.cache\1A\{1ADEB68C-2F1D-0E77-8CDE-F26203A6E52F}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiance\S3004-01_Campagne-ambiance_diurne-pres_d_une_riviere-grenouille-grillons		46002648
-	819827368	S3004-02_Campagne-ambiance_diurne-vent_dans_les_arbres	C:\Users\joseb\Documents\GitHub\VirtualRealityProject\VirtualRealityProject_WwiseProject\.cache\25\{252A9831-295D-4DEC-ED65-555E1E6D61BF}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiance\S3004-02_Campagne-ambiance_diurne-vent_dans_les_arbres		46131344
+	188424556	Music	C:\Users\joseb\Documents\GitHub\VirtualRealityProject\VirtualRealityProject_WwiseProject\.cache\CF\{CFA4F131-C3B9-2991-2038-B2CE305E0634}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music		2933065
+	743402601	S3004-01_Campagne-ambiance_diurne-pres_d_une_riviere-grenouille-grillons	C:\Users\joseb\Documents\GitHub\VirtualRealityProject\VirtualRealityProject_WwiseProject\.cache\9A\{9AE90BC4-3C2D-278A-5ED0-4A43894284F7}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiance\S3004-01_Campagne-ambiance_diurne-pres_d_une_riviere-grenouille-grillons		2453281
+	819827368	S3004-02_Campagne-ambiance_diurne-vent_dans_les_arbres	C:\Users\joseb\Documents\GitHub\VirtualRealityProject\VirtualRealityProject_WwiseProject\.cache\91\{91040BA0-7966-863A-499A-28A29A335D37}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiance\S3004-02_Campagne-ambiance_diurne-vent_dans_les_arbres		2311066
 

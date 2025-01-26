@@ -10,18 +10,26 @@
     "Type": "User",
     "GUID": "{45D8302B-19E7-418B-B7D2-CDAC15D9EA71}",
     "Language": "SFX",
-    "Hash": "{1FE2906F-7730-B0F2-6D7F-915F070B799C}",
+    "Hash": "{57E25E3A-5E49-7562-B112-743E27D138CD}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
     "Media": [
+     {
+      "Id": "188424556",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Get Up Offa That Thing (Release The Pressure).wav",
+      "CachePath": "A4/{A448A559-6D60-D117-CE25-AEBF8C76DCE4}.wem"
+     },
      {
       "Id": "743402601",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "S3004-01_Campagne-ambiance_diurne-pres_d_une_riviere-grenouille-grillons.wav",
-      "CachePath": "1A/{1ADEB68C-2F1D-0E77-8CDE-F26203A6E52F}.wem"
+      "CachePath": "ED/{EDBDB39D-2D7E-B583-DF04-F42D7BD48A5C}.wem"
      },
      {
       "Id": "819827368",
@@ -29,14 +37,36 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "S3004-02_Campagne-ambiance_diurne-vent_dans_les_arbres.wav",
-      "CachePath": "25/{252A9831-295D-4DEC-ED65-555E1E6D61BF}.wem"
+      "CachePath": "72/{724E1887-BAD9-C694-172A-18158EAEEE30}.wem"
      }
     ],
+    "Plugins": {
+     "ShareSets": [
+      {
+       "Id": "1990128658",
+       "Name": "Room_Medium",
+       "ObjectPath": "\\Effects\\Factory Effects\\RoomVerb\\Rooms\\Room_Medium",
+       "GUID": "{F5C06EC1-E4A4-4332-A7D3-A89E2986B74F}",
+       "LibName": "Wwise RoomVerb",
+       "LibId": "7733251"
+      }
+     ]
+    },
     "Events": [
      {
-      "Id": "2981377429",
-      "Name": "Ambiance",
-      "ObjectPath": "\\Events\\Default Work Unit\\Ambiance",
+      "Id": "2011814100",
+      "Name": "AmbianceOff",
+      "ObjectPath": "\\Events\\Default Work Unit\\AmbianceOff",
+      "GUID": "{04E77DEA-2479-45E7-8022-FB1161CD3052}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "2661120974",
+      "Name": "AmbianceOn",
+      "ObjectPath": "\\Events\\Default Work Unit\\AmbianceOn",
       "GUID": "{0ADE0251-8EAA-45D5-87D6-CEA9F4467C9F}",
       "DurationType": "OneShot",
       "DurationMin": "240.26666",
@@ -49,18 +79,89 @@
         "Id": "819827368"
        }
       ]
+     },
+     {
+      "Id": "3991942870",
+      "Name": "Music",
+      "ObjectPath": "\\Events\\Default Work Unit\\Music",
+      "GUID": "{6C2B9CC9-47BA-48A0-A03D-F4C61BD281D3}",
+      "DurationType": "OneShot",
+      "DurationMin": "374.50665",
+      "DurationMax": "374.50665",
+      "MediaRefs": [
+       {
+        "Id": "188424556"
+       }
+      ],
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "1990128658"
+        }
+       ]
+      }
+     },
+     {
+      "Id": "4017455162",
+      "Name": "Reset",
+      "ObjectPath": "\\Events\\Default Work Unit\\Reset",
+      "GUID": "{98D5F919-007E-41E0-BCF2-C379723F61FA}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "2160358933",
+      "Name": "Sensor1Activated",
+      "ObjectPath": "\\Events\\Default Work Unit\\Sensor1Activated",
+      "GUID": "{5C13809D-2C9E-41EE-97E7-7D32F4B3B9D5}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "996378512",
+      "Name": "Sensor2Activated",
+      "ObjectPath": "\\Events\\Default Work Unit\\Sensor2Activated",
+      "GUID": "{C011709D-71D2-4E2C-9D32-2418092208F1}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "3742079315",
+      "Name": "Sensor3Activated",
+      "ObjectPath": "\\Events\\Default Work Unit\\Sensor3Activated",
+      "GUID": "{237B9BB2-A701-4F3A-9F06-9AF3ED6FEC24}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "1865857008",
+      "Name": "Transition",
+      "ObjectPath": "\\Events\\Default Work Unit\\Transition",
+      "GUID": "{FF2159BA-A7E5-4B83-9357-D0EC8F81668C}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
      }
     ],
     "GameParameters": [
      {
-      "Id": "2181097513",
-      "Name": "Crazyness",
-      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Crazyness",
+      "Id": "3023874992",
+      "Name": "sensor1",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\sensor1",
       "GUID": "{8A0125EA-B17C-4A07-A2AA-F4E92A932029}"
      }
     ]
    }
   ],
-  "FileHash": "{A0877DE7-93D2-B399-84A3-2A44FA29C5A3}"
+  "FileHash": "{BCCD9D1A-F00E-8221-E271-FE2F22B00E39}"
  }
 }

@@ -15,9 +15,9 @@ RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 10
   m_Fog: 1
-  m_FogColor: {r: 0.4245283, g: 0.36645603, b: 0.41726926, a: 1}
+  m_FogColor: {r: 0.9496855, g: 0, b: 0.87300974, a: 1}
   m_FogMode: 2
-  m_FogDensity: 0.02
+  m_FogDensity: 0.0009
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
   m_AmbientSkyColor: {r: 0.3301887, g: 0.16665184, b: 0.17220218, a: 1}
@@ -442,7 +442,7 @@ GameObject:
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &870674935
 Transform:
@@ -453,7 +453,7 @@ Transform:
   m_GameObject: {fileID: 870674934}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 4.365574e-10, w: 1}
-  m_LocalPosition: {x: 363.79242, y: 173.20103, z: -0.00041007996}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -644,14 +644,14 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.01
-  far clip plane: 1000
-  field of view: 60
+  far clip plane: 774.92
+  field of view: 33
   orthographic: 0
   orthographic size: 5
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 53
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -693,7 +693,7 @@ MonoBehaviour:
     initialListenerList: []
     useDefaultListeners: 1
   isEnvironmentAware: 0
-  isStaticObject: 0
+  isStaticObject: 1
   usePositionOffsetData: 0
   m_positionOffsetData:
     KeepMe: 0
@@ -812,6 +812,8 @@ GameObject:
   - component: {fileID: 1011351651}
   - component: {fileID: 1011351650}
   - component: {fileID: 1011351649}
+  - component: {fileID: 1011351653}
+  - component: {fileID: 1011351652}
   m_Layer: 0
   m_Name: XR Origin (VR)
   m_TagString: Untagged
@@ -848,7 +850,7 @@ MonoBehaviour:
   m_Camera: {fileID: 870674939}
   m_OriginBaseGameObject: {fileID: 1011351648}
   m_CameraFloorOffsetObject: {fileID: 984534429}
-  m_RequestedTrackingOriginMode: 0
+  m_RequestedTrackingOriginMode: 1
   m_CameraYOffset: 1.1176
 --- !u!4 &1011351651
 Transform:
@@ -858,14 +860,66 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1011351648}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.052539084, y: 0.7277092, z: 0.049980417, w: -0.6820419}
-  m_LocalPosition: {x: 599.20056, y: -24.55774, z: 21.022705}
+  m_LocalRotation: {x: -0.087264106, y: 0.828889, z: -0.13499314, w: -0.53582174}
+  m_LocalPosition: {x: 686.4, y: 184.78, z: 305.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 984534430}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: -8.303, y: 266.254, z: 0.48}
+  m_LocalEulerAnglesHint: {x: 18.5, y: 245.76, z: 0}
+--- !u!114 &1011351652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1011351648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4d6d2ca8f9d60d4e834402444cf94c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  actionOnEventType: 0
+  curveInterpolation: 4
+  enableActionOnEvent: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: e3f39e9c5f3225840898dadea5a292ee, type: 2}
+  useCallbacks: 0
+  stopSoundOnDestroy: 1
+  Callbacks: []
+  soundEmitterObject: {fileID: 0}
+  transitionDuration: 0
+  eventIdInternal: 0
+  valueGuidInternal: 
+  m_callbackDataInternal: {fileID: 0}
+--- !u!114 &1011351653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1011351648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e54a906f1f3df404bb97d6192c57e6dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_listeners:
+    initialListenerList: []
+    useDefaultListeners: 1
+  isEnvironmentAware: 1
+  isStaticObject: 0
+  usePositionOffsetData: 0
+  m_positionOffsetData:
+    KeepMe: 0
+    positionOffset: {x: 0, y: 0, z: 0}
+  m_posOffsetData: {fileID: 0}
+  listenerMask: 1
 --- !u!1001 &1123130266
 PrefabInstance:
   m_ObjectHideFlags: 0
