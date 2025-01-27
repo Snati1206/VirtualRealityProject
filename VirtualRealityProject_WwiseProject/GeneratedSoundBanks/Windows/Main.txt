@@ -1,21 +1,25 @@
 Event	ID	Name			Wwise Object Path	Notes
-	996378512	Sensor2Activated			\Default Work Unit\Sensor2Activated	
-	1865857008	Transition			\Default Work Unit\Transition	
-	2011814100	AmbianceOff			\Default Work Unit\AmbianceOff	
 	2160358933	Sensor1Activated			\Default Work Unit\Sensor1Activated	
-	2661120974	AmbianceOn			\Default Work Unit\AmbianceOn	
-	3742079315	Sensor3Activated			\Default Work Unit\Sensor3Activated	
-	3991942870	Music			\Default Work Unit\Music	
-	4017455162	Reset			\Default Work Unit\Reset	
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	3023874992	sensor1			\Default Work Unit\sensor1	
+	3499501082	timeScene			\Default Work Unit\timeScene	
 
 Effect plug-ins	ID	Name	Type				Notes
-	1990128658	Room_Medium	Wwise RoomVerb			
+	886273627	Have_U_Ever_Been_Outside (Custom)	Wwise RoomVerb			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	188424556	Music	C:\Users\joseb\Documents\GitHub\VirtualRealityProject\VirtualRealityProject_WwiseProject\.cache\CF\{CFA4F131-C3B9-2991-2038-B2CE305E0634}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music		2933065
-	743402601	S3004-01_Campagne-ambiance_diurne-pres_d_une_riviere-grenouille-grillons	C:\Users\joseb\Documents\GitHub\VirtualRealityProject\VirtualRealityProject_WwiseProject\.cache\9A\{9AE90BC4-3C2D-278A-5ED0-4A43894284F7}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiance\S3004-01_Campagne-ambiance_diurne-pres_d_une_riviere-grenouille-grillons		2453281
-	819827368	S3004-02_Campagne-ambiance_diurne-vent_dans_les_arbres	C:\Users\joseb\Documents\GitHub\VirtualRealityProject\VirtualRealityProject_WwiseProject\.cache\91\{91040BA0-7966-863A-499A-28A29A335D37}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiance\S3004-02_Campagne-ambiance_diurne-vent_dans_les_arbres		2311066
+	89892199	amb_wind_strong-001	C:\Users\joseb\Documents\GitHub\VirtualRealityProject\VirtualRealityProject_WwiseProject\.cache\1B\{1B71546D-2D93-D2A0-B702-8C012EF408DA}.wem		\Actor-Mixer Hierarchy\Default Work Unit\amb\Ambiance\amb_wind_wild\amb_wind_strong-001		2204
+	181926460	amb_leaves-001	C:\Users\joseb\Documents\GitHub\VirtualRealityProject\VirtualRealityProject_WwiseProject\.cache\8D\{8DA9D45C-9AAD-D69E-E23B-6B118813FC87}.wem		\Actor-Mixer Hierarchy\Default Work Unit\amb\Ambiance\amb_leaves\amb_leaves-001		1293
+	196160818	amb_creek	C:\Users\joseb\Documents\GitHub\VirtualRealityProject\VirtualRealityProject_WwiseProject\.cache\04\{04AE6978-8DB2-EF38-79D1-33A5FA44346D}.wem		\Actor-Mixer Hierarchy\Default Work Unit\amb\Ambiance\amb_creek		950557
+	293933914	amb_leaves-002	C:\Users\joseb\Documents\GitHub\VirtualRealityProject\VirtualRealityProject_WwiseProject\.cache\09\{0992235D-F2A6-D401-D719-5CF5BBA04907}.wem		\Actor-Mixer Hierarchy\Default Work Unit\amb\Ambiance\amb_leaves\amb_leaves-002		800
+	326334206	amb_leaves-004	C:\Users\joseb\Documents\GitHub\VirtualRealityProject\VirtualRealityProject_WwiseProject\.cache\8F\{8FCD5C24-3341-A162-C2CA-4A8F6636F719}.wem		\Actor-Mixer Hierarchy\Default Work Unit\amb\Ambiance\amb_leaves\amb_leaves-004		559
+	621973919	amb_wind_super_calm	C:\Users\joseb\Documents\GitHub\VirtualRealityProject\VirtualRealityProject_WwiseProject\.cache\90\{90258333-F8F8-90B5-CAEC-CF36F21714D5}.wem		\Actor-Mixer Hierarchy\Default Work Unit\amb\Ambiance\amb_wind\amb_wind_super_calm		1412
+	630766008	amb_wind_strong-003	C:\Users\joseb\Documents\GitHub\VirtualRealityProject\VirtualRealityProject_WwiseProject\.cache\DD\{DDF316EE-2550-D574-D878-B3259A8CC6AD}.wem		\Actor-Mixer Hierarchy\Default Work Unit\amb\Ambiance\amb_wind_wild\amb_wind_strong-003		1638
+	849966493	sfx_sensor_activated	C:\Users\joseb\Documents\GitHub\VirtualRealityProject\VirtualRealityProject_WwiseProject\.cache\B7\{B7852287-C68B-4869-5BB7-36E5409236FC}.wem		\Actor-Mixer Hierarchy\Default Work Unit\sfx\Sensor1\sfx_sensor_activated		109077
+	959841215	amb_wind_calm	C:\Users\joseb\Documents\GitHub\VirtualRealityProject\VirtualRealityProject_WwiseProject\.cache\EB\{EB9D6753-F13A-C352-DC1D-EBB9FC0D27B9}.wem		\Actor-Mixer Hierarchy\Default Work Unit\amb\Ambiance\amb_wind\amb_wind_calm		1326
+	1014557919	amb_leaves-003	C:\Users\joseb\Documents\GitHub\VirtualRealityProject\VirtualRealityProject_WwiseProject\.cache\F4\{F42DF69F-3908-86FA-E23A-9E04DD386B0B}.wem		\Actor-Mixer Hierarchy\Default Work Unit\amb\Ambiance\amb_leaves\amb_leaves-003		800
+	1029648873	power_up_loop	C:\Users\joseb\Documents\GitHub\VirtualRealityProject\VirtualRealityProject_WwiseProject\.cache\12\{123ED7B6-75D6-483B-5436-729C3C00F4D4}.wem		\Actor-Mixer Hierarchy\Default Work Unit\sfx\Sensor1\power_up_loop		1096224
+	1064833642	amb_wind_strong-004	C:\Users\joseb\Documents\GitHub\VirtualRealityProject\VirtualRealityProject_WwiseProject\.cache\9B\{9BD1D85B-6C2B-7721-A6FB-C54271F37371}.wem		\Actor-Mixer Hierarchy\Default Work Unit\amb\Ambiance\amb_wind_wild\amb_wind_strong-004		2281
+	1073305620	amb_wind_strong-002	C:\Users\joseb\Documents\GitHub\VirtualRealityProject\VirtualRealityProject_WwiseProject\.cache\58\{58A07ACE-E654-D0D6-5B2A-353CA889222F}.wem		\Actor-Mixer Hierarchy\Default Work Unit\amb\Ambiance\amb_wind_wild\amb_wind_strong-002		1638
 

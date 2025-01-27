@@ -3,29 +3,6 @@
 	<ControlSurfaceSessions>
 		<WorkUnit Name="Default Work Unit" ID="{82D2D2AC-40C5-47C4-9320-350C119B1843}" PersistMode="Standalone">
 			<ChildrenList>
-				<ControlSurfaceSession Name="Default Control Surface Session" ID="{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}">
-					<ChildrenList>
-						<ControlSurfaceBindingGroup Name="Global" ID="{22FE5804-2DBD-47EE-A176-DDFA63186689}"/>
-						<ControlSurfaceBindingGroup Name="Current Selection" ID="{5F85B887-0936-49B4-AB75-03056B3C34B9}">
-							<PropertyList>
-								<Property Name="GroupType" Type="int16" Value="4"/>
-							</PropertyList>
-							<ChildrenList>
-								<ControlSurfaceBinding Name="Binding" ID="{FB5BC270-7E49-4FB6-868B-83247236D63C}">
-									<PropertyList>
-										<Property Name="TargetName" Type="string" Value="PassMidiNote"/>
-										<Property Name="TargetType" Type="int16" Value="1"/>
-									</PropertyList>
-								</ControlSurfaceBinding>
-							</ChildrenList>
-						</ControlSurfaceBindingGroup>
-						<ControlSurfaceBindingGroup Name="View Groups" ID="{6136C1B9-A118-41D4-8AA6-597B26D0662C}">
-							<PropertyList>
-								<Property Name="GroupType" Type="int16" Value="3"/>
-							</PropertyList>
-						</ControlSurfaceBindingGroup>
-					</ChildrenList>
-				</ControlSurfaceSession>
 				<ControlSurfaceSession Name="MaxMsp" ID="{5A04972C-4530-466D-9468-9A3835A43BFD}">
 					<ChildrenList>
 						<ControlSurfaceBindingGroup Name="Global" ID="{211FB2D2-8D1C-4E7F-B08B-33FA8925AB95}">
@@ -99,6 +76,42 @@
 									<ReferenceList>
 										<Reference Name="TargetObject">
 											<ObjectRef Name="Transition" ID="{FF2159BA-A7E5-4B83-9357-D0EC8F81668C}" WorkUnitID="{8837BB41-6FC3-415B-85DD-91771863AD97}"/>
+										</Reference>
+									</ReferenceList>
+								</ControlSurfaceBinding>
+								<ControlSurfaceBinding Name="Binding" ID="{E11F596E-97BE-424E-B725-261F400DD928}">
+									<PropertyList>
+										<Property Name="HardwareControllerKey" Type="string" Value="MaxMsp~Ch.1~CC~7"/>
+										<Property Name="TargetName" Type="string" Value="TransportPlay"/>
+										<Property Name="TargetType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="TargetObject">
+											<ObjectRef Name="Sensor1Activated" ID="{5C13809D-2C9E-41EE-97E7-7D32F4B3B9D5}" WorkUnitID="{8837BB41-6FC3-415B-85DD-91771863AD97}"/>
+										</Reference>
+									</ReferenceList>
+								</ControlSurfaceBinding>
+								<ControlSurfaceBinding Name="Binding" ID="{94A02408-AEAC-40BA-8A20-FAEE2E333B83}">
+									<PropertyList>
+										<Property Name="HardwareControllerKey" Type="string" Value="MaxMsp~Ch.1~CC~8"/>
+										<Property Name="TargetName" Type="string" Value="TransportPlay"/>
+										<Property Name="TargetType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="TargetObject">
+											<ObjectRef Name="Sensor2Activated" ID="{C011709D-71D2-4E2C-9D32-2418092208F1}" WorkUnitID="{8837BB41-6FC3-415B-85DD-91771863AD97}"/>
+										</Reference>
+									</ReferenceList>
+								</ControlSurfaceBinding>
+								<ControlSurfaceBinding Name="Binding" ID="{0509A40F-2ACD-435D-B93B-83B2EE3791B1}">
+									<PropertyList>
+										<Property Name="HardwareControllerKey" Type="string" Value="MaxMsp~Ch.1~CC~9"/>
+										<Property Name="TargetName" Type="string" Value="TransportPlay"/>
+										<Property Name="TargetType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="TargetObject">
+											<ObjectRef Name="Sensor3Activated" ID="{237B9BB2-A701-4F3A-9F06-9AF3ED6FEC24}" WorkUnitID="{8837BB41-6FC3-415B-85DD-91771863AD97}"/>
 										</Reference>
 									</ReferenceList>
 								</ControlSurfaceBinding>

@@ -10,43 +10,123 @@
     "Type": "User",
     "GUID": "{45D8302B-19E7-418B-B7D2-CDAC15D9EA71}",
     "Language": "SFX",
-    "Hash": "{ABFE5011-4C56-61F5-36ED-816B2F874C90}",
+    "Hash": "{5AAFB512-A3EA-932F-56A7-FD6484D2E1D4}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
     "Media": [
      {
-      "Id": "188424556",
+      "Id": "89892199",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
-      "ShortName": "Get Up Offa That Thing (Release The Pressure).wav",
-      "CachePath": "CF/{CFA4F131-C3B9-2991-2038-B2CE305E0634}.wem"
+      "ShortName": "amb_wind_strong-001.wav",
+      "CachePath": "1B/{1B71546D-2D93-D2A0-B702-8C012EF408DA}.wem"
      },
      {
-      "Id": "743402601",
+      "Id": "181926460",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
-      "ShortName": "S3004-01_Campagne-ambiance_diurne-pres_d_une_riviere-grenouille-grillons.wav",
-      "CachePath": "9A/{9AE90BC4-3C2D-278A-5ED0-4A43894284F7}.wem"
+      "ShortName": "amb_leaves-001.wav",
+      "CachePath": "8D/{8DA9D45C-9AAD-D69E-E23B-6B118813FC87}.wem"
      },
      {
-      "Id": "819827368",
+      "Id": "196160818",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
-      "ShortName": "S3004-02_Campagne-ambiance_diurne-vent_dans_les_arbres.wav",
-      "CachePath": "91/{91040BA0-7966-863A-499A-28A29A335D37}.wem"
+      "ShortName": "amb_creek.wav",
+      "CachePath": "04/{04AE6978-8DB2-EF38-79D1-33A5FA44346D}.wem"
+     },
+     {
+      "Id": "293933914",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "amb_leaves-002.wav",
+      "CachePath": "09/{0992235D-F2A6-D401-D719-5CF5BBA04907}.wem"
+     },
+     {
+      "Id": "326334206",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "amb_leaves-004.wav",
+      "CachePath": "8F/{8FCD5C24-3341-A162-C2CA-4A8F6636F719}.wem"
+     },
+     {
+      "Id": "621973919",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "amb_wind_super_calm.wav",
+      "CachePath": "90/{90258333-F8F8-90B5-CAEC-CF36F21714D5}.wem"
+     },
+     {
+      "Id": "630766008",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "amb_wind_strong-003.wav",
+      "CachePath": "DD/{DDF316EE-2550-D574-D878-B3259A8CC6AD}.wem"
+     },
+     {
+      "Id": "849966493",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "sfx_sensor_unlocked_pad.wav",
+      "CachePath": "B7/{B7852287-C68B-4869-5BB7-36E5409236FC}.wem"
+     },
+     {
+      "Id": "959841215",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "amb_wind_calm.wav",
+      "CachePath": "EB/{EB9D6753-F13A-C352-DC1D-EBB9FC0D27B9}.wem"
+     },
+     {
+      "Id": "1014557919",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "amb_leaves-003.wav",
+      "CachePath": "F4/{F42DF69F-3908-86FA-E23A-9E04DD386B0B}.wem"
+     },
+     {
+      "Id": "1029648873",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "VideoGameDrone.wav",
+      "CachePath": "12/{123ED7B6-75D6-483B-5436-729C3C00F4D4}.wem"
+     },
+     {
+      "Id": "1064833642",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "amb_wind_strong-004.wav",
+      "CachePath": "9B/{9BD1D85B-6C2B-7721-A6FB-C54271F37371}.wem"
+     },
+     {
+      "Id": "1073305620",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "amb_wind_strong-002.wav",
+      "CachePath": "58/{58A07ACE-E654-D0D6-5B2A-353CA889222F}.wem"
      }
     ],
     "Plugins": {
-     "ShareSets": [
+     "Custom": [
       {
-       "Id": "1990128658",
-       "Name": "Room_Medium",
-       "ObjectPath": "\\Effects\\Factory Effects\\RoomVerb\\Rooms\\Room_Medium",
-       "GUID": "{F5C06EC1-E4A4-4332-A7D3-A89E2986B74F}",
+       "Id": "886273627",
+       "Name": "Have_U_Ever_Been_Outside (Custom)",
+       "ObjectPath": "\\Actor-Mixer Hierarchy\\Default Work Unit\\amb\\Ambiance\\[Effect Slot [0]: (RoomVerb)]\\Have_U_Ever_Been_Outside (Custom)",
+       "GUID": "{C694A6B9-785C-413A-8770-B28F49125C89}",
        "LibName": "Wwise RoomVerb",
        "LibId": "7733251"
       }
@@ -54,102 +134,21 @@
     },
     "Events": [
      {
-      "Id": "2011814100",
-      "Name": "AmbianceOff",
-      "ObjectPath": "\\Events\\Default Work Unit\\AmbianceOff",
-      "GUID": "{04E77DEA-2479-45E7-8022-FB1161CD3052}",
-      "MaxAttenuation": "0",
-      "DurationType": "OneShot",
-      "DurationMin": "0",
-      "DurationMax": "0"
-     },
-     {
-      "Id": "2661120974",
-      "Name": "AmbianceOn",
-      "ObjectPath": "\\Events\\Default Work Unit\\AmbianceOn",
-      "GUID": "{0ADE0251-8EAA-45D5-87D6-CEA9F4467C9F}",
-      "DurationType": "OneShot",
-      "DurationMin": "240.26666",
-      "DurationMax": "240.26666",
-      "MediaRefs": [
-       {
-        "Id": "743402601"
-       },
-       {
-        "Id": "819827368"
-       }
-      ]
-     },
-     {
-      "Id": "3991942870",
-      "Name": "Music",
-      "ObjectPath": "\\Events\\Default Work Unit\\Music",
-      "GUID": "{6C2B9CC9-47BA-48A0-A03D-F4C61BD281D3}",
-      "DurationType": "OneShot",
-      "DurationMin": "374.50665",
-      "DurationMax": "374.50665",
-      "MediaRefs": [
-       {
-        "Id": "188424556"
-       }
-      ],
-      "PluginRefs": {
-       "ShareSets": [
-        {
-         "Id": "1990128658"
-        }
-       ]
-      }
-     },
-     {
-      "Id": "4017455162",
-      "Name": "Reset",
-      "ObjectPath": "\\Events\\Default Work Unit\\Reset",
-      "GUID": "{98D5F919-007E-41E0-BCF2-C379723F61FA}",
-      "MaxAttenuation": "0",
-      "DurationType": "OneShot",
-      "DurationMin": "0",
-      "DurationMax": "0"
-     },
-     {
       "Id": "2160358933",
       "Name": "Sensor1Activated",
       "ObjectPath": "\\Events\\Default Work Unit\\Sensor1Activated",
       "GUID": "{5C13809D-2C9E-41EE-97E7-7D32F4B3B9D5}",
-      "MaxAttenuation": "0",
       "DurationType": "OneShot",
-      "DurationMin": "0",
-      "DurationMax": "0"
-     },
-     {
-      "Id": "996378512",
-      "Name": "Sensor2Activated",
-      "ObjectPath": "\\Events\\Default Work Unit\\Sensor2Activated",
-      "GUID": "{C011709D-71D2-4E2C-9D32-2418092208F1}",
-      "MaxAttenuation": "0",
-      "DurationType": "OneShot",
-      "DurationMin": "0",
-      "DurationMax": "0"
-     },
-     {
-      "Id": "3742079315",
-      "Name": "Sensor3Activated",
-      "ObjectPath": "\\Events\\Default Work Unit\\Sensor3Activated",
-      "GUID": "{237B9BB2-A701-4F3A-9F06-9AF3ED6FEC24}",
-      "MaxAttenuation": "0",
-      "DurationType": "OneShot",
-      "DurationMin": "0",
-      "DurationMax": "0"
-     },
-     {
-      "Id": "1865857008",
-      "Name": "Transition",
-      "ObjectPath": "\\Events\\Default Work Unit\\Transition",
-      "GUID": "{FF2159BA-A7E5-4B83-9357-D0EC8F81668C}",
-      "MaxAttenuation": "0",
-      "DurationType": "OneShot",
-      "DurationMin": "0",
-      "DurationMax": "0"
+      "DurationMin": "4.617",
+      "DurationMax": "4.617",
+      "MediaRefs": [
+       {
+        "Id": "849966493"
+       },
+       {
+        "Id": "1029648873"
+       }
+      ]
      }
     ],
     "GameParameters": [
@@ -158,10 +157,16 @@
       "Name": "sensor1",
       "ObjectPath": "\\Game Parameters\\Default Work Unit\\sensor1",
       "GUID": "{8A0125EA-B17C-4A07-A2AA-F4E92A932029}"
+     },
+     {
+      "Id": "3499501082",
+      "Name": "timeScene",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\timeScene",
+      "GUID": "{8C7A1363-674B-41F9-B092-3E3C9F25B869}"
      }
     ]
    }
   ],
-  "FileHash": "{F3EEFC4F-A83A-B3BE-53F4-8F1D164F8B50}"
+  "FileHash": "{FC6A81B4-8BF1-8665-4ADE-78E4655DEE68}"
  }
 }

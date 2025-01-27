@@ -28,7 +28,27 @@
 				</Event>
 				<Event Name="Reset" ID="{98D5F919-007E-41E0-BCF2-C379723F61FA}"/>
 				<Event Name="Transition" ID="{FF2159BA-A7E5-4B83-9357-D0EC8F81668C}"/>
-				<Event Name="Sensor1Activated" ID="{5C13809D-2C9E-41EE-97E7-7D32F4B3B9D5}"/>
+				<Event Name="Sensor1Activated" ID="{5C13809D-2C9E-41EE-97E7-7D32F4B3B9D5}">
+					<ChildrenList>
+						<Action Name="" ID="{AA5FC217-8D5B-4CE5-AF76-12BEF82292FD}" ShortID="487055030">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="sfx_sensor_activated" ID="{F8D96FF3-C6C1-47AF-A215-ED5C2CE51670}" WorkUnitID="{4E140D7F-62E4-4DAF-A811-B1E5FF1E146B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{249ADCDA-4C7E-447A-93B5-DEFC9E38E074}" ShortID="243536196">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="power_up_loop" ID="{F30103F1-6911-4F23-8AD7-1C640D8F675D}" WorkUnitID="{4E140D7F-62E4-4DAF-A811-B1E5FF1E146B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 				<Event Name="Sensor2Activated" ID="{C011709D-71D2-4E2C-9D32-2418092208F1}"/>
 				<Event Name="Sensor3Activated" ID="{237B9BB2-A701-4F3A-9F06-9AF3ED6FEC24}"/>
 				<Event Name="Alarm" ID="{471925B2-6CB3-45BC-8184-B20853065D36}">
@@ -46,6 +66,7 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="SensorPowerUp" ID="{2E5E0868-3A05-47D6-97BB-EC53EF4EC22A}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

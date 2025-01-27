@@ -281,6 +281,19 @@
 									</ModifierList>
 								</Property>
 								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{649F1395-20C8-4F64-B8F4-5002FB4D1D7C}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="400"/>
+													<Property Name="Min" Type="Real64" Value="-325"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
 								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 								<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
@@ -302,6 +315,11 @@
 								<Property Name="UserAuxSendVolume0" Type="Real64">
 									<ValueList>
 										<Value>12</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-7</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -408,7 +426,6 @@
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="2"/>
 										<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
-										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 										<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
 									</PropertyList>
 									<ReferenceList>
@@ -789,6 +806,46 @@
 							</PositioningInfo>
 						</RandomSequenceContainer>
 					</ChildrenList>
+					<ObjectLists>
+						<ObjectList Name="Effects">
+							<Reference>
+								<Local>
+									<EffectSlot Name="" ID="{CD59363C-9720-481D-9954-DFE27A6C4ACF}" ShortID="105575407">
+										<ReferenceList>
+											<Reference Name="Effect">
+												<Custom CreatedFrom="{FE29AE8D-FD86-4652-A95D-68D32F5760EC}">
+													<Effect Name="Have_U_Ever_Been_Outside (Custom)" ID="{C694A6B9-785C-413A-8770-B28F49125C89}" ShortID="886273627" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+														<PropertyList>
+															<Property Name="DecayTime" Type="Real32" Value="3.6"/>
+															<Property Name="Density" Type="Real32" Value="50"/>
+															<Property Name="Diffusion" Type="Real32" Value="67"/>
+															<Property Name="DryLevel" Type="Real32" Value="-0.3"/>
+															<Property Name="ERLevel" Type="Real32" Value="-19"/>
+															<Property Name="ERPattern" Type="int32" Value="28"/>
+															<Property Name="Filter1Freq" Type="Real32" Value="210"/>
+															<Property Name="Filter1Gain" Type="Real32" Value="1.5"/>
+															<Property Name="Filter2Freq" Type="Real32" Value="6830"/>
+															<Property Name="Filter2Gain" Type="Real32" Value="-7.5"/>
+															<Property Name="Filter2Q" Type="Real32" Value="0.65"/>
+															<Property Name="Filter3Freq" Type="Real32" Value="8440"/>
+															<Property Name="Filter3Gain" Type="Real32" Value="-4"/>
+															<Property Name="HFDamping" Type="Real32" Value="3.9"/>
+															<Property Name="LFELevel" Type="Real32" Value="-18.3"/>
+															<Property Name="PreDelay" Type="Real32" Value="122"/>
+															<Property Name="Quality" Type="int32" Value="12"/>
+															<Property Name="ReverbLevel" Type="Real32" Value="-19"/>
+															<Property Name="RoomSize" Type="Real32" Value="94"/>
+															<Property Name="StereoWidth" Type="Real32" Value="68"/>
+														</PropertyList>
+													</Effect>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</EffectSlot>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
 					<BlendTrackList>
 						<BlendTrack Name="Ambiance Calm" ID="{FC976730-1FC4-4E37-A473-3A5B4ED2047F}" ShortID="92811754">
 							<PropertyList>
