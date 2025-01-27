@@ -227,8 +227,8 @@ MonoBehaviour:
         guid: ea7de7047924e7458022fb1161cd3052
       Path: Events/Default Work Unit/AmbianceOff
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: AmbianceOn
       guid: 5102de0aaa8ed54587d6cea9f4467c9f
       id: 2661120974
@@ -244,8 +244,8 @@ MonoBehaviour:
         guid: 5102de0aaa8ed54587d6cea9f4467c9f
       Path: Events/Default Work Unit/AmbianceOn
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 240.26666
+      minDuration: 240.26666
     - name: Music
       guid: c99c2b6cba47a048a03df4c61bd281d3
       id: 3991942870
@@ -261,8 +261,8 @@ MonoBehaviour:
         guid: c99c2b6cba47a048a03df4c61bd281d3
       Path: Events/Default Work Unit/Music
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 374.50665
+      minDuration: 374.50665
     - name: Reset
       guid: 19f9d5987e00e041bcf2c379723f61fa
       id: 4017455162
@@ -278,8 +278,8 @@ MonoBehaviour:
         guid: 19f9d5987e00e041bcf2c379723f61fa
       Path: Events/Default Work Unit/Reset
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: Sensor1Activated
       guid: 9d80135c9e2cee4197e77d32f4b3b9d5
       id: 2160358933
@@ -295,8 +295,8 @@ MonoBehaviour:
         guid: 9d80135c9e2cee4197e77d32f4b3b9d5
       Path: Events/Default Work Unit/Sensor1Activated
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: Sensor2Activated
       guid: 9d7011c0d2712c4e9d322418092208f1
       id: 996378512
@@ -312,8 +312,8 @@ MonoBehaviour:
         guid: 9d7011c0d2712c4e9d322418092208f1
       Path: Events/Default Work Unit/Sensor2Activated
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: Sensor3Activated
       guid: b29b7b2301a73a4f9f069af3ed6fec24
       id: 3742079315
@@ -329,8 +329,8 @@ MonoBehaviour:
         guid: b29b7b2301a73a4f9f069af3ed6fec24
       Path: Events/Default Work Unit/Sensor3Activated
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: Transition
       guid: ba5921ffe5a7834b9357d0ec8f81668c
       id: 1865857008
@@ -346,8 +346,8 @@ MonoBehaviour:
         guid: ba5921ffe5a7834b9357d0ec8f81668c
       Path: Events/Default Work Unit/Transition
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
   RtpcWwu:
   - PhysicalPath: Game Parameters/Default Work Unit.wwu
     PathAndIcons:
@@ -360,7 +360,7 @@ MonoBehaviour:
     ParentPath: Game Parameters/Default Work Unit
     guid: 98ed3e78d9387545be3b51ab635cb706
     GuidInternal: 
-    m_lastTime: -8584641042977464446
+    m_lastTime: -8584636119680498197
     List:
     - name: sensor1
       guid: ea25018a7cb1074aa2aaf4e92a932029
@@ -404,6 +404,20 @@ MonoBehaviour:
         ObjectType: 13
         guid: 11b70a057026c24db70499f8f851564c
       Path: Game Parameters/Default Work Unit/sensor3
+    - name: timeScene
+      guid: 63137a8c4b67f941b0923e3c9f25b869
+      id: 3499501082
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 98ed3e78d9387545be3b51ab635cb706
+      - ElementName: timeScene
+        ObjectType: 13
+        guid: 63137a8c4b67f941b0923e3c9f25b869
+      Path: Game Parameters/Default Work Unit/timeScene
   StateWwu:
   - PhysicalPath: States/Default Work Unit.wwu
     PathAndIcons:
