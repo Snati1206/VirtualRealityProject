@@ -3,7 +3,11 @@
 	<AudioObjects>
 		<WorkUnit Name="amb" ID="{7FAE9102-D772-46A8-AA69-F6DB5B0BCD91}" OwnerID="{4B7C06E9-0662-4FE5-912F-FFD8A7A89BD7}" PersistMode="Nested">
 			<ChildrenList>
-				<Sound Name="amb_creek" ID="{23D4034E-1B7E-4C99-9648-4D29BA0075CE}" ShortID="169418256">
+				<BlendContainer Name="Ambiance" ID="{A143B276-DF92-4BBA-8949-54BED2AB4075}" ShortID="621356792">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+						<Property Name="BlendBehavior" Type="int16" Value="1"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02AB0E9E-DC49-4D18-8206-2301BDC73EC0}"/>
@@ -13,40 +17,811 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<AudioFileSource Name="amb_creek" ID="{617E76F6-1568-45F7-A825-D88684497CD3}">
-							<Language>SFX</Language>
-							<AudioFile>amb_creek.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="196160818"/>
-							</MediaIDList>
-						</AudioFileSource>
+						<Sound Name="amb_creek" ID="{23D4034E-1B7E-4C99-9648-4D29BA0075CE}" ShortID="169418256">
+							<PropertyList>
+								<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02AB0E9E-DC49-4D18-8206-2301BDC73EC0}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Ambiance Master" ID="{CCCF0DF9-24CC-4600-B821-E19884B16803}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="amb_creek" ID="{617E76F6-1568-45F7-A825-D88684497CD3}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>amb_creek.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="196160818"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="amb_creek" ID="{617E76F6-1568-45F7-A825-D88684497CD3}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<RandomSequenceContainer Name="amb_wind" ID="{208B69B2-757C-4089-9C2E-BAA919527FCF}" ShortID="292524676">
+							<PropertyList>
+								<Property Name="3DPosition" Type="int16" Value="1"/>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="InitialDelay" Type="Real64">
+									<ValueList>
+										<Value>6</Value>
+									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{38E5F1FC-ED20-45F4-84E1-E0656533287E}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Min" Type="Real64" Value="-3"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="8">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{A130AACA-080F-4828-8093-B77170074750}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="6"/>
+													<Property Name="Min" Type="Real64" Value="-2"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="wind_leaves" ID="{ECAA42CC-0BAD-4790-9A83-3EB344D6A8E3}" WorkUnitID="{E34D0F54-3006-4BF2-8644-C46BE46E4D0F}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02AB0E9E-DC49-4D18-8206-2301BDC73EC0}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="LFE" ID="{7A99EF7A-6B7D-43B7-B065-79464E51DCAB}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="amb_wind_calm" ID="{575A2F32-D579-4E40-BD29-2CDC983EC4FB}" ShortID="735220951">
+									<PropertyList>
+										<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02AB0E9E-DC49-4D18-8206-2301BDC73EC0}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="amb_wind_calm" ID="{5F839465-68A1-4A7D-A68B-8813135DE61C}">
+											<PropertyList>
+												<Property Name="ChannelConfigOverride" Type="int64" Value="1"/>
+												<Property Name="FadeInDuration" Type="Real64" Value="2.11055981121592"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="2.29678567691144"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>amb_wind_calm.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="959841215"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="amb_wind_calm" ID="{5F839465-68A1-4A7D-A68B-8813135DE61C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="amb_wind_super_calm" ID="{7AF72FFA-68E6-4192-B017-CFC59AA11B95}" ShortID="153060701">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02AB0E9E-DC49-4D18-8206-2301BDC73EC0}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="amb_wind_super_calm" ID="{734BA1BC-5D0E-43D3-AB51-7FB3841B3BCE}">
+											<PropertyList>
+												<Property Name="ChannelConfigOverride" Type="int64" Value="1"/>
+												<Property Name="FadeInDuration" Type="Real64" Value="1.45870609324116"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="1.80281112036471"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>amb_wind_super_calm.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="621973919"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="amb_wind_super_calm" ID="{734BA1BC-5D0E-43D3-AB51-7FB3841B3BCE}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<PositioningInfo>
+								<Panner Name="" ID="{2796FD82-5917-406E-8231-E8F5DF140C01}"/>
+								<Position Name="" ID="{CF57141D-24E1-4F9B-90CF-EA2B271772A3}">
+									<PropertyList>
+										<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="PlayMechanismTransitionTime" Type="Real64" Value="0"/>
+									</PropertyList>
+									<ChildrenList>
+										<Path2D Name="amb_wind_Path" ID="{B2D51037-A542-41D3-86F8-A9DF18193232}">
+											<PropertyList>
+												<Property Name="Duration" Type="Uint32" Value="7000"/>
+												<Property Name="LinearTime" Type="bool" Value="False"/>
+												<Property Name="RandomX" Type="Real64" Value="19"/>
+												<Property Name="RandomY" Type="Real64" Value="20"/>
+												<Property Name="RandomZ" Type="Real64" Value="26"/>
+											</PropertyList>
+											<PointList>
+												<Point>
+													<XPos>80</XPos>
+													<YPos>81.52364</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+												<Point>
+													<XPos>70.1754385964912</XPos>
+													<YPos>42.907180385289</YPos>
+													<Flags>0</Flags>
+													<Time>1000</Time>
+												</Point>
+												<Point>
+													<XPos>26.6666666666667</XPos>
+													<YPos>20.1401050788091</YPos>
+													<Flags>0</Flags>
+													<Time>2000</Time>
+												</Point>
+												<Point>
+													<XPos>-21.4035087719298</XPos>
+													<YPos>0.175131348511385</YPos>
+													<Flags>0</Flags>
+													<Time>3000</Time>
+												</Point>
+												<Point>
+													<XPos>-20.7017543859649</XPos>
+													<YPos>-42.907180385289</YPos>
+													<Flags>0</Flags>
+													<Time>4000</Time>
+												</Point>
+												<Point>
+													<XPos>-54.0350877192982</XPos>
+													<YPos>-73.7302977232925</YPos>
+													<Flags>0</Flags>
+													<Time>5000</Time>
+												</Point>
+												<Point>
+													<XPos>-70.1754385964912</XPos>
+													<YPos>-85.6392294220666</YPos>
+													<Flags>0</Flags>
+													<Time>6000</Time>
+												</Point>
+												<Point>
+													<XPos>-84.5614035087719</XPos>
+													<YPos>-94.3957968476357</YPos>
+													<Flags>0</Flags>
+													<Time>7000</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="amb_wind_Path_01" ID="{171BBC4E-FE34-44BC-8CC3-04462D2E801E}">
+											<PropertyList>
+												<Property Name="RandomX" Type="Real64" Value="21"/>
+												<Property Name="RandomY" Type="Real64" Value="28"/>
+												<Property Name="RandomZ" Type="Real64" Value="54"/>
+											</PropertyList>
+											<PointList>
+												<Point>
+													<XPos>84.91228</XPos>
+													<YPos>-85.2014</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+												<Point>
+													<XPos>-81.40351</XPos>
+													<YPos>80.73555</YPos>
+													<Flags>0</Flags>
+													<Time>5000</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+									</ChildrenList>
+								</Position>
+							</PositioningInfo>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="amb_wind_wild" ID="{CFA1FA55-54C2-498B-A86C-77356224DC26}" ShortID="705345942">
+							<PropertyList>
+								<Property Name="3DPosition" Type="int16" Value="1"/>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="InitialDelay" Type="Real64">
+									<ValueList>
+										<Value>5.5</Value>
+									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{82F8E496-3DC3-4442-BFA4-A697058F757C}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Min" Type="Real64" Value="-2"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="8">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{BAF78485-F7E6-454B-AA1C-C97E14EA9649}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="5"/>
+													<Property Name="Min" Type="Real64" Value="-3"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="SpeakerPanning" Type="int16" Value="2"/>
+								<Property Name="UserAuxSendVolume0" Type="Real64">
+									<ValueList>
+										<Value>12</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="wind_leaves" ID="{ECAA42CC-0BAD-4790-9A83-3EB344D6A8E3}" WorkUnitID="{E34D0F54-3006-4BF2-8644-C46BE46E4D0F}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02AB0E9E-DC49-4D18-8206-2301BDC73EC0}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="LFE" ID="{7A99EF7A-6B7D-43B7-B065-79464E51DCAB}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="amb_wind_strong-001" ID="{2D679F60-657E-46EA-9432-9189E1AA9159}" ShortID="1062652276">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02AB0E9E-DC49-4D18-8206-2301BDC73EC0}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="amb_wind_strong-001" ID="{D8F2A25D-44B9-4793-9312-4B6C1854C133}">
+											<PropertyList>
+												<Property Name="ChannelConfigOverride" Type="int64" Value="1"/>
+												<Property Name="FadeInDuration" Type="Real64" Value="3.9631745556016"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="4.3673140662057"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>amb_wind_strong-001.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="89892199"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="amb_wind_strong-001" ID="{D8F2A25D-44B9-4793-9312-4B6C1854C133}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="amb_wind_strong-002" ID="{21BFC1EA-F819-491B-806A-048BEC879A19}" ShortID="523727503">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02AB0E9E-DC49-4D18-8206-2301BDC73EC0}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="amb_wind_strong-002" ID="{0066BEAD-163F-49BA-802B-EE38DADC611C}">
+											<PropertyList>
+												<Property Name="ChannelConfigOverride" Type="int64" Value="1"/>
+												<Property Name="FadeInDuration" Type="Real64" Value="2.56772984319658"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="3.30266311987123"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>amb_wind_strong-002.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1073305620"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="amb_wind_strong-002" ID="{0066BEAD-163F-49BA-802B-EE38DADC611C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="amb_wind_strong-003" ID="{E190E4FB-C2A7-4C81-8E74-185D98B47DFF}" ShortID="63191377">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02AB0E9E-DC49-4D18-8206-2301BDC73EC0}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="amb_wind_strong-003" ID="{619B44AB-495A-46B6-B4C8-0A7646D18E1B}">
+											<PropertyList>
+												<Property Name="ChannelConfigOverride" Type="int64" Value="1"/>
+												<Property Name="FadeInDuration" Type="Real64" Value="3.63888096961894"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="3.4755396792121"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>amb_wind_strong-003.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="630766008"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="amb_wind_strong-003" ID="{619B44AB-495A-46B6-B4C8-0A7646D18E1B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="amb_wind_strong-004" ID="{3F825E74-98B2-4329-9DFC-4E8A1FBB7814}" ShortID="796501511">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02AB0E9E-DC49-4D18-8206-2301BDC73EC0}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="LFE" ID="{7A99EF7A-6B7D-43B7-B065-79464E51DCAB}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="amb_wind_strong-004" ID="{A3ED9AB2-410D-4695-BD56-E22A702F3DD1}">
+											<PropertyList>
+												<Property Name="ChannelConfigOverride" Type="int64" Value="1"/>
+												<Property Name="FadeInDuration" Type="Real64" Value="1.60067904986806"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="5.2632497571933"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>amb_wind_strong-004.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1064833642"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="amb_wind_strong-004" ID="{A3ED9AB2-410D-4695-BD56-E22A702F3DD1}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<PositioningInfo>
+								<Panner Name="" ID="{E2E2B2DB-4A9B-4994-A2C1-D6255AD8FE22}"/>
+								<Position Name="" ID="{4441512D-4334-4668-973E-A07A2CC61CC2}">
+									<PropertyList>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="False"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="PlayMechanismTransitionUse" Type="bool" Value="False"/>
+									</PropertyList>
+									<ChildrenList>
+										<Path2D Name="amb_wind_wild_Path" ID="{EB871295-2A1D-4843-A5D5-CF90E56B3B46}">
+											<PropertyList>
+												<Property Name="Duration" Type="Uint32" Value="10000"/>
+												<Property Name="RandomX" Type="Real64" Value="22"/>
+												<Property Name="RandomY" Type="Real64" Value="16"/>
+												<Property Name="RandomZ" Type="Real64" Value="29"/>
+											</PropertyList>
+											<PointList>
+												<Point>
+													<XPos>-62.10527</XPos>
+													<YPos>58.75657</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+												<Point>
+													<XPos>-29.82456</XPos>
+													<YPos>6.1296</YPos>
+													<Flags>0</Flags>
+													<Time>5000</Time>
+												</Point>
+												<Point>
+													<XPos>82.10526</XPos>
+													<YPos>-82.83713</YPos>
+													<Flags>0</Flags>
+													<Time>10000</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="amb_wind_wild_Path_01" ID="{35568616-CCF3-4F45-9088-EB50EFC43122}">
+											<PropertyList>
+												<Property Name="Duration" Type="Uint32" Value="10000"/>
+												<Property Name="RandomX" Type="Real64" Value="12"/>
+												<Property Name="RandomY" Type="Real64" Value="15"/>
+												<Property Name="RandomZ" Type="Real64" Value="24"/>
+											</PropertyList>
+											<PointList>
+												<Point>
+													<XPos>4.21052</XPos>
+													<YPos>65.41156</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+												<Point>
+													<XPos>-3.50877</XPos>
+													<YPos>0.17513</YPos>
+													<Flags>0</Flags>
+													<Time>5000</Time>
+												</Point>
+												<Point>
+													<XPos>-2.45614</XPos>
+													<YPos>-84.23818</YPos>
+													<Flags>0</Flags>
+													<Time>10000</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="amb_wind_wild_Path_02" ID="{32BF987B-8A56-429D-84DA-5B26C6C5317D}">
+											<PropertyList>
+												<Property Name="Duration" Type="Uint32" Value="10000"/>
+												<Property Name="RandomX" Type="Real64" Value="20"/>
+												<Property Name="RandomY" Type="Real64" Value="31"/>
+												<Property Name="RandomZ" Type="Real64" Value="45"/>
+											</PropertyList>
+											<PointList>
+												<Point>
+													<XPos>8.07017</XPos>
+													<YPos>-92.20665</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+												<Point>
+													<XPos>-3.50877</XPos>
+													<YPos>0.17513</YPos>
+													<Flags>0</Flags>
+													<Time>5000</Time>
+												</Point>
+												<Point>
+													<XPos>-2.45614</XPos>
+													<YPos>76.88266</YPos>
+													<Flags>0</Flags>
+													<Time>10000</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+									</ChildrenList>
+								</Position>
+							</PositioningInfo>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="amb_leaves" ID="{09D7936E-D01C-49C3-8E66-0F9BA4D46E16}" ShortID="992955084">
+							<PropertyList>
+								<Property Name="3DPosition" Type="int16" Value="1"/>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="InitialDelay" Type="Real64">
+									<ValueList>
+										<Value>7</Value>
+									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{9E673EA0-D1B5-4461-ADE8-A8FEB85335FF}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Min" Type="Real64" Value="-4"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="7.5">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{80F8E6FF-00A1-4072-BA03-90818154FFDE}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="4"/>
+													<Property Name="Min" Type="Real64" Value="-2"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="RandomAvoidRepeating" Type="bool" Value="False"/>
+								<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+								<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="0"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="wind_leaves" ID="{ECAA42CC-0BAD-4790-9A83-3EB344D6A8E3}" WorkUnitID="{E34D0F54-3006-4BF2-8644-C46BE46E4D0F}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02AB0E9E-DC49-4D18-8206-2301BDC73EC0}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="LFE" ID="{7A99EF7A-6B7D-43B7-B065-79464E51DCAB}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="amb_leaves-001" ID="{8E009CDA-3FDD-4EF4-8997-650C9E96DF5F}" ShortID="585472457">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02AB0E9E-DC49-4D18-8206-2301BDC73EC0}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="amb_leaves-001" ID="{0D7190E2-0696-45A8-9AF4-9D041AA5C010}">
+											<PropertyList>
+												<Property Name="ChannelConfigOverride" Type="int64" Value="1"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>amb_leaves-001.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="181926460"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="amb_leaves-001" ID="{0D7190E2-0696-45A8-9AF4-9D041AA5C010}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="amb_leaves-002" ID="{04E35A5F-F23E-4942-9952-D5DD4794AB55}" ShortID="128083447">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02AB0E9E-DC49-4D18-8206-2301BDC73EC0}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="amb_leaves-002" ID="{A05346B3-AE41-4538-867C-AF96671CC44C}">
+											<PropertyList>
+												<Property Name="ChannelConfigOverride" Type="int64" Value="1"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>amb_leaves-002.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="293933914"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="amb_leaves-002" ID="{A05346B3-AE41-4538-867C-AF96671CC44C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="amb_leaves-003" ID="{C992A53D-F7ED-4882-B16F-BC10705E8606}" ShortID="238982474">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02AB0E9E-DC49-4D18-8206-2301BDC73EC0}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="amb_leaves-003" ID="{276EC1C1-E93D-42F7-A956-F1C24946D458}">
+											<PropertyList>
+												<Property Name="ChannelConfigOverride" Type="int64" Value="1"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>amb_leaves-003.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1014557919"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="amb_leaves-003" ID="{276EC1C1-E93D-42F7-A956-F1C24946D458}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="amb_leaves-004" ID="{DFD2C284-2991-418F-A141-099DCE46D9A4}" ShortID="550408437">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02AB0E9E-DC49-4D18-8206-2301BDC73EC0}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="amb_leaves-004" ID="{5C561887-6013-48E9-A1A5-4656B51BE697}">
+											<PropertyList>
+												<Property Name="ChannelConfigOverride" Type="int64" Value="1"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>amb_leaves-004.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="326334206"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="amb_leaves-004" ID="{5C561887-6013-48E9-A1A5-4656B51BE697}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<PositioningInfo>
+								<Panner Name="" ID="{9B952D35-60A9-49D5-92E6-1492206A9533}"/>
+								<Position Name="" ID="{4AF4F5D9-7B39-49C3-8834-F74D4D59B230}">
+									<PropertyList>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="False"/>
+										<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+										<Property Name="PlayMechanismTransitionTime" Type="Real64" Value="4"/>
+									</PropertyList>
+									<ChildrenList>
+										<Path2D Name="amb_leaves_Path" ID="{B938687B-6FFC-4C1A-ADDF-3C6CCFA9A757}">
+											<PropertyList>
+												<Property Name="LinearTime" Type="bool" Value="False"/>
+											</PropertyList>
+											<PointList>
+												<Point>
+													<XPos>67.7193</XPos>
+													<YPos>32.83713</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+												<Point>
+													<XPos>39.29824</XPos>
+													<YPos>-21.89142</YPos>
+													<Flags>0</Flags>
+													<Time>1666</Time>
+												</Point>
+												<Point>
+													<XPos>36.49123</XPos>
+													<YPos>-55.51663</YPos>
+													<Flags>0</Flags>
+													<Time>3333</Time>
+												</Point>
+												<Point>
+													<XPos>35.4386</XPos>
+													<YPos>-74.43082</YPos>
+													<Flags>0</Flags>
+													<Time>4557</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="amb_leaves_Path_01" ID="{B7C27E65-5B90-4AA3-AC15-D5EA2292337A}">
+											<PointList>
+												<Point>
+													<XPos>42.80702</XPos>
+													<YPos>32.48686</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+												<Point>
+													<XPos>-73.6842105263158</XPos>
+													<YPos>-57.9684763572679</YPos>
+													<Flags>0</Flags>
+													<Time>5000</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="amb_leaves_Path_02" ID="{AAE37C00-D6F6-48F4-9FFE-F70F4BF14735}">
+											<PointList>
+												<Point>
+													<XPos>-73.33334</XPos>
+													<YPos>60.15762</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+												<Point>
+													<XPos>77.89474</XPos>
+													<YPos>29.5972</YPos>
+													<Flags>0</Flags>
+													<Time>5000</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="amb_leaves_Path_03" ID="{9D022FC6-C4AC-4785-851D-26086C8C0429}">
+											<PointList>
+												<Point>
+													<XPos>57.89474</XPos>
+													<YPos>-87.30298</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+												<Point>
+													<XPos>-49.8245614035088</XPos>
+													<YPos>-87.0402802101576</YPos>
+													<Flags>0</Flags>
+													<Time>5000</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+									</ChildrenList>
+								</Position>
+							</PositioningInfo>
+						</RandomSequenceContainer>
 					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="amb_creek" ID="{617E76F6-1568-45F7-A825-D88684497CD3}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="amb_drone" ID="{F0433501-7106-4CD2-96F8-7AAF92B36B53}" ShortID="632705441">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02AB0E9E-DC49-4D18-8206-2301BDC73EC0}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="sfx_amb_wind_drone" ID="{1FBA8E59-D31A-405C-B640-79FC9258B495}">
-							<Language>SFX</Language>
-							<AudioFile>sfx_amb_wind_drone.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="161205952"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="sfx_amb_wind_drone" ID="{1FBA8E59-D31A-405C-B640-79FC9258B495}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
+					<BlendTrackList>
+						<BlendTrack Name="Ambiance Calm" ID="{FC976730-1FC4-4E37-A473-3A5B4ED2047F}" ShortID="92811754">
+							<PropertyList>
+								<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="LayerCrossFadeControlInput">
+									<ObjectRef Name="timeScene" ID="{8C7A1363-674B-41F9-B092-3E3C9F25B869}" WorkUnitID="{783EED98-38D9-4575-BE3B-51AB635CB706}"/>
+								</Reference>
+							</ReferenceList>
+							<BlendTrackAssocList>
+								<BlendTrackAssoc>
+									<ItemRef Name="amb_wind" ID="{208B69B2-757C-4089-9C2E-BAA919527FCF}"/>
+									<CrossfadingInfo>
+										<LeftEdgePos>0</LeftEdgePos>
+										<LeftFadingMode>Automatic</LeftFadingMode>
+										<RightEdgePos>54.0823970037453</RightEdgePos>
+										<RightFadingMode>Automatic</RightFadingMode>
+									</CrossfadingInfo>
+								</BlendTrackAssoc>
+								<BlendTrackAssoc>
+									<ItemRef Name="amb_wind_wild" ID="{CFA1FA55-54C2-498B-A86C-77356224DC26}"/>
+									<CrossfadingInfo>
+										<LeftEdgePos>32.690169241573</LeftEdgePos>
+										<LeftFadingMode>Automatic</LeftFadingMode>
+										<RightEdgePos>94.4173223314607</RightEdgePos>
+										<RightFadingMode>Automatic</RightFadingMode>
+									</CrossfadingInfo>
+								</BlendTrackAssoc>
+							</BlendTrackAssocList>
+						</BlendTrack>
+					</BlendTrackList>
+				</BlendContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

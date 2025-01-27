@@ -4,24 +4,18 @@
 		<WorkUnit Name="Default Work Unit" ID="{34271F2E-40BE-45FA-B400-14CA7C1031D1}" PersistMode="Standalone">
 			<ChildrenList>
 				<SoundcasterSession Name="Testing" ID="{7EB0F613-EF8D-49F9-B693-46321EA08579}">
-					<ModuleList>
-						<Module>
-							<ObjectRef Name="Alarm" ID="{DD4DE8BC-A555-4EBD-83CF-2A409ED87571}" WorkUnitID="{4E140D7F-62E4-4DAF-A811-B1E5FF1E146B}"/>
-							<Position X="0" Y="0"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="amb_drone" ID="{F0433501-7106-4CD2-96F8-7AAF92B36B53}" WorkUnitID="{7FAE9102-D772-46A8-AA69-F6DB5B0BCD91}"/>
-							<Position X="1" Y="0"/>
-						</Module>
-					</ModuleList>
 					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="timeScene" ID="{8C7A1363-674B-41F9-B092-3E3C9F25B869}"/>
+							<Value>13.1086142322097</Value>
+						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="sensor2" ID="{64F8FD5A-7F09-4772-A48A-3629D18ECA60}"/>
 							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="sensor1" ID="{8A0125EA-B17C-4A07-A2AA-F4E92A932029}"/>
-							<Value>100</Value>
+							<Value>3.93700787401575</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="sensor3" ID="{050AB711-2670-4DC2-B704-99F8F851564C}"/>
