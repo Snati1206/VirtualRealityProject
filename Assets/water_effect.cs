@@ -1,57 +1,77 @@
+using System.Collections;
 using UnityEngine;
 
 public class WaterColorChanger : MonoBehaviour
 {
-    public Material waterMaterial; // Le matériau de ton Waterblock
-    public Color deepColor = new Color(22f / 255f, 20f / 255f, 72f / 255f); // Couleur bleue 161448
-    public Color alternateColor = Color.red; // La couleur temporaire (modifie selon tes besoins)
-    public float changeInterval = 20f; // Temps avant le changement (20s)
-    public float changeDuration = 5f; // Durée du changement (5s)
+    [Header("Matériau de l'eau")]
+    public Material waterMaterial; // Matériau de l'eau à modifier
+
+    [Header("Couleurs")]
+    public Color deepColor = new Color(0.09f, 0.56f, 0.72f); // Couleur initiale
+    public Color alternateColor = Color.red; // Couleur temporaire
+
+    [Header("Durées")]
+    public float changeInterval = 20f; // Temps avant changement
+    public float changeDuration = 5f; // Durée du changement
 
     private bool isChanging = false;
     private float timer = 0f;
+    private string colorProperty = "_DeepColor"; // Nom du paramètre dans le shader
 
     void Start()
     {
-        // Définit la couleur initiale au lancement
         if (waterMaterial != null)
         {
-            waterMaterial.SetColor("_DeepColor", deepColor);
+            Debug.Log("✅ Matériau assigné : " + waterMaterial.name);
+
+            // Vérification du Shader et affichage de la couleur actuelle
+            if (waterMaterial.HasProperty(colorProperty))
+            {
+                waterMaterial.SetColor(colorProperty, deepColor);
+                Debug.Log("🎨 Couleur initiale appliquée : " + deepColor);
+            }
+            else
+            {
+                Debug.LogError("❌ Le matériau ne possède pas la propriété " + colorProperty + ". Vérifie le nom exact dans Shader Graph !");
+            }
+        }
+        else
+        {
+            Debug.LogError("❌ Aucun matériau assigné ! Drag & Drop ton matériau dans l'Inspector.");
         }
     }
 
     void Update()
     {
-        // Compte le temps écoulé
         timer += Time.deltaTime;
 
         if (!isChanging && timer >= changeInterval)
         {
-            // Déclenche le changement de couleur
-            StartCoroutine(ChangeColor());
-            timer = 0f; // Réinitialise le timer
+            StartCoroutine(ChangeWaterColor());
         }
     }
 
-    private System.Collections.IEnumerator ChangeColor()
+    IEnumerator ChangeWaterColor()
     {
         isChanging = true;
+        float elapsedTime = 0f;
 
-        // Change la couleur en couleur temporaire
-        if (waterMaterial != null)
+        Color startColor = waterMaterial.GetColor(colorProperty);
+        Color targetColor = (startColor == deepColor) ? alternateColor : deepColor;
+
+        Debug.Log("🔄 Début du changement de couleur...");
+
+        while (elapsedTime < changeDuration)
         {
-            waterMaterial.SetColor("_DeepColor", alternateColor);
+            elapsedTime += Time.deltaTime;
+            waterMaterial.SetColor(colorProperty, Color.Lerp(startColor, targetColor, elapsedTime / changeDuration));
+            yield return null;
         }
 
-        // Attend la durée du changement
-        yield return new WaitForSeconds(changeDuration);
+        Debug.Log("✅ Changement terminé ! Nouvelle couleur : " + targetColor);
 
-        // Restaure la couleur initiale
-        if (waterMaterial != null)
-        {
-            waterMaterial.SetColor("_DeepColor", deepColor);
-        }
-
+        waterMaterial.SetColor(colorProperty, targetColor);
+        timer = 0f;
         isChanging = false;
     }
 }
