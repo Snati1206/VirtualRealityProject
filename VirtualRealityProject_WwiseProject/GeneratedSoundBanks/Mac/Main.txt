@@ -1,21 +1,55 @@
 Event	ID	Name			Wwise Object Path	Notes
+	855317084	Alarm			\Default Work Unit\Alarm	
 	996378512	Sensor2Activated			\Default Work Unit\Sensor2Activated	
 	1865857008	Transition			\Default Work Unit\Transition	
 	2011814100	AmbianceOff			\Default Work Unit\AmbianceOff	
 	2160358933	Sensor1Activated			\Default Work Unit\Sensor1Activated	
+	2441367941	SensorPowerUp			\Default Work Unit\SensorPowerUp	
 	2661120974	AmbianceOn			\Default Work Unit\AmbianceOn	
 	3742079315	Sensor3Activated			\Default Work Unit\Sensor3Activated	
 	3991942870	Music			\Default Work Unit\Music	
-	4017455162	Reset			\Default Work Unit\Reset	
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
-	3023874992	sensor1			\Default Work Unit\sensor1	
+	2078519427	activationStatus			\Default Work Unit\activationStatus	
 
 Effect plug-ins	ID	Name	Type				Notes
-	1990128658	Room_Medium	Wwise RoomVerb			
+	886273627	Have_U_Ever_Been_Outside (Custom)	Wwise RoomVerb			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	188424556	Music	C:\Users\joseb\Documents\GitHub\VirtualRealityProject\VirtualRealityProject_WwiseProject\.cache\A4\{A448A559-6D60-D117-CE25-AEBF8C76DCE4}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music		3311924
-	743402601	S3004-01_Campagne-ambiance_diurne-pres_d_une_riviere-grenouille-grillons	C:\Users\joseb\Documents\GitHub\VirtualRealityProject\VirtualRealityProject_WwiseProject\.cache\ED\{EDBDB39D-2D7E-B583-DF04-F42D7BD48A5C}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiance\S3004-01_Campagne-ambiance_diurne-pres_d_une_riviere-grenouille-grillons		2622631
-	819827368	S3004-02_Campagne-ambiance_diurne-vent_dans_les_arbres	C:\Users\joseb\Documents\GitHub\VirtualRealityProject\VirtualRealityProject_WwiseProject\.cache\72\{724E1887-BAD9-C694-172A-18158EAEEE30}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiance\S3004-02_Campagne-ambiance_diurne-vent_dans_les_arbres		2486676
+	89892199	amb_wind_strong-001	C:\Users\joseb\Documents\GitHub\VirtualRealityProject\VirtualRealityProject_WwiseProject\.cache\F8\{F8CA4392-B040-EC64-5A74-7F2DE0B452FD}.wem		\Actor-Mixer Hierarchy\Default Work Unit\amb\Ambiance\amb_wind_wild\amb_wind_strong-001		172420
+	137294667	sfx_powerup_voices	C:\Users\joseb\Documents\GitHub\VirtualRealityProject\VirtualRealityProject_WwiseProject\.cache\43\{4365484D-A43E-0573-F428-B1D26B423204}.wem		\Actor-Mixer Hierarchy\Default Work Unit\sfx\powerUp2\sfx_powerup_voices		94534
+	138764880	mus_pads_chords_loop_var_2	C:\Users\joseb\Documents\GitHub\VirtualRealityProject\VirtualRealityProject_WwiseProject\.cache\71\{71C0B525-7BF8-E512-CB99-A3ECAFED90E4}.wem		\Actor-Mixer Hierarchy\Default Work Unit\amb\PadsSensor1\mus_pads_chords\mus_pads_chords_loop_var_2		309834
+	175958417	mus_pads_scary_chord_loop_var_2	C:\Users\joseb\Documents\GitHub\VirtualRealityProject\VirtualRealityProject_WwiseProject\.cache\E3\{E33FD874-8E72-87C4-7F15-8F133DBAE088}.wem		\Actor-Mixer Hierarchy\Default Work Unit\amb\PadsSensor1\mus_pads_chords_scary\mus_pads_scary_chord_loop_var_2		288225
+	181926460	amb_leaves-001	C:\Users\joseb\Documents\GitHub\VirtualRealityProject\VirtualRealityProject_WwiseProject\.cache\DB\{DBBCE706-D6C3-324B-35A1-EC0638214C21}.wem		\Actor-Mixer Hierarchy\Default Work Unit\amb\Ambiance\amb_leaves\amb_leaves-001		92195
+	187480084	amb_bird_5_weird	C:\Users\joseb\Documents\GitHub\VirtualRealityProject\VirtualRealityProject_WwiseProject\.cache\3C\{3C4E637A-1634-2A71-F3DB-AD87C6B29665}.wem		\Actor-Mixer Hierarchy\Default Work Unit\amb\PadsSensor3\amb_bird_5_weird		490143
+	188145887	sfx_powerup	C:\Users\joseb\Documents\GitHub\VirtualRealityProject\VirtualRealityProject_WwiseProject\.cache\FC\{FCCE9DAB-9B87-1E6D-BD52-D30038EFA162}.wem		\Actor-Mixer Hierarchy\Default Work Unit\sfx\powerUp2\sfx_powerup		88910
+	189253345	amb_bird_1	C:\Users\joseb\Documents\GitHub\VirtualRealityProject\VirtualRealityProject_WwiseProject\.cache\A5\{A5AD14A5-2906-F41F-B119-6428C7A60B63}.wem		\Actor-Mixer Hierarchy\Default Work Unit\amb\PadsSensor3\amb_bird_1		432241
+	196160818	amb_creek	C:\Users\joseb\Documents\GitHub\VirtualRealityProject\VirtualRealityProject_WwiseProject\.cache\3C\{3C209B34-B479-1297-CE43-A345753C171C}.wem		\Actor-Mixer Hierarchy\Default Work Unit\amb\Ambiance\amb_creek		330829
+	211319641	amb_bird_5	C:\Users\joseb\Documents\GitHub\VirtualRealityProject\VirtualRealityProject_WwiseProject\.cache\87\{873DF818-0B83-C154-DA76-121C7B28E683}.wem		\Actor-Mixer Hierarchy\Default Work Unit\amb\PadsSensor3\amb_bird_5		563497
+	268901580	mus_pads_scary_melody	C:\Users\joseb\Documents\GitHub\VirtualRealityProject\VirtualRealityProject_WwiseProject\.cache\5C\{5CE54BE1-3811-6AFF-198F-8D8BDCCF487E}.wem		\Actor-Mixer Hierarchy\Default Work Unit\amb\PadsSensor1\mus_pads_scary_melody		785912
+	288241684	mus_pads_melody	C:\Users\joseb\Documents\GitHub\VirtualRealityProject\VirtualRealityProject_WwiseProject\.cache\B4\{B41EB7F6-C540-DFF6-0C4C-3A308B842431}.wem		\Actor-Mixer Hierarchy\Default Work Unit\amb\PadsSensor1\mus_pads_melody		796240
+	293933914	amb_leaves-002	C:\Users\joseb\Documents\GitHub\VirtualRealityProject\VirtualRealityProject_WwiseProject\.cache\19\{19BC2F7C-EB61-236F-884A-0B793EB895F0}.wem		\Actor-Mixer Hierarchy\Default Work Unit\amb\Ambiance\amb_leaves\amb_leaves-002		45697
+	315644122	amb_bird_2_weird	C:\Users\joseb\Documents\GitHub\VirtualRealityProject\VirtualRealityProject_WwiseProject\.cache\11\{113CE1D0-E4D5-291F-AEFB-47F28DACB9DA}.wem		\Actor-Mixer Hierarchy\Default Work Unit\amb\PadsSensor3\amb_bird_2_weird		372203
+	326334206	amb_leaves-004	C:\Users\joseb\Documents\GitHub\VirtualRealityProject\VirtualRealityProject_WwiseProject\.cache\08\{08070582-8708-0BAC-6F1C-C8F240DED92A}.wem		\Actor-Mixer Hierarchy\Default Work Unit\amb\Ambiance\amb_leaves\amb_leaves-004		21826
+	335637789	sfx_powerup_rumble	C:\Users\joseb\Documents\GitHub\VirtualRealityProject\VirtualRealityProject_WwiseProject\.cache\92\{923EC168-FCAE-F84F-AF95-EBA6019CD511}.wem		\Actor-Mixer Hierarchy\Default Work Unit\sfx\powerUp2\sfx_powerup_rumble		69491
+	346838675	sfx_alarm	C:\Users\joseb\Documents\GitHub\VirtualRealityProject\VirtualRealityProject_WwiseProject\.cache\9C\{9CFDB1CA-29B6-8585-75E8-4E3C647EDEA5}.wem		\Actor-Mixer Hierarchy\Default Work Unit\sfx\sfx_alarm		594244
+	397949216	amb_bird_3	C:\Users\joseb\Documents\GitHub\VirtualRealityProject\VirtualRealityProject_WwiseProject\.cache\8F\{8F88D968-A0E1-9137-813C-CB6571FE47BE}.wem		\Actor-Mixer Hierarchy\Default Work Unit\amb\PadsSensor3\amb_bird_3		341137
+	426481905	amb_bird_4_weird	C:\Users\joseb\Documents\GitHub\VirtualRealityProject\VirtualRealityProject_WwiseProject\.cache\9B\{9B9ED132-1BBF-7C45-92D9-0F0F408D81D8}.wem		\Actor-Mixer Hierarchy\Default Work Unit\amb\PadsSensor3\amb_bird_4_weird		427889
+	441835573	amb_bird_3_weird	C:\Users\joseb\Documents\GitHub\VirtualRealityProject\VirtualRealityProject_WwiseProject\.cache\7E\{7EB47739-81C5-160D-E56F-53DC39172A94}.wem		\Actor-Mixer Hierarchy\Default Work Unit\amb\PadsSensor3\amb_bird_3_weird		305672
+	526174884	sfx_powerup_loaded_hit	C:\Users\joseb\Documents\GitHub\VirtualRealityProject\VirtualRealityProject_WwiseProject\.cache\0F\{0F7E5887-E398-BE26-A8BF-0D8AD3A401FC}.wem		\Actor-Mixer Hierarchy\Default Work Unit\sfx\powerUpHit\sfx_powerup_loaded_hit		172975
+	541488690	amb_bird_4	C:\Users\joseb\Documents\GitHub\VirtualRealityProject\VirtualRealityProject_WwiseProject\.cache\2B\{2B30B947-FAED-AFA3-A340-DBCED0468BE2}.wem		\Actor-Mixer Hierarchy\Default Work Unit\amb\PadsSensor3\amb_bird_4		512523
+	608934966	mus_pads_scary_chord_loop	C:\Users\joseb\Documents\GitHub\VirtualRealityProject\VirtualRealityProject_WwiseProject\.cache\C1\{C1BC7386-B6E7-4366-8447-7A010DE6FC3C}.wem		\Actor-Mixer Hierarchy\Default Work Unit\amb\PadsSensor1\mus_pads_chords_scary\mus_pads_scary_chord_loop		343385
+	621973919	amb_wind_super_calm	C:\Users\joseb\Documents\GitHub\VirtualRealityProject\VirtualRealityProject_WwiseProject\.cache\B9\{B9F77818-5958-44B9-CDBC-288D7429B3DC}.wem		\Actor-Mixer Hierarchy\Default Work Unit\amb\Ambiance\amb_wind\amb_wind_super_calm		94934
+	630766008	amb_wind_strong-003	C:\Users\joseb\Documents\GitHub\VirtualRealityProject\VirtualRealityProject_WwiseProject\.cache\FD\{FDC182A4-3D28-90A9-0D48-BA0FC6484C5A}.wem		\Actor-Mixer Hierarchy\Default Work Unit\amb\Ambiance\amb_wind_wild\amb_wind_strong-003		120823
+	704704544	amb_bird_6_weird	C:\Users\joseb\Documents\GitHub\VirtualRealityProject\VirtualRealityProject_WwiseProject\.cache\D0\{D060B90F-D3ED-8023-150D-F336A5CFB9DC}.wem		\Actor-Mixer Hierarchy\Default Work Unit\amb\PadsSensor3\amb_bird_6_weird		479452
+	849966493	sfx_sensor_activated	C:\Users\joseb\Documents\GitHub\VirtualRealityProject\VirtualRealityProject_WwiseProject\.cache\9C\{9CAEE33B-F9E6-1987-C42F-51862F3DFE33}.wem		\Actor-Mixer Hierarchy\Default Work Unit\sfx\powerUpHit\sfx_sensor_activated		120870
+	868510851	amb_bird_6	C:\Users\joseb\Documents\GitHub\VirtualRealityProject\VirtualRealityProject_WwiseProject\.cache\32\{32459F15-36FC-1A58-44E7-A585B00AD080}.wem		\Actor-Mixer Hierarchy\Default Work Unit\amb\PadsSensor3\amb_bird_6		551033
+	937797086	sfx_powerup_perc	C:\Users\joseb\Documents\GitHub\VirtualRealityProject\VirtualRealityProject_WwiseProject\.cache\B2\{B2D109DF-57C7-9327-52D2-2BA2CD100F34}.wem		\Actor-Mixer Hierarchy\Default Work Unit\sfx\powerUp3\sfx_powerup_perc		254008
+	958267533	amb_bird_2	C:\Users\joseb\Documents\GitHub\VirtualRealityProject\VirtualRealityProject_WwiseProject\.cache\89\{8959C55E-3137-ED8E-9F46-57507E17E8FC}.wem		\Actor-Mixer Hierarchy\Default Work Unit\amb\PadsSensor3\amb_bird_2		433580
+	959841215	amb_wind_calm	C:\Users\joseb\Documents\GitHub\VirtualRealityProject\VirtualRealityProject_WwiseProject\.cache\CE\{CE007053-6F82-5ECA-4CB4-2A3E7346A9A0}.wem		\Actor-Mixer Hierarchy\Default Work Unit\amb\Ambiance\amb_wind\amb_wind_calm		87577
+	979599441	mus_pads_chords_loop	C:\Users\joseb\Documents\GitHub\VirtualRealityProject\VirtualRealityProject_WwiseProject\.cache\DE\{DE01EF12-ACD7-B015-6E71-6CF9FE23D3C8}.wem		\Actor-Mixer Hierarchy\Default Work Unit\amb\PadsSensor1\mus_pads_chords\mus_pads_chords_loop		362432
+	1014557919	amb_leaves-003	C:\Users\joseb\Documents\GitHub\VirtualRealityProject\VirtualRealityProject_WwiseProject\.cache\61\{61B8A8AA-A966-2046-ECAF-ECF6A9841670}.wem		\Actor-Mixer Hierarchy\Default Work Unit\amb\Ambiance\amb_leaves\amb_leaves-003		49695
+	1037117347	amb_bird_1_weird	C:\Users\joseb\Documents\GitHub\VirtualRealityProject\VirtualRealityProject_WwiseProject\.cache\67\{672369FA-715D-3018-C62C-1C1D8A4630FD}.wem		\Actor-Mixer Hierarchy\Default Work Unit\amb\PadsSensor3\amb_bird_1_weird		322841
+	1064833642	amb_wind_strong-004	C:\Users\joseb\Documents\GitHub\VirtualRealityProject\VirtualRealityProject_WwiseProject\.cache\54\{54D4D858-7936-5A55-5804-FFC5610E3258}.wem		\Actor-Mixer Hierarchy\Default Work Unit\amb\Ambiance\amb_wind_wild\amb_wind_strong-004		184480
+	1073305620	amb_wind_strong-002	C:\Users\joseb\Documents\GitHub\VirtualRealityProject\VirtualRealityProject_WwiseProject\.cache\22\{2297A5AF-CF4A-C61C-3BE4-B6A1FF437ADD}.wem		\Actor-Mixer Hierarchy\Default Work Unit\amb\Ambiance\amb_wind_wild\amb_wind_strong-002		119534
 

@@ -3,33 +3,6 @@
 	<AudioObjects>
 		<WorkUnit Name="sfx" ID="{4E140D7F-62E4-4DAF-A811-B1E5FF1E146B}" OwnerID="{4B7C06E9-0662-4FE5-912F-FFD8A7A89BD7}" PersistMode="Nested">
 			<ChildrenList>
-				<RandomSequenceContainer Name="Alarm" ID="{DD4DE8BC-A555-4EBD-83CF-2A409ED87571}" ShortID="1023699706">
-					<PropertyList>
-						<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
-						<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
-						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
-						<Property Name="RandomOrSequence" Type="int16" Value="0"/>
-						<Property Name="UserAuxSendLPF0" Type="int16">
-							<ValueList>
-								<Value>20</Value>
-							</ValueList>
-						</Property>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02AB0E9E-DC49-4D18-8206-2301BDC73EC0}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="VRHeadset" ID="{39F54136-2FB9-4BEE-8868-4E6FDE31586A}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
-						</Reference>
-						<Reference Name="UserAuxSend0">
-							<ObjectRef Name="Reverb" ID="{568A8176-882E-40FC-A572-D3004C78AC10}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
-						</Reference>
-						<Reference Name="UserAuxSend1">
-							<ObjectRef Name="LFE" ID="{7A99EF7A-6B7D-43B7-B065-79464E51DCAB}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
-						</Reference>
-					</ReferenceList>
-				</RandomSequenceContainer>
 				<ActorMixer Name="powerUpHit" ID="{58A7C8D1-A51F-4371-A255-2F5153FD2C7F}" ShortID="423248050">
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -100,7 +73,10 @@
 						</Sound>
 					</ChildrenList>
 				</ActorMixer>
-				<BlendContainer Name="powerUp" ID="{85742A46-EDE1-4A32-88CC-4F4517079F6E}" ShortID="548491813">
+				<BlendContainer Name="powerUp1" ID="{85742A46-EDE1-4A32-88CC-4F4517079F6E}" ShortID="548491813">
+					<PropertyList>
+						<Property Name="BlendBehavior" Type="int16" Value="1"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02AB0E9E-DC49-4D18-8206-2301BDC73EC0}"/>
@@ -208,6 +184,250 @@
 						</Sound>
 					</ChildrenList>
 				</BlendContainer>
+				<BlendContainer Name="powerUp2" ID="{886E4950-FE7F-4931-898F-70670340DFF7}" ShortID="391669767">
+					<PropertyList>
+						<Property Name="BlendBehavior" Type="int16" Value="1"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02AB0E9E-DC49-4D18-8206-2301BDC73EC0}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="SFX Master" ID="{1D32FBBD-0AD3-47AA-BA1F-81C9A58A2B61}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="sfx_powerup" ID="{CCD6A086-986A-45EB-9DC4-71F25F2142AB}" ShortID="737034574">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02AB0E9E-DC49-4D18-8206-2301BDC73EC0}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX Master" ID="{1D32FBBD-0AD3-47AA-BA1F-81C9A58A2B61}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_powerup" ID="{CD07439A-4D9F-4338-B7D7-79D1786053A5}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_powerup.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="188145887"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_powerup" ID="{CD07439A-4D9F-4338-B7D7-79D1786053A5}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_powerup_perc" ID="{01F8A3B1-E302-42CE-8168-1D92E65BAC0F}" ShortID="199524715">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02AB0E9E-DC49-4D18-8206-2301BDC73EC0}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX Master" ID="{1D32FBBD-0AD3-47AA-BA1F-81C9A58A2B61}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_powerup_perc" ID="{2BE14E0D-DF71-4665-BB9F-ADC6337B35FC}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_powerup_perc.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="937797086"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_powerup_perc" ID="{2BE14E0D-DF71-4665-BB9F-ADC6337B35FC}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_powerup_rumble" ID="{E9C65F33-C885-4364-86E3-67831367003F}" ShortID="560803397">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02AB0E9E-DC49-4D18-8206-2301BDC73EC0}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX Master" ID="{1D32FBBD-0AD3-47AA-BA1F-81C9A58A2B61}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_powerup_rumble" ID="{1BB0E593-24A8-4543-A95E-BEDB24B6528E}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_powerup_rumble.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="335637789"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_powerup_rumble" ID="{1BB0E593-24A8-4543-A95E-BEDB24B6528E}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_powerup_voices" ID="{4619F2E3-D596-498E-8C50-9539FD155136}" ShortID="57873615">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02AB0E9E-DC49-4D18-8206-2301BDC73EC0}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX Master" ID="{1D32FBBD-0AD3-47AA-BA1F-81C9A58A2B61}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_powerup_voices" ID="{1045851F-0638-41A2-BABE-46251C0FF583}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.171385538509653"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.0734509450755656"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>sfx_powerup_voices.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="137294667"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_powerup_voices" ID="{1045851F-0638-41A2-BABE-46251C0FF583}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</BlendContainer>
+				<BlendContainer Name="powerUp3" ID="{D19A70D6-AA96-4200-8720-398D871AEA44}" ShortID="982868481">
+					<PropertyList>
+						<Property Name="BlendBehavior" Type="int16" Value="1"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02AB0E9E-DC49-4D18-8206-2301BDC73EC0}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="SFX Master" ID="{1D32FBBD-0AD3-47AA-BA1F-81C9A58A2B61}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="sfx_powerup" ID="{AD692D80-82D8-4D1F-A342-1EA10D81CAC6}" ShortID="403149293">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02AB0E9E-DC49-4D18-8206-2301BDC73EC0}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX Master" ID="{1D32FBBD-0AD3-47AA-BA1F-81C9A58A2B61}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_powerup" ID="{4D0FC851-C4BA-481F-B201-E14A77D202FC}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_powerup.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="188145887"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_powerup" ID="{4D0FC851-C4BA-481F-B201-E14A77D202FC}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_powerup_perc" ID="{EAD67715-8EB6-40C1-8F1F-42CE7DDC234E}" ShortID="457177957">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02AB0E9E-DC49-4D18-8206-2301BDC73EC0}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX Master" ID="{1D32FBBD-0AD3-47AA-BA1F-81C9A58A2B61}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_powerup_perc" ID="{9F96EDB1-5285-4647-BD33-594C40A3029F}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_powerup_perc.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="937797086"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_powerup_perc" ID="{9F96EDB1-5285-4647-BD33-594C40A3029F}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_powerup_rumble" ID="{F577B38B-AD69-4CD0-8885-9893C3F44CA1}" ShortID="180822656">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02AB0E9E-DC49-4D18-8206-2301BDC73EC0}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX Master" ID="{1D32FBBD-0AD3-47AA-BA1F-81C9A58A2B61}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_powerup_rumble" ID="{4C9E7E15-037C-4A84-B539-097D285787E3}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_powerup_rumble.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="335637789"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_powerup_rumble" ID="{4C9E7E15-037C-4A84-B539-097D285787E3}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_powerup_voices" ID="{B909C323-558B-4AAB-B6DC-82DB3588BC4C}" ShortID="677406256">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02AB0E9E-DC49-4D18-8206-2301BDC73EC0}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX Master" ID="{1D32FBBD-0AD3-47AA-BA1F-81C9A58A2B61}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_powerup_voices" ID="{88659F37-F35F-46D2-B9C3-565247A8EB08}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.171385538509653"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.0734509450755656"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>sfx_powerup_voices.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="137294667"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_powerup_voices" ID="{88659F37-F35F-46D2-B9C3-565247A8EB08}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</BlendContainer>
+				<Sound Name="sfx_alarm" ID="{F51106EF-625F-4146-8C0A-33CD0C106D0C}" ShortID="1018370121">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02AB0E9E-DC49-4D18-8206-2301BDC73EC0}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="VRHeadset" ID="{39F54136-2FB9-4BEE-8868-4E6FDE31586A}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="sfx_alarm" ID="{6BB39026-B38A-4916-AB39-AE288328B95C}">
+							<Language>SFX</Language>
+							<AudioFile>sfx_alarm.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="346838675"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="sfx_alarm" ID="{6BB39026-B38A-4916-AB39-AE288328B95C}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

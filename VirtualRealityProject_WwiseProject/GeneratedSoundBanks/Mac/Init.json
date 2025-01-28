@@ -10,12 +10,46 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{3ACDD443-7F5E-D0BC-30CB-EC686E6C05D4}",
+    "Hash": "{B9CA31E5-EF4F-9E25-95EC-6EF7A5AC49EE}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
     "Plugins": {
+     "ShareSets": [
+      {
+       "Id": "1008402193",
+       "Name": "Low_Pass_20KHz",
+       "ObjectPath": "\\Effects\\Factory Effects\\Parametric EQ\\Low Pass Filters\\Low_Pass_20KHz",
+       "GUID": "{830124FB-B9D5-4AE8-846E-E94A74652666}",
+       "LibName": "Wwise Parametric EQ",
+       "LibId": "6881283"
+      },
+      {
+       "Id": "1144018367",
+       "Name": "Plate_Large",
+       "ObjectPath": "\\Effects\\Factory Effects\\RoomVerb\\Plates\\Plate_Large",
+       "GUID": "{62CB7384-421D-4F9A-9CF1-E90F7336A07B}",
+       "LibName": "Wwise RoomVerb",
+       "LibId": "7733251"
+      }
+     ],
      "AudioDevices": [
+      {
+       "Id": "664256295",
+       "Name": "BinauralAux",
+       "ObjectPath": "\\Audio Devices\\Default Work Unit\\BinauralAux",
+       "GUID": "{69083BB4-E6D1-47F2-BEFE-AF9B5EE6A94D}",
+       "LibName": "System",
+       "LibId": "11403271"
+      },
+      {
+       "Id": "1679100205",
+       "Name": "System_VR",
+       "ObjectPath": "\\Audio Devices\\Default Work Unit\\System_VR",
+       "GUID": "{B63B1BDF-C198-4236-B3E3-A03E1A0EE2FC}",
+       "LibName": "System",
+       "LibId": "11403271"
+      },
       {
        "Id": "2317455096",
        "Name": "No_Output",
@@ -36,25 +70,107 @@
     },
     "Busses": [
      {
-      "Id": "2981377429",
-      "Name": "Ambiance",
-      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Ambiance",
-      "GUID": "{CCCF0DF9-24CC-4600-B821-E19884B16803}"
+      "Id": "896672153",
+      "Name": "Ambiance Master",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Ambiance Master",
+      "GUID": "{CCCF0DF9-24CC-4600-B821-E19884B16803}",
+      "AuxBusRefs": [
+       {
+        "Id": "3842105963",
+        "Name": "AuxBinaural",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Auxiliar Binaural Bus\\AuxBinaural",
+        "GUID": "{6D3B1C80-6322-4462-A58A-C15AB4962048}"
+       }
+      ]
      },
      {
-      "Id": "3149422595",
-      "Name": "AudioObjects",
-      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\AudioObjects",
-      "GUID": "{CE147A78-C7F5-4AA5-8006-9CF43DE38E3E}"
+      "Id": "1833644823",
+      "Name": "Master VR Bus",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master VR Bus",
+      "GUID": "{85088EDF-3415-4817-BB68-1BA901F2BD37}"
+     },
+     {
+      "Id": "2355230746",
+      "Name": "Auxiliar Binaural Bus",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Auxiliar Binaural Bus",
+      "GUID": "{5ABD1057-9040-4D86-8B49-8A0BA4DED42C}"
+     },
+     {
+      "Id": "3222323340",
+      "Name": "SFX Master",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\SFX Master",
+      "GUID": "{1D32FBBD-0AD3-47AA-BA1F-81C9A58A2B61}",
+      "AuxBusRefs": [
+       {
+        "Id": "3842105963",
+        "Name": "AuxBinaural",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Auxiliar Binaural Bus\\AuxBinaural",
+        "GUID": "{6D3B1C80-6322-4462-A58A-C15AB4962048}"
+       }
+      ]
      },
      {
       "Id": "3803692087",
       "Name": "Master Audio Bus",
       "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus",
       "GUID": "{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"
+     },
+     {
+      "Id": "4262402045",
+      "Name": "VRHeadset",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master VR Bus\\VRHeadset",
+      "GUID": "{39F54136-2FB9-4BEE-8868-4E6FDE31586A}"
+     }
+    ],
+    "AuxBusses": [
+     {
+      "Id": "348963605",
+      "Name": "Reverb",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Reverb",
+      "GUID": "{568A8176-882E-40FC-A572-D3004C78AC10}",
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "1144018367"
+        }
+       ]
+      },
+      "AuxBusRefs": [
+       {
+        "Id": "3842105963",
+        "Name": "AuxBinaural",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Auxiliar Binaural Bus\\AuxBinaural",
+        "GUID": "{6D3B1C80-6322-4462-A58A-C15AB4962048}"
+       }
+      ]
+     },
+     {
+      "Id": "696369880",
+      "Name": "LFE",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\LFE",
+      "GUID": "{7A99EF7A-6B7D-43B7-B065-79464E51DCAB}",
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "1008402193"
+        }
+       ]
+      }
+     },
+     {
+      "Id": "3842105963",
+      "Name": "AuxBinaural",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Auxiliar Binaural Bus\\AuxBinaural",
+      "GUID": "{6D3B1C80-6322-4462-A58A-C15AB4962048}"
      }
     ],
     "GameParameters": [
+     {
+      "Id": "2078519427",
+      "Name": "activationStatus",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\activationStatus",
+      "GUID": "{8C7A1363-674B-41F9-B092-3E3C9F25B869}"
+     },
      {
       "Id": "3023874992",
       "Name": "sensor1",
@@ -76,6 +192,6 @@
     ]
    }
   ],
-  "FileHash": "{67DD7049-AC4D-A1EA-F528-ED11DB6A27B3}"
+  "FileHash": "{51BB49F5-ED02-3CB7-0AB0-3179AD445689}"
  }
 }

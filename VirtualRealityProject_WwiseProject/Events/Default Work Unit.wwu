@@ -14,7 +14,22 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="AmbianceOff" ID="{04E77DEA-2479-45E7-8022-FB1161CD3052}"/>
+				<Event Name="AmbianceOff" ID="{04E77DEA-2479-45E7-8022-FB1161CD3052}">
+					<ChildrenList>
+						<Action Name="" ID="{856D2CE1-65F1-4AE2-BF0B-8981C14E20AE}" ShortID="72242726">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeOutCurve" Type="int16" Value="1"/>
+								<Property Name="FadeTime" Type="Real64" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Ambiance" ID="{A143B276-DF92-4BBA-8949-54BED2AB4075}" WorkUnitID="{7FAE9102-D772-46A8-AA69-F6DB5B0BCD91}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 				<Event Name="Music" ID="{6C2B9CC9-47BA-48A0-A03D-F4C61BD281D3}">
 					<ChildrenList>
 						<Action Name="" ID="{0C07D42B-DAAD-4358-8F83-6B0C3EFD6B95}" ShortID="845019971">
@@ -26,24 +41,58 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Reset" ID="{98D5F919-007E-41E0-BCF2-C379723F61FA}"/>
-				<Event Name="Transition" ID="{FF2159BA-A7E5-4B83-9357-D0EC8F81668C}"/>
+				<Event Name="Reset" ID="{98D5F919-007E-41E0-BCF2-C379723F61FA}">
+					<ChildrenList>
+						<Action Name="" ID="{2DF4AB21-681C-4014-A111-1271CCF6D393}" ShortID="406147915">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="38"/>
+								<Property Name="FadeTime" Type="Real64" Value="3.5"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="activationStatus" ID="{8C7A1363-674B-41F9-B092-3E3C9F25B869}" WorkUnitID="{783EED98-38D9-4575-BE3B-51AB635CB706}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Transition" ID="{FF2159BA-A7E5-4B83-9357-D0EC8F81668C}">
+					<ChildrenList>
+						<Action Name="" ID="{A4A7085A-6053-4079-874B-E3D0ED38C77B}" ShortID="105699510">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="3"/>
+								<Property Name="FadeOutCurve" Type="int16" Value="1"/>
+								<Property Name="FadeTime" Type="Real64" Value="3.5"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList/>
+							<ChildrenList>
+								<EventActionException Name="" ID="{E80DAF60-5299-45A7-9D22-01EB0E35FF8E}">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="powerUpHit" ID="{58A7C8D1-A51F-4371-A255-2F5153FD2C7F}" WorkUnitID="{4E140D7F-62E4-4DAF-A811-B1E5FF1E146B}"/>
+										</Reference>
+									</ReferenceList>
+								</EventActionException>
+								<EventActionException Name="" ID="{BF741E9A-0112-4ABD-858C-26E1F6164C00}"/>
+							</ChildrenList>
+						</Action>
+						<Action Name="" ID="{912F214C-928B-4BCC-B95B-996FA995C9AF}" ShortID="29478905">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="41"/>
+								<Property Name="Delay" Type="Real64" Value="30"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music" ID="{6C2B9CC9-47BA-48A0-A03D-F4C61BD281D3}" WorkUnitID="{8837BB41-6FC3-415B-85DD-91771863AD97}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 				<Event Name="Sensor1Activated" ID="{5C13809D-2C9E-41EE-97E7-7D32F4B3B9D5}">
 					<ChildrenList>
-						<Action Name="" ID="{AA5FC217-8D5B-4CE5-AF76-12BEF82292FD}" ShortID="487055030">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="sfx_sensor_activated" ID="{F8D96FF3-C6C1-47AF-A215-ED5C2CE51670}" WorkUnitID="{4E140D7F-62E4-4DAF-A811-B1E5FF1E146B}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{1197F99F-031E-4B6C-A2FF-A68013BA60EF}" ShortID="747000214">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="sfx_powerup_loaded_hit" ID="{02BCCF10-FFD1-495E-B7C6-F42A468B70E9}" WorkUnitID="{4E140D7F-62E4-4DAF-A811-B1E5FF1E146B}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
 						<Action Name="" ID="{249ADCDA-4C7E-447A-93B5-DEFC9E38E074}" ShortID="243536196">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="2"/>
@@ -51,7 +100,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="powerUp" ID="{F820918A-4E03-4357-8D20-245D7E6A593F}" WorkUnitID="{4E140D7F-62E4-4DAF-A811-B1E5FF1E146B}"/>
+									<ObjectRef Name="powerUp1" ID="{85742A46-EDE1-4A32-88CC-4F4517079F6E}" WorkUnitID="{4E140D7F-62E4-4DAF-A811-B1E5FF1E146B}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -68,24 +117,98 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Sensor2Activated" ID="{C011709D-71D2-4E2C-9D32-2418092208F1}"/>
-				<Event Name="Sensor3Activated" ID="{237B9BB2-A701-4F3A-9F06-9AF3ED6FEC24}"/>
 				<Event Name="Alarm" ID="{471925B2-6CB3-45BC-8184-B20853065D36}">
 					<ChildrenList>
 						<Action Name="" ID="{DF576E5D-4404-4C49-97C7-2ADBD06A946D}" ShortID="181901360">
 							<PropertyList>
 								<Property Name="FadeInCurve" Type="int16" Value="1"/>
-								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="sfx_alarm" ID="{138BDEF5-344E-4ED4-89B3-216D4EE32565}" WorkUnitID="{4B7C06E9-0662-4FE5-912F-FFD8A7A89BD7}"/>
+									<ObjectRef Name="sfx_alarm" ID="{F51106EF-625F-4146-8C0A-33CD0C106D0C}" WorkUnitID="{4E140D7F-62E4-4DAF-A811-B1E5FF1E146B}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="SensorPowerUp" ID="{2E5E0868-3A05-47D6-97BB-EC53EF4EC22A}"/>
+				<Event Name="SensorPowerUp" ID="{2E5E0868-3A05-47D6-97BB-EC53EF4EC22A}">
+					<ChildrenList>
+						<Action Name="" ID="{E2110866-4C27-4B9D-8E67-A86ED08B2FBF}" ShortID="277640089">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="powerUp1" ID="{85742A46-EDE1-4A32-88CC-4F4517079F6E}" WorkUnitID="{4E140D7F-62E4-4DAF-A811-B1E5FF1E146B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{020668EC-7316-49DE-9DBA-1A133ACF788C}" ShortID="198149899">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="powerUp2" ID="{886E4950-FE7F-4931-898F-70670340DFF7}" WorkUnitID="{4E140D7F-62E4-4DAF-A811-B1E5FF1E146B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{3E224A44-9634-4C59-B4BA-37F3348DE70F}" ShortID="327216096">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="powerUp3" ID="{D19A70D6-AA96-4200-8720-398D871AEA44}" WorkUnitID="{4E140D7F-62E4-4DAF-A811-B1E5FF1E146B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Sensor2Activated" ID="{ED6E7F52-B1C5-4517-BC04-1B1E5BC3FBBF}">
+					<ChildrenList>
+						<Action Name="" ID="{9EE58C75-398F-4BDB-83B8-356C868DDC0A}" ShortID="137759206">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="powerUp2" ID="{886E4950-FE7F-4931-898F-70670340DFF7}" WorkUnitID="{4E140D7F-62E4-4DAF-A811-B1E5FF1E146B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{F731842C-34C8-4CEF-B1E8-C5298D12A064}" ShortID="540892474">
+							<PropertyList>
+								<Property Name="FadeInCurve" Type="int16" Value="1"/>
+								<Property Name="FadeTime" Type="Real64" Value="1.5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="PadsSensor2" ID="{FBC92C6B-7B49-456C-BB31-D52E8D348CB6}" WorkUnitID="{7FAE9102-D772-46A8-AA69-F6DB5B0BCD91}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Sensor3Activated" ID="{88A957EF-9D5C-43E2-80D0-9528FDE8C673}">
+					<ChildrenList>
+						<Action Name="" ID="{858B21DE-1FA8-47D9-84DE-637428586A97}" ShortID="637727254">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="powerUp3" ID="{D19A70D6-AA96-4200-8720-398D871AEA44}" WorkUnitID="{4E140D7F-62E4-4DAF-A811-B1E5FF1E146B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{5482CC33-1D3C-401C-9BB9-21C95FEE94F2}" ShortID="377807263">
+							<PropertyList>
+								<Property Name="FadeInCurve" Type="int16" Value="1"/>
+								<Property Name="FadeTime" Type="Real64" Value="1.5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="PadsSensor3" ID="{936DA61C-AB9B-4169-A1AF-4085A09458CE}" WorkUnitID="{7FAE9102-D772-46A8-AA69-F6DB5B0BCD91}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="VoicesHeadset" ID="{9294D0CF-808F-479B-85BA-82B381531B99}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

@@ -99,7 +99,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="TargetObject">
-											<ObjectRef Name="Sensor2Activated" ID="{C011709D-71D2-4E2C-9D32-2418092208F1}" WorkUnitID="{8837BB41-6FC3-415B-85DD-91771863AD97}"/>
+											<ObjectRef Name="Sensor2Activated" ID="{ED6E7F52-B1C5-4517-BC04-1B1E5BC3FBBF}" WorkUnitID="{8837BB41-6FC3-415B-85DD-91771863AD97}"/>
 										</Reference>
 									</ReferenceList>
 								</ControlSurfaceBinding>
@@ -111,7 +111,19 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="TargetObject">
-											<ObjectRef Name="Sensor3Activated" ID="{237B9BB2-A701-4F3A-9F06-9AF3ED6FEC24}" WorkUnitID="{8837BB41-6FC3-415B-85DD-91771863AD97}"/>
+											<ObjectRef Name="Sensor3Activated" ID="{88A957EF-9D5C-43E2-80D0-9528FDE8C673}" WorkUnitID="{8837BB41-6FC3-415B-85DD-91771863AD97}"/>
+										</Reference>
+									</ReferenceList>
+								</ControlSurfaceBinding>
+								<ControlSurfaceBinding Name="Binding" ID="{AF739801-CA03-46CE-89F7-4B35C4955928}">
+									<PropertyList>
+										<Property Name="HardwareControllerKey" Type="string" Value="MaxMsp~Ch.1~CC~10"/>
+										<Property Name="TargetName" Type="string" Value="TransportPlay"/>
+										<Property Name="TargetType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="TargetObject">
+											<ObjectRef Name="Alarm" ID="{471925B2-6CB3-45BC-8184-B20853065D36}" WorkUnitID="{8837BB41-6FC3-415B-85DD-91771863AD97}"/>
 										</Reference>
 									</ReferenceList>
 								</ControlSurfaceBinding>

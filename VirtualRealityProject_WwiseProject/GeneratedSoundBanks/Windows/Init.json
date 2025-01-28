@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{4C3B9A8D-53B2-A215-8668-06CE3B6696BA}",
+    "Hash": "{9970190F-C10A-B57F-C5BB-CF6C6B888DF3}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -34,6 +34,14 @@
       }
      ],
      "AudioDevices": [
+      {
+       "Id": "664256295",
+       "Name": "BinauralAux",
+       "ObjectPath": "\\Audio Devices\\Default Work Unit\\BinauralAux",
+       "GUID": "{69083BB4-E6D1-47F2-BEFE-AF9B5EE6A94D}",
+       "LibName": "System",
+       "LibId": "11403271"
+      },
       {
        "Id": "1679100205",
        "Name": "System_VR",
@@ -65,7 +73,15 @@
       "Id": "896672153",
       "Name": "Ambiance Master",
       "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Ambiance Master",
-      "GUID": "{CCCF0DF9-24CC-4600-B821-E19884B16803}"
+      "GUID": "{CCCF0DF9-24CC-4600-B821-E19884B16803}",
+      "AuxBusRefs": [
+       {
+        "Id": "3842105963",
+        "Name": "AuxBinaural",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Auxiliar Binaural Bus\\AuxBinaural",
+        "GUID": "{6D3B1C80-6322-4462-A58A-C15AB4962048}"
+       }
+      ]
      },
      {
       "Id": "1833644823",
@@ -74,10 +90,24 @@
       "GUID": "{85088EDF-3415-4817-BB68-1BA901F2BD37}"
      },
      {
+      "Id": "2355230746",
+      "Name": "Auxiliar Binaural Bus",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Auxiliar Binaural Bus",
+      "GUID": "{5ABD1057-9040-4D86-8B49-8A0BA4DED42C}"
+     },
+     {
       "Id": "3222323340",
       "Name": "SFX Master",
       "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\SFX Master",
-      "GUID": "{1D32FBBD-0AD3-47AA-BA1F-81C9A58A2B61}"
+      "GUID": "{1D32FBBD-0AD3-47AA-BA1F-81C9A58A2B61}",
+      "AuxBusRefs": [
+       {
+        "Id": "3842105963",
+        "Name": "AuxBinaural",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Auxiliar Binaural Bus\\AuxBinaural",
+        "GUID": "{6D3B1C80-6322-4462-A58A-C15AB4962048}"
+       }
+      ]
      },
      {
       "Id": "3803692087",
@@ -104,7 +134,15 @@
          "Id": "1144018367"
         }
        ]
-      }
+      },
+      "AuxBusRefs": [
+       {
+        "Id": "3842105963",
+        "Name": "AuxBinaural",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Auxiliar Binaural Bus\\AuxBinaural",
+        "GUID": "{6D3B1C80-6322-4462-A58A-C15AB4962048}"
+       }
+      ]
      },
      {
       "Id": "696369880",
@@ -118,9 +156,21 @@
         }
        ]
       }
+     },
+     {
+      "Id": "3842105963",
+      "Name": "AuxBinaural",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Auxiliar Binaural Bus\\AuxBinaural",
+      "GUID": "{6D3B1C80-6322-4462-A58A-C15AB4962048}"
      }
     ],
     "GameParameters": [
+     {
+      "Id": "2078519427",
+      "Name": "activationStatus",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\activationStatus",
+      "GUID": "{8C7A1363-674B-41F9-B092-3E3C9F25B869}"
+     },
      {
       "Id": "3023874992",
       "Name": "sensor1",
@@ -138,16 +188,10 @@
       "Name": "sensor2",
       "ObjectPath": "\\Game Parameters\\Default Work Unit\\sensor2",
       "GUID": "{64F8FD5A-7F09-4772-A48A-3629D18ECA60}"
-     },
-     {
-      "Id": "3499501082",
-      "Name": "timeScene",
-      "ObjectPath": "\\Game Parameters\\Default Work Unit\\timeScene",
-      "GUID": "{8C7A1363-674B-41F9-B092-3E3C9F25B869}"
      }
     ]
    }
   ],
-  "FileHash": "{0591E90F-2E7D-2F76-233E-A8E275CA8C75}"
+  "FileHash": "{23589696-F007-E06F-E6AB-AA075889227B}"
  }
 }

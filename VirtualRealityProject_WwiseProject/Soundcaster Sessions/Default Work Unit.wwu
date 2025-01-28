@@ -17,7 +17,7 @@
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
 							<GameParameterRef Name="activationStatus" ID="{8C7A1363-674B-41F9-B092-3E3C9F25B869}"/>
-							<Value>8.09262159278954E-312</Value>
+							<Value>7.36693766937668</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="sensor2" ID="{64F8FD5A-7F09-4772-A48A-3629D18ECA60}"/>
