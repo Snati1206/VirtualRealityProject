@@ -20,11 +20,21 @@
 								</Property>
 								<Property Name="EnableAttenuation" Type="bool" Value="False"/>
 							</PropertyList>
+							<ReferenceList>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="AuxBinaural" ID="{6D3B1C80-6322-4462-A58A-C15AB4962048}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+								</Reference>
+							</ReferenceList>
 							<PositioningInfo>
 								<Position Name="" ID="{2D55CB32-96A0-4643-94C9-6D2F2EAE157D}"/>
 							</PositioningInfo>
 						</Bus>
 						<AuxBus Name="Reverb" ID="{568A8176-882E-40FC-A572-D3004C78AC10}">
+							<ReferenceList>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="AuxBinaural" ID="{6D3B1C80-6322-4462-A58A-C15AB4962048}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+								</Reference>
+							</ReferenceList>
 							<ObjectLists>
 								<ObjectList Name="Effects">
 									<Reference>
@@ -77,13 +87,18 @@
 								</Property>
 								<Property Name="RecoveryTime" Type="Real64" Value="0"/>
 							</PropertyList>
+							<ReferenceList>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="AuxBinaural" ID="{6D3B1C80-6322-4462-A58A-C15AB4962048}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+								</Reference>
+							</ReferenceList>
 						</Bus>
 					</ChildrenList>
 				</Bus>
 				<Bus Name="Master VR Bus" ID="{85088EDF-3415-4817-BB68-1BA901F2BD37}">
 					<ReferenceList>
 						<Reference Name="AudioDevice" PluginName="System" CompanyID="0" PluginID="174" PluginType="7">
-							<ObjectRef Name="System_VR" ID="{B63B1BDF-C198-4236-B3E3-A03E1A0EE2FC}" WorkUnitID="{E8BDE8A5-FAF6-425B-A87D-75867B16A631}"/>
+							<ObjectRef Name="BinauralAux" ID="{69083BB4-E6D1-47F2-BEFE-AF9B5EE6A94D}" WorkUnitID="{E8BDE8A5-FAF6-425B-A87D-75867B16A631}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -96,6 +111,20 @@
 								</Property>
 							</PropertyList>
 						</Bus>
+					</ChildrenList>
+				</Bus>
+				<Bus Name="Auxiliar Binaural Bus" ID="{5ABD1057-9040-4D86-8B49-8A0BA4DED42C}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="AudioDevice" PluginName="System" CompanyID="0" PluginID="174" PluginType="7">
+							<ObjectRef Name="BinauralAux" ID="{69083BB4-E6D1-47F2-BEFE-AF9B5EE6A94D}" WorkUnitID="{E8BDE8A5-FAF6-425B-A87D-75867B16A631}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AuxBus Name="AuxBinaural" ID="{6D3B1C80-6322-4462-A58A-C15AB4962048}"/>
 					</ChildrenList>
 				</Bus>
 			</ChildrenList>

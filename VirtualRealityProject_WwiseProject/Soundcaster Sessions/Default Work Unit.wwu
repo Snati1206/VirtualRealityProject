@@ -4,10 +4,20 @@
 		<WorkUnit Name="Default Work Unit" ID="{34271F2E-40BE-45FA-B400-14CA7C1031D1}" PersistMode="Standalone">
 			<ChildrenList>
 				<SoundcasterSession Name="Testing" ID="{7EB0F613-EF8D-49F9-B693-46321EA08579}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="AmbianceOn" ID="{0ADE0251-8EAA-45D5-87D6-CEA9F4467C9F}" WorkUnitID="{8837BB41-6FC3-415B-85DD-91771863AD97}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Sensor1Activated" ID="{5C13809D-2C9E-41EE-97E7-7D32F4B3B9D5}" WorkUnitID="{8837BB41-6FC3-415B-85DD-91771863AD97}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
-							<GameParameterRef Name="timeScene" ID="{8C7A1363-674B-41F9-B092-3E3C9F25B869}"/>
-							<Value>64.8327521632442</Value>
+							<GameParameterRef Name="activationStatus" ID="{8C7A1363-674B-41F9-B092-3E3C9F25B869}"/>
+							<Value>8.09262159278954E-312</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="sensor2" ID="{64F8FD5A-7F09-4772-A48A-3629D18ECA60}"/>
@@ -15,7 +25,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="sensor1" ID="{8A0125EA-B17C-4A07-A2AA-F4E92A932029}"/>
-							<Value>3.93700787401575</Value>
+							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="sensor3" ID="{050AB711-2670-4DC2-B704-99F8F851564C}"/>

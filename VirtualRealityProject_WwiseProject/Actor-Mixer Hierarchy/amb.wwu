@@ -7,6 +7,7 @@
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="1"/>
 						<Property Name="BlendBehavior" Type="int16" Value="1"/>
+						<Property Name="EnableAttenuation" Type="bool" Value="False"/>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -23,6 +24,11 @@
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 								<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
 								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-2</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -558,7 +564,7 @@
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="amb_leaves" ID="{09D7936E-D01C-49C3-8E66-0F9BA4D46E16}" ShortID="992955084">
 							<PropertyList>
-								<Property Name="3DPosition" Type="int16" Value="1"/>
+								<Property Name="3DPosition" Type="int16" Value="2"/>
 								<Property Name="3DSpatialization" Type="int16" Value="1"/>
 								<Property Name="InitialDelay" Type="Real64">
 									<ValueList>
@@ -853,7 +859,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="LayerCrossFadeControlInput">
-									<ObjectRef Name="timeScene" ID="{8C7A1363-674B-41F9-B092-3E3C9F25B869}" WorkUnitID="{783EED98-38D9-4575-BE3B-51AB635CB706}"/>
+									<ObjectRef Name="activationStatus" ID="{8C7A1363-674B-41F9-B092-3E3C9F25B869}" WorkUnitID="{783EED98-38D9-4575-BE3B-51AB635CB706}"/>
 								</Reference>
 							</ReferenceList>
 							<BlendTrackAssocList>
@@ -872,6 +878,280 @@
 										<LeftEdgePos>32.690169241573</LeftEdgePos>
 										<LeftFadingMode>Automatic</LeftFadingMode>
 										<RightEdgePos>94.4173223314607</RightEdgePos>
+										<RightFadingMode>Automatic</RightFadingMode>
+									</CrossfadingInfo>
+								</BlendTrackAssoc>
+							</BlendTrackAssocList>
+						</BlendTrack>
+					</BlendTrackList>
+				</BlendContainer>
+				<BlendContainer Name="PadsSensor1" ID="{F93CAD75-E09E-45D7-867B-A3ED0F08B091}" ShortID="684830053">
+					<PropertyList>
+						<Property Name="BlendBehavior" Type="int16" Value="1"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02AB0E9E-DC49-4D18-8206-2301BDC73EC0}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Ambiance Master" ID="{CCCF0DF9-24CC-4600-B821-E19884B16803}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="mus_pads_melody" ID="{B6AA15C4-02A0-44DE-BBF7-B57BB5B7268B}" ShortID="86282562">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02AB0E9E-DC49-4D18-8206-2301BDC73EC0}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="mus_pads_normal-001" ID="{F51456EE-8D6D-4A3C-9ECF-C4E8D4C50F5A}">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="2.52390057361377"/>
+										<Property Name="LoopBegin" Type="Real64" Value="0"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>mus_pads_normal-001.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="288241684"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="mus_pads_normal-001" ID="{F51456EE-8D6D-4A3C-9ECF-C4E8D4C50F5A}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="mus_pads_scary_melody" ID="{0A15CCF8-536B-4A33-A3A0-D20D329D3767}" ShortID="131061384">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02AB0E9E-DC49-4D18-8206-2301BDC73EC0}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="mus_pads_scary-001" ID="{C9483020-9A86-48D8-A14C-0ED61E50C62D}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.655146699106716"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="5.3567877162255"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>mus_pads_scary-001.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="268901580"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="mus_pads_scary-001" ID="{C9483020-9A86-48D8-A14C-0ED61E50C62D}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<RandomSequenceContainer Name="mus_pads_chords" ID="{3D882C0A-06AB-4087-B8A2-ECBABEB537D0}" ShortID="41555833">
+							<PropertyList>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="3.5"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02AB0E9E-DC49-4D18-8206-2301BDC73EC0}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="mus_pads_chords_loop" ID="{7A5DDB93-7673-47CE-87BC-743A997FCCE1}" ShortID="22066501">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02AB0E9E-DC49-4D18-8206-2301BDC73EC0}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Ambiance Master" ID="{CCCF0DF9-24CC-4600-B821-E19884B16803}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="mus_pads_normal-002" ID="{3C392791-7F0A-42FA-88C4-85FE5715670D}">
+											<Language>SFX</Language>
+											<AudioFile>mus_pads_normal-002.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="979599441"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="mus_pads_normal-002" ID="{3C392791-7F0A-42FA-88C4-85FE5715670D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="mus_pads_chords_loop_var_2" ID="{3AB1FDCE-C3BF-4261-9F6E-5A9B43503BA1}" ShortID="837573711">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02AB0E9E-DC49-4D18-8206-2301BDC73EC0}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Ambiance Master" ID="{CCCF0DF9-24CC-4600-B821-E19884B16803}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="mus_pads_normal-003" ID="{624559C8-BA63-4448-90E2-A887CD67C06A}">
+											<Language>SFX</Language>
+											<AudioFile>mus_pads_normal-003.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="138764880"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="mus_pads_normal-003" ID="{624559C8-BA63-4448-90E2-A887CD67C06A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="mus_pads_chords_scary" ID="{8B2F743C-F48E-4D74-B94D-28FF085B384F}" ShortID="350094485">
+							<PropertyList>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="3.5"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02AB0E9E-DC49-4D18-8206-2301BDC73EC0}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="mus_pads_scary_chord_loop" ID="{B4F23275-F5E3-4C60-B1D3-7863D3FA7303}" ShortID="470746666">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02AB0E9E-DC49-4D18-8206-2301BDC73EC0}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Ambiance Master" ID="{CCCF0DF9-24CC-4600-B821-E19884B16803}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="mus_pads_scary-002" ID="{ADA5D4E6-B393-4053-BCB0-0BBB40ABA6F8}">
+											<Language>SFX</Language>
+											<AudioFile>mus_pads_scary-002.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="608934966"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="mus_pads_scary-002" ID="{ADA5D4E6-B393-4053-BCB0-0BBB40ABA6F8}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="mus_pads_scary_chord_loop_var_2" ID="{873FE4DB-1617-4F48-BE6C-01DFE6DB28E5}" ShortID="259149694">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02AB0E9E-DC49-4D18-8206-2301BDC73EC0}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Ambiance Master" ID="{CCCF0DF9-24CC-4600-B821-E19884B16803}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="mus_pads_scary-003" ID="{337BD9F5-3F2D-44FC-BB1E-4672CF8A376E}">
+											<Language>SFX</Language>
+											<AudioFile>mus_pads_scary-003.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="175958417"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="mus_pads_scary-003" ID="{337BD9F5-3F2D-44FC-BB1E-4672CF8A376E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+					</ChildrenList>
+					<BlendTrackList>
+						<BlendTrack Name="pads" ID="{D5419AA9-3197-419C-A7C5-D26653578993}" ShortID="62168550">
+							<PropertyList>
+								<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="LayerCrossFadeControlInput">
+									<ObjectRef Name="activationStatus" ID="{8C7A1363-674B-41F9-B092-3E3C9F25B869}" WorkUnitID="{783EED98-38D9-4575-BE3B-51AB635CB706}"/>
+								</Reference>
+							</ReferenceList>
+							<BlendTrackAssocList>
+								<BlendTrackAssoc>
+									<ItemRef Name="mus_pads_chords" ID="{3D882C0A-06AB-4087-B8A2-ECBABEB537D0}"/>
+									<CrossfadingInfo>
+										<LeftEdgePos>0</LeftEdgePos>
+										<LeftFadingMode>Automatic</LeftFadingMode>
+										<RightEdgePos>70.5335833333333</RightEdgePos>
+										<RightFadingMode>Automatic</RightFadingMode>
+									</CrossfadingInfo>
+								</BlendTrackAssoc>
+								<BlendTrackAssoc>
+									<ItemRef Name="mus_pads_chords_scary" ID="{8B2F743C-F48E-4D74-B94D-28FF085B384F}"/>
+									<CrossfadingInfo>
+										<LeftEdgePos>35.20025</LeftEdgePos>
+										<LeftFadingMode>Automatic</LeftFadingMode>
+										<RightEdgePos>100</RightEdgePos>
+										<RightFadingMode>Automatic</RightFadingMode>
+									</CrossfadingInfo>
+								</BlendTrackAssoc>
+							</BlendTrackAssocList>
+						</BlendTrack>
+						<BlendTrack Name="pads melody" ID="{953D4ABC-EE44-49BA-A657-47A164AD5A5E}" ShortID="334974019">
+							<PropertyList>
+								<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="LayerCrossFadeControlInput">
+									<ObjectRef Name="activationStatus" ID="{8C7A1363-674B-41F9-B092-3E3C9F25B869}" WorkUnitID="{783EED98-38D9-4575-BE3B-51AB635CB706}"/>
+								</Reference>
+							</ReferenceList>
+							<BlendTrackAssocList>
+								<BlendTrackAssoc>
+									<ItemRef Name="mus_pads_melody" ID="{B6AA15C4-02A0-44DE-BBF7-B57BB5B7268B}"/>
+									<CrossfadingInfo>
+										<LeftEdgePos>0</LeftEdgePos>
+										<LeftFadingMode>Automatic</LeftFadingMode>
+										<RightEdgePos>60.1333333333333</RightEdgePos>
+										<RightFadingMode>Automatic</RightFadingMode>
+									</CrossfadingInfo>
+								</BlendTrackAssoc>
+								<BlendTrackAssoc>
+									<ItemRef Name="mus_pads_scary_melody" ID="{0A15CCF8-536B-4A33-A3A0-D20D329D3767}"/>
+									<CrossfadingInfo>
+										<LeftEdgePos>39.8666666666667</LeftEdgePos>
+										<LeftFadingMode>Automatic</LeftFadingMode>
+										<RightEdgePos>100</RightEdgePos>
 										<RightFadingMode>Automatic</RightFadingMode>
 									</CrossfadingInfo>
 								</BlendTrackAssoc>

@@ -8,7 +8,7 @@
 						<Action Name="" ID="{0E42BC3D-087E-44BD-8977-EC96C0C0AEB1}" ShortID="611420571">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Ambiance" ID="{D669405C-A95D-45A8-8155-F11A622CAA3F}" WorkUnitID="{4B7C06E9-0662-4FE5-912F-FFD8A7A89BD7}"/>
+									<ObjectRef Name="Ambiance" ID="{A143B276-DF92-4BBA-8949-54BED2AB4075}" WorkUnitID="{7FAE9102-D772-46A8-AA69-F6DB5B0BCD91}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -37,13 +37,32 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
+						<Action Name="" ID="{1197F99F-031E-4B6C-A2FF-A68013BA60EF}" ShortID="747000214">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="sfx_powerup_loaded_hit" ID="{02BCCF10-FFD1-495E-B7C6-F42A468B70E9}" WorkUnitID="{4E140D7F-62E4-4DAF-A811-B1E5FF1E146B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 						<Action Name="" ID="{249ADCDA-4C7E-447A-93B5-DEFC9E38E074}" ShortID="243536196">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="power_up_loop" ID="{F30103F1-6911-4F23-8AD7-1C640D8F675D}" WorkUnitID="{4E140D7F-62E4-4DAF-A811-B1E5FF1E146B}"/>
+									<ObjectRef Name="powerUp" ID="{F820918A-4E03-4357-8D20-245D7E6A593F}" WorkUnitID="{4E140D7F-62E4-4DAF-A811-B1E5FF1E146B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{B7163F67-1FEA-4A1B-9E21-DBF78D15345B}" ShortID="406498130">
+							<PropertyList>
+								<Property Name="FadeInCurve" Type="int16" Value="1"/>
+								<Property Name="FadeTime" Type="Real64" Value="1.5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="PadsSensor1" ID="{F93CAD75-E09E-45D7-867B-A3ED0F08B091}" WorkUnitID="{7FAE9102-D772-46A8-AA69-F6DB5B0BCD91}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

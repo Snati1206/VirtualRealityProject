@@ -22,6 +22,15 @@
 						</Property>
 					</PropertyList>
 				</AudioDevice>
+				<AudioDevice Name="BinauralAux" ID="{69083BB4-E6D1-47F2-BEFE-AF9B5EE6A94D}" PluginName="System" CompanyID="0" PluginID="174" PluginType="7">
+					<PropertyList>
+						<Property Name="Allow3DAudio" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+				</AudioDevice>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioDevices>
