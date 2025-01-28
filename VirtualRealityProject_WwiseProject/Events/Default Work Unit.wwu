@@ -176,7 +176,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="PadsSensor2" ID="{FBC92C6B-7B49-456C-BB31-D52E8D348CB6}" WorkUnitID="{7FAE9102-D772-46A8-AA69-F6DB5B0BCD91}"/>
+									<ObjectRef Name="PadsSensor2" ID="{DA48C7F3-C4EC-4CDA-8536-10E48CC6AAD6}" WorkUnitID="{7FAE9102-D772-46A8-AA69-F6DB5B0BCD91}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -208,7 +208,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="VoicesHeadset" ID="{9294D0CF-808F-479B-85BA-82B381531B99}"/>
+				<Event Name="VoicesHeadset" ID="{9294D0CF-808F-479B-85BA-82B381531B99}">
+					<ChildrenList>
+						<Action Name="" ID="{FAADC4ED-0ED5-4E5D-9C9F-3425031C1092}" ShortID="399813259">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="sfx_whispers" ID="{B8CD4534-621A-4566-9042-D530C94C7F81}" WorkUnitID="{4E140D7F-62E4-4DAF-A811-B1E5FF1E146B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

@@ -10,11 +10,19 @@
     "Type": "User",
     "GUID": "{45D8302B-19E7-418B-B7D2-CDAC15D9EA71}",
     "Language": "SFX",
-    "Hash": "{962C9995-7C22-AF52-CB28-C45EF87DDF00}",
+    "Hash": "{D90D9FB4-5125-F970-A421-8887C537D468}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
     "Media": [
+     {
+      "Id": "56029158",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "sfx_whispers.wav",
+      "CachePath": "CE/{CEACC9DD-5DB7-CCA3-A951-C8F34C9D4480}.wem"
+     },
      {
       "Id": "89892199",
       "Language": "SFX",
@@ -272,6 +280,14 @@
       "CachePath": "8E/{8EA9F578-CBC6-C570-C5D8-C3778C424D01}.wem"
      },
      {
+      "Id": "1006396274",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "amb_pad_guitar.wav",
+      "CachePath": "34/{34A42B14-1B51-14EB-426A-D89558B62063}.wem"
+     },
+     {
       "Id": "1014557919",
       "Language": "SFX",
       "Streaming": "false",
@@ -306,6 +322,14 @@
     ],
     "Plugins": {
      "Custom": [
+      {
+       "Id": "175393484",
+       "Name": "Three_Voices (Custom)",
+       "ObjectPath": "\\Actor-Mixer Hierarchy\\Default Work Unit\\amb\\PadsSensor3\\[Effect Slot [0]: (Harmonizer)]\\Three_Voices (Custom)",
+       "GUID": "{CB23F1C5-79AC-49A1-8C6A-D60A92E42952}",
+       "LibName": "Wwise Harmonizer",
+       "LibId": "9043971"
+      },
       {
        "Id": "886273627",
        "Name": "Have_U_Ever_Been_Outside (Custom)",
@@ -503,8 +527,8 @@
       "ObjectPath": "\\Events\\Default Work Unit\\Sensor2Activated",
       "GUID": "{ED6E7F52-B1C5-4517-BC04-1B1E5BC3FBBF}",
       "DurationType": "OneShot",
-      "DurationMin": "0",
-      "DurationMax": "0",
+      "DurationMin": "72",
+      "DurationMax": "72",
       "MediaRefs": [
        {
         "Id": "137294667"
@@ -517,6 +541,9 @@
        },
        {
         "Id": "937797086"
+       },
+       {
+        "Id": "1006396274"
        }
       ]
      },
@@ -577,7 +604,14 @@
        {
         "Id": "1037117347"
        }
-      ]
+      ],
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "175393484"
+        }
+       ]
+      }
      },
      {
       "Id": "2441367941",
@@ -625,6 +659,18 @@
         "GUID": "{6C2B9CC9-47BA-48A0-A03D-F4C61BD281D3}"
        }
       ]
+     },
+     {
+      "Id": "3107780790",
+      "Name": "VoicesHeadset",
+      "ObjectPath": "\\Events\\Default Work Unit\\VoicesHeadset",
+      "GUID": "{9294D0CF-808F-479B-85BA-82B381531B99}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "56029158"
+       }
+      ]
      }
     ],
     "GameParameters": [
@@ -637,6 +683,6 @@
     ]
    }
   ],
-  "FileHash": "{749AEE34-784F-F432-5611-163C0AEF66BF}"
+  "FileHash": "{22CBC20D-3DE2-F08D-3028-29CD5797E491}"
  }
 }

@@ -22,6 +22,7 @@ namespace AK
         static const AkUniqueID SENSOR3ACTIVATED = 3742079315U;
         static const AkUniqueID SENSORPOWERUP = 2441367941U;
         static const AkUniqueID TRANSITION = 1865857008U;
+        static const AkUniqueID VOICESHEADSET = 3107780790U;
     } // namespace EVENTS
 
     namespace GAME_PARAMETERS

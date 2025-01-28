@@ -1206,16 +1206,6 @@
 						</BlendTrack>
 					</BlendTrackList>
 				</BlendContainer>
-				<BlendContainer Name="PadsSensor2" ID="{FBC92C6B-7B49-456C-BB31-D52E8D348CB6}" ShortID="464105277">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02AB0E9E-DC49-4D18-8206-2301BDC73EC0}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Ambiance Master" ID="{CCCF0DF9-24CC-4600-B821-E19884B16803}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
-						</Reference>
-					</ReferenceList>
-				</BlendContainer>
 				<BlendContainer Name="PadsSensor3" ID="{936DA61C-AB9B-4169-A1AF-4085A09458CE}" ShortID="1065024419">
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -2206,6 +2196,109 @@
 							</ChildrenList>
 						</BlendContainer>
 					</ChildrenList>
+					<ObjectLists>
+						<ObjectList Name="Effects">
+							<Reference>
+								<Local>
+									<EffectSlot Name="" ID="{CADD45B1-0BD6-41EF-B98B-EA0A66BAF541}" ShortID="171014154">
+										<ReferenceList>
+											<Reference Name="Effect">
+												<Custom CreatedFrom="{71CA20BE-8C1D-4A0C-92AF-BFCE183D5651}">
+													<Effect Name="Three_Voices (Custom)" ID="{CB23F1C5-79AC-49A1-8C6A-D60A92E42952}" ShortID="175393484" PluginName="Wwise Harmonizer" CompanyID="0" PluginID="138" PluginType="3">
+														<PropertyList>
+															<Property Name="DryLevel" Type="Real32" Value="-3"/>
+															<Property Name="Voice1Pitch" Type="Real32" Value="-1400"/>
+															<Property Name="Voice2Enable" Type="bool" Value="True"/>
+															<Property Name="Voice2Pitch" Type="Real32" Value="1200"/>
+														</PropertyList>
+														<ObjectLists>
+															<ObjectList Name="RTPC">
+																<Reference>
+																	<Local>
+																		<RTPC Name="" ID="{52CFA984-ED99-4EDE-92F4-B510E15209BC}" ShortID="959172034">
+																			<PropertyList>
+																				<Property Name="PropertyName" Type="string" Value="WetLevel"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="ControlInput">
+																					<ObjectRef Name="activationStatus" ID="{8C7A1363-674B-41F9-B092-3E3C9F25B869}" WorkUnitID="{783EED98-38D9-4575-BE3B-51AB635CB706}"/>
+																				</Reference>
+																				<Reference Name="Curve">
+																					<Custom>
+																						<Curve Name="" ID="{2875BE2B-8BA6-46FD-9298-39806AA616AD}">
+																							<PropertyList>
+																								<Property Name="Flags" Type="int32" Value="3"/>
+																							</PropertyList>
+																							<PointList>
+																								<Point>
+																									<XPos>0</XPos>
+																									<YPos>-96</YPos>
+																									<Flags>5</Flags>
+																								</Point>
+																								<Point>
+																									<XPos>100</XPos>
+																									<YPos>0</YPos>
+																									<Flags>37</Flags>
+																								</Point>
+																							</PointList>
+																						</Curve>
+																					</Custom>
+																				</Reference>
+																			</ReferenceList>
+																		</RTPC>
+																	</Local>
+																</Reference>
+																<Reference>
+																	<Local>
+																		<RTPC Name="" ID="{0F69DA4C-7098-4C78-9448-A070CE3646C0}" ShortID="276392904">
+																			<PropertyList>
+																				<Property Name="PropertyName" Type="string" Value="WetLevel"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="ControlInput">
+																					<ObjectRef Name="activationStatus" ID="{8C7A1363-674B-41F9-B092-3E3C9F25B869}" WorkUnitID="{783EED98-38D9-4575-BE3B-51AB635CB706}"/>
+																				</Reference>
+																				<Reference Name="Curve">
+																					<Custom>
+																						<Curve Name="" ID="{D0A7E287-5319-4556-B6CD-3DD45CFFEEDE}">
+																							<PropertyList>
+																								<Property Name="Flags" Type="int32" Value="3"/>
+																							</PropertyList>
+																							<PointList>
+																								<Point>
+																									<XPos>0</XPos>
+																									<YPos>-96</YPos>
+																									<Flags>5</Flags>
+																								</Point>
+																								<Point>
+																									<XPos>49.7002</XPos>
+																									<YPos>-120</YPos>
+																									<Flags>0</Flags>
+																								</Point>
+																								<Point>
+																									<XPos>100</XPos>
+																									<YPos>0</YPos>
+																									<Flags>37</Flags>
+																								</Point>
+																							</PointList>
+																						</Curve>
+																					</Custom>
+																				</Reference>
+																			</ReferenceList>
+																		</RTPC>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</Effect>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</EffectSlot>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
 					<BlendTrackList>
 						<BlendTrack Name="birds" ID="{427810A6-E221-494C-A284-EB4841A740B8}" ShortID="339516555">
 							<PropertyList>
@@ -2239,6 +2332,40 @@
 						</BlendTrack>
 					</BlendTrackList>
 				</BlendContainer>
+				<Sound Name="PadsSensor2" ID="{DA48C7F3-C4EC-4CDA-8536-10E48CC6AAD6}" ShortID="976045426">
+					<PropertyList>
+						<Property Name="OutputBusVolume" Type="Real64">
+							<ValueList>
+								<Value>-5</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-4</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02AB0E9E-DC49-4D18-8206-2301BDC73EC0}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Ambiance Master" ID="{CCCF0DF9-24CC-4600-B821-E19884B16803}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="amb_pad_guitar" ID="{19848BF1-122C-4E40-A239-FB7622770E76}">
+							<Language>SFX</Language>
+							<AudioFile>amb_pad_guitar.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="1006396274"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="amb_pad_guitar" ID="{19848BF1-122C-4E40-A239-FB7622770E76}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

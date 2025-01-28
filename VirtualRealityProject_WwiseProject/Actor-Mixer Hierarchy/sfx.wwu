@@ -428,6 +428,549 @@
 						<ActiveSource Name="sfx_alarm" ID="{6BB39026-B38A-4916-AB39-AE288328B95C}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<RandomSequenceContainer Name="whispers" ID="{73B61880-4FCC-4E1C-B7DD-B9398DF6C638}" ShortID="1072049293">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02AB0E9E-DC49-4D18-8206-2301BDC73EC0}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="VRHeadset" ID="{39F54136-2FB9-4BEE-8868-4E6FDE31586A}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="sfx_whispers" ID="{B8CD4534-621A-4566-9042-D530C94C7F81}" ShortID="885534251">
+							<PropertyList>
+								<Property Name="3DPosition" Type="int16" Value="2"/>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="OutputBusVolume" Type="Real64">
+									<ValueList>
+										<Value>-24</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{8E8ABBF4-1938-4A88-8236-6D4DB6B19D62}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="525"/>
+													<Property Name="Min" Type="Real64" Value="-2025"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02AB0E9E-DC49-4D18-8206-2301BDC73EC0}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX Master" ID="{1D32FBBD-0AD3-47AA-BA1F-81C9A58A2B61}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_whispers" ID="{E0DE6E54-99D3-4B5C-83B4-E513DECFFEA6}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_whispers.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="56029158"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<PositioningInfo>
+								<Position Name="" ID="{32CC7CD1-A5B4-44BF-B1A6-171861AC3BA1}">
+									<PropertyList>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="PlayMechanismTransitionTime" Type="Real64" Value="3"/>
+									</PropertyList>
+									<ChildrenList>
+										<Path2D Name="sfx_whispers_Path" ID="{A271EE34-F466-4DA5-BD11-31509D2DC70F}">
+											<PropertyList>
+												<Property Name="Duration" Type="Uint32" Value="12000"/>
+												<Property Name="RandomX" Type="Real64" Value="54"/>
+												<Property Name="RandomY" Type="Real64" Value="41"/>
+												<Property Name="RandomZ" Type="Real64" Value="47"/>
+											</PropertyList>
+											<PointList>
+												<Point>
+													<XPos>-71.92982</XPos>
+													<YPos>-65.23643</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+												<Point>
+													<XPos>-79.2982456140351</XPos>
+													<YPos>65.6742556917688</YPos>
+													<Flags>0</Flags>
+													<Time>2400</Time>
+												</Point>
+												<Point>
+													<XPos>54.7368421052632</XPos>
+													<YPos>64.2732049036778</YPos>
+													<Flags>0</Flags>
+													<Time>4800</Time>
+												</Point>
+												<Point>
+													<XPos>71.9298245614035</XPos>
+													<YPos>-63.922942206655</YPos>
+													<Flags>0</Flags>
+													<Time>7200</Time>
+												</Point>
+												<Point>
+													<XPos>15.7894736842105</XPos>
+													<YPos>-76.5323992994746</YPos>
+													<Flags>0</Flags>
+													<Time>9600</Time>
+												</Point>
+												<Point>
+													<XPos>-71.2280701754386</XPos>
+													<YPos>-65.323992994746</YPos>
+													<Flags>0</Flags>
+													<Time>12000</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="sfx_whispers_Path_01" ID="{6F48366D-877B-4737-A352-DEA0CCD60574}">
+											<PropertyList>
+												<Property Name="Duration" Type="Uint32" Value="12000"/>
+												<Property Name="RandomX" Type="Real64" Value="79"/>
+												<Property Name="RandomY" Type="Real64" Value="65"/>
+												<Property Name="RandomZ" Type="Real64" Value="55"/>
+											</PropertyList>
+											<PointList>
+												<Point>
+													<XPos>0</XPos>
+													<YPos>50</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+												<Point>
+													<XPos>-71.5789473684211</XPos>
+													<YPos>-43.2574430823117</YPos>
+													<Flags>0</Flags>
+													<Time>2000</Time>
+												</Point>
+												<Point>
+													<XPos>45.6140350877193</XPos>
+													<YPos>-70.2276707530648</YPos>
+													<Flags>0</Flags>
+													<Time>4000</Time>
+												</Point>
+												<Point>
+													<XPos>65.2631578947368</XPos>
+													<YPos>-0.175131348511385</YPos>
+													<Flags>0</Flags>
+													<Time>6000</Time>
+												</Point>
+												<Point>
+													<XPos>35.0877192982456</XPos>
+													<YPos>75.4816112084063</YPos>
+													<Flags>0</Flags>
+													<Time>8000</Time>
+												</Point>
+												<Point>
+													<XPos>-75.4385964912281</XPos>
+													<YPos>73.7302977232925</YPos>
+													<Flags>0</Flags>
+													<Time>10000</Time>
+												</Point>
+												<Point>
+													<XPos>-60</XPos>
+													<YPos>36.6024518388792</YPos>
+													<Flags>0</Flags>
+													<Time>12000</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+									</ChildrenList>
+								</Position>
+							</PositioningInfo>
+							<ObjectLists>
+								<ObjectList Name="Effects">
+									<Reference>
+										<Local>
+											<EffectSlot Name="" ID="{71EDDAAB-78C0-4A18-9AB2-806AC8D7A2BD}" ShortID="447923409">
+												<ReferenceList>
+													<Reference Name="Effect">
+														<Custom CreatedFrom="{D20F3717-EBA2-4E3A-84F8-C8BD431563FB}">
+															<Effect Name="Echoes_Linear (Custom)" ID="{CBB90758-EE61-4B72-8255-A03527E2519B}" ShortID="168381429" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
+																<PropertyList>
+																	<Property Name="DelayTime" Type="Real32" Value="0.45"/>
+																	<Property Name="Feedback" Type="Real32" Value="41.5"/>
+																	<Property Name="ProcessLFE" Type="bool" Value="False"/>
+																	<Property Name="WetDryMix" Type="Real32" Value="23"/>
+																</PropertyList>
+															</Effect>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</EffectSlot>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_whispers" ID="{E0DE6E54-99D3-4B5C-83B4-E513DECFFEA6}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_whispers_01" ID="{92E510DD-1B16-44E4-B42C-5CC544DA70E2}" ShortID="209714279">
+							<PropertyList>
+								<Property Name="3DPosition" Type="int16" Value="2"/>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="OutputBusVolume" Type="Real64">
+									<ValueList>
+										<Value>-24</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{C097F3C9-F2A6-4AE6-8497-EB13FCA17BC0}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="525"/>
+													<Property Name="Min" Type="Real64" Value="-2025"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02AB0E9E-DC49-4D18-8206-2301BDC73EC0}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX Master" ID="{1D32FBBD-0AD3-47AA-BA1F-81C9A58A2B61}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_whispers" ID="{B628099C-FFFB-46FC-AB36-09B3A6B5DE73}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_whispers.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="56029158"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<PositioningInfo>
+								<Position Name="" ID="{4508E766-6649-42FC-B6BF-A382EB7CB6EF}">
+									<PropertyList>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="PlayMechanismTransitionTime" Type="Real64" Value="3"/>
+									</PropertyList>
+									<ChildrenList>
+										<Path2D Name="sfx_whispers_Path" ID="{736F3E4B-7A44-43CB-8FE9-71C3F3F69861}">
+											<PropertyList>
+												<Property Name="Duration" Type="Uint32" Value="12000"/>
+												<Property Name="RandomX" Type="Real64" Value="54"/>
+												<Property Name="RandomY" Type="Real64" Value="41"/>
+												<Property Name="RandomZ" Type="Real64" Value="47"/>
+											</PropertyList>
+											<PointList>
+												<Point>
+													<XPos>-71.92982</XPos>
+													<YPos>-65.23643</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+												<Point>
+													<XPos>-79.2982456140351</XPos>
+													<YPos>65.6742556917688</YPos>
+													<Flags>0</Flags>
+													<Time>2400</Time>
+												</Point>
+												<Point>
+													<XPos>54.7368421052632</XPos>
+													<YPos>64.2732049036778</YPos>
+													<Flags>0</Flags>
+													<Time>4800</Time>
+												</Point>
+												<Point>
+													<XPos>71.9298245614035</XPos>
+													<YPos>-63.922942206655</YPos>
+													<Flags>0</Flags>
+													<Time>7200</Time>
+												</Point>
+												<Point>
+													<XPos>15.7894736842105</XPos>
+													<YPos>-76.5323992994746</YPos>
+													<Flags>0</Flags>
+													<Time>9600</Time>
+												</Point>
+												<Point>
+													<XPos>-71.2280701754386</XPos>
+													<YPos>-65.323992994746</YPos>
+													<Flags>0</Flags>
+													<Time>12000</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="sfx_whispers_Path_01" ID="{61142212-6DEB-4693-BD18-625137E8CFD1}">
+											<PropertyList>
+												<Property Name="Duration" Type="Uint32" Value="12000"/>
+												<Property Name="RandomX" Type="Real64" Value="79"/>
+												<Property Name="RandomY" Type="Real64" Value="65"/>
+												<Property Name="RandomZ" Type="Real64" Value="55"/>
+											</PropertyList>
+											<PointList>
+												<Point>
+													<XPos>0</XPos>
+													<YPos>50</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+												<Point>
+													<XPos>-71.5789473684211</XPos>
+													<YPos>-43.2574430823117</YPos>
+													<Flags>0</Flags>
+													<Time>2000</Time>
+												</Point>
+												<Point>
+													<XPos>45.6140350877193</XPos>
+													<YPos>-70.2276707530648</YPos>
+													<Flags>0</Flags>
+													<Time>4000</Time>
+												</Point>
+												<Point>
+													<XPos>65.2631578947368</XPos>
+													<YPos>-0.175131348511385</YPos>
+													<Flags>0</Flags>
+													<Time>6000</Time>
+												</Point>
+												<Point>
+													<XPos>35.0877192982456</XPos>
+													<YPos>75.4816112084063</YPos>
+													<Flags>0</Flags>
+													<Time>8000</Time>
+												</Point>
+												<Point>
+													<XPos>-75.4385964912281</XPos>
+													<YPos>73.7302977232925</YPos>
+													<Flags>0</Flags>
+													<Time>10000</Time>
+												</Point>
+												<Point>
+													<XPos>-60</XPos>
+													<YPos>36.6024518388792</YPos>
+													<Flags>0</Flags>
+													<Time>12000</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+									</ChildrenList>
+								</Position>
+							</PositioningInfo>
+							<ObjectLists>
+								<ObjectList Name="Effects">
+									<Reference>
+										<Local>
+											<EffectSlot Name="" ID="{A40686A7-C998-4196-A164-E4D1E120A554}" ShortID="912400002">
+												<ReferenceList>
+													<Reference Name="Effect">
+														<Custom CreatedFrom="{D20F3717-EBA2-4E3A-84F8-C8BD431563FB}">
+															<Effect Name="Echoes_Linear (Custom)" ID="{64F433E4-D803-44D0-BF3A-298FF7A55A60}" ShortID="530581587" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
+																<PropertyList>
+																	<Property Name="DelayTime" Type="Real32" Value="0.45"/>
+																	<Property Name="Feedback" Type="Real32" Value="41.5"/>
+																	<Property Name="ProcessLFE" Type="bool" Value="False"/>
+																	<Property Name="WetDryMix" Type="Real32" Value="23"/>
+																</PropertyList>
+															</Effect>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</EffectSlot>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_whispers" ID="{B628099C-FFFB-46FC-AB36-09B3A6B5DE73}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_whispers_02" ID="{4325D69B-0887-4FD9-B446-5242A8A10952}" ShortID="980887868">
+							<PropertyList>
+								<Property Name="3DPosition" Type="int16" Value="2"/>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="OutputBusVolume" Type="Real64">
+									<ValueList>
+										<Value>-24</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{74938070-D4FF-47BF-832A-4F927264903F}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="525"/>
+													<Property Name="Min" Type="Real64" Value="-2025"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02AB0E9E-DC49-4D18-8206-2301BDC73EC0}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX Master" ID="{1D32FBBD-0AD3-47AA-BA1F-81C9A58A2B61}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_whispers" ID="{B404909B-E613-45A3-A7B6-4DE7A82FF7B8}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_whispers.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="56029158"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<PositioningInfo>
+								<Position Name="" ID="{4A1898C0-6E2E-49BD-9A30-651C118D4760}">
+									<PropertyList>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="PlayMechanismTransitionTime" Type="Real64" Value="3"/>
+									</PropertyList>
+									<ChildrenList>
+										<Path2D Name="sfx_whispers_Path" ID="{4891D46E-26D2-4BE5-BFBC-5343938447E8}">
+											<PropertyList>
+												<Property Name="Duration" Type="Uint32" Value="12000"/>
+												<Property Name="RandomX" Type="Real64" Value="54"/>
+												<Property Name="RandomY" Type="Real64" Value="41"/>
+												<Property Name="RandomZ" Type="Real64" Value="47"/>
+											</PropertyList>
+											<PointList>
+												<Point>
+													<XPos>-71.92982</XPos>
+													<YPos>-65.23643</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+												<Point>
+													<XPos>-79.2982456140351</XPos>
+													<YPos>65.6742556917688</YPos>
+													<Flags>0</Flags>
+													<Time>2400</Time>
+												</Point>
+												<Point>
+													<XPos>54.7368421052632</XPos>
+													<YPos>64.2732049036778</YPos>
+													<Flags>0</Flags>
+													<Time>4800</Time>
+												</Point>
+												<Point>
+													<XPos>71.9298245614035</XPos>
+													<YPos>-63.922942206655</YPos>
+													<Flags>0</Flags>
+													<Time>7200</Time>
+												</Point>
+												<Point>
+													<XPos>15.7894736842105</XPos>
+													<YPos>-76.5323992994746</YPos>
+													<Flags>0</Flags>
+													<Time>9600</Time>
+												</Point>
+												<Point>
+													<XPos>-71.2280701754386</XPos>
+													<YPos>-65.323992994746</YPos>
+													<Flags>0</Flags>
+													<Time>12000</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="sfx_whispers_Path_01" ID="{D2083C3A-BC5F-46FF-ABD1-D29F7BC28813}">
+											<PropertyList>
+												<Property Name="Duration" Type="Uint32" Value="12000"/>
+												<Property Name="RandomX" Type="Real64" Value="79"/>
+												<Property Name="RandomY" Type="Real64" Value="65"/>
+												<Property Name="RandomZ" Type="Real64" Value="55"/>
+											</PropertyList>
+											<PointList>
+												<Point>
+													<XPos>0</XPos>
+													<YPos>50</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+												<Point>
+													<XPos>-71.5789473684211</XPos>
+													<YPos>-43.2574430823117</YPos>
+													<Flags>0</Flags>
+													<Time>2000</Time>
+												</Point>
+												<Point>
+													<XPos>45.6140350877193</XPos>
+													<YPos>-70.2276707530648</YPos>
+													<Flags>0</Flags>
+													<Time>4000</Time>
+												</Point>
+												<Point>
+													<XPos>65.2631578947368</XPos>
+													<YPos>-0.175131348511385</YPos>
+													<Flags>0</Flags>
+													<Time>6000</Time>
+												</Point>
+												<Point>
+													<XPos>35.0877192982456</XPos>
+													<YPos>75.4816112084063</YPos>
+													<Flags>0</Flags>
+													<Time>8000</Time>
+												</Point>
+												<Point>
+													<XPos>-75.4385964912281</XPos>
+													<YPos>73.7302977232925</YPos>
+													<Flags>0</Flags>
+													<Time>10000</Time>
+												</Point>
+												<Point>
+													<XPos>-60</XPos>
+													<YPos>36.6024518388792</YPos>
+													<Flags>0</Flags>
+													<Time>12000</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+									</ChildrenList>
+								</Position>
+							</PositioningInfo>
+							<ObjectLists>
+								<ObjectList Name="Effects">
+									<Reference>
+										<Local>
+											<EffectSlot Name="" ID="{52FEBD7E-40D1-4A06-877C-199DCB443CD8}" ShortID="250759190">
+												<ReferenceList>
+													<Reference Name="Effect">
+														<Custom CreatedFrom="{D20F3717-EBA2-4E3A-84F8-C8BD431563FB}">
+															<Effect Name="Echoes_Linear (Custom)" ID="{032163D7-BCC1-40C3-AB46-BAC8DF879A8C}" ShortID="148487990" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
+																<PropertyList>
+																	<Property Name="DelayTime" Type="Real32" Value="0.45"/>
+																	<Property Name="Feedback" Type="Real32" Value="41.5"/>
+																	<Property Name="ProcessLFE" Type="bool" Value="False"/>
+																	<Property Name="WetDryMix" Type="Real32" Value="23"/>
+																</PropertyList>
+															</Effect>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</EffectSlot>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_whispers" ID="{B404909B-E613-45A3-A7B6-4DE7A82FF7B8}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
