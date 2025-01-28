@@ -209,7 +209,7 @@ Material:
     - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
     - _SubsurfaceColor: {r: 1, g: 1, b: 1, a: 1}
     - _TopColor: {r: 0.53871244, g: 0.5764706, b: 0, a: 0}
-    - _Top_Color: {r: 0.6886792, g: 0.14618193, b: 0.16245049, a: 0}
+    - _Top_Color: {r: 0.6509434, g: 0.10524489, b: 0.095185116, a: 0}
     - _WindDirection: {r: 1, g: 2, b: 0, a: 0}
     - _WindDirection_1: {r: 1, g: 2, b: 0, a: 0}
     - _Wind_Direction: {r: 0.1, g: 0.1, b: 0, a: 0}
