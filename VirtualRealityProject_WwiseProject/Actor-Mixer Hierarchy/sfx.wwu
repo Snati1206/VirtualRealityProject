@@ -14,6 +14,13 @@
 					</ReferenceList>
 					<ChildrenList>
 						<Sound Name="sfx_sensor_activated" ID="{F8D96FF3-C6C1-47AF-A215-ED5C2CE51670}" ShortID="927624626">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02AB0E9E-DC49-4D18-8206-2301BDC73EC0}"/>
@@ -87,6 +94,9 @@
 					</ReferenceList>
 					<ChildrenList>
 						<Sound Name="sfx_powerup" ID="{A97BE9E5-74DD-4DC2-9F2C-B739B2DD8100}" ShortID="735688203">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02AB0E9E-DC49-4D18-8206-2301BDC73EC0}"/>
@@ -100,21 +110,87 @@
 									<Language>SFX</Language>
 									<AudioFile>sfx_powerup.wav</AudioFile>
 									<MediaIDList>
-										<MediaID ID="188145887"/>
+										<MediaID ID="623889076"/>
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{38D4A66E-0145-4FF4-AF55-38B7F7BC5929}" ShortID="848152332">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Volume"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="sensor1" ID="{8A0125EA-B17C-4A07-A2AA-F4E92A932029}" WorkUnitID="{783EED98-38D9-4575-BE3B-51AB635CB706}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{B130E13D-5EB9-45AF-90B2-91BD11D72339}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>9.24092</XPos>
+																		<YPos>-0.25802</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>19.3069306930693</XPos>
+																		<YPos>-0.229022403678057</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>42.24422</XPos>
+																		<YPos>-24.23614</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
 							<ActiveSourceList>
 								<ActiveSource Name="sfx_powerup" ID="{2D5CB568-22E7-4D31-A806-55F8B45E6913}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="sfx_powerup_perc" ID="{D2112B65-DE92-4A54-9D48-0545F5CC0AA7}" ShortID="105716617">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+								<Property Name="UserAuxSendVolume0" Type="Real64">
+									<ValueList>
+										<Value>-16</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02AB0E9E-DC49-4D18-8206-2301BDC73EC0}"/>
 								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="SFX Master" ID="{1D32FBBD-0AD3-47AA-BA1F-81C9A58A2B61}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="Reverb" ID="{568A8176-882E-40FC-A572-D3004C78AC10}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -122,15 +198,93 @@
 									<Language>SFX</Language>
 									<AudioFile>sfx_powerup_perc.wav</AudioFile>
 									<MediaIDList>
-										<MediaID ID="937797086"/>
+										<MediaID ID="652838272"/>
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{642C2CFB-E449-4B41-8333-3AC2FB59BD4A}" ShortID="57504337">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Volume"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="sensor1" ID="{8A0125EA-B17C-4A07-A2AA-F4E92A932029}" WorkUnitID="{783EED98-38D9-4575-BE3B-51AB635CB706}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{DBB559D2-DCB7-49BC-AFAC-6C4212E1A881}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>8.41584</XPos>
+																		<YPos>-14.28965</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>11.71617</XPos>
+																		<YPos>-0.07653</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>17.32673</XPos>
+																		<YPos>-0.00692</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>41.08911</XPos>
+																		<YPos>-15.45805</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>59.07591</XPos>
+																		<YPos>-18.36007</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
 							<ActiveSourceList>
 								<ActiveSource Name="sfx_powerup_perc" ID="{1D29BDAE-6F85-4917-9489-B16457AE0713}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="sfx_powerup_rumble" ID="{8016157E-BE5C-4402-B227-C0BA66CCD137}" ShortID="733323926">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+								<Property Name="UserAuxSendLPF0" Type="int16">
+									<ValueList>
+										<Value>94</Value>
+									</ValueList>
+								</Property>
+								<Property Name="UserAuxSendVolume0" Type="Real64">
+									<ValueList>
+										<Value>-1</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02AB0E9E-DC49-4D18-8206-2301BDC73EC0}"/>
@@ -138,16 +292,81 @@
 								<Reference Name="OutputBus">
 									<ObjectRef Name="SFX Master" ID="{1D32FBBD-0AD3-47AA-BA1F-81C9A58A2B61}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
 								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="LFE" ID="{7A99EF7A-6B7D-43B7-B065-79464E51DCAB}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+								</Reference>
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="sfx_powerup_rumble" ID="{BB0C5F14-7BB7-4A92-9759-3CB9A1053020}">
+									<PropertyList>
+										<Property Name="ChannelConfigOverride" Type="int64" Value="1"/>
+									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>sfx_powerup_rumble.wav</AudioFile>
 									<MediaIDList>
-										<MediaID ID="335637789"/>
+										<MediaID ID="516061011"/>
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{4DB8EF21-AB23-4A5C-80F3-00F913BCB297}" ShortID="357375793">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Volume"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="sensor1" ID="{8A0125EA-B17C-4A07-A2AA-F4E92A932029}" WorkUnitID="{783EED98-38D9-4575-BE3B-51AB635CB706}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{DB629A62-88DD-45F3-B890-097CD29A733F}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>6.43564</XPos>
+																		<YPos>-17.61627</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>10.23103</XPos>
+																		<YPos>2.96839</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>18.31683</XPos>
+																		<YPos>3.07629</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>30.73497</XPos>
+																		<YPos>-1.95727</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
 							<ActiveSourceList>
 								<ActiveSource Name="sfx_powerup_rumble" ID="{BB0C5F14-7BB7-4A92-9759-3CB9A1053020}" Platform="Linked"/>
 							</ActiveSourceList>
@@ -178,241 +397,155 @@
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{48672221-8C9C-4787-A1AE-8E9851CD5110}" ShortID="687475738">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Volume"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="sensor1" ID="{8A0125EA-B17C-4A07-A2AA-F4E92A932029}" WorkUnitID="{783EED98-38D9-4575-BE3B-51AB635CB706}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{BDC41EF0-B355-4E12-B28B-42F1F5AB13CD}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>5.94059</XPos>
+																		<YPos>-7.33419</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>13.20132</XPos>
+																		<YPos>-6.9867</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>25.41254</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
 							<ActiveSourceList>
 								<ActiveSource Name="sfx_powerup_voices" ID="{20CD7101-2C04-4CF7-8749-FC80296838FB}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
-				</BlendContainer>
-				<BlendContainer Name="powerUp2" ID="{886E4950-FE7F-4931-898F-70670340DFF7}" ShortID="391669767">
-					<PropertyList>
-						<Property Name="BlendBehavior" Type="int16" Value="1"/>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02AB0E9E-DC49-4D18-8206-2301BDC73EC0}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="SFX Master" ID="{1D32FBBD-0AD3-47AA-BA1F-81C9A58A2B61}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<Sound Name="sfx_powerup" ID="{CCD6A086-986A-45EB-9DC4-71F25F2142AB}" ShortID="737034574">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02AB0E9E-DC49-4D18-8206-2301BDC73EC0}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="SFX Master" ID="{1D32FBBD-0AD3-47AA-BA1F-81C9A58A2B61}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="sfx_powerup" ID="{CD07439A-4D9F-4338-B7D7-79D1786053A5}">
-									<Language>SFX</Language>
-									<AudioFile>sfx_powerup.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="188145887"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="sfx_powerup" ID="{CD07439A-4D9F-4338-B7D7-79D1786053A5}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="sfx_powerup_perc" ID="{01F8A3B1-E302-42CE-8168-1D92E65BAC0F}" ShortID="199524715">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02AB0E9E-DC49-4D18-8206-2301BDC73EC0}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="SFX Master" ID="{1D32FBBD-0AD3-47AA-BA1F-81C9A58A2B61}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="sfx_powerup_perc" ID="{2BE14E0D-DF71-4665-BB9F-ADC6337B35FC}">
-									<Language>SFX</Language>
-									<AudioFile>sfx_powerup_perc.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="937797086"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="sfx_powerup_perc" ID="{2BE14E0D-DF71-4665-BB9F-ADC6337B35FC}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="sfx_powerup_rumble" ID="{E9C65F33-C885-4364-86E3-67831367003F}" ShortID="560803397">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02AB0E9E-DC49-4D18-8206-2301BDC73EC0}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="SFX Master" ID="{1D32FBBD-0AD3-47AA-BA1F-81C9A58A2B61}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="sfx_powerup_rumble" ID="{1BB0E593-24A8-4543-A95E-BEDB24B6528E}">
-									<Language>SFX</Language>
-									<AudioFile>sfx_powerup_rumble.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="335637789"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="sfx_powerup_rumble" ID="{1BB0E593-24A8-4543-A95E-BEDB24B6528E}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="sfx_powerup_voices" ID="{4619F2E3-D596-498E-8C50-9539FD155136}" ShortID="57873615">
-							<PropertyList>
-								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02AB0E9E-DC49-4D18-8206-2301BDC73EC0}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="SFX Master" ID="{1D32FBBD-0AD3-47AA-BA1F-81C9A58A2B61}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="sfx_powerup_voices" ID="{1045851F-0638-41A2-BABE-46251C0FF583}">
-									<PropertyList>
-										<Property Name="FadeInDuration" Type="Real64" Value="0.171385538509653"/>
-										<Property Name="FadeOutDuration" Type="Real64" Value="0.0734509450755656"/>
-										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-									</PropertyList>
-									<Language>SFX</Language>
-									<AudioFile>sfx_powerup_voices.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="137294667"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="sfx_powerup_voices" ID="{1045851F-0638-41A2-BABE-46251C0FF583}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-					</ChildrenList>
-				</BlendContainer>
-				<BlendContainer Name="powerUp3" ID="{D19A70D6-AA96-4200-8720-398D871AEA44}" ShortID="982868481">
-					<PropertyList>
-						<Property Name="BlendBehavior" Type="int16" Value="1"/>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02AB0E9E-DC49-4D18-8206-2301BDC73EC0}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="SFX Master" ID="{1D32FBBD-0AD3-47AA-BA1F-81C9A58A2B61}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<Sound Name="sfx_powerup" ID="{AD692D80-82D8-4D1F-A342-1EA10D81CAC6}" ShortID="403149293">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02AB0E9E-DC49-4D18-8206-2301BDC73EC0}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="SFX Master" ID="{1D32FBBD-0AD3-47AA-BA1F-81C9A58A2B61}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="sfx_powerup" ID="{4D0FC851-C4BA-481F-B201-E14A77D202FC}">
-									<Language>SFX</Language>
-									<AudioFile>sfx_powerup.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="188145887"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="sfx_powerup" ID="{4D0FC851-C4BA-481F-B201-E14A77D202FC}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="sfx_powerup_perc" ID="{EAD67715-8EB6-40C1-8F1F-42CE7DDC234E}" ShortID="457177957">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02AB0E9E-DC49-4D18-8206-2301BDC73EC0}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="SFX Master" ID="{1D32FBBD-0AD3-47AA-BA1F-81C9A58A2B61}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="sfx_powerup_perc" ID="{9F96EDB1-5285-4647-BD33-594C40A3029F}">
-									<Language>SFX</Language>
-									<AudioFile>sfx_powerup_perc.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="937797086"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="sfx_powerup_perc" ID="{9F96EDB1-5285-4647-BD33-594C40A3029F}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="sfx_powerup_rumble" ID="{F577B38B-AD69-4CD0-8885-9893C3F44CA1}" ShortID="180822656">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02AB0E9E-DC49-4D18-8206-2301BDC73EC0}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="SFX Master" ID="{1D32FBBD-0AD3-47AA-BA1F-81C9A58A2B61}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="sfx_powerup_rumble" ID="{4C9E7E15-037C-4A84-B539-097D285787E3}">
-									<Language>SFX</Language>
-									<AudioFile>sfx_powerup_rumble.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="335637789"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="sfx_powerup_rumble" ID="{4C9E7E15-037C-4A84-B539-097D285787E3}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="sfx_powerup_voices" ID="{B909C323-558B-4AAB-B6DC-82DB3588BC4C}" ShortID="677406256">
-							<PropertyList>
-								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02AB0E9E-DC49-4D18-8206-2301BDC73EC0}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="SFX Master" ID="{1D32FBBD-0AD3-47AA-BA1F-81C9A58A2B61}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="sfx_powerup_voices" ID="{88659F37-F35F-46D2-B9C3-565247A8EB08}">
-									<PropertyList>
-										<Property Name="FadeInDuration" Type="Real64" Value="0.171385538509653"/>
-										<Property Name="FadeOutDuration" Type="Real64" Value="0.0734509450755656"/>
-										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-									</PropertyList>
-									<Language>SFX</Language>
-									<AudioFile>sfx_powerup_voices.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="137294667"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="sfx_powerup_voices" ID="{88659F37-F35F-46D2-B9C3-565247A8EB08}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-					</ChildrenList>
+					<ObjectLists>
+						<ObjectList Name="RTPC">
+							<Reference>
+								<Local>
+									<RTPC Name="" ID="{16860886-4A76-408E-A124-8F0247A6182F}" ShortID="989045151">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="Pitch"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="sensor1" ID="{8A0125EA-B17C-4A07-A2AA-F4E92A932029}" WorkUnitID="{783EED98-38D9-4575-BE3B-51AB635CB706}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{3A5BE362-51EB-46B3-A523-80BC8E8282AD}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="65537"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-43</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>7.75578</XPos>
+																<YPos>336</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>16.17162</XPos>
+																<YPos>378</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>-42</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
+					<BlendTrackList>
+						<BlendTrack Name="powerup" ID="{DC6D4771-A34F-40CB-8E88-43EFB6E4E4E6}" ShortID="700238582">
+							<BlendTrackAssocList>
+								<BlendTrackAssoc>
+									<ItemRef Name="sfx_powerup" ID="{A97BE9E5-74DD-4DC2-9F2C-B739B2DD8100}"/>
+								</BlendTrackAssoc>
+								<BlendTrackAssoc>
+									<ItemRef Name="sfx_powerup_perc" ID="{D2112B65-DE92-4A54-9D48-0545F5CC0AA7}"/>
+								</BlendTrackAssoc>
+								<BlendTrackAssoc>
+									<ItemRef Name="sfx_powerup_rumble" ID="{8016157E-BE5C-4402-B227-C0BA66CCD137}"/>
+								</BlendTrackAssoc>
+								<BlendTrackAssoc>
+									<ItemRef Name="sfx_powerup_voices" ID="{C3EDC1F2-E6C4-4F1C-95C4-7065DC563F62}"/>
+								</BlendTrackAssoc>
+							</BlendTrackAssocList>
+						</BlendTrack>
+					</BlendTrackList>
 				</BlendContainer>
 				<Sound Name="sfx_alarm" ID="{F51106EF-625F-4146-8C0A-33CD0C106D0C}" ShortID="1018370121">
+					<PropertyList>
+						<Property Name="UserAuxSendLPF0" Type="int16">
+							<ValueList>
+								<Value>59</Value>
+							</ValueList>
+						</Property>
+						<Property Name="UserAuxSendVolume0" Type="Real64">
+							<ValueList>
+								<Value>-7</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02AB0E9E-DC49-4D18-8206-2301BDC73EC0}"/>
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="VRHeadset" ID="{39F54136-2FB9-4BEE-8868-4E6FDE31586A}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+						</Reference>
+						<Reference Name="UserAuxSend0">
+							<ObjectRef Name="Reverb" ID="{568A8176-882E-40FC-A572-D3004C78AC10}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -429,6 +562,13 @@
 					</ActiveSourceList>
 				</Sound>
 				<RandomSequenceContainer Name="whispers" ID="{73B61880-4FCC-4E1C-B7DD-B9398DF6C638}" ShortID="1072049293">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-7</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02AB0E9E-DC49-4D18-8206-2301BDC73EC0}"/>
@@ -971,6 +1111,894 @@
 						</Sound>
 					</ChildrenList>
 				</RandomSequenceContainer>
+				<BlendContainer Name="powerUp2" ID="{3F83824E-29BE-4ED1-AD11-43DD08F7D49A}" ShortID="501565415">
+					<PropertyList>
+						<Property Name="BlendBehavior" Type="int16" Value="1"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02AB0E9E-DC49-4D18-8206-2301BDC73EC0}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="SFX Master" ID="{1D32FBBD-0AD3-47AA-BA1F-81C9A58A2B61}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="sfx_powerup" ID="{38D9B10B-B58B-4245-8E67-8F754C100DD7}" ShortID="635097836">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02AB0E9E-DC49-4D18-8206-2301BDC73EC0}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX Master" ID="{1D32FBBD-0AD3-47AA-BA1F-81C9A58A2B61}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_powerup" ID="{2624BB91-EB29-40F5-A7A1-B75DA67CB751}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_powerup.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="623889076"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{AEBBF843-F84C-496B-9E38-1B6173BEF1D2}" ShortID="828066205">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Volume"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="sensor1" ID="{8A0125EA-B17C-4A07-A2AA-F4E92A932029}" WorkUnitID="{783EED98-38D9-4575-BE3B-51AB635CB706}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{147E5008-3E72-4140-8B40-1A820B705B96}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>9.24092</XPos>
+																		<YPos>-0.25802</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>19.3069306930693</XPos>
+																		<YPos>-0.229022403678057</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>42.24422</XPos>
+																		<YPos>-24.23614</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_powerup" ID="{2624BB91-EB29-40F5-A7A1-B75DA67CB751}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_powerup_perc" ID="{8DB83BE4-FC0D-470D-B2BA-AAE5472900AC}" ShortID="784268230">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+								<Property Name="UserAuxSendVolume0" Type="Real64">
+									<ValueList>
+										<Value>-16</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02AB0E9E-DC49-4D18-8206-2301BDC73EC0}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX Master" ID="{1D32FBBD-0AD3-47AA-BA1F-81C9A58A2B61}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="Reverb" ID="{568A8176-882E-40FC-A572-D3004C78AC10}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_powerup_perc" ID="{30D16FD8-5EF6-4D11-879C-501E5A0806AB}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_powerup_perc.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="652838272"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{BAF6193B-FC78-4218-8957-6EF5EFEA98E3}" ShortID="27679052">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Volume"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="sensor1" ID="{8A0125EA-B17C-4A07-A2AA-F4E92A932029}" WorkUnitID="{783EED98-38D9-4575-BE3B-51AB635CB706}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{0CBFA298-AE21-40E6-AC16-06FFD8A22E7A}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>8.41584</XPos>
+																		<YPos>-14.28965</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>11.71617</XPos>
+																		<YPos>-0.07653</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>17.32673</XPos>
+																		<YPos>-0.00692</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>41.08911</XPos>
+																		<YPos>-15.45805</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>59.07591</XPos>
+																		<YPos>-18.36007</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_powerup_perc" ID="{30D16FD8-5EF6-4D11-879C-501E5A0806AB}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_powerup_rumble" ID="{64BF8747-EE8E-4EBC-8E51-9DE7C632C567}" ShortID="229047427">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+								<Property Name="UserAuxSendLPF0" Type="int16">
+									<ValueList>
+										<Value>94</Value>
+									</ValueList>
+								</Property>
+								<Property Name="UserAuxSendVolume0" Type="Real64">
+									<ValueList>
+										<Value>-1</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02AB0E9E-DC49-4D18-8206-2301BDC73EC0}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX Master" ID="{1D32FBBD-0AD3-47AA-BA1F-81C9A58A2B61}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="LFE" ID="{7A99EF7A-6B7D-43B7-B065-79464E51DCAB}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_powerup_rumble" ID="{982C51E6-5C25-4806-A64A-79CD9E6338E3}">
+									<PropertyList>
+										<Property Name="ChannelConfigOverride" Type="int64" Value="1"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>sfx_powerup_rumble.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="516061011"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{7AFE8E64-2D74-453D-A53E-27CBB57078B9}" ShortID="611638892">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Volume"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="sensor1" ID="{8A0125EA-B17C-4A07-A2AA-F4E92A932029}" WorkUnitID="{783EED98-38D9-4575-BE3B-51AB635CB706}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{43EC0B64-28C8-4B01-9F0B-FDB05FC1437A}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>6.43564</XPos>
+																		<YPos>-17.61627</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>10.23103</XPos>
+																		<YPos>2.96839</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>18.31683</XPos>
+																		<YPos>3.07629</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>30.73497</XPos>
+																		<YPos>-1.95727</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_powerup_rumble" ID="{982C51E6-5C25-4806-A64A-79CD9E6338E3}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_powerup_voices" ID="{4B37D2C7-643D-4347-B072-BAA8A3ABF6E5}" ShortID="695484881">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02AB0E9E-DC49-4D18-8206-2301BDC73EC0}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX Master" ID="{1D32FBBD-0AD3-47AA-BA1F-81C9A58A2B61}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_powerup_voices" ID="{2282F6C2-77F9-4835-9635-E604DE5EC972}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.171385538509653"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.0734509450755656"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>sfx_powerup_voices.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="137294667"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{DCC1A4A1-765D-4576-9595-8C640887EFB5}" ShortID="261406014">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Volume"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="sensor1" ID="{8A0125EA-B17C-4A07-A2AA-F4E92A932029}" WorkUnitID="{783EED98-38D9-4575-BE3B-51AB635CB706}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{E249F1B1-30C4-4AE9-A8A1-B681C5930ECC}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>5.94059</XPos>
+																		<YPos>-7.33419</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>13.20132</XPos>
+																		<YPos>-6.9867</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>25.41254</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_powerup_voices" ID="{2282F6C2-77F9-4835-9635-E604DE5EC972}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<ObjectLists>
+						<ObjectList Name="RTPC">
+							<Reference>
+								<Local>
+									<RTPC Name="" ID="{5E42577B-06A7-40C4-86BB-AA4F2E231326}" ShortID="1048585588">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="Pitch"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="sensor2" ID="{64F8FD5A-7F09-4772-A48A-3629D18ECA60}" WorkUnitID="{783EED98-38D9-4575-BE3B-51AB635CB706}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{A8E39D17-3ED6-4B91-BA1E-439B12D73889}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="65537"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-43</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>7.75578</XPos>
+																<YPos>336</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>16.17162</XPos>
+																<YPos>378</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>-42</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
+					<BlendTrackList>
+						<BlendTrack Name="powerup" ID="{EB21563D-CEC6-4949-844C-6320200A8AAA}" ShortID="411900795">
+							<BlendTrackAssocList>
+								<BlendTrackAssoc>
+									<ItemRef Name="sfx_powerup" ID="{38D9B10B-B58B-4245-8E67-8F754C100DD7}"/>
+								</BlendTrackAssoc>
+								<BlendTrackAssoc>
+									<ItemRef Name="sfx_powerup_perc" ID="{8DB83BE4-FC0D-470D-B2BA-AAE5472900AC}"/>
+								</BlendTrackAssoc>
+								<BlendTrackAssoc>
+									<ItemRef Name="sfx_powerup_rumble" ID="{64BF8747-EE8E-4EBC-8E51-9DE7C632C567}"/>
+								</BlendTrackAssoc>
+								<BlendTrackAssoc>
+									<ItemRef Name="sfx_powerup_voices" ID="{4B37D2C7-643D-4347-B072-BAA8A3ABF6E5}"/>
+								</BlendTrackAssoc>
+							</BlendTrackAssocList>
+						</BlendTrack>
+					</BlendTrackList>
+				</BlendContainer>
+				<BlendContainer Name="powerUp3" ID="{96FB7318-6C07-4CB4-9625-8D542D056564}" ShortID="715053013">
+					<PropertyList>
+						<Property Name="BlendBehavior" Type="int16" Value="1"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02AB0E9E-DC49-4D18-8206-2301BDC73EC0}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="SFX Master" ID="{1D32FBBD-0AD3-47AA-BA1F-81C9A58A2B61}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="sfx_powerup" ID="{50A92C47-9C29-44F6-B3A9-BFBEEE345CC4}" ShortID="371221895">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02AB0E9E-DC49-4D18-8206-2301BDC73EC0}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX Master" ID="{1D32FBBD-0AD3-47AA-BA1F-81C9A58A2B61}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_powerup" ID="{1782AE0D-982E-4393-BE29-9339C4002EBF}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_powerup.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="623889076"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{70037B21-2C02-4FCF-BFAE-5CB2EB53E787}" ShortID="578026677">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Volume"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="sensor1" ID="{8A0125EA-B17C-4A07-A2AA-F4E92A932029}" WorkUnitID="{783EED98-38D9-4575-BE3B-51AB635CB706}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{7EBF8C99-BD2B-418F-B8BC-0F5277F3DF17}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>9.24092</XPos>
+																		<YPos>-0.25802</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>19.3069306930693</XPos>
+																		<YPos>-0.229022403678057</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>42.24422</XPos>
+																		<YPos>-24.23614</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_powerup" ID="{1782AE0D-982E-4393-BE29-9339C4002EBF}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_powerup_perc" ID="{33F83E7E-62D7-49ED-95CD-987D1DE4CE8E}" ShortID="1010449793">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+								<Property Name="UserAuxSendVolume0" Type="Real64">
+									<ValueList>
+										<Value>-16</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02AB0E9E-DC49-4D18-8206-2301BDC73EC0}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX Master" ID="{1D32FBBD-0AD3-47AA-BA1F-81C9A58A2B61}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="Reverb" ID="{568A8176-882E-40FC-A572-D3004C78AC10}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_powerup_perc" ID="{5F602265-61AA-4C9B-B6E4-8B8775192B50}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_powerup_perc.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="652838272"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{E2350CE2-72A9-4790-B6E4-A2781E01E4F0}" ShortID="866001146">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Volume"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="sensor1" ID="{8A0125EA-B17C-4A07-A2AA-F4E92A932029}" WorkUnitID="{783EED98-38D9-4575-BE3B-51AB635CB706}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{9A1640EE-EE66-4CA7-8BBB-E8CEECCF85F7}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>8.41584</XPos>
+																		<YPos>-14.28965</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>11.71617</XPos>
+																		<YPos>-0.07653</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>17.32673</XPos>
+																		<YPos>-0.00692</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>41.08911</XPos>
+																		<YPos>-15.45805</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>59.07591</XPos>
+																		<YPos>-18.36007</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_powerup_perc" ID="{5F602265-61AA-4C9B-B6E4-8B8775192B50}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_powerup_rumble" ID="{91695806-FD22-4C87-97E6-232CB98BA996}" ShortID="936586949">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+								<Property Name="UserAuxSendLPF0" Type="int16">
+									<ValueList>
+										<Value>94</Value>
+									</ValueList>
+								</Property>
+								<Property Name="UserAuxSendVolume0" Type="Real64">
+									<ValueList>
+										<Value>-1</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02AB0E9E-DC49-4D18-8206-2301BDC73EC0}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX Master" ID="{1D32FBBD-0AD3-47AA-BA1F-81C9A58A2B61}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="LFE" ID="{7A99EF7A-6B7D-43B7-B065-79464E51DCAB}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_powerup_rumble" ID="{38AD911F-7400-46A0-98A9-28CA43AE5A91}">
+									<PropertyList>
+										<Property Name="ChannelConfigOverride" Type="int64" Value="1"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>sfx_powerup_rumble.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="516061011"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{75AC4A79-4660-4C00-920D-2AF40398464C}" ShortID="874113378">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Volume"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="sensor1" ID="{8A0125EA-B17C-4A07-A2AA-F4E92A932029}" WorkUnitID="{783EED98-38D9-4575-BE3B-51AB635CB706}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{6F1A1A78-A274-440B-8E29-46967F90806E}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>6.43564</XPos>
+																		<YPos>-17.61627</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>10.23103</XPos>
+																		<YPos>2.96839</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>18.31683</XPos>
+																		<YPos>3.07629</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>30.73497</XPos>
+																		<YPos>-1.95727</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_powerup_rumble" ID="{38AD911F-7400-46A0-98A9-28CA43AE5A91}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_powerup_voices" ID="{5816B928-CA54-44F5-8DF7-33B22C2FC347}" ShortID="953205269">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02AB0E9E-DC49-4D18-8206-2301BDC73EC0}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX Master" ID="{1D32FBBD-0AD3-47AA-BA1F-81C9A58A2B61}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_powerup_voices" ID="{998EF856-DB6B-4ECD-B81F-F9887FA88635}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.171385538509653"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.0734509450755656"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>sfx_powerup_voices.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="137294667"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{A42713E1-3914-4E7A-9A27-23B203F2E4E7}" ShortID="971944043">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Volume"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="sensor1" ID="{8A0125EA-B17C-4A07-A2AA-F4E92A932029}" WorkUnitID="{783EED98-38D9-4575-BE3B-51AB635CB706}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{AB12D0F2-C1C4-4965-B71E-03016841F138}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>5.94059</XPos>
+																		<YPos>-7.33419</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>13.20132</XPos>
+																		<YPos>-6.9867</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>25.41254</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_powerup_voices" ID="{998EF856-DB6B-4ECD-B81F-F9887FA88635}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<ObjectLists>
+						<ObjectList Name="RTPC">
+							<Reference>
+								<Local>
+									<RTPC Name="" ID="{2DFEE8A9-2D6D-414A-822C-3D31C3719D5B}" ShortID="638883670">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="Pitch"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="sensor1" ID="{8A0125EA-B17C-4A07-A2AA-F4E92A932029}" WorkUnitID="{783EED98-38D9-4575-BE3B-51AB635CB706}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{022BD286-3302-4938-A4EF-56E153403592}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="65537"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-43</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>7.75578</XPos>
+																<YPos>336</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>16.17162</XPos>
+																<YPos>378</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>-42</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
+					<BlendTrackList>
+						<BlendTrack Name="powerup" ID="{FABB3901-A6BB-4CDE-8644-4293801E95DA}" ShortID="624509841">
+							<BlendTrackAssocList>
+								<BlendTrackAssoc>
+									<ItemRef Name="sfx_powerup" ID="{50A92C47-9C29-44F6-B3A9-BFBEEE345CC4}"/>
+								</BlendTrackAssoc>
+								<BlendTrackAssoc>
+									<ItemRef Name="sfx_powerup_perc" ID="{33F83E7E-62D7-49ED-95CD-987D1DE4CE8E}"/>
+								</BlendTrackAssoc>
+								<BlendTrackAssoc>
+									<ItemRef Name="sfx_powerup_rumble" ID="{91695806-FD22-4C87-97E6-232CB98BA996}"/>
+								</BlendTrackAssoc>
+								<BlendTrackAssoc>
+									<ItemRef Name="sfx_powerup_voices" ID="{5816B928-CA54-44F5-8DF7-33B22C2FC347}"/>
+								</BlendTrackAssoc>
+							</BlendTrackAssocList>
+						</BlendTrack>
+					</BlendTrackList>
+				</BlendContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

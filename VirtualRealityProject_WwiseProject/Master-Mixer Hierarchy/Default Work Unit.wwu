@@ -92,6 +92,18 @@
 									<ObjectRef Name="AuxBinaural" ID="{6D3B1C80-6322-4462-A58A-C15AB4962048}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
 								</Reference>
 							</ReferenceList>
+							<DuckingList>
+								<DuckItem>
+									<BusRef Name="Ambiance Master" ID="{CCCF0DF9-24CC-4600-B821-E19884B16803}"/>
+									<DuckingParam>
+										<Volume>-4</Volume>
+										<FadeInTime>1.5</FadeInTime>
+										<FadeOutTime>1.5</FadeOutTime>
+										<FadeCurve>FadeLinear</FadeCurve>
+										<TargetProp>BusVolume</TargetProp>
+									</DuckingParam>
+								</DuckItem>
+							</DuckingList>
 						</Bus>
 					</ChildrenList>
 				</Bus>

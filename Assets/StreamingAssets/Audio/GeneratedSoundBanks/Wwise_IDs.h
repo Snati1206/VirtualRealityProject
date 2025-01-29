@@ -20,7 +20,9 @@ namespace AK
         static const AkUniqueID SENSOR1ACTIVATED = 2160358933U;
         static const AkUniqueID SENSOR2ACTIVATED = 996378512U;
         static const AkUniqueID SENSOR3ACTIVATED = 3742079315U;
-        static const AkUniqueID SENSORPOWERUP = 2441367941U;
+        static const AkUniqueID SENSORPOWERUP1 = 2555139182U;
+        static const AkUniqueID SENSORPOWERUP2 = 2555139181U;
+        static const AkUniqueID SENSORPOWERUP3 = 2555139180U;
         static const AkUniqueID TRANSITION = 1865857008U;
         static const AkUniqueID VOICESHEADSET = 3107780790U;
     } // namespace EVENTS

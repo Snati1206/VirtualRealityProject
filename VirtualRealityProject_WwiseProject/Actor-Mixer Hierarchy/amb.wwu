@@ -6,6 +6,11 @@
 				<BlendContainer Name="Ambiance" ID="{A143B276-DF92-4BBA-8949-54BED2AB4075}" ShortID="621356792">
 					<PropertyList>
 						<Property Name="BlendBehavior" Type="int16" Value="1"/>
+						<Property Name="UserAuxSendVolume0" Type="Real64">
+							<ValueList>
+								<Value>-34</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -13,6 +18,9 @@
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Ambiance Master" ID="{CCCF0DF9-24CC-4600-B821-E19884B16803}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+						</Reference>
+						<Reference Name="UserAuxSend0">
+							<ObjectRef Name="Reverb" ID="{568A8176-882E-40FC-A572-D3004C78AC10}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -1207,12 +1215,28 @@
 					</BlendTrackList>
 				</BlendContainer>
 				<BlendContainer Name="PadsSensor3" ID="{936DA61C-AB9B-4169-A1AF-4085A09458CE}" ShortID="1065024419">
+					<PropertyList>
+						<Property Name="BlendBehavior" Type="int16" Value="1"/>
+						<Property Name="UserAuxSendVolume0" Type="Real64">
+							<ValueList>
+								<Value>-14</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-5</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02AB0E9E-DC49-4D18-8206-2301BDC73EC0}"/>
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Ambiance Master" ID="{CCCF0DF9-24CC-4600-B821-E19884B16803}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+						</Reference>
+						<Reference Name="UserAuxSend0">
+							<ObjectRef Name="Reverb" ID="{568A8176-882E-40FC-A572-D3004C78AC10}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -1236,498 +1260,608 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="amb_bird_6" ID="{B238969D-5AE7-4599-837C-53C6D7A1099B}" ShortID="702803267">
+								<RandomSequenceContainer Name="New Random Container" ID="{CA395F29-7282-4A45-8C62-1D6083413FBE}" ShortID="707979786">
 									<PropertyList>
-										<Property Name="3DPosition" Type="int16" Value="2"/>
-										<Property Name="3DSpatialization" Type="int16" Value="2"/>
-										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02AB0E9E-DC49-4D18-8206-2301BDC73EC0}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Ambiance Master" ID="{CCCF0DF9-24CC-4600-B821-E19884B16803}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="amb_bird_6" ID="{051DBDEA-9676-4135-AD9D-0622939324CD}">
-											<Language>SFX</Language>
-											<AudioFile>amb_bird_6.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="868510851"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<PositioningInfo>
-										<Position Name="" ID="{33EB9674-B460-4466-AD5F-20762CC0C194}">
+										<Sound Name="amb_bird_1" ID="{99ADD214-E756-413B-B733-86DEC03B1685}" ShortID="803946612">
 											<PropertyList>
-												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="3DPosition" Type="int16" Value="2"/>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+												<Property Name="UserAuxSendVolume0" Type="Real64">
+													<ValueList>
+														<Value>-25</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{66562AB0-32F1-47E8-93C3-0CC07C3703A0}">
+																<PropertyList>
+																	<Property Name="Min" Type="Real64" Value="-97"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
 											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02AB0E9E-DC49-4D18-8206-2301BDC73EC0}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Ambiance Master" ID="{CCCF0DF9-24CC-4600-B821-E19884B16803}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="Reverb" ID="{568A8176-882E-40FC-A572-D3004C78AC10}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+												</Reference>
+											</ReferenceList>
 											<ChildrenList>
-												<Path2D Name="amb_bird_6_Path" ID="{7FD07181-B266-4B4E-97A0-1159F433A4F0}">
-													<PropertyList>
-														<Property Name="Duration" Type="Uint32" Value="8000"/>
-														<Property Name="RandomZ" Type="Real64" Value="61"/>
-													</PropertyList>
-													<PointList>
-														<Point>
-															<XPos>-75.78947</XPos>
-															<YPos>-55.77933</YPos>
-															<Flags>12</Flags>
-															<Time>0</Time>
-														</Point>
-														<Point>
-															<XPos>72.9824561403509</XPos>
-															<YPos>-78.6339754816112</YPos>
-															<Flags>0</Flags>
-															<Time>2000</Time>
-														</Point>
-														<Point>
-															<XPos>-90.5263157894737</XPos>
-															<YPos>-83.5376532399299</YPos>
-															<Flags>0</Flags>
-															<Time>4000</Time>
-														</Point>
-														<Point>
-															<XPos>51.9298245614035</XPos>
-															<YPos>80.385288966725</YPos>
-															<Flags>0</Flags>
-															<Time>6000</Time>
-														</Point>
-														<Point>
-															<XPos>-58.5964912280702</XPos>
-															<YPos>80.385288966725</YPos>
-															<Flags>0</Flags>
-															<Time>8000</Time>
-														</Point>
-													</PointList>
-												</Path2D>
+												<AudioFileSource Name="amb_bird_1" ID="{5BEC1B36-6E38-48F7-B2F9-9DB8C49C5E74}">
+													<Language>SFX</Language>
+													<AudioFile>amb_bird_1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="189253345"/>
+													</MediaIDList>
+												</AudioFileSource>
 											</ChildrenList>
-										</Position>
-									</PositioningInfo>
-									<ActiveSourceList>
-										<ActiveSource Name="amb_bird_6" ID="{051DBDEA-9676-4135-AD9D-0622939324CD}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="amb_bird_5" ID="{B5073086-2AB4-4849-AB35-70F483380F24}" ShortID="682258779">
-									<PropertyList>
-										<Property Name="3DPosition" Type="int16" Value="2"/>
-										<Property Name="3DSpatialization" Type="int16" Value="2"/>
-										<Property Name="OverridePositioning" Type="bool" Value="True"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02AB0E9E-DC49-4D18-8206-2301BDC73EC0}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Ambiance Master" ID="{CCCF0DF9-24CC-4600-B821-E19884B16803}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="amb_bird_5" ID="{72086933-A39A-4105-9FBB-CB142D1604E5}">
-											<Language>SFX</Language>
-											<AudioFile>amb_bird_5.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="211319641"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<PositioningInfo>
-										<Position Name="" ID="{185DF136-FEDE-410A-9D70-EB2626B6B626}">
+											<PositioningInfo>
+												<Position Name="" ID="{9B547BB8-D6D0-46DB-8778-B396C9F7CE01}">
+													<PropertyList>
+														<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+														<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+													</PropertyList>
+													<ChildrenList>
+														<Path2D Name="amb_bird_1_Path" ID="{B10B5117-5CFF-4531-A63A-D3B993B2F1C3}">
+															<PropertyList>
+																<Property Name="Duration" Type="Uint32" Value="10000"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>87.36842</XPos>
+																	<YPos>72.76708</YPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="amb_bird_1_Path_01" ID="{8C0EE863-23B1-40CD-B5EE-8BE0FEFA2E1D}">
+															<PointList>
+																<Point>
+																	<XPos>-80</XPos>
+																	<YPos>60.50788</YPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="amb_bird_1_Path_02" ID="{C8AD13AC-4E05-49E7-8A55-F004775BB0CD}">
+															<PointList>
+																<Point>
+																	<XPos>-64.5614</XPos>
+																	<YPos>-82.04904</YPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+																<Point>
+																	<XPos>68.0701754385965</XPos>
+																	<YPos>-80.7355516637478</YPos>
+																	<Flags>0</Flags>
+																	<Time>5000</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="amb_bird_1_Path_03" ID="{083771F3-6A70-4BD2-898F-A39ACCA838BB}">
+															<PointList>
+																<Point>
+																	<XPos>80.70175</XPos>
+																	<YPos>-4.64098</YPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+																<Point>
+																	<XPos>-45.9649122807018</XPos>
+																	<YPos>74.0805604203152</YPos>
+																	<Flags>0</Flags>
+																	<Time>1666</Time>
+																</Point>
+																<Point>
+																	<XPos>-69.4736842105263</XPos>
+																	<YPos>3.67775831873905</YPos>
+																	<Flags>0</Flags>
+																	<Time>3333</Time>
+																</Point>
+																<Point>
+																	<XPos>61.0526315789474</XPos>
+																	<YPos>71.6287215411559</YPos>
+																	<Flags>0</Flags>
+																	<Time>5000</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+													</ChildrenList>
+												</Position>
+											</PositioningInfo>
+											<ActiveSourceList>
+												<ActiveSource Name="amb_bird_1" ID="{5BEC1B36-6E38-48F7-B2F9-9DB8C49C5E74}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="amb_bird_2" ID="{1F755ABA-7E50-46B9-BE0F-11383D1288CD}" ShortID="688597484">
 											<PropertyList>
-												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="3DPosition" Type="int16" Value="2"/>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+												<Property Name="UserAuxSendVolume0" Type="Real64">
+													<ValueList>
+														<Value>-25</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02AB0E9E-DC49-4D18-8206-2301BDC73EC0}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Ambiance Master" ID="{CCCF0DF9-24CC-4600-B821-E19884B16803}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="Reverb" ID="{568A8176-882E-40FC-A572-D3004C78AC10}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+												</Reference>
+											</ReferenceList>
 											<ChildrenList>
-												<Path2D Name="amb_bird_5_Path" ID="{0F0A0B86-9BA6-4C0C-AF84-BC015F2D3F84}">
-													<PropertyList>
-														<Property Name="Duration" Type="Uint32" Value="10000"/>
-														<Property Name="RandomX" Type="Real64" Value="24"/>
-														<Property Name="RandomY" Type="Real64" Value="56"/>
-														<Property Name="RandomZ" Type="Real64" Value="58"/>
-													</PropertyList>
-													<PointList>
-														<Point>
-															<XPos>85.61404</XPos>
-															<YPos>82.92469</YPos>
-															<Flags>12</Flags>
-															<Time>0</Time>
-														</Point>
-														<Point>
-															<XPos>-76.140350877193</XPos>
-															<YPos>77.9334500875657</YPos>
-															<Flags>0</Flags>
-															<Time>3333</Time>
-														</Point>
-														<Point>
-															<XPos>75.0877192982456</XPos>
-															<YPos>-65.6742556917688</YPos>
-															<Flags>0</Flags>
-															<Time>6666</Time>
-														</Point>
-														<Point>
-															<XPos>85.9649122807018</XPos>
-															<YPos>82.8371278458844</YPos>
-															<Flags>0</Flags>
-															<Time>10000</Time>
-														</Point>
-													</PointList>
-												</Path2D>
+												<AudioFileSource Name="amb_bird_2" ID="{3F379299-833B-475F-9CA9-F20266DF72C1}">
+													<Language>SFX</Language>
+													<AudioFile>amb_bird_2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="958267533"/>
+													</MediaIDList>
+												</AudioFileSource>
 											</ChildrenList>
-										</Position>
-									</PositioningInfo>
-									<ActiveSourceList>
-										<ActiveSource Name="amb_bird_5" ID="{72086933-A39A-4105-9FBB-CB142D1604E5}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="amb_bird_2" ID="{1F755ABA-7E50-46B9-BE0F-11383D1288CD}" ShortID="688597484">
+											<PositioningInfo>
+												<Position Name="" ID="{7125C91C-65EC-4A09-B2FD-CB0E13C0CB8B}">
+													<PropertyList>
+														<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+														<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+													</PropertyList>
+													<ChildrenList>
+														<Path2D Name="amb_bird_2_Path" ID="{4526436C-3B08-4564-9567-4C67F06F0B45}">
+															<PropertyList>
+																<Property Name="Duration" Type="Uint32" Value="10000"/>
+																<Property Name="RandomX" Type="Real64" Value="34"/>
+																<Property Name="RandomY" Type="Real64" Value="35"/>
+																<Property Name="RandomZ" Type="Real64" Value="36"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>75.08772</XPos>
+																	<YPos>72.06655</YPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+																<Point>
+																	<XPos>82.8070175438596</XPos>
+																	<YPos>52.0140105078809</YPos>
+																	<Flags>0</Flags>
+																	<Time>3333</Time>
+																</Point>
+																<Point>
+																	<XPos>63.859649122807</XPos>
+																	<YPos>42.907180385289</YPos>
+																	<Flags>0</Flags>
+																	<Time>6666</Time>
+																</Point>
+																<Point>
+																	<XPos>49.1228070175439</XPos>
+																	<YPos>72.3292469352014</YPos>
+																	<Flags>0</Flags>
+																	<Time>10000</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="amb_bird_2_Path_01" ID="{3E3F4BE1-FCE9-4538-A5D9-3758A14F9645}">
+															<PropertyList>
+																<Property Name="RandomX" Type="Real64" Value="10"/>
+																<Property Name="RandomZ" Type="Real64" Value="39"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>-81.40351</XPos>
+																	<YPos>48.24869</YPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+																<Point>
+																	<XPos>-54.0350877192982</XPos>
+																	<YPos>80.385288966725</YPos>
+																	<Flags>0</Flags>
+																	<Time>2500</Time>
+																</Point>
+																<Point>
+																	<XPos>-74.0350877192982</XPos>
+																	<YPos>66.0245183887916</YPos>
+																	<Flags>0</Flags>
+																	<Time>5000</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="amb_bird_2_Path_02" ID="{DDD68F5F-AD1D-44B2-9FEB-1D3E5E213D3B}">
+															<PropertyList>
+																<Property Name="RandomX" Type="Real64" Value="21"/>
+																<Property Name="RandomY" Type="Real64" Value="24"/>
+																<Property Name="RandomZ" Type="Real64" Value="32"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>-2.80702</XPos>
+																	<YPos>-82.74956</YPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+																<Point>
+																	<XPos>-64.9122807017544</XPos>
+																	<YPos>-40.4553415061296</YPos>
+																	<Flags>0</Flags>
+																	<Time>2500</Time>
+																</Point>
+																<Point>
+																	<XPos>-72.6315789473684</XPos>
+																	<YPos>-67.0753064798599</YPos>
+																	<Flags>0</Flags>
+																	<Time>5000</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+													</ChildrenList>
+												</Position>
+											</PositioningInfo>
+											<ActiveSourceList>
+												<ActiveSource Name="amb_bird_2" ID="{3F379299-833B-475F-9CA9-F20266DF72C1}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="New Random Container_01" ID="{114EE9FC-2FCC-461C-9B76-404C7663B7E3}" ShortID="221965847">
 									<PropertyList>
-										<Property Name="3DPosition" Type="int16" Value="2"/>
-										<Property Name="3DSpatialization" Type="int16" Value="2"/>
-										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02AB0E9E-DC49-4D18-8206-2301BDC73EC0}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Ambiance Master" ID="{CCCF0DF9-24CC-4600-B821-E19884B16803}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="amb_bird_2" ID="{3F379299-833B-475F-9CA9-F20266DF72C1}">
-											<Language>SFX</Language>
-											<AudioFile>amb_bird_2.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="958267533"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<PositioningInfo>
-										<Position Name="" ID="{7125C91C-65EC-4A09-B2FD-CB0E13C0CB8B}">
+										<Sound Name="amb_bird_3" ID="{D5957E46-4413-4379-98A5-F0510AF532C5}" ShortID="1038985279">
 											<PropertyList>
-												<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
-												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+												<Property Name="UserAuxSendVolume0" Type="Real64">
+													<ValueList>
+														<Value>-25</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02AB0E9E-DC49-4D18-8206-2301BDC73EC0}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Ambiance Master" ID="{CCCF0DF9-24CC-4600-B821-E19884B16803}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="Reverb" ID="{568A8176-882E-40FC-A572-D3004C78AC10}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+												</Reference>
+											</ReferenceList>
 											<ChildrenList>
-												<Path2D Name="amb_bird_2_Path" ID="{4526436C-3B08-4564-9567-4C67F06F0B45}">
-													<PropertyList>
-														<Property Name="Duration" Type="Uint32" Value="10000"/>
-														<Property Name="RandomX" Type="Real64" Value="34"/>
-														<Property Name="RandomY" Type="Real64" Value="35"/>
-														<Property Name="RandomZ" Type="Real64" Value="36"/>
-													</PropertyList>
-													<PointList>
-														<Point>
-															<XPos>75.08772</XPos>
-															<YPos>72.06655</YPos>
-															<Flags>12</Flags>
-															<Time>0</Time>
-														</Point>
-														<Point>
-															<XPos>82.8070175438596</XPos>
-															<YPos>52.0140105078809</YPos>
-															<Flags>0</Flags>
-															<Time>3333</Time>
-														</Point>
-														<Point>
-															<XPos>63.859649122807</XPos>
-															<YPos>42.907180385289</YPos>
-															<Flags>0</Flags>
-															<Time>6666</Time>
-														</Point>
-														<Point>
-															<XPos>49.1228070175439</XPos>
-															<YPos>72.3292469352014</YPos>
-															<Flags>0</Flags>
-															<Time>10000</Time>
-														</Point>
-													</PointList>
-												</Path2D>
-												<Path2D Name="amb_bird_2_Path_01" ID="{3E3F4BE1-FCE9-4538-A5D9-3758A14F9645}">
-													<PropertyList>
-														<Property Name="RandomX" Type="Real64" Value="10"/>
-														<Property Name="RandomZ" Type="Real64" Value="39"/>
-													</PropertyList>
-													<PointList>
-														<Point>
-															<XPos>-81.40351</XPos>
-															<YPos>48.24869</YPos>
-															<Flags>12</Flags>
-															<Time>0</Time>
-														</Point>
-														<Point>
-															<XPos>-54.0350877192982</XPos>
-															<YPos>80.385288966725</YPos>
-															<Flags>0</Flags>
-															<Time>2500</Time>
-														</Point>
-														<Point>
-															<XPos>-74.0350877192982</XPos>
-															<YPos>66.0245183887916</YPos>
-															<Flags>0</Flags>
-															<Time>5000</Time>
-														</Point>
-													</PointList>
-												</Path2D>
-												<Path2D Name="amb_bird_2_Path_02" ID="{DDD68F5F-AD1D-44B2-9FEB-1D3E5E213D3B}">
-													<PropertyList>
-														<Property Name="RandomX" Type="Real64" Value="21"/>
-														<Property Name="RandomY" Type="Real64" Value="24"/>
-														<Property Name="RandomZ" Type="Real64" Value="32"/>
-													</PropertyList>
-													<PointList>
-														<Point>
-															<XPos>-2.80702</XPos>
-															<YPos>-82.74956</YPos>
-															<Flags>12</Flags>
-															<Time>0</Time>
-														</Point>
-														<Point>
-															<XPos>-64.9122807017544</XPos>
-															<YPos>-40.4553415061296</YPos>
-															<Flags>0</Flags>
-															<Time>2500</Time>
-														</Point>
-														<Point>
-															<XPos>-72.6315789473684</XPos>
-															<YPos>-67.0753064798599</YPos>
-															<Flags>0</Flags>
-															<Time>5000</Time>
-														</Point>
-													</PointList>
-												</Path2D>
+												<AudioFileSource Name="amb_bird_3" ID="{E7432044-923F-4E12-94FB-06763C4715A7}">
+													<Language>SFX</Language>
+													<AudioFile>amb_bird_3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="397949216"/>
+													</MediaIDList>
+												</AudioFileSource>
 											</ChildrenList>
-										</Position>
-									</PositioningInfo>
-									<ActiveSourceList>
-										<ActiveSource Name="amb_bird_2" ID="{3F379299-833B-475F-9CA9-F20266DF72C1}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="amb_bird_3" ID="{D5957E46-4413-4379-98A5-F0510AF532C5}" ShortID="1038985279">
-									<PropertyList>
-										<Property Name="OverridePositioning" Type="bool" Value="True"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02AB0E9E-DC49-4D18-8206-2301BDC73EC0}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Ambiance Master" ID="{CCCF0DF9-24CC-4600-B821-E19884B16803}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="amb_bird_3" ID="{E7432044-923F-4E12-94FB-06763C4715A7}">
-											<Language>SFX</Language>
-											<AudioFile>amb_bird_3.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="397949216"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="amb_bird_3" ID="{E7432044-923F-4E12-94FB-06763C4715A7}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="amb_bird_1" ID="{99ADD214-E756-413B-B733-86DEC03B1685}" ShortID="803946612">
-									<PropertyList>
-										<Property Name="3DPosition" Type="int16" Value="2"/>
-										<Property Name="3DSpatialization" Type="int16" Value="2"/>
-										<Property Name="EnableAttenuation" Type="bool" Value="False"/>
-										<Property Name="OverridePositioning" Type="bool" Value="True"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02AB0E9E-DC49-4D18-8206-2301BDC73EC0}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Ambiance Master" ID="{CCCF0DF9-24CC-4600-B821-E19884B16803}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="amb_bird_1" ID="{5BEC1B36-6E38-48F7-B2F9-9DB8C49C5E74}">
-											<Language>SFX</Language>
-											<AudioFile>amb_bird_1.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="189253345"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<PositioningInfo>
-										<Position Name="" ID="{9B547BB8-D6D0-46DB-8778-B396C9F7CE01}">
+											<ActiveSourceList>
+												<ActiveSource Name="amb_bird_3" ID="{E7432044-923F-4E12-94FB-06763C4715A7}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="amb_bird_4" ID="{C8309A1C-DF30-4A97-A0F4-C263B8354B99}" ShortID="657540246">
 											<PropertyList>
-												<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
-												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="3DPosition" Type="int16" Value="2"/>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+												<Property Name="UserAuxSendVolume0" Type="Real64">
+													<ValueList>
+														<Value>-25</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02AB0E9E-DC49-4D18-8206-2301BDC73EC0}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Ambiance Master" ID="{CCCF0DF9-24CC-4600-B821-E19884B16803}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="Reverb" ID="{568A8176-882E-40FC-A572-D3004C78AC10}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+												</Reference>
+											</ReferenceList>
 											<ChildrenList>
-												<Path2D Name="amb_bird_1_Path" ID="{B10B5117-5CFF-4531-A63A-D3B993B2F1C3}">
-													<PropertyList>
-														<Property Name="Duration" Type="Uint32" Value="10000"/>
-													</PropertyList>
-													<PointList>
-														<Point>
-															<XPos>87.36842</XPos>
-															<YPos>72.76708</YPos>
-															<Flags>12</Flags>
-															<Time>0</Time>
-														</Point>
-													</PointList>
-												</Path2D>
-												<Path2D Name="amb_bird_1_Path_01" ID="{8C0EE863-23B1-40CD-B5EE-8BE0FEFA2E1D}">
-													<PointList>
-														<Point>
-															<XPos>-80</XPos>
-															<YPos>60.50788</YPos>
-															<Flags>12</Flags>
-															<Time>0</Time>
-														</Point>
-													</PointList>
-												</Path2D>
-												<Path2D Name="amb_bird_1_Path_02" ID="{C8AD13AC-4E05-49E7-8A55-F004775BB0CD}">
-													<PointList>
-														<Point>
-															<XPos>-64.5614</XPos>
-															<YPos>-82.04904</YPos>
-															<Flags>12</Flags>
-															<Time>0</Time>
-														</Point>
-														<Point>
-															<XPos>68.0701754385965</XPos>
-															<YPos>-80.7355516637478</YPos>
-															<Flags>0</Flags>
-															<Time>5000</Time>
-														</Point>
-													</PointList>
-												</Path2D>
-												<Path2D Name="amb_bird_1_Path_03" ID="{083771F3-6A70-4BD2-898F-A39ACCA838BB}">
-													<PointList>
-														<Point>
-															<XPos>80.70175</XPos>
-															<YPos>-4.64098</YPos>
-															<Flags>12</Flags>
-															<Time>0</Time>
-														</Point>
-														<Point>
-															<XPos>-45.9649122807018</XPos>
-															<YPos>74.0805604203152</YPos>
-															<Flags>0</Flags>
-															<Time>1666</Time>
-														</Point>
-														<Point>
-															<XPos>-69.4736842105263</XPos>
-															<YPos>3.67775831873905</YPos>
-															<Flags>0</Flags>
-															<Time>3333</Time>
-														</Point>
-														<Point>
-															<XPos>61.0526315789474</XPos>
-															<YPos>71.6287215411559</YPos>
-															<Flags>0</Flags>
-															<Time>5000</Time>
-														</Point>
-													</PointList>
-												</Path2D>
+												<AudioFileSource Name="amb_bird_4" ID="{76C482EC-4312-4F08-92E9-99512D5CCE6E}">
+													<Language>SFX</Language>
+													<AudioFile>amb_bird_4.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="541488690"/>
+													</MediaIDList>
+												</AudioFileSource>
 											</ChildrenList>
-										</Position>
-									</PositioningInfo>
-									<ActiveSourceList>
-										<ActiveSource Name="amb_bird_1" ID="{5BEC1B36-6E38-48F7-B2F9-9DB8C49C5E74}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="amb_bird_4" ID="{C8309A1C-DF30-4A97-A0F4-C263B8354B99}" ShortID="657540246">
+											<PositioningInfo>
+												<Position Name="" ID="{D311DF7E-DAB4-4E85-A42D-6B9152381552}">
+													<PropertyList>
+														<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+													</PropertyList>
+													<ChildrenList>
+														<Path2D Name="amb_bird_4_Path" ID="{A37064E1-CCEA-4452-ADD3-523E970D9832}">
+															<PropertyList>
+																<Property Name="Duration" Type="Uint32" Value="10000"/>
+																<Property Name="RandomX" Type="Real64" Value="28"/>
+																<Property Name="RandomY" Type="Real64" Value="25"/>
+																<Property Name="RandomZ" Type="Real64" Value="71"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>0</XPos>
+																	<YPos>50</YPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+																<Point>
+																	<XPos>-72.280701754386</XPos>
+																	<YPos>63.5726795096322</YPos>
+																	<Flags>0</Flags>
+																	<Time>1428</Time>
+																</Point>
+																<Point>
+																	<XPos>58.2456140350877</XPos>
+																	<YPos>77.5831873905429</YPos>
+																	<Flags>0</Flags>
+																	<Time>2857</Time>
+																</Point>
+																<Point>
+																	<XPos>63.1578947368421</XPos>
+																	<YPos>-25.0437828371278</YPos>
+																	<Flags>0</Flags>
+																	<Time>4285</Time>
+																</Point>
+																<Point>
+																	<XPos>62.4561403508772</XPos>
+																	<YPos>-74.0805604203152</YPos>
+																	<Flags>0</Flags>
+																	<Time>5714</Time>
+																</Point>
+																<Point>
+																	<XPos>-89.4736842105263</XPos>
+																	<YPos>-56.9176882661997</YPos>
+																	<Flags>0</Flags>
+																	<Time>7142</Time>
+																</Point>
+																<Point>
+																	<XPos>-68.4210526315789</XPos>
+																	<YPos>10.6830122591944</YPos>
+																	<Flags>0</Flags>
+																	<Time>8571</Time>
+																</Point>
+																<Point>
+																	<XPos>0</XPos>
+																	<YPos>50.9632224168126</YPos>
+																	<Flags>0</Flags>
+																	<Time>10000</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+													</ChildrenList>
+												</Position>
+											</PositioningInfo>
+											<ActiveSourceList>
+												<ActiveSource Name="amb_bird_4" ID="{76C482EC-4312-4F08-92E9-99512D5CCE6E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="New Random Container_02" ID="{6F419CEA-E2F9-4FD3-84AB-05391FD6C742}" ShortID="729030189">
 									<PropertyList>
-										<Property Name="3DPosition" Type="int16" Value="2"/>
-										<Property Name="3DSpatialization" Type="int16" Value="2"/>
-										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02AB0E9E-DC49-4D18-8206-2301BDC73EC0}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Ambiance Master" ID="{CCCF0DF9-24CC-4600-B821-E19884B16803}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="amb_bird_4" ID="{76C482EC-4312-4F08-92E9-99512D5CCE6E}">
-											<Language>SFX</Language>
-											<AudioFile>amb_bird_4.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="541488690"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<PositioningInfo>
-										<Position Name="" ID="{D311DF7E-DAB4-4E85-A42D-6B9152381552}">
+										<Sound Name="amb_bird_5" ID="{B5073086-2AB4-4849-AB35-70F483380F24}" ShortID="682258779">
 											<PropertyList>
-												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="3DPosition" Type="int16" Value="2"/>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+												<Property Name="UserAuxSendVolume0" Type="Real64">
+													<ValueList>
+														<Value>-25</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02AB0E9E-DC49-4D18-8206-2301BDC73EC0}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Ambiance Master" ID="{CCCF0DF9-24CC-4600-B821-E19884B16803}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="Reverb" ID="{568A8176-882E-40FC-A572-D3004C78AC10}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+												</Reference>
+											</ReferenceList>
 											<ChildrenList>
-												<Path2D Name="amb_bird_4_Path" ID="{A37064E1-CCEA-4452-ADD3-523E970D9832}">
-													<PropertyList>
-														<Property Name="Duration" Type="Uint32" Value="10000"/>
-														<Property Name="RandomX" Type="Real64" Value="28"/>
-														<Property Name="RandomY" Type="Real64" Value="25"/>
-														<Property Name="RandomZ" Type="Real64" Value="71"/>
-													</PropertyList>
-													<PointList>
-														<Point>
-															<XPos>0</XPos>
-															<YPos>50</YPos>
-															<Flags>12</Flags>
-															<Time>0</Time>
-														</Point>
-														<Point>
-															<XPos>-72.280701754386</XPos>
-															<YPos>63.5726795096322</YPos>
-															<Flags>0</Flags>
-															<Time>1428</Time>
-														</Point>
-														<Point>
-															<XPos>58.2456140350877</XPos>
-															<YPos>77.5831873905429</YPos>
-															<Flags>0</Flags>
-															<Time>2857</Time>
-														</Point>
-														<Point>
-															<XPos>63.1578947368421</XPos>
-															<YPos>-25.0437828371278</YPos>
-															<Flags>0</Flags>
-															<Time>4285</Time>
-														</Point>
-														<Point>
-															<XPos>62.4561403508772</XPos>
-															<YPos>-74.0805604203152</YPos>
-															<Flags>0</Flags>
-															<Time>5714</Time>
-														</Point>
-														<Point>
-															<XPos>-89.4736842105263</XPos>
-															<YPos>-56.9176882661997</YPos>
-															<Flags>0</Flags>
-															<Time>7142</Time>
-														</Point>
-														<Point>
-															<XPos>-68.4210526315789</XPos>
-															<YPos>10.6830122591944</YPos>
-															<Flags>0</Flags>
-															<Time>8571</Time>
-														</Point>
-														<Point>
-															<XPos>0</XPos>
-															<YPos>50.9632224168126</YPos>
-															<Flags>0</Flags>
-															<Time>10000</Time>
-														</Point>
-													</PointList>
-												</Path2D>
+												<AudioFileSource Name="amb_bird_5" ID="{72086933-A39A-4105-9FBB-CB142D1604E5}">
+													<Language>SFX</Language>
+													<AudioFile>amb_bird_5.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="211319641"/>
+													</MediaIDList>
+												</AudioFileSource>
 											</ChildrenList>
-										</Position>
-									</PositioningInfo>
-									<ActiveSourceList>
-										<ActiveSource Name="amb_bird_4" ID="{76C482EC-4312-4F08-92E9-99512D5CCE6E}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
+											<PositioningInfo>
+												<Position Name="" ID="{185DF136-FEDE-410A-9D70-EB2626B6B626}">
+													<PropertyList>
+														<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+													</PropertyList>
+													<ChildrenList>
+														<Path2D Name="amb_bird_5_Path" ID="{0F0A0B86-9BA6-4C0C-AF84-BC015F2D3F84}">
+															<PropertyList>
+																<Property Name="Duration" Type="Uint32" Value="10000"/>
+																<Property Name="RandomX" Type="Real64" Value="24"/>
+																<Property Name="RandomY" Type="Real64" Value="56"/>
+																<Property Name="RandomZ" Type="Real64" Value="58"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>85.61404</XPos>
+																	<YPos>82.92469</YPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+																<Point>
+																	<XPos>-76.140350877193</XPos>
+																	<YPos>77.9334500875657</YPos>
+																	<Flags>0</Flags>
+																	<Time>3333</Time>
+																</Point>
+																<Point>
+																	<XPos>75.0877192982456</XPos>
+																	<YPos>-65.6742556917688</YPos>
+																	<Flags>0</Flags>
+																	<Time>6666</Time>
+																</Point>
+																<Point>
+																	<XPos>85.9649122807018</XPos>
+																	<YPos>82.8371278458844</YPos>
+																	<Flags>0</Flags>
+																	<Time>10000</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+													</ChildrenList>
+												</Position>
+											</PositioningInfo>
+											<ActiveSourceList>
+												<ActiveSource Name="amb_bird_5" ID="{72086933-A39A-4105-9FBB-CB142D1604E5}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="amb_bird_6" ID="{B238969D-5AE7-4599-837C-53C6D7A1099B}" ShortID="702803267">
+											<PropertyList>
+												<Property Name="3DPosition" Type="int16" Value="2"/>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+												<Property Name="UserAuxSendVolume0" Type="Real64">
+													<ValueList>
+														<Value>-25</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02AB0E9E-DC49-4D18-8206-2301BDC73EC0}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Ambiance Master" ID="{CCCF0DF9-24CC-4600-B821-E19884B16803}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="Reverb" ID="{568A8176-882E-40FC-A572-D3004C78AC10}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="amb_bird_6" ID="{051DBDEA-9676-4135-AD9D-0622939324CD}">
+													<Language>SFX</Language>
+													<AudioFile>amb_bird_6.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="868510851"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<PositioningInfo>
+												<Position Name="" ID="{33EB9674-B460-4466-AD5F-20762CC0C194}">
+													<PropertyList>
+														<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+													</PropertyList>
+													<ChildrenList>
+														<Path2D Name="amb_bird_6_Path" ID="{7FD07181-B266-4B4E-97A0-1159F433A4F0}">
+															<PropertyList>
+																<Property Name="Duration" Type="Uint32" Value="8000"/>
+																<Property Name="RandomZ" Type="Real64" Value="61"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>-75.78947</XPos>
+																	<YPos>-55.77933</YPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+																<Point>
+																	<XPos>72.9824561403509</XPos>
+																	<YPos>-78.6339754816112</YPos>
+																	<Flags>0</Flags>
+																	<Time>2000</Time>
+																</Point>
+																<Point>
+																	<XPos>-90.5263157894737</XPos>
+																	<YPos>-83.5376532399299</YPos>
+																	<Flags>0</Flags>
+																	<Time>4000</Time>
+																</Point>
+																<Point>
+																	<XPos>51.9298245614035</XPos>
+																	<YPos>80.385288966725</YPos>
+																	<Flags>0</Flags>
+																	<Time>6000</Time>
+																</Point>
+																<Point>
+																	<XPos>-58.5964912280702</XPos>
+																	<YPos>80.385288966725</YPos>
+																	<Flags>0</Flags>
+																	<Time>8000</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+													</ChildrenList>
+												</Position>
+											</PositioningInfo>
+											<ActiveSourceList>
+												<ActiveSource Name="amb_bird_6" ID="{051DBDEA-9676-4135-AD9D-0622939324CD}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
 							</ChildrenList>
 							<PositioningInfo>
 								<Position Name="" ID="{8ED805DF-6F33-4FD1-9476-0D4F9882FC9F}">
@@ -1759,440 +1893,540 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="amb_bird_1_weird" ID="{F40BB908-7534-4655-BF22-7BB51343DE21}" ShortID="163203506">
+								<RandomSequenceContainer Name="New Random Container" ID="{262E9251-493C-45E9-B42D-F8452E1A16CA}" ShortID="998798991">
 									<PropertyList>
-										<Property Name="3DPosition" Type="int16" Value="2"/>
-										<Property Name="3DSpatialization" Type="int16" Value="2"/>
-										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="RandomAvoidRepeating" Type="bool" Value="False"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02AB0E9E-DC49-4D18-8206-2301BDC73EC0}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Ambiance Master" ID="{CCCF0DF9-24CC-4600-B821-E19884B16803}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="amb_bird_1_weird" ID="{CCA170F5-C2FF-4C78-9070-6C399A208C7E}">
-											<Language>SFX</Language>
-											<AudioFile>amb_bird_1_weird.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="1037117347"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<PositioningInfo>
-										<Position Name="" ID="{3E91DB9D-91E9-4CFE-AC91-78DD167BDE0C}">
+										<Sound Name="amb_bird_1_weird" ID="{F40BB908-7534-4655-BF22-7BB51343DE21}" ShortID="163203506">
 											<PropertyList>
-												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="3DPosition" Type="int16" Value="2"/>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+												<Property Name="UserAuxSendVolume0" Type="Real64">
+													<ValueList>
+														<Value>-25</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02AB0E9E-DC49-4D18-8206-2301BDC73EC0}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Ambiance Master" ID="{CCCF0DF9-24CC-4600-B821-E19884B16803}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="Reverb" ID="{568A8176-882E-40FC-A572-D3004C78AC10}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+												</Reference>
+											</ReferenceList>
 											<ChildrenList>
-												<Path2D Name="amb_bird_1_weird_Path" ID="{4E6D0D8D-DE7D-4ED3-A53D-EF19DB21882A}">
-													<PropertyList>
-														<Property Name="Duration" Type="Uint32" Value="10000"/>
-														<Property Name="RandomX" Type="Real64" Value="42"/>
-														<Property Name="RandomY" Type="Real64" Value="42"/>
-														<Property Name="RandomZ" Type="Real64" Value="36"/>
-													</PropertyList>
-													<PointList>
-														<Point>
-															<XPos>0</XPos>
-															<YPos>50</YPos>
-															<Flags>12</Flags>
-															<Time>0</Time>
-														</Point>
-														<Point>
-															<XPos>-18.5964912280702</XPos>
-															<YPos>56.5674255691769</YPos>
-															<Flags>0</Flags>
-															<Time>2000</Time>
-														</Point>
-														<Point>
-															<XPos>-74.7368421052632</XPos>
-															<YPos>-17.6882661996497</YPos>
-															<Flags>0</Flags>
-															<Time>4000</Time>
-														</Point>
-														<Point>
-															<XPos>25.9649122807018</XPos>
-															<YPos>-53.415061295972</YPos>
-															<Flags>0</Flags>
-															<Time>6000</Time>
-														</Point>
-														<Point>
-															<XPos>67.3684210526316</XPos>
-															<YPos>49.2119089316988</YPos>
-															<Flags>0</Flags>
-															<Time>8000</Time>
-														</Point>
-														<Point>
-															<XPos>5.96491228070175</XPos>
-															<YPos>64.6234676007005</YPos>
-															<Flags>0</Flags>
-															<Time>10000</Time>
-														</Point>
-													</PointList>
-												</Path2D>
+												<AudioFileSource Name="amb_bird_1_weird" ID="{CCA170F5-C2FF-4C78-9070-6C399A208C7E}">
+													<Language>SFX</Language>
+													<AudioFile>amb_bird_1_weird.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1037117347"/>
+													</MediaIDList>
+												</AudioFileSource>
 											</ChildrenList>
-										</Position>
-									</PositioningInfo>
-									<ActiveSourceList>
-										<ActiveSource Name="amb_bird_1_weird" ID="{CCA170F5-C2FF-4C78-9070-6C399A208C7E}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="amb_bird_3_weird" ID="{1AF24BD0-3256-402A-AC9C-6D689743FD8F}" ShortID="320965748">
+											<PositioningInfo>
+												<Position Name="" ID="{3E91DB9D-91E9-4CFE-AC91-78DD167BDE0C}">
+													<PropertyList>
+														<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+													</PropertyList>
+													<ChildrenList>
+														<Path2D Name="amb_bird_1_weird_Path" ID="{4E6D0D8D-DE7D-4ED3-A53D-EF19DB21882A}">
+															<PropertyList>
+																<Property Name="Duration" Type="Uint32" Value="10000"/>
+																<Property Name="RandomX" Type="Real64" Value="42"/>
+																<Property Name="RandomY" Type="Real64" Value="42"/>
+																<Property Name="RandomZ" Type="Real64" Value="36"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>0</XPos>
+																	<YPos>50</YPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+																<Point>
+																	<XPos>-18.5964912280702</XPos>
+																	<YPos>56.5674255691769</YPos>
+																	<Flags>0</Flags>
+																	<Time>2000</Time>
+																</Point>
+																<Point>
+																	<XPos>-74.7368421052632</XPos>
+																	<YPos>-17.6882661996497</YPos>
+																	<Flags>0</Flags>
+																	<Time>4000</Time>
+																</Point>
+																<Point>
+																	<XPos>25.9649122807018</XPos>
+																	<YPos>-53.415061295972</YPos>
+																	<Flags>0</Flags>
+																	<Time>6000</Time>
+																</Point>
+																<Point>
+																	<XPos>67.3684210526316</XPos>
+																	<YPos>49.2119089316988</YPos>
+																	<Flags>0</Flags>
+																	<Time>8000</Time>
+																</Point>
+																<Point>
+																	<XPos>5.96491228070175</XPos>
+																	<YPos>64.6234676007005</YPos>
+																	<Flags>0</Flags>
+																	<Time>10000</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+													</ChildrenList>
+												</Position>
+											</PositioningInfo>
+											<ActiveSourceList>
+												<ActiveSource Name="amb_bird_1_weird" ID="{CCA170F5-C2FF-4C78-9070-6C399A208C7E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="amb_bird_2_weird" ID="{5A74D12C-3EDB-4940-A7A5-6DF96B070BED}" ShortID="811295375">
+											<PropertyList>
+												<Property Name="3DPosition" Type="int16" Value="2"/>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+												<Property Name="UserAuxSendVolume0" Type="Real64">
+													<ValueList>
+														<Value>-25</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02AB0E9E-DC49-4D18-8206-2301BDC73EC0}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Ambiance Master" ID="{CCCF0DF9-24CC-4600-B821-E19884B16803}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="Reverb" ID="{568A8176-882E-40FC-A572-D3004C78AC10}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="amb_bird_2_weird" ID="{F02E3FAD-0A07-4580-9BA2-52DAD2B3D2B0}">
+													<Language>SFX</Language>
+													<AudioFile>amb_bird_2_weird.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="315644122"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<PositioningInfo>
+												<Position Name="" ID="{C51D071A-251B-4D8D-B193-6667AFE1A9F8}">
+													<PropertyList>
+														<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+													</PropertyList>
+													<ChildrenList>
+														<Path2D Name="amb_bird_2_weird_Path" ID="{4DCE2D86-0DFA-421B-956B-CBE1E4728E2A}">
+															<PropertyList>
+																<Property Name="Duration" Type="Uint32" Value="10000"/>
+																<Property Name="RandomX" Type="Real64" Value="38"/>
+																<Property Name="RandomY" Type="Real64" Value="40"/>
+																<Property Name="RandomZ" Type="Real64" Value="36"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>-70.87719</XPos>
+																	<YPos>62.95972</YPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+																<Point>
+																	<XPos>74.0350877192982</XPos>
+																	<YPos>64.6234676007005</YPos>
+																	<Flags>0</Flags>
+																	<Time>2500</Time>
+																</Point>
+																<Point>
+																	<XPos>77.8947368421053</XPos>
+																	<YPos>-66.7250437828371</YPos>
+																	<Flags>0</Flags>
+																	<Time>5000</Time>
+																</Point>
+																<Point>
+																	<XPos>-64.2105263157895</XPos>
+																	<YPos>-63.5726795096322</YPos>
+																	<Flags>0</Flags>
+																	<Time>7500</Time>
+																</Point>
+																<Point>
+																	<XPos>-71.9298245614035</XPos>
+																	<YPos>62.5218914185639</YPos>
+																	<Flags>0</Flags>
+																	<Time>10000</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+													</ChildrenList>
+												</Position>
+											</PositioningInfo>
+											<ActiveSourceList>
+												<ActiveSource Name="amb_bird_2_weird" ID="{F02E3FAD-0A07-4580-9BA2-52DAD2B3D2B0}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="New Random Container_01" ID="{0000E33D-BE8D-4668-8D22-2212FB05DB4E}" ShortID="916279420">
 									<PropertyList>
-										<Property Name="3DPosition" Type="int16" Value="2"/>
-										<Property Name="3DSpatialization" Type="int16" Value="2"/>
-										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02AB0E9E-DC49-4D18-8206-2301BDC73EC0}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Ambiance Master" ID="{CCCF0DF9-24CC-4600-B821-E19884B16803}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="amb_bird_3_weird" ID="{334E3B0F-0736-4E6B-8258-247B461C42CD}">
-											<Language>SFX</Language>
-											<AudioFile>amb_bird_3_weird.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="441835573"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<PositioningInfo>
-										<Position Name="" ID="{467E3D23-0149-4709-BF40-D3555CBEF30A}">
+										<Sound Name="amb_bird_4_weird" ID="{8DB676D8-C4B8-47DF-87B6-8240155841E2}" ShortID="843431892">
 											<PropertyList>
-												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="3DPosition" Type="int16" Value="2"/>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+												<Property Name="UserAuxSendVolume0" Type="Real64">
+													<ValueList>
+														<Value>-25</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02AB0E9E-DC49-4D18-8206-2301BDC73EC0}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Ambiance Master" ID="{CCCF0DF9-24CC-4600-B821-E19884B16803}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="Reverb" ID="{568A8176-882E-40FC-A572-D3004C78AC10}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+												</Reference>
+											</ReferenceList>
 											<ChildrenList>
-												<Path2D Name="amb_bird_3_weird_Path" ID="{1F279E37-264A-4878-8BE3-1EFF85CBACE8}">
-													<PropertyList>
-														<Property Name="RandomZ" Type="Real64" Value="64"/>
-													</PropertyList>
-													<PointList>
-														<Point>
-															<XPos>0</XPos>
-															<YPos>50</YPos>
-															<Flags>12</Flags>
-															<Time>0</Time>
-														</Point>
-														<Point>
-															<XPos>-74.0350877192982</XPos>
-															<YPos>30.6479859894921</YPos>
-															<Flags>0</Flags>
-															<Time>2500</Time>
-														</Point>
-														<Point>
-															<XPos>-51.9298245614035</XPos>
-															<YPos>-85.2889667250438</YPos>
-															<Flags>0</Flags>
-															<Time>5000</Time>
-														</Point>
-													</PointList>
-												</Path2D>
+												<AudioFileSource Name="amb_bird_4_weird" ID="{86DB5724-93B2-4B2B-9D97-3C1BFA3A3DFD}">
+													<Language>SFX</Language>
+													<AudioFile>amb_bird_4_weird.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="426481905"/>
+													</MediaIDList>
+												</AudioFileSource>
 											</ChildrenList>
-										</Position>
-									</PositioningInfo>
-									<ActiveSourceList>
-										<ActiveSource Name="amb_bird_3_weird" ID="{334E3B0F-0736-4E6B-8258-247B461C42CD}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="amb_bird_2_weird" ID="{5A74D12C-3EDB-4940-A7A5-6DF96B070BED}" ShortID="811295375">
+											<PositioningInfo>
+												<Position Name="" ID="{B8312798-FE61-4313-A961-E95A89A90CF6}">
+													<PropertyList>
+														<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+													</PropertyList>
+													<ChildrenList>
+														<Path2D Name="10" ID="{35DDBE23-FCAA-4D8A-B015-DED616F7D918}">
+															<PropertyList>
+																<Property Name="Duration" Type="Uint32" Value="10000"/>
+																<Property Name="RandomX" Type="Real64" Value="33"/>
+																<Property Name="RandomY" Type="Real64" Value="18"/>
+																<Property Name="RandomZ" Type="Real64" Value="84"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>89.12281</XPos>
+																	<YPos>-77.49562</YPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+																<Point>
+																	<XPos>61.0526315789474</XPos>
+																	<YPos>-75.1313485113835</YPos>
+																	<Flags>0</Flags>
+																	<Time>1666</Time>
+																</Point>
+																<Point>
+																	<XPos>84.9122807017544</XPos>
+																	<YPos>-52.7145359019264</YPos>
+																	<Flags>0</Flags>
+																	<Time>3333</Time>
+																</Point>
+																<Point>
+																	<XPos>-46.6666666666667</XPos>
+																	<YPos>-81.7863397548161</YPos>
+																	<Flags>0</Flags>
+																	<Time>5000</Time>
+																</Point>
+																<Point>
+																	<XPos>-83.5087719298246</XPos>
+																	<YPos>-55.5166374781086</YPos>
+																	<Flags>0</Flags>
+																	<Time>6666</Time>
+																</Point>
+																<Point>
+																	<XPos>-11.2280701754386</XPos>
+																	<YPos>-52.3642732049037</YPos>
+																	<Flags>0</Flags>
+																	<Time>8333</Time>
+																</Point>
+																<Point>
+																	<XPos>25.9649122807018</XPos>
+																	<YPos>-82.4868651488617</YPos>
+																	<Flags>0</Flags>
+																	<Time>10000</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+													</ChildrenList>
+												</Position>
+											</PositioningInfo>
+											<ActiveSourceList>
+												<ActiveSource Name="amb_bird_4_weird" ID="{86DB5724-93B2-4B2B-9D97-3C1BFA3A3DFD}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="amb_bird_3_weird" ID="{1AF24BD0-3256-402A-AC9C-6D689743FD8F}" ShortID="320965748">
+											<PropertyList>
+												<Property Name="3DPosition" Type="int16" Value="2"/>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+												<Property Name="UserAuxSendVolume0" Type="Real64">
+													<ValueList>
+														<Value>-25</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02AB0E9E-DC49-4D18-8206-2301BDC73EC0}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Ambiance Master" ID="{CCCF0DF9-24CC-4600-B821-E19884B16803}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="Reverb" ID="{568A8176-882E-40FC-A572-D3004C78AC10}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="amb_bird_3_weird" ID="{334E3B0F-0736-4E6B-8258-247B461C42CD}">
+													<Language>SFX</Language>
+													<AudioFile>amb_bird_3_weird.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="441835573"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<PositioningInfo>
+												<Position Name="" ID="{467E3D23-0149-4709-BF40-D3555CBEF30A}">
+													<PropertyList>
+														<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+													</PropertyList>
+													<ChildrenList>
+														<Path2D Name="amb_bird_3_weird_Path" ID="{1F279E37-264A-4878-8BE3-1EFF85CBACE8}">
+															<PropertyList>
+																<Property Name="RandomZ" Type="Real64" Value="64"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>0</XPos>
+																	<YPos>50</YPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+																<Point>
+																	<XPos>-74.0350877192982</XPos>
+																	<YPos>30.6479859894921</YPos>
+																	<Flags>0</Flags>
+																	<Time>2500</Time>
+																</Point>
+																<Point>
+																	<XPos>-51.9298245614035</XPos>
+																	<YPos>-85.2889667250438</YPos>
+																	<Flags>0</Flags>
+																	<Time>5000</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+													</ChildrenList>
+												</Position>
+											</PositioningInfo>
+											<ActiveSourceList>
+												<ActiveSource Name="amb_bird_3_weird" ID="{334E3B0F-0736-4E6B-8258-247B461C42CD}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="New Random Container_02" ID="{56473714-24EC-4C5F-B1AC-715C48C76287}" ShortID="314221353">
 									<PropertyList>
-										<Property Name="3DPosition" Type="int16" Value="2"/>
-										<Property Name="3DSpatialization" Type="int16" Value="2"/>
-										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02AB0E9E-DC49-4D18-8206-2301BDC73EC0}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Ambiance Master" ID="{CCCF0DF9-24CC-4600-B821-E19884B16803}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="amb_bird_2_weird" ID="{F02E3FAD-0A07-4580-9BA2-52DAD2B3D2B0}">
-											<Language>SFX</Language>
-											<AudioFile>amb_bird_2_weird.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="315644122"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<PositioningInfo>
-										<Position Name="" ID="{C51D071A-251B-4D8D-B193-6667AFE1A9F8}">
+										<Sound Name="amb_bird_6_weird" ID="{505D0527-4A5F-457A-B5D0-574B9BE4E527}" ShortID="963916923">
 											<PropertyList>
-												<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
-												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="3DPosition" Type="int16" Value="2"/>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+												<Property Name="UserAuxSendVolume0" Type="Real64">
+													<ValueList>
+														<Value>-25</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02AB0E9E-DC49-4D18-8206-2301BDC73EC0}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Ambiance Master" ID="{CCCF0DF9-24CC-4600-B821-E19884B16803}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="Reverb" ID="{568A8176-882E-40FC-A572-D3004C78AC10}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+												</Reference>
+											</ReferenceList>
 											<ChildrenList>
-												<Path2D Name="amb_bird_2_weird_Path" ID="{4DCE2D86-0DFA-421B-956B-CBE1E4728E2A}">
-													<PropertyList>
-														<Property Name="Duration" Type="Uint32" Value="10000"/>
-														<Property Name="RandomX" Type="Real64" Value="38"/>
-														<Property Name="RandomY" Type="Real64" Value="40"/>
-														<Property Name="RandomZ" Type="Real64" Value="36"/>
-													</PropertyList>
-													<PointList>
-														<Point>
-															<XPos>-70.87719</XPos>
-															<YPos>62.95972</YPos>
-															<Flags>12</Flags>
-															<Time>0</Time>
-														</Point>
-														<Point>
-															<XPos>74.0350877192982</XPos>
-															<YPos>64.6234676007005</YPos>
-															<Flags>0</Flags>
-															<Time>2500</Time>
-														</Point>
-														<Point>
-															<XPos>77.8947368421053</XPos>
-															<YPos>-66.7250437828371</YPos>
-															<Flags>0</Flags>
-															<Time>5000</Time>
-														</Point>
-														<Point>
-															<XPos>-64.2105263157895</XPos>
-															<YPos>-63.5726795096322</YPos>
-															<Flags>0</Flags>
-															<Time>7500</Time>
-														</Point>
-														<Point>
-															<XPos>-71.9298245614035</XPos>
-															<YPos>62.5218914185639</YPos>
-															<Flags>0</Flags>
-															<Time>10000</Time>
-														</Point>
-													</PointList>
-												</Path2D>
+												<AudioFileSource Name="amb_bird_6_weird" ID="{21365D58-F2D6-4A2F-9C52-F1DBAC29958F}">
+													<Language>SFX</Language>
+													<AudioFile>amb_bird_6_weird.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="704704544"/>
+													</MediaIDList>
+												</AudioFileSource>
 											</ChildrenList>
-										</Position>
-									</PositioningInfo>
-									<ActiveSourceList>
-										<ActiveSource Name="amb_bird_2_weird" ID="{F02E3FAD-0A07-4580-9BA2-52DAD2B3D2B0}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="amb_bird_5_weird" ID="{0865968B-E8CB-489E-9AE1-A04CC4C5DD0C}" ShortID="747717315">
-									<PropertyList>
-										<Property Name="3DPosition" Type="int16" Value="2"/>
-										<Property Name="3DSpatialization" Type="int16" Value="2"/>
-										<Property Name="OverridePositioning" Type="bool" Value="True"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02AB0E9E-DC49-4D18-8206-2301BDC73EC0}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Ambiance Master" ID="{CCCF0DF9-24CC-4600-B821-E19884B16803}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="amb_bird_5_weird" ID="{65B20005-C5CA-4684-84BB-55F2B8BF68B3}">
-											<Language>SFX</Language>
-											<AudioFile>amb_bird_5_weird.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="187480084"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<PositioningInfo>
-										<Position Name="" ID="{CC8E293F-CE00-43BC-BDD1-408AAC17640F}">
+											<PositioningInfo>
+												<Position Name="" ID="{441F92E7-CE75-4E44-AC65-B61BF6F68A35}">
+													<PropertyList>
+														<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+													</PropertyList>
+													<ChildrenList>
+														<Path2D Name="amb_bird_6_weird_Path" ID="{E649C0CA-9542-46B4-963B-B2A49EB609A9}">
+															<PropertyList>
+																<Property Name="RandomX" Type="Real64" Value="36"/>
+																<Property Name="RandomY" Type="Real64" Value="46"/>
+																<Property Name="RandomZ" Type="Real64" Value="89"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>0</XPos>
+																	<YPos>50</YPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+																<Point>
+																	<XPos>56.140350877193</XPos>
+																	<YPos>-80.7355516637478</YPos>
+																	<Flags>0</Flags>
+																	<Time>1666</Time>
+																</Point>
+																<Point>
+																	<XPos>-89.8245614035088</XPos>
+																	<YPos>-78.2837127845884</YPos>
+																	<Flags>0</Flags>
+																	<Time>3333</Time>
+																</Point>
+																<Point>
+																	<XPos>-0.350877192982466</XPos>
+																	<YPos>48.861646234676</YPos>
+																	<Flags>0</Flags>
+																	<Time>5000</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+													</ChildrenList>
+												</Position>
+											</PositioningInfo>
+											<ActiveSourceList>
+												<ActiveSource Name="amb_bird_6_weird" ID="{21365D58-F2D6-4A2F-9C52-F1DBAC29958F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="amb_bird_5_weird" ID="{0865968B-E8CB-489E-9AE1-A04CC4C5DD0C}" ShortID="747717315">
 											<PropertyList>
-												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="3DPosition" Type="int16" Value="2"/>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+												<Property Name="UserAuxSendVolume0" Type="Real64">
+													<ValueList>
+														<Value>-25</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02AB0E9E-DC49-4D18-8206-2301BDC73EC0}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Ambiance Master" ID="{CCCF0DF9-24CC-4600-B821-E19884B16803}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="Reverb" ID="{568A8176-882E-40FC-A572-D3004C78AC10}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+												</Reference>
+											</ReferenceList>
 											<ChildrenList>
-												<Path2D Name="amb_bird_5_weird_Path" ID="{CDC89738-AE71-4802-8D4C-20C808679AF7}">
-													<PropertyList>
-														<Property Name="RandomX" Type="Real64" Value="53"/>
-														<Property Name="RandomY" Type="Real64" Value="60"/>
-														<Property Name="RandomZ" Type="Real64" Value="55"/>
-													</PropertyList>
-													<PointList>
-														<Point>
-															<XPos>0</XPos>
-															<YPos>50</YPos>
-															<Flags>12</Flags>
-															<Time>0</Time>
-														</Point>
-														<Point>
-															<XPos>9.47368421052632</XPos>
-															<YPos>-54.816112084063</YPos>
-															<Flags>0</Flags>
-															<Time>5000</Time>
-														</Point>
-													</PointList>
-												</Path2D>
+												<AudioFileSource Name="amb_bird_5_weird" ID="{65B20005-C5CA-4684-84BB-55F2B8BF68B3}">
+													<Language>SFX</Language>
+													<AudioFile>amb_bird_5_weird.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="187480084"/>
+													</MediaIDList>
+												</AudioFileSource>
 											</ChildrenList>
-										</Position>
-									</PositioningInfo>
-									<ActiveSourceList>
-										<ActiveSource Name="amb_bird_5_weird" ID="{65B20005-C5CA-4684-84BB-55F2B8BF68B3}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="amb_bird_6_weird" ID="{505D0527-4A5F-457A-B5D0-574B9BE4E527}" ShortID="963916923">
-									<PropertyList>
-										<Property Name="3DPosition" Type="int16" Value="2"/>
-										<Property Name="3DSpatialization" Type="int16" Value="2"/>
-										<Property Name="OverridePositioning" Type="bool" Value="True"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02AB0E9E-DC49-4D18-8206-2301BDC73EC0}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Ambiance Master" ID="{CCCF0DF9-24CC-4600-B821-E19884B16803}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="amb_bird_6_weird" ID="{21365D58-F2D6-4A2F-9C52-F1DBAC29958F}">
-											<Language>SFX</Language>
-											<AudioFile>amb_bird_6_weird.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="704704544"/>
-											</MediaIDList>
-										</AudioFileSource>
+											<PositioningInfo>
+												<Position Name="" ID="{CC8E293F-CE00-43BC-BDD1-408AAC17640F}">
+													<PropertyList>
+														<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+													</PropertyList>
+													<ChildrenList>
+														<Path2D Name="amb_bird_5_weird_Path" ID="{CDC89738-AE71-4802-8D4C-20C808679AF7}">
+															<PropertyList>
+																<Property Name="RandomX" Type="Real64" Value="53"/>
+																<Property Name="RandomY" Type="Real64" Value="60"/>
+																<Property Name="RandomZ" Type="Real64" Value="55"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>0</XPos>
+																	<YPos>50</YPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+																<Point>
+																	<XPos>9.47368421052632</XPos>
+																	<YPos>-54.816112084063</YPos>
+																	<Flags>0</Flags>
+																	<Time>5000</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+													</ChildrenList>
+												</Position>
+											</PositioningInfo>
+											<ActiveSourceList>
+												<ActiveSource Name="amb_bird_5_weird" ID="{65B20005-C5CA-4684-84BB-55F2B8BF68B3}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
 									</ChildrenList>
-									<PositioningInfo>
-										<Position Name="" ID="{441F92E7-CE75-4E44-AC65-B61BF6F68A35}">
-											<PropertyList>
-												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
-											</PropertyList>
-											<ChildrenList>
-												<Path2D Name="amb_bird_6_weird_Path" ID="{E649C0CA-9542-46B4-963B-B2A49EB609A9}">
-													<PropertyList>
-														<Property Name="RandomX" Type="Real64" Value="36"/>
-														<Property Name="RandomY" Type="Real64" Value="46"/>
-														<Property Name="RandomZ" Type="Real64" Value="89"/>
-													</PropertyList>
-													<PointList>
-														<Point>
-															<XPos>0</XPos>
-															<YPos>50</YPos>
-															<Flags>12</Flags>
-															<Time>0</Time>
-														</Point>
-														<Point>
-															<XPos>56.140350877193</XPos>
-															<YPos>-80.7355516637478</YPos>
-															<Flags>0</Flags>
-															<Time>1666</Time>
-														</Point>
-														<Point>
-															<XPos>-89.8245614035088</XPos>
-															<YPos>-78.2837127845884</YPos>
-															<Flags>0</Flags>
-															<Time>3333</Time>
-														</Point>
-														<Point>
-															<XPos>-0.350877192982466</XPos>
-															<YPos>48.861646234676</YPos>
-															<Flags>0</Flags>
-															<Time>5000</Time>
-														</Point>
-													</PointList>
-												</Path2D>
-											</ChildrenList>
-										</Position>
-									</PositioningInfo>
-									<ActiveSourceList>
-										<ActiveSource Name="amb_bird_6_weird" ID="{21365D58-F2D6-4A2F-9C52-F1DBAC29958F}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="amb_bird_4_weird" ID="{8DB676D8-C4B8-47DF-87B6-8240155841E2}" ShortID="843431892">
-									<PropertyList>
-										<Property Name="3DPosition" Type="int16" Value="2"/>
-										<Property Name="3DSpatialization" Type="int16" Value="2"/>
-										<Property Name="OverridePositioning" Type="bool" Value="True"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02AB0E9E-DC49-4D18-8206-2301BDC73EC0}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Ambiance Master" ID="{CCCF0DF9-24CC-4600-B821-E19884B16803}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="amb_bird_4_weird" ID="{86DB5724-93B2-4B2B-9D97-3C1BFA3A3DFD}">
-											<Language>SFX</Language>
-											<AudioFile>amb_bird_4_weird.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="426481905"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<PositioningInfo>
-										<Position Name="" ID="{B8312798-FE61-4313-A961-E95A89A90CF6}">
-											<PropertyList>
-												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
-											</PropertyList>
-											<ChildrenList>
-												<Path2D Name="10" ID="{35DDBE23-FCAA-4D8A-B015-DED616F7D918}">
-													<PropertyList>
-														<Property Name="Duration" Type="Uint32" Value="10000"/>
-														<Property Name="RandomX" Type="Real64" Value="33"/>
-														<Property Name="RandomY" Type="Real64" Value="18"/>
-														<Property Name="RandomZ" Type="Real64" Value="84"/>
-													</PropertyList>
-													<PointList>
-														<Point>
-															<XPos>89.12281</XPos>
-															<YPos>-77.49562</YPos>
-															<Flags>12</Flags>
-															<Time>0</Time>
-														</Point>
-														<Point>
-															<XPos>61.0526315789474</XPos>
-															<YPos>-75.1313485113835</YPos>
-															<Flags>0</Flags>
-															<Time>1666</Time>
-														</Point>
-														<Point>
-															<XPos>84.9122807017544</XPos>
-															<YPos>-52.7145359019264</YPos>
-															<Flags>0</Flags>
-															<Time>3333</Time>
-														</Point>
-														<Point>
-															<XPos>-46.6666666666667</XPos>
-															<YPos>-81.7863397548161</YPos>
-															<Flags>0</Flags>
-															<Time>5000</Time>
-														</Point>
-														<Point>
-															<XPos>-83.5087719298246</XPos>
-															<YPos>-55.5166374781086</YPos>
-															<Flags>0</Flags>
-															<Time>6666</Time>
-														</Point>
-														<Point>
-															<XPos>-11.2280701754386</XPos>
-															<YPos>-52.3642732049037</YPos>
-															<Flags>0</Flags>
-															<Time>8333</Time>
-														</Point>
-														<Point>
-															<XPos>25.9649122807018</XPos>
-															<YPos>-82.4868651488617</YPos>
-															<Flags>0</Flags>
-															<Time>10000</Time>
-														</Point>
-													</PointList>
-												</Path2D>
-											</ChildrenList>
-										</Position>
-									</PositioningInfo>
-									<ActiveSourceList>
-										<ActiveSource Name="amb_bird_4_weird" ID="{86DB5724-93B2-4B2B-9D97-3C1BFA3A3DFD}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
+								</RandomSequenceContainer>
 							</ChildrenList>
 						</BlendContainer>
 					</ChildrenList>
@@ -2322,7 +2556,7 @@
 								<BlendTrackAssoc>
 									<ItemRef Name="birds_weird" ID="{7A918A33-074D-4050-AEB6-1B1D18FC85AF}"/>
 									<CrossfadingInfo>
-										<LeftEdgePos>36.4772147696477</LeftEdgePos>
+										<LeftEdgePos>57.3328297429097</LeftEdgePos>
 										<LeftFadingMode>Automatic</LeftFadingMode>
 										<RightEdgePos>100</RightEdgePos>
 										<RightFadingMode>Automatic</RightFadingMode>
@@ -2334,14 +2568,14 @@
 				</BlendContainer>
 				<Sound Name="PadsSensor2" ID="{DA48C7F3-C4EC-4CDA-8536-10E48CC6AAD6}" ShortID="976045426">
 					<PropertyList>
-						<Property Name="OutputBusVolume" Type="Real64">
+						<Property Name="UserAuxSendVolume0" Type="Real64">
 							<ValueList>
-								<Value>-5</Value>
+								<Value>-25</Value>
 							</ValueList>
 						</Property>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-4</Value>
+								<Value>-8</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -2351,6 +2585,9 @@
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Ambiance Master" ID="{CCCF0DF9-24CC-4600-B821-E19884B16803}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+						</Reference>
+						<Reference Name="UserAuxSend0">
+							<ObjectRef Name="Reverb" ID="{568A8176-882E-40FC-A572-D3004C78AC10}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>

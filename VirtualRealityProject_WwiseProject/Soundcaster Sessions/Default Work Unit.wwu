@@ -10,30 +10,54 @@
 							<Position X="0" Y="0"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="PadsSensor2" ID="{DA48C7F3-C4EC-4CDA-8536-10E48CC6AAD6}" WorkUnitID="{7FAE9102-D772-46A8-AA69-F6DB5B0BCD91}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="powerUp2" ID="{3F83824E-29BE-4ED1-AD11-43DD08F7D49A}" WorkUnitID="{4E140D7F-62E4-4DAF-A811-B1E5FF1E146B}"/>
+							<Position X="0" Y="2"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="Sensor1Activated" ID="{5C13809D-2C9E-41EE-97E7-7D32F4B3B9D5}" WorkUnitID="{8837BB41-6FC3-415B-85DD-91771863AD97}"/>
 							<Position X="1" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="PadsSensor2" ID="{DA48C7F3-C4EC-4CDA-8536-10E48CC6AAD6}" WorkUnitID="{7FAE9102-D772-46A8-AA69-F6DB5B0BCD91}"/>
+							<ObjectRef Name="whispers" ID="{73B61880-4FCC-4E1C-B7DD-B9398DF6C638}" WorkUnitID="{4E140D7F-62E4-4DAF-A811-B1E5FF1E146B}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Sensor3Activated" ID="{88A957EF-9D5C-43E2-80D0-9528FDE8C673}" WorkUnitID="{8837BB41-6FC3-415B-85DD-91771863AD97}"/>
 							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="sfx_alarm" ID="{F51106EF-625F-4146-8C0A-33CD0C106D0C}" WorkUnitID="{4E140D7F-62E4-4DAF-A811-B1E5FF1E146B}"/>
+							<Position X="2" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Sensor2Activated" ID="{ED6E7F52-B1C5-4517-BC04-1B1E5BC3FBBF}" WorkUnitID="{8837BB41-6FC3-415B-85DD-91771863AD97}"/>
+							<Position X="3" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="powerUp1" ID="{85742A46-EDE1-4A32-88CC-4F4517079F6E}" WorkUnitID="{4E140D7F-62E4-4DAF-A811-B1E5FF1E146B}"/>
+							<Position X="3" Y="1"/>
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
 							<GameParameterRef Name="activationStatus" ID="{8C7A1363-674B-41F9-B092-3E3C9F25B869}"/>
-							<Value>41.6188997759398</Value>
+							<Value>93.908</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="sensor2" ID="{64F8FD5A-7F09-4772-A48A-3629D18ECA60}"/>
-							<Value>0</Value>
+							<Value>10.2362204724409</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="sensor1" ID="{8A0125EA-B17C-4A07-A2AA-F4E92A932029}"/>
-							<Value>0</Value>
+							<Value>15.748031496063</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="sensor3" ID="{050AB711-2670-4DC2-B704-99F8F851564C}"/>
-							<Value>100</Value>
+							<Value>59.8425196850394</Value>
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true"/>

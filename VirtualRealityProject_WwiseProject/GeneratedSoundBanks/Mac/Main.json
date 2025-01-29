@@ -10,11 +10,19 @@
     "Type": "User",
     "GUID": "{45D8302B-19E7-418B-B7D2-CDAC15D9EA71}",
     "Language": "SFX",
-    "Hash": "{22B4F0C7-B036-F6FF-65E2-5D85FBB05046}",
+    "Hash": "{AEB9015C-8DA5-7F59-0812-9B7D3C72E0EB}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
     "Media": [
+     {
+      "Id": "56029158",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "sfx_whispers.wav",
+      "CachePath": "CF/{CFE96C8A-E332-B485-0F3D-68D48BCE2BDF}.wem"
+     },
      {
       "Id": "89892199",
       "Language": "SFX",
@@ -62,14 +70,6 @@
       "Location": "Memory",
       "ShortName": "amb_bird_5_weird.wav",
       "CachePath": "3C/{3C4E637A-1634-2A71-F3DB-AD87C6B29665}.wem"
-     },
-     {
-      "Id": "188145887",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "sfx_powerup.wav",
-      "CachePath": "FC/{FCCE9DAB-9B87-1E6D-BD52-D30038EFA162}.wem"
      },
      {
       "Id": "189253345",
@@ -136,14 +136,6 @@
       "CachePath": "08/{08070582-8708-0BAC-6F1C-C8F240DED92A}.wem"
      },
      {
-      "Id": "335637789",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "sfx_powerup_rumble.wav",
-      "CachePath": "92/{923EC168-FCAE-F84F-AF95-EBA6019CD511}.wem"
-     },
-     {
       "Id": "346838675",
       "Language": "SFX",
       "Streaming": "false",
@@ -174,6 +166,14 @@
       "Location": "Memory",
       "ShortName": "amb_bird_3_weird.wav",
       "CachePath": "7E/{7EB47739-81C5-160D-E56F-53DC39172A94}.wem"
+     },
+     {
+      "Id": "516061011",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "sfx_powerup_rumble.wav",
+      "CachePath": "F3/{F38B98E2-96DC-5D2D-FE96-3012990124A4}.wem"
      },
      {
       "Id": "526174884",
@@ -208,12 +208,28 @@
       "CachePath": "B9/{B9F77818-5958-44B9-CDBC-288D7429B3DC}.wem"
      },
      {
+      "Id": "623889076",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "sfx_powerup.wav",
+      "CachePath": "BB/{BB9C2665-AF89-51E4-788F-4FC51BAA06F9}.wem"
+     },
+     {
       "Id": "630766008",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "amb_wind_strong-003.wav",
       "CachePath": "FD/{FDC182A4-3D28-90A9-0D48-BA0FC6484C5A}.wem"
+     },
+     {
+      "Id": "652838272",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "sfx_powerup_perc.wav",
+      "CachePath": "88/{8816468A-5DEA-AAFE-B6F8-2C7F91DA39CF}.wem"
      },
      {
       "Id": "704704544",
@@ -240,14 +256,6 @@
       "CachePath": "32/{32459F15-36FC-1A58-44E7-A585B00AD080}.wem"
      },
      {
-      "Id": "937797086",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "sfx_powerup_perc.wav",
-      "CachePath": "B2/{B2D109DF-57C7-9327-52D2-2BA2CD100F34}.wem"
-     },
-     {
       "Id": "958267533",
       "Language": "SFX",
       "Streaming": "false",
@@ -270,6 +278,14 @@
       "Location": "Memory",
       "ShortName": "mus_pads_normal-002.wav",
       "CachePath": "DE/{DE01EF12-ACD7-B015-6E71-6CF9FE23D3C8}.wem"
+     },
+     {
+      "Id": "1006396274",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "amb_pad_guitar.wav",
+      "CachePath": "6C/{6C3562F3-5A56-98CD-0CFD-688B673DB2D1}.wem"
      },
      {
       "Id": "1014557919",
@@ -307,6 +323,14 @@
     "Plugins": {
      "Custom": [
       {
+       "Id": "175393484",
+       "Name": "Three_Voices (Custom)",
+       "ObjectPath": "\\Actor-Mixer Hierarchy\\Default Work Unit\\amb\\PadsSensor3\\[Effect Slot [0]: (Harmonizer)]\\Three_Voices (Custom)",
+       "GUID": "{CB23F1C5-79AC-49A1-8C6A-D60A92E42952}",
+       "LibName": "Wwise Harmonizer",
+       "LibId": "9043971"
+      },
+      {
        "Id": "886273627",
        "Name": "Have_U_Ever_Been_Outside (Custom)",
        "ObjectPath": "\\Actor-Mixer Hierarchy\\Default Work Unit\\amb\\Ambiance\\[Effect Slot [0]: (RoomVerb)]\\Have_U_Ever_Been_Outside (Custom)",
@@ -328,6 +352,14 @@
       "MediaRefs": [
        {
         "Id": "346838675"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "348963605",
+        "Name": "Reverb",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Reverb",
+        "GUID": "{568A8176-882E-40FC-A572-D3004C78AC10}"
        }
       ]
      },
@@ -383,6 +415,12 @@
        ]
       },
       "AuxBusRefs": [
+       {
+        "Id": "348963605",
+        "Name": "Reverb",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Reverb",
+        "GUID": "{568A8176-882E-40FC-A572-D3004C78AC10}"
+       },
        {
         "Id": "696369880",
         "Name": "LFE",
@@ -441,6 +479,12 @@
       },
       "AuxBusRefs": [
        {
+        "Id": "348963605",
+        "Name": "Reverb",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Reverb",
+        "GUID": "{568A8176-882E-40FC-A572-D3004C78AC10}"
+       },
+       {
         "Id": "696369880",
         "Name": "LFE",
         "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\LFE",
@@ -475,25 +519,45 @@
         "Id": "175958417"
        },
        {
-        "Id": "188145887"
-       },
-       {
         "Id": "268901580"
        },
        {
         "Id": "288241684"
        },
        {
-        "Id": "335637789"
+        "Id": "516061011"
+       },
+       {
+        "Id": "526174884"
        },
        {
         "Id": "608934966"
        },
        {
-        "Id": "937797086"
+        "Id": "623889076"
+       },
+       {
+        "Id": "652838272"
+       },
+       {
+        "Id": "849966493"
        },
        {
         "Id": "979599441"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "348963605",
+        "Name": "Reverb",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Reverb",
+        "GUID": "{568A8176-882E-40FC-A572-D3004C78AC10}"
+       },
+       {
+        "Id": "696369880",
+        "Name": "LFE",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\LFE",
+        "GUID": "{7A99EF7A-6B7D-43B7-B065-79464E51DCAB}"
        }
       ]
      },
@@ -503,20 +567,43 @@
       "ObjectPath": "\\Events\\Default Work Unit\\Sensor2Activated",
       "GUID": "{ED6E7F52-B1C5-4517-BC04-1B1E5BC3FBBF}",
       "DurationType": "OneShot",
-      "DurationMin": "0",
-      "DurationMax": "0",
+      "DurationMin": "72",
+      "DurationMax": "72",
       "MediaRefs": [
        {
         "Id": "137294667"
        },
        {
-        "Id": "188145887"
+        "Id": "516061011"
        },
        {
-        "Id": "335637789"
+        "Id": "526174884"
        },
        {
-        "Id": "937797086"
+        "Id": "623889076"
+       },
+       {
+        "Id": "652838272"
+       },
+       {
+        "Id": "849966493"
+       },
+       {
+        "Id": "1006396274"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "348963605",
+        "Name": "Reverb",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Reverb",
+        "GUID": "{568A8176-882E-40FC-A572-D3004C78AC10}"
+       },
+       {
+        "Id": "696369880",
+        "Name": "LFE",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\LFE",
+        "GUID": "{7A99EF7A-6B7D-43B7-B065-79464E51DCAB}"
        }
       ]
      },
@@ -525,18 +612,13 @@
       "Name": "Sensor3Activated",
       "ObjectPath": "\\Events\\Default Work Unit\\Sensor3Activated",
       "GUID": "{88A957EF-9D5C-43E2-80D0-9528FDE8C673}",
-      "DurationType": "OneShot",
-      "DurationMin": "28",
-      "DurationMax": "28",
+      "DurationType": "Infinite",
       "MediaRefs": [
        {
         "Id": "137294667"
        },
        {
         "Id": "187480084"
-       },
-       {
-        "Id": "188145887"
        },
        {
         "Id": "189253345"
@@ -548,9 +630,6 @@
         "Id": "315644122"
        },
        {
-        "Id": "335637789"
-       },
-       {
         "Id": "397949216"
        },
        {
@@ -560,16 +639,28 @@
         "Id": "441835573"
        },
        {
+        "Id": "516061011"
+       },
+       {
+        "Id": "526174884"
+       },
+       {
         "Id": "541488690"
+       },
+       {
+        "Id": "623889076"
+       },
+       {
+        "Id": "652838272"
        },
        {
         "Id": "704704544"
        },
        {
-        "Id": "868510851"
+        "Id": "849966493"
        },
        {
-        "Id": "937797086"
+        "Id": "868510851"
        },
        {
         "Id": "958267533"
@@ -577,12 +668,33 @@
        {
         "Id": "1037117347"
        }
+      ],
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "175393484"
+        }
+       ]
+      },
+      "AuxBusRefs": [
+       {
+        "Id": "348963605",
+        "Name": "Reverb",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Reverb",
+        "GUID": "{568A8176-882E-40FC-A572-D3004C78AC10}"
+       },
+       {
+        "Id": "696369880",
+        "Name": "LFE",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\LFE",
+        "GUID": "{7A99EF7A-6B7D-43B7-B065-79464E51DCAB}"
+       }
       ]
      },
      {
-      "Id": "2441367941",
-      "Name": "SensorPowerUp",
-      "ObjectPath": "\\Events\\Default Work Unit\\SensorPowerUp",
+      "Id": "2555139182",
+      "Name": "SensorPowerUp1",
+      "ObjectPath": "\\Events\\Default Work Unit\\SensorPowerUp1",
       "GUID": "{2E5E0868-3A05-47D6-97BB-EC53EF4EC22A}",
       "DurationType": "Infinite",
       "MediaRefs": [
@@ -590,13 +702,97 @@
         "Id": "137294667"
        },
        {
-        "Id": "188145887"
+        "Id": "516061011"
        },
        {
-        "Id": "335637789"
+        "Id": "623889076"
        },
        {
-        "Id": "937797086"
+        "Id": "652838272"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "348963605",
+        "Name": "Reverb",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Reverb",
+        "GUID": "{568A8176-882E-40FC-A572-D3004C78AC10}"
+       },
+       {
+        "Id": "696369880",
+        "Name": "LFE",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\LFE",
+        "GUID": "{7A99EF7A-6B7D-43B7-B065-79464E51DCAB}"
+       }
+      ]
+     },
+     {
+      "Id": "2555139181",
+      "Name": "SensorPowerUp2",
+      "ObjectPath": "\\Events\\Default Work Unit\\SensorPowerUp2",
+      "GUID": "{AD6A56EB-368B-47F7-8AF0-C15A4E78103A}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "137294667"
+       },
+       {
+        "Id": "516061011"
+       },
+       {
+        "Id": "623889076"
+       },
+       {
+        "Id": "652838272"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "348963605",
+        "Name": "Reverb",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Reverb",
+        "GUID": "{568A8176-882E-40FC-A572-D3004C78AC10}"
+       },
+       {
+        "Id": "696369880",
+        "Name": "LFE",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\LFE",
+        "GUID": "{7A99EF7A-6B7D-43B7-B065-79464E51DCAB}"
+       }
+      ]
+     },
+     {
+      "Id": "2555139180",
+      "Name": "SensorPowerUp3",
+      "ObjectPath": "\\Events\\Default Work Unit\\SensorPowerUp3",
+      "GUID": "{8726150C-0DD6-45FB-A1B4-DB2DB608EEEA}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "137294667"
+       },
+       {
+        "Id": "516061011"
+       },
+       {
+        "Id": "623889076"
+       },
+       {
+        "Id": "652838272"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "348963605",
+        "Name": "Reverb",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Reverb",
+        "GUID": "{568A8176-882E-40FC-A572-D3004C78AC10}"
+       },
+       {
+        "Id": "696369880",
+        "Name": "LFE",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\LFE",
+        "GUID": "{7A99EF7A-6B7D-43B7-B065-79464E51DCAB}"
        }
       ]
      },
@@ -625,6 +821,18 @@
         "GUID": "{6C2B9CC9-47BA-48A0-A03D-F4C61BD281D3}"
        }
       ]
+     },
+     {
+      "Id": "3107780790",
+      "Name": "VoicesHeadset",
+      "ObjectPath": "\\Events\\Default Work Unit\\VoicesHeadset",
+      "GUID": "{9294D0CF-808F-479B-85BA-82B381531B99}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "56029158"
+       }
+      ]
      }
     ],
     "GameParameters": [
@@ -633,10 +841,22 @@
       "Name": "activationStatus",
       "ObjectPath": "\\Game Parameters\\Default Work Unit\\activationStatus",
       "GUID": "{8C7A1363-674B-41F9-B092-3E3C9F25B869}"
+     },
+     {
+      "Id": "3023874992",
+      "Name": "sensor1",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\sensor1",
+      "GUID": "{8A0125EA-B17C-4A07-A2AA-F4E92A932029}"
+     },
+     {
+      "Id": "3023874995",
+      "Name": "sensor2",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\sensor2",
+      "GUID": "{64F8FD5A-7F09-4772-A48A-3629D18ECA60}"
      }
     ]
    }
   ],
-  "FileHash": "{E7A814C5-B3E1-CD74-F741-BFE5A1D069C9}"
+  "FileHash": "{8576B537-E4AC-551E-CC38-75E77EF68DC8}"
  }
 }
