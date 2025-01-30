@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877f4e433db82944eb6395c8eab47961, type: 3}
+  m_Name: 5C13809D-2C9E-41EE-97E7-7D32F4B3B9D5
+  m_EditorClassIdentifier: 
+  objectName: Sensor1Activated
+  id: 2160358933
+  guid: 5C13809D-2C9E-41EE-97E7-7D32F4B3B9D5
+  IsInUserDefinedSoundBank: 1
+  IsAutoBankLoaded: 0

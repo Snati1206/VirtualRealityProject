@@ -5,6 +5,7 @@
 			<ChildrenList>
 				<WorkUnit Name="amb" ID="{7FAE9102-D772-46A8-AA69-F6DB5B0BCD91}" PersistMode="Reference"/>
 				<WorkUnit Name="sfx" ID="{4E140D7F-62E4-4DAF-A811-B1E5FF1E146B}" PersistMode="Reference"/>
+				<WorkUnit Name="music" ID="{ABB6BD34-6969-466B-92FD-2113713FBC8B}" PersistMode="Reference"/>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

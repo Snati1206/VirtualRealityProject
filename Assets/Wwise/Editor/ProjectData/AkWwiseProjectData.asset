@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 4ec30404cd03cc49bfe9a6396411430e
     GuidInternal: 
-    m_lastTime: -8584635333446383282
+    m_lastTime: -8584634380156390433
     List:
     - name: Ambiance Master
       guid: f90dcfcccc240046b821e19884b16803
@@ -133,6 +133,23 @@ MonoBehaviour:
         ObjectType: 2
         guid: df8e088515341748bb681ba901f2bd37
       Path: Master-Mixer Hierarchy\Default Work Unit\Master VR Bus
+    - name: Music Master
+      guid: e37362f647de984caddf303e7792642a
+      id: 79554116
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 4ec30404cd03cc49bfe9a6396411430e
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Music Master
+        ObjectType: 2
+        guid: e37362f647de984caddf303e7792642a
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Music Master
     - name: Reverb
       guid: 76818a562e88fc40a572d3004c78ac10
       id: 348963605
@@ -224,7 +241,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 41bb3788c36f5b4185dd91771863ad97
     GuidInternal: 
-    m_lastTime: -8584635047556706216
+    m_lastTime: -8584634405771555200
     List:
     - name: Alarm
       guid: b2251947b36cbc458184b20853065d36
@@ -294,6 +311,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: PowerUpsOn
+      guid: 18e5c0a567876944ababf298406c6c25
+      id: 538312913
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 41bb3788c36f5b4185dd91771863ad97
+      - ElementName: PowerUpsOn
+        ObjectType: 3
+        guid: 18e5c0a567876944ababf298406c6c25
+      Path: Events\Default Work Unit\PowerUpsOn
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: Reset
       guid: 19f9d5987e00e041bcf2c379723f61fa
       id: 4017455162
@@ -309,8 +343,8 @@ MonoBehaviour:
         guid: 19f9d5987e00e041bcf2c379723f61fa
       Path: Events\Default Work Unit\Reset
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: Sensor1Activated
       guid: 9d80135c9e2cee4197e77d32f4b3b9d5
       id: 2160358933
@@ -343,8 +377,8 @@ MonoBehaviour:
         guid: 527f6eedc5b11745bc041b1e5bc3fbbf
       Path: Events\Default Work Unit\Sensor2Activated
       maxAttenuation: 0
-      maxDuration: 72
-      minDuration: 72
+      maxDuration: 0
+      minDuration: 0
     - name: Sensor3Activated
       guid: ef57a9885c9de24380d09528fde8c673
       id: 3742079315
@@ -459,7 +493,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 98ed3e78d9387545be3b51ab635cb706
     GuidInternal: 
-    m_lastTime: -8584635125478300563
+    m_lastTime: -8584634583591806441
     List:
     - name: activationStatus
       guid: 63137a8c4b67f941b0923e3c9f25b869
@@ -559,7 +593,7 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8584648036453243164
     List: []
-  ExpandedFileSystemItemIds: 0200000003000000
+  ExpandedFileSystemItemIds: 02000000030000001800000019000000
   ExpandedWaapiItemIds: 1800000019000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1

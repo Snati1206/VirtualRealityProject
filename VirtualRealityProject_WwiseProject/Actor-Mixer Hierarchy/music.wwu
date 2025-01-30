@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{ABB6BD34-6969-466B-92FD-2113713FBC8B}" SchemaVersion="123" RootDocumentID="{4B7C06E9-0662-4FE5-912F-FFD8A7A89BD7}" ParentDocumentID="{4B7C06E9-0662-4FE5-912F-FFD8A7A89BD7}">
+	<AudioObjects>
+		<WorkUnit Name="music" ID="{ABB6BD34-6969-466B-92FD-2113713FBC8B}" OwnerID="{4B7C06E9-0662-4FE5-912F-FFD8A7A89BD7}" PersistMode="Nested">
+			<ChildrenList>
+				<Sound Name="mus_music_vr" ID="{E880849C-6548-4A9F-A6E0-6671B7BDFA14}" ShortID="1063056632">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02AB0E9E-DC49-4D18-8206-2301BDC73EC0}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Music Master" ID="{F66273E3-DE47-4C98-ADDF-303E7792642A}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="mus_music_vr" ID="{9E6DC068-A1B0-4373-8090-AF26E80F91D0}">
+							<PropertyList>
+								<Property Name="FadeOutDuration" Type="Real64" Value="19.0790323957007"/>
+								<Property Name="LoopBegin" Type="Real64" Value="0"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>mus_music_vr.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="198555096"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="mus_music_vr" ID="{9E6DC068-A1B0-4373-8090-AF26E80F91D0}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

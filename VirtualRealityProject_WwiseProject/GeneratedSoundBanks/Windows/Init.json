@@ -10,11 +10,21 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{7F0F6AD1-D9E4-9D56-186E-6FB01E3848E9}",
+    "Hash": "{A0243DF6-019E-2A29-7A46-8E2E68169F08}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
     "Plugins": {
+     "Custom": [
+      {
+       "Id": "542854342",
+       "Name": "Brick_Wall_Minus_1dB_Peak_Slow_Release (Custom)",
+       "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\LFE\\[Effect Slot [1]: (Peak Limiter)]\\Brick_Wall_Minus_1dB_Peak_Slow_Release (Custom)",
+       "GUID": "{87541A21-4EE2-448C-9C02-245D69C4BE04}",
+       "LibName": "Wwise Peak Limiter",
+       "LibId": "7208963"
+      }
+     ],
      "ShareSets": [
       {
        "Id": "1008402193",
@@ -69,6 +79,12 @@
      ]
     },
     "Busses": [
+     {
+      "Id": "79554116",
+      "Name": "Music Master",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Music Master",
+      "GUID": "{F66273E3-DE47-4C98-ADDF-303E7792642A}"
+     },
      {
       "Id": "896672153",
       "Name": "Ambiance Master",
@@ -150,6 +166,11 @@
       "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\LFE",
       "GUID": "{7A99EF7A-6B7D-43B7-B065-79464E51DCAB}",
       "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "542854342"
+        }
+       ],
        "ShareSets": [
         {
          "Id": "1008402193"
@@ -192,6 +213,6 @@
     ]
    }
   ],
-  "FileHash": "{8B2FFC53-8274-816A-E4A1-4881C86D6547}"
+  "FileHash": "{6736CD7F-E526-A4F7-EBED-BE30A372CE00}"
  }
 }

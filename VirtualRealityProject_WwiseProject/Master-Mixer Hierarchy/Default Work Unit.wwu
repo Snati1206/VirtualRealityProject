@@ -75,6 +75,25 @@
 											</EffectSlot>
 										</Local>
 									</Reference>
+									<Reference>
+										<Local>
+											<EffectSlot Name="" ID="{E65981C3-B4DC-4729-9269-905546354238}" ShortID="747236406">
+												<ReferenceList>
+													<Reference Name="Effect">
+														<Custom CreatedFrom="{9FB8DC2B-7F1C-4E4E-8FA5-50872652D2DD}">
+															<Effect Name="Brick_Wall_Minus_1dB_Peak_Slow_Release (Custom)" ID="{87541A21-4EE2-448C-9C02-245D69C4BE04}" ShortID="542854342" PluginName="Wwise Peak Limiter" CompanyID="0" PluginID="110" PluginType="3">
+																<PropertyList>
+																	<Property Name="Ratio" Type="Real32" Value="50"/>
+																	<Property Name="ReleaseTime" Type="Real32" Value="0.25"/>
+																	<Property Name="Threshold" Type="Real32" Value="-1"/>
+																</PropertyList>
+															</Effect>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</EffectSlot>
+										</Local>
+									</Reference>
 								</ObjectList>
 							</ObjectLists>
 						</AuxBus>
@@ -105,9 +124,29 @@
 								</DuckItem>
 							</DuckingList>
 						</Bus>
+						<Bus Name="Music Master" ID="{F66273E3-DE47-4C98-ADDF-303E7792642A}">
+							<DuckingList>
+								<DuckItem>
+									<BusRef Name="Ambiance Master" ID="{CCCF0DF9-24CC-4600-B821-E19884B16803}"/>
+									<DuckingParam>
+										<Volume>-9</Volume>
+										<FadeInTime>1</FadeInTime>
+										<FadeOutTime>1.5</FadeOutTime>
+										<FadeCurve>FadeLinear</FadeCurve>
+									</DuckingParam>
+								</DuckItem>
+							</DuckingList>
+						</Bus>
 					</ChildrenList>
 				</Bus>
 				<Bus Name="Master VR Bus" ID="{85088EDF-3415-4817-BB68-1BA901F2BD37}">
+					<PropertyList>
+						<Property Name="BusVolume" Type="Real64">
+							<ValueList>
+								<Value>-13</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="AudioDevice" PluginName="System" CompanyID="0" PluginID="174" PluginType="7">
 							<ObjectRef Name="BinauralAux" ID="{69083BB4-E6D1-47F2-BEFE-AF9B5EE6A94D}" WorkUnitID="{E8BDE8A5-FAF6-425B-A87D-75867B16A631}"/>

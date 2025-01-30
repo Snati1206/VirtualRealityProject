@@ -17,6 +17,8 @@ namespace AK
         static const AkUniqueID AMBIANCEOFF = 2011814100U;
         static const AkUniqueID AMBIANCEON = 2661120974U;
         static const AkUniqueID MUSIC = 3991942870U;
+        static const AkUniqueID POWERUPSON = 538312913U;
+        static const AkUniqueID RESET = 4017455162U;
         static const AkUniqueID SENSOR1ACTIVATED = 2160358933U;
         static const AkUniqueID SENSOR2ACTIVATED = 996378512U;
         static const AkUniqueID SENSOR3ACTIVATED = 3742079315U;
@@ -47,6 +49,7 @@ namespace AK
         static const AkUniqueID AUXILIAR_BINAURAL_BUS = 2355230746U;
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
         static const AkUniqueID MASTER_VR_BUS = 1833644823U;
+        static const AkUniqueID MUSIC_MASTER = 79554116U;
         static const AkUniqueID SFX_MASTER = 3222323340U;
         static const AkUniqueID VRHEADSET = 4262402045U;
     } // namespace BUSSES

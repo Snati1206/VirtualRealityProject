@@ -1,4 +1,5 @@
 Audio Bus	ID	Name			Wwise Object Path	Notes
+	79554116	Music Master			\Default Work Unit\Master Audio Bus\Music Master	
 	896672153	Ambiance Master			\Default Work Unit\Master Audio Bus\Ambiance Master	
 	1833644823	Master VR Bus			\Default Work Unit\Master VR Bus	
 	2355230746	Auxiliar Binaural Bus			\Default Work Unit\Auxiliar Binaural Bus	
@@ -12,6 +13,7 @@ Auxiliary Bus	ID	Name			Wwise Object Path	Notes
 	3842105963	AuxBinaural			\Default Work Unit\Auxiliar Binaural Bus\AuxBinaural	
 
 Effect plug-ins	ID	Name	Type				Notes
+	542854342	Brick_Wall_Minus_1dB_Peak_Slow_Release (Custom)	Wwise Peak Limiter			
 	1008402193	Low_Pass_20KHz	Wwise Parametric EQ			
 	1144018367	Plate_Large	Wwise RoomVerb			
 

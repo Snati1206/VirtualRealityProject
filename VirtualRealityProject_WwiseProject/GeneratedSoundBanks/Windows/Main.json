@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{45D8302B-19E7-418B-B7D2-CDAC15D9EA71}",
     "Language": "SFX",
-    "Hash": "{41393FD8-1616-37F5-A17B-AB9E075E222D}",
+    "Hash": "{9AB75C94-59D2-9E5D-DB4D-FAA089096AB9}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -30,14 +30,6 @@
       "Location": "Memory",
       "ShortName": "amb_wind_strong-001.wav",
       "CachePath": "1B/{1B71546D-2D93-D2A0-B702-8C012EF408DA}.wem"
-     },
-     {
-      "Id": "137294667",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "sfx_powerup_voices.wav",
-      "CachePath": "D9/{D9D6FF06-65FD-79C3-D444-C0327A3C5A54}.wem"
      },
      {
       "Id": "138764880",
@@ -86,6 +78,14 @@
       "Location": "Memory",
       "ShortName": "amb_creek.wav",
       "CachePath": "04/{04AE6978-8DB2-EF38-79D1-33A5FA44346D}.wem"
+     },
+     {
+      "Id": "198555096",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "mus_music_vr.wav",
+      "CachePath": "2D/{2D795937-201A-C2BF-7731-B3DDD1885A0B}.wem"
      },
      {
       "Id": "211319641",
@@ -216,6 +216,14 @@
       "CachePath": "25/{251DBCC2-A342-DBA2-04D3-8F3775C8808F}.wem"
      },
      {
+      "Id": "626024965",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "sfx_powerup_rumble.wav",
+      "CachePath": "48/{4845DA71-1C59-CF8B-4D2E-5DB645E11AD3}.wem"
+     },
+     {
       "Id": "630766008",
       "Language": "SFX",
       "Streaming": "false",
@@ -282,10 +290,11 @@
      {
       "Id": "1006396274",
       "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
+      "Streaming": "true",
+      "Location": "Loose",
       "ShortName": "amb_pad_guitar.wav",
-      "CachePath": "34/{34A42B14-1B51-14EB-426A-D89558B62063}.wem"
+      "Path": "Media/1006396274.wem",
+      "CachePath": "6F/{6F27AA26-19CF-1ABE-05A9-78B4F7A892AE}.wem"
      },
      {
       "Id": "1014557919",
@@ -497,10 +506,173 @@
       "Name": "Music",
       "ObjectPath": "\\Events\\Default Work Unit\\Music",
       "GUID": "{6C2B9CC9-47BA-48A0-A03D-F4C61BD281D3}",
-      "MaxAttenuation": "0",
-      "DurationType": "OneShot",
-      "DurationMin": "0",
-      "DurationMax": "0"
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "187480084"
+       },
+       {
+        "Id": "189253345"
+       },
+       {
+        "Id": "198555096"
+       },
+       {
+        "Id": "211319641"
+       },
+       {
+        "Id": "315644122"
+       },
+       {
+        "Id": "397949216"
+       },
+       {
+        "Id": "426481905"
+       },
+       {
+        "Id": "441835573"
+       },
+       {
+        "Id": "541488690"
+       },
+       {
+        "Id": "704704544"
+       },
+       {
+        "Id": "868510851"
+       },
+       {
+        "Id": "958267533"
+       },
+       {
+        "Id": "1037117347"
+       }
+      ],
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "175393484"
+        }
+       ]
+      },
+      "AuxBusRefs": [
+       {
+        "Id": "348963605",
+        "Name": "Reverb",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Reverb",
+        "GUID": "{568A8176-882E-40FC-A572-D3004C78AC10}"
+       }
+      ]
+     },
+     {
+      "Id": "538312913",
+      "Name": "PowerUpsOn",
+      "ObjectPath": "\\Events\\Default Work Unit\\PowerUpsOn",
+      "GUID": "{A5C0E518-8767-4469-ABAB-F298406C6C25}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "516061011"
+       },
+       {
+        "Id": "623889076"
+       },
+       {
+        "Id": "626024965"
+       },
+       {
+        "Id": "652838272"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "348963605",
+        "Name": "Reverb",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Reverb",
+        "GUID": "{568A8176-882E-40FC-A572-D3004C78AC10}"
+       },
+       {
+        "Id": "696369880",
+        "Name": "LFE",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\LFE",
+        "GUID": "{7A99EF7A-6B7D-43B7-B065-79464E51DCAB}"
+       }
+      ]
+     },
+     {
+      "Id": "4017455162",
+      "Name": "Reset",
+      "ObjectPath": "\\Events\\Default Work Unit\\Reset",
+      "GUID": "{98D5F919-007E-41E0-BCF2-C379723F61FA}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "89892199"
+       },
+       {
+        "Id": "181926460"
+       },
+       {
+        "Id": "196160818"
+       },
+       {
+        "Id": "293933914"
+       },
+       {
+        "Id": "326334206"
+       },
+       {
+        "Id": "516061011"
+       },
+       {
+        "Id": "621973919"
+       },
+       {
+        "Id": "623889076"
+       },
+       {
+        "Id": "626024965"
+       },
+       {
+        "Id": "630766008"
+       },
+       {
+        "Id": "652838272"
+       },
+       {
+        "Id": "959841215"
+       },
+       {
+        "Id": "1014557919"
+       },
+       {
+        "Id": "1064833642"
+       },
+       {
+        "Id": "1073305620"
+       }
+      ],
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "886273627"
+        }
+       ]
+      },
+      "AuxBusRefs": [
+       {
+        "Id": "348963605",
+        "Name": "Reverb",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Reverb",
+        "GUID": "{568A8176-882E-40FC-A572-D3004C78AC10}"
+       },
+       {
+        "Id": "696369880",
+        "Name": "LFE",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\LFE",
+        "GUID": "{7A99EF7A-6B7D-43B7-B065-79464E51DCAB}"
+       }
+      ]
      },
      {
       "Id": "2160358933",
@@ -509,9 +681,6 @@
       "GUID": "{5C13809D-2C9E-41EE-97E7-7D32F4B3B9D5}",
       "DurationType": "Infinite",
       "MediaRefs": [
-       {
-        "Id": "137294667"
-       },
        {
         "Id": "138764880"
        },
@@ -525,9 +694,6 @@
         "Id": "288241684"
        },
        {
-        "Id": "516061011"
-       },
-       {
         "Id": "526174884"
        },
        {
@@ -535,6 +701,9 @@
        },
        {
         "Id": "623889076"
+       },
+       {
+        "Id": "626024965"
        },
        {
         "Id": "652838272"
@@ -566,13 +735,8 @@
       "Name": "Sensor2Activated",
       "ObjectPath": "\\Events\\Default Work Unit\\Sensor2Activated",
       "GUID": "{ED6E7F52-B1C5-4517-BC04-1B1E5BC3FBBF}",
-      "DurationType": "OneShot",
-      "DurationMin": "72",
-      "DurationMax": "72",
+      "DurationType": "Infinite",
       "MediaRefs": [
-       {
-        "Id": "137294667"
-       },
        {
         "Id": "516061011"
        },
@@ -614,9 +778,6 @@
       "GUID": "{88A957EF-9D5C-43E2-80D0-9528FDE8C673}",
       "DurationType": "Infinite",
       "MediaRefs": [
-       {
-        "Id": "137294667"
-       },
        {
         "Id": "187480084"
        },
@@ -699,13 +860,10 @@
       "DurationType": "Infinite",
       "MediaRefs": [
        {
-        "Id": "137294667"
-       },
-       {
-        "Id": "516061011"
-       },
-       {
         "Id": "623889076"
+       },
+       {
+        "Id": "626024965"
        },
        {
         "Id": "652838272"
@@ -733,9 +891,6 @@
       "GUID": "{AD6A56EB-368B-47F7-8AF0-C15A4E78103A}",
       "DurationType": "Infinite",
       "MediaRefs": [
-       {
-        "Id": "137294667"
-       },
        {
         "Id": "516061011"
        },
@@ -768,9 +923,6 @@
       "GUID": "{8726150C-0DD6-45FB-A1B4-DB2DB608EEEA}",
       "DurationType": "Infinite",
       "MediaRefs": [
-       {
-        "Id": "137294667"
-       },
        {
         "Id": "516061011"
        },
@@ -812,14 +964,6 @@
        {
         "Id": "849966493"
        }
-      ],
-      "ActionPostEvent": [
-       {
-        "Id": "3991942870",
-        "Name": "Music",
-        "ObjectPath": "\\Events\\Default Work Unit\\Music",
-        "GUID": "{6C2B9CC9-47BA-48A0-A03D-F4C61BD281D3}"
-       }
       ]
      },
      {
@@ -849,6 +993,12 @@
       "GUID": "{8A0125EA-B17C-4A07-A2AA-F4E92A932029}"
      },
      {
+      "Id": "3023874994",
+      "Name": "sensor3",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\sensor3",
+      "GUID": "{050AB711-2670-4DC2-B704-99F8F851564C}"
+     },
+     {
       "Id": "3023874995",
       "Name": "sensor2",
       "ObjectPath": "\\Game Parameters\\Default Work Unit\\sensor2",
@@ -857,6 +1007,6 @@
     ]
    }
   ],
-  "FileHash": "{C3B6AFD2-F0A1-28BD-96A7-68B980998803}"
+  "FileHash": "{75CE2BCD-236D-BE48-78C6-B333484DC4B9}"
  }
 }

@@ -15,9 +15,14 @@
 					<ChildrenList>
 						<Sound Name="sfx_sensor_activated" ID="{F8D96FF3-C6C1-47AF-A215-ED5C2CE51670}" ShortID="927624626">
 							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>-680</Value>
+									</ValueList>
+								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-6</Value>
+										<Value>-8</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -53,6 +58,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="sfx_powerup_loaded_hit" ID="{02BCCF10-FFD1-495E-B7C6-F42A468B70E9}" ShortID="934748163">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02AB0E9E-DC49-4D18-8206-2301BDC73EC0}"/>
@@ -82,7 +94,9 @@
 				</ActorMixer>
 				<BlendContainer Name="powerUp1" ID="{85742A46-EDE1-4A32-88CC-4F4517079F6E}" ShortID="548491813">
 					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
 						<Property Name="BlendBehavior" Type="int16" Value="1"/>
+						<Property Name="EnableAttenuation" Type="bool" Value="False"/>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -139,18 +153,38 @@
 																		<Flags>5</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>9.24092</XPos>
-																		<YPos>-0.25802</YPos>
+																		<XPos>6.79555</XPos>
+																		<YPos>-11.59567</YPos>
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>19.3069306930693</XPos>
-																		<YPos>-0.229022403678057</YPos>
+																		<XPos>10.19667</XPos>
+																		<YPos>-0.29173</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>17.97433</XPos>
+																		<YPos>-0.2067</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>23.2816</XPos>
+																		<YPos>-6.33084</YPos>
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
 																		<XPos>42.24422</XPos>
 																		<YPos>-24.23614</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>49.80315</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>49.80415</XPos>
+																		<YPos>-200</YPos>
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
@@ -227,28 +261,28 @@
 																		<Flags>5</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>8.41584</XPos>
+																		<XPos>8.11189</XPos>
 																		<YPos>-14.28965</YPos>
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>11.71617</XPos>
+																		<XPos>10.53507</XPos>
 																		<YPos>-0.07653</YPos>
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>17.32673</XPos>
-																		<YPos>-0.00692</YPos>
+																		<XPos>15.35823</XPos>
+																		<YPos>0.06955</YPos>
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>41.08911</XPos>
-																		<YPos>-15.45805</YPos>
+																		<XPos>21.79777</XPos>
+																		<YPos>-13.81673</YPos>
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>59.07591</XPos>
-																		<YPos>-18.36007</YPos>
+																		<XPos>41.35937</XPos>
+																		<YPos>-200</YPos>
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
@@ -272,7 +306,9 @@
 						</Sound>
 						<Sound Name="sfx_powerup_rumble" ID="{8016157E-BE5C-4402-B227-C0BA66CCD137}" ShortID="733323926">
 							<PropertyList>
+								<Property Name="EnableAttenuation" Type="bool" Value="False"/>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
 								<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
 								<Property Name="UserAuxSendLPF0" Type="int16">
 									<ValueList>
@@ -281,7 +317,7 @@
 								</Property>
 								<Property Name="UserAuxSendVolume0" Type="Real64">
 									<ValueList>
-										<Value>-1</Value>
+										<Value>5</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -299,12 +335,12 @@
 							<ChildrenList>
 								<AudioFileSource Name="sfx_powerup_rumble" ID="{BB0C5F14-7BB7-4A92-9759-3CB9A1053020}">
 									<PropertyList>
-										<Property Name="ChannelConfigOverride" Type="int64" Value="1"/>
+										<Property Name="ChannelConfigOverride" Type="int64" Value="33025"/>
 									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>sfx_powerup_rumble.wav</AudioFile>
 									<MediaIDList>
-										<MediaID ID="516061011"/>
+										<MediaID ID="626024965"/>
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
@@ -333,23 +369,28 @@
 																		<Flags>5</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>6.43564</XPos>
+																		<XPos>7.42375</XPos>
 																		<YPos>-17.61627</YPos>
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>10.23103</XPos>
-																		<YPos>2.96839</YPos>
+																		<XPos>10.66313</XPos>
+																		<YPos>-1E-05</YPos>
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>18.31683</XPos>
-																		<YPos>3.07629</YPos>
+																		<XPos>16.0627</XPos>
+																		<YPos>0.15373</YPos>
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>30.73497</XPos>
-																		<YPos>-1.95727</YPos>
+																		<XPos>20.11277</XPos>
+																		<YPos>-14.28965</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>49.49111</XPos>
+																		<YPos>-200</YPos>
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
@@ -371,140 +412,7 @@
 								<ActiveSource Name="sfx_powerup_rumble" ID="{BB0C5F14-7BB7-4A92-9759-3CB9A1053020}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="sfx_powerup_voices" ID="{C3EDC1F2-E6C4-4F1C-95C4-7065DC563F62}" ShortID="141476539">
-							<PropertyList>
-								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02AB0E9E-DC49-4D18-8206-2301BDC73EC0}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="SFX Master" ID="{1D32FBBD-0AD3-47AA-BA1F-81C9A58A2B61}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="sfx_powerup_voices" ID="{20CD7101-2C04-4CF7-8749-FC80296838FB}">
-									<PropertyList>
-										<Property Name="FadeInDuration" Type="Real64" Value="0.171385538509653"/>
-										<Property Name="FadeOutDuration" Type="Real64" Value="0.0734509450755656"/>
-										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-									</PropertyList>
-									<Language>SFX</Language>
-									<AudioFile>sfx_powerup_voices.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="137294667"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ObjectLists>
-								<ObjectList Name="RTPC">
-									<Reference>
-										<Local>
-											<RTPC Name="" ID="{48672221-8C9C-4787-A1AE-8E9851CD5110}" ShortID="687475738">
-												<PropertyList>
-													<Property Name="PropertyName" Type="string" Value="Volume"/>
-												</PropertyList>
-												<ReferenceList>
-													<Reference Name="ControlInput">
-														<ObjectRef Name="sensor1" ID="{8A0125EA-B17C-4A07-A2AA-F4E92A932029}" WorkUnitID="{783EED98-38D9-4575-BE3B-51AB635CB706}"/>
-													</Reference>
-													<Reference Name="Curve">
-														<Custom>
-															<Curve Name="" ID="{BDC41EF0-B355-4E12-B28B-42F1F5AB13CD}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="3"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>-200</YPos>
-																		<Flags>5</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>5.94059</XPos>
-																		<YPos>-7.33419</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>13.20132</XPos>
-																		<YPos>-6.9867</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>25.41254</XPos>
-																		<YPos>-200</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>100</XPos>
-																		<YPos>-200</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</Custom>
-													</Reference>
-												</ReferenceList>
-											</RTPC>
-										</Local>
-									</Reference>
-								</ObjectList>
-							</ObjectLists>
-							<ActiveSourceList>
-								<ActiveSource Name="sfx_powerup_voices" ID="{20CD7101-2C04-4CF7-8749-FC80296838FB}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
 					</ChildrenList>
-					<ObjectLists>
-						<ObjectList Name="RTPC">
-							<Reference>
-								<Local>
-									<RTPC Name="" ID="{16860886-4A76-408E-A124-8F0247A6182F}" ShortID="989045151">
-										<PropertyList>
-											<Property Name="PropertyName" Type="string" Value="Pitch"/>
-										</PropertyList>
-										<ReferenceList>
-											<Reference Name="ControlInput">
-												<ObjectRef Name="sensor1" ID="{8A0125EA-B17C-4A07-A2AA-F4E92A932029}" WorkUnitID="{783EED98-38D9-4575-BE3B-51AB635CB706}"/>
-											</Reference>
-											<Reference Name="Curve">
-												<Custom>
-													<Curve Name="" ID="{3A5BE362-51EB-46B3-A523-80BC8E8282AD}">
-														<PropertyList>
-															<Property Name="Flags" Type="int32" Value="65537"/>
-														</PropertyList>
-														<PointList>
-															<Point>
-																<XPos>0</XPos>
-																<YPos>-43</YPos>
-																<Flags>5</Flags>
-															</Point>
-															<Point>
-																<XPos>7.75578</XPos>
-																<YPos>336</YPos>
-																<Flags>0</Flags>
-															</Point>
-															<Point>
-																<XPos>16.17162</XPos>
-																<YPos>378</YPos>
-																<Flags>0</Flags>
-															</Point>
-															<Point>
-																<XPos>100</XPos>
-																<YPos>-42</YPos>
-																<Flags>37</Flags>
-															</Point>
-														</PointList>
-													</Curve>
-												</Custom>
-											</Reference>
-										</ReferenceList>
-									</RTPC>
-								</Local>
-							</Reference>
-						</ObjectList>
-					</ObjectLists>
 					<BlendTrackList>
 						<BlendTrack Name="powerup" ID="{DC6D4771-A34F-40CB-8E88-43EFB6E4E4E6}" ShortID="700238582">
 							<BlendTrackAssocList>
@@ -516,9 +424,6 @@
 								</BlendTrackAssoc>
 								<BlendTrackAssoc>
 									<ItemRef Name="sfx_powerup_rumble" ID="{8016157E-BE5C-4402-B227-C0BA66CCD137}"/>
-								</BlendTrackAssoc>
-								<BlendTrackAssoc>
-									<ItemRef Name="sfx_powerup_voices" ID="{C3EDC1F2-E6C4-4F1C-95C4-7065DC563F62}"/>
 								</BlendTrackAssoc>
 							</BlendTrackAssocList>
 						</BlendTrack>
@@ -1113,7 +1018,9 @@
 				</RandomSequenceContainer>
 				<BlendContainer Name="powerUp2" ID="{3F83824E-29BE-4ED1-AD11-43DD08F7D49A}" ShortID="501565415">
 					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
 						<Property Name="BlendBehavior" Type="int16" Value="1"/>
+						<Property Name="EnableAttenuation" Type="bool" Value="False"/>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -1155,7 +1062,7 @@
 												</PropertyList>
 												<ReferenceList>
 													<Reference Name="ControlInput">
-														<ObjectRef Name="sensor1" ID="{8A0125EA-B17C-4A07-A2AA-F4E92A932029}" WorkUnitID="{783EED98-38D9-4575-BE3B-51AB635CB706}"/>
+														<ObjectRef Name="sensor2" ID="{64F8FD5A-7F09-4772-A48A-3629D18ECA60}" WorkUnitID="{783EED98-38D9-4575-BE3B-51AB635CB706}"/>
 													</Reference>
 													<Reference Name="Curve">
 														<Custom>
@@ -1170,18 +1077,28 @@
 																		<Flags>5</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>9.24092</XPos>
-																		<YPos>-0.25802</YPos>
+																		<XPos>7.25455</XPos>
+																		<YPos>-18.93386</YPos>
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>19.3069306930693</XPos>
-																		<YPos>-0.229022403678057</YPos>
+																		<XPos>10.21137</XPos>
+																		<YPos>-0.33686</YPos>
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>42.24422</XPos>
-																		<YPos>-24.23614</YPos>
+																		<XPos>15.89386</XPos>
+																		<YPos>-0.44399</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>18.30709</XPos>
+																		<YPos>-14.28964</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>32.99225</XPos>
+																		<YPos>-200</YPos>
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
@@ -1243,7 +1160,7 @@
 												</PropertyList>
 												<ReferenceList>
 													<Reference Name="ControlInput">
-														<ObjectRef Name="sensor1" ID="{8A0125EA-B17C-4A07-A2AA-F4E92A932029}" WorkUnitID="{783EED98-38D9-4575-BE3B-51AB635CB706}"/>
+														<ObjectRef Name="sensor2" ID="{64F8FD5A-7F09-4772-A48A-3629D18ECA60}" WorkUnitID="{783EED98-38D9-4575-BE3B-51AB635CB706}"/>
 													</Reference>
 													<Reference Name="Curve">
 														<Custom>
@@ -1258,23 +1175,28 @@
 																		<Flags>5</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>8.41584</XPos>
-																		<YPos>-14.28965</YPos>
+																		<XPos>8.01504</XPos>
+																		<YPos>-12.51083</YPos>
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>11.71617</XPos>
-																		<YPos>-0.07653</YPos>
+																		<XPos>11.01852</XPos>
+																		<YPos>-0.05459</YPos>
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>17.32673</XPos>
-																		<YPos>-0.00692</YPos>
+																		<XPos>17.88314</XPos>
+																		<YPos>0.06955</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>21.98641</XPos>
+																		<YPos>-15.36929</YPos>
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
 																		<XPos>41.08911</XPos>
-																		<YPos>-15.45805</YPos>
+																		<YPos>-16.41188</YPos>
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
@@ -1303,7 +1225,9 @@
 						</Sound>
 						<Sound Name="sfx_powerup_rumble" ID="{64BF8747-EE8E-4EBC-8E51-9DE7C632C567}" ShortID="229047427">
 							<PropertyList>
+								<Property Name="EnableAttenuation" Type="bool" Value="False"/>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
 								<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
 								<Property Name="UserAuxSendLPF0" Type="int16">
 									<ValueList>
@@ -1349,7 +1273,7 @@
 												</PropertyList>
 												<ReferenceList>
 													<Reference Name="ControlInput">
-														<ObjectRef Name="sensor1" ID="{8A0125EA-B17C-4A07-A2AA-F4E92A932029}" WorkUnitID="{783EED98-38D9-4575-BE3B-51AB635CB706}"/>
+														<ObjectRef Name="sensor2" ID="{64F8FD5A-7F09-4772-A48A-3629D18ECA60}" WorkUnitID="{783EED98-38D9-4575-BE3B-51AB635CB706}"/>
 													</Reference>
 													<Reference Name="Curve">
 														<Custom>
@@ -1364,23 +1288,28 @@
 																		<Flags>5</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>6.43564</XPos>
-																		<YPos>-17.61627</YPos>
+																		<XPos>7.83134</XPos>
+																		<YPos>-18.21553</YPos>
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>10.23103</XPos>
-																		<YPos>2.96839</YPos>
+																		<XPos>10.41631</XPos>
+																		<YPos>-0.20932</YPos>
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>18.31683</XPos>
-																		<YPos>3.07629</YPos>
+																		<XPos>16.61458</XPos>
+																		<YPos>0.18703</YPos>
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>30.73497</XPos>
-																		<YPos>-1.95727</YPos>
+																		<XPos>20.3019</XPos>
+																		<YPos>-15.56303</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>39.17323</XPos>
+																		<YPos>-200</YPos>
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
@@ -1400,90 +1329,6 @@
 							</ObjectLists>
 							<ActiveSourceList>
 								<ActiveSource Name="sfx_powerup_rumble" ID="{982C51E6-5C25-4806-A64A-79CD9E6338E3}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="sfx_powerup_voices" ID="{4B37D2C7-643D-4347-B072-BAA8A3ABF6E5}" ShortID="695484881">
-							<PropertyList>
-								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02AB0E9E-DC49-4D18-8206-2301BDC73EC0}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="SFX Master" ID="{1D32FBBD-0AD3-47AA-BA1F-81C9A58A2B61}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="sfx_powerup_voices" ID="{2282F6C2-77F9-4835-9635-E604DE5EC972}">
-									<PropertyList>
-										<Property Name="FadeInDuration" Type="Real64" Value="0.171385538509653"/>
-										<Property Name="FadeOutDuration" Type="Real64" Value="0.0734509450755656"/>
-										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-									</PropertyList>
-									<Language>SFX</Language>
-									<AudioFile>sfx_powerup_voices.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="137294667"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ObjectLists>
-								<ObjectList Name="RTPC">
-									<Reference>
-										<Local>
-											<RTPC Name="" ID="{DCC1A4A1-765D-4576-9595-8C640887EFB5}" ShortID="261406014">
-												<PropertyList>
-													<Property Name="PropertyName" Type="string" Value="Volume"/>
-												</PropertyList>
-												<ReferenceList>
-													<Reference Name="ControlInput">
-														<ObjectRef Name="sensor1" ID="{8A0125EA-B17C-4A07-A2AA-F4E92A932029}" WorkUnitID="{783EED98-38D9-4575-BE3B-51AB635CB706}"/>
-													</Reference>
-													<Reference Name="Curve">
-														<Custom>
-															<Curve Name="" ID="{E249F1B1-30C4-4AE9-A8A1-B681C5930ECC}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="3"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>-200</YPos>
-																		<Flags>5</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>5.94059</XPos>
-																		<YPos>-7.33419</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>13.20132</XPos>
-																		<YPos>-6.9867</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>25.41254</XPos>
-																		<YPos>-200</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>100</XPos>
-																		<YPos>-200</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</Custom>
-													</Reference>
-												</ReferenceList>
-											</RTPC>
-										</Local>
-									</Reference>
-								</ObjectList>
-							</ObjectLists>
-							<ActiveSourceList>
-								<ActiveSource Name="sfx_powerup_voices" ID="{2282F6C2-77F9-4835-9635-E604DE5EC972}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
@@ -1512,18 +1357,28 @@
 																<Flags>5</Flags>
 															</Point>
 															<Point>
-																<XPos>7.75578</XPos>
-																<YPos>336</YPos>
+																<XPos>7.61523</XPos>
+																<YPos>-43</YPos>
 																<Flags>0</Flags>
 															</Point>
 															<Point>
-																<XPos>16.17162</XPos>
-																<YPos>378</YPos>
+																<XPos>10.76178</XPos>
+																<YPos>192</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>17.17586</XPos>
+																<YPos>151</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>20.84168</XPos>
+																<YPos>-126</YPos>
 																<Flags>0</Flags>
 															</Point>
 															<Point>
 																<XPos>100</XPos>
-																<YPos>-42</YPos>
+																<YPos>-126</YPos>
 																<Flags>37</Flags>
 															</Point>
 														</PointList>
@@ -1547,9 +1402,6 @@
 								</BlendTrackAssoc>
 								<BlendTrackAssoc>
 									<ItemRef Name="sfx_powerup_rumble" ID="{64BF8747-EE8E-4EBC-8E51-9DE7C632C567}"/>
-								</BlendTrackAssoc>
-								<BlendTrackAssoc>
-									<ItemRef Name="sfx_powerup_voices" ID="{4B37D2C7-643D-4347-B072-BAA8A3ABF6E5}"/>
 								</BlendTrackAssoc>
 							</BlendTrackAssocList>
 						</BlendTrack>
@@ -1599,7 +1451,7 @@
 												</PropertyList>
 												<ReferenceList>
 													<Reference Name="ControlInput">
-														<ObjectRef Name="sensor1" ID="{8A0125EA-B17C-4A07-A2AA-F4E92A932029}" WorkUnitID="{783EED98-38D9-4575-BE3B-51AB635CB706}"/>
+														<ObjectRef Name="sensor3" ID="{050AB711-2670-4DC2-B704-99F8F851564C}" WorkUnitID="{783EED98-38D9-4575-BE3B-51AB635CB706}"/>
 													</Reference>
 													<Reference Name="Curve">
 														<Custom>
@@ -1614,13 +1466,23 @@
 																		<Flags>5</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>9.24092</XPos>
-																		<YPos>-0.25802</YPos>
+																		<XPos>6.93951</XPos>
+																		<YPos>-12.10676</YPos>
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>19.3069306930693</XPos>
-																		<YPos>-0.229022403678057</YPos>
+																		<XPos>11.65775</XPos>
+																		<YPos>-0.33686</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>17.93762</XPos>
+																		<YPos>-0.17332</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>20.64128</XPos>
+																		<YPos>-13.1793</YPos>
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
@@ -1687,7 +1549,7 @@
 												</PropertyList>
 												<ReferenceList>
 													<Reference Name="ControlInput">
-														<ObjectRef Name="sensor1" ID="{8A0125EA-B17C-4A07-A2AA-F4E92A932029}" WorkUnitID="{783EED98-38D9-4575-BE3B-51AB635CB706}"/>
+														<ObjectRef Name="sensor3" ID="{050AB711-2670-4DC2-B704-99F8F851564C}" WorkUnitID="{783EED98-38D9-4575-BE3B-51AB635CB706}"/>
 													</Reference>
 													<Reference Name="Curve">
 														<Custom>
@@ -1702,28 +1564,33 @@
 																		<Flags>5</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>8.41584</XPos>
-																		<YPos>-14.28965</YPos>
+																		<XPos>9.73296</XPos>
+																		<YPos>-13.03166</YPos>
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>11.71617</XPos>
-																		<YPos>-0.07653</YPos>
+																		<XPos>11.92327</XPos>
+																		<YPos>-0.34415</YPos>
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>17.32673</XPos>
-																		<YPos>-0.00692</YPos>
+																		<XPos>17.84671</XPos>
+																		<YPos>-0.10551</YPos>
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>41.08911</XPos>
-																		<YPos>-15.45805</YPos>
+																		<XPos>20.45429</XPos>
+																		<YPos>-7.01106</YPos>
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>59.07591</XPos>
-																		<YPos>-18.36007</YPos>
+																		<XPos>25.65825</XPos>
+																		<YPos>-15.01774</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>39.83743</XPos>
+																		<YPos>-19.01498</YPos>
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
@@ -1748,6 +1615,7 @@
 						<Sound Name="sfx_powerup_rumble" ID="{91695806-FD22-4C87-97E6-232CB98BA996}" ShortID="936586949">
 							<PropertyList>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
 								<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
 								<Property Name="UserAuxSendLPF0" Type="int16">
 									<ValueList>
@@ -1793,7 +1661,7 @@
 												</PropertyList>
 												<ReferenceList>
 													<Reference Name="ControlInput">
-														<ObjectRef Name="sensor1" ID="{8A0125EA-B17C-4A07-A2AA-F4E92A932029}" WorkUnitID="{783EED98-38D9-4575-BE3B-51AB635CB706}"/>
+														<ObjectRef Name="sensor3" ID="{050AB711-2670-4DC2-B704-99F8F851564C}" WorkUnitID="{783EED98-38D9-4575-BE3B-51AB635CB706}"/>
 													</Reference>
 													<Reference Name="Curve">
 														<Custom>
@@ -1808,23 +1676,23 @@
 																		<Flags>5</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>6.43564</XPos>
-																		<YPos>-17.61627</YPos>
+																		<XPos>8.86725</XPos>
+																		<YPos>-13.08059</YPos>
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>10.23103</XPos>
-																		<YPos>2.96839</YPos>
+																		<XPos>12.45106</XPos>
+																		<YPos>0.13161</YPos>
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>18.31683</XPos>
-																		<YPos>3.07629</YPos>
+																		<XPos>18.13207</XPos>
+																		<YPos>-0.13162</YPos>
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>30.73497</XPos>
-																		<YPos>-1.95727</YPos>
+																		<XPos>23.32014</XPos>
+																		<YPos>-18.85924</YPos>
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
@@ -1846,90 +1714,6 @@
 								<ActiveSource Name="sfx_powerup_rumble" ID="{38AD911F-7400-46A0-98A9-28CA43AE5A91}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="sfx_powerup_voices" ID="{5816B928-CA54-44F5-8DF7-33B22C2FC347}" ShortID="953205269">
-							<PropertyList>
-								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02AB0E9E-DC49-4D18-8206-2301BDC73EC0}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="SFX Master" ID="{1D32FBBD-0AD3-47AA-BA1F-81C9A58A2B61}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="sfx_powerup_voices" ID="{998EF856-DB6B-4ECD-B81F-F9887FA88635}">
-									<PropertyList>
-										<Property Name="FadeInDuration" Type="Real64" Value="0.171385538509653"/>
-										<Property Name="FadeOutDuration" Type="Real64" Value="0.0734509450755656"/>
-										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-									</PropertyList>
-									<Language>SFX</Language>
-									<AudioFile>sfx_powerup_voices.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="137294667"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ObjectLists>
-								<ObjectList Name="RTPC">
-									<Reference>
-										<Local>
-											<RTPC Name="" ID="{A42713E1-3914-4E7A-9A27-23B203F2E4E7}" ShortID="971944043">
-												<PropertyList>
-													<Property Name="PropertyName" Type="string" Value="Volume"/>
-												</PropertyList>
-												<ReferenceList>
-													<Reference Name="ControlInput">
-														<ObjectRef Name="sensor1" ID="{8A0125EA-B17C-4A07-A2AA-F4E92A932029}" WorkUnitID="{783EED98-38D9-4575-BE3B-51AB635CB706}"/>
-													</Reference>
-													<Reference Name="Curve">
-														<Custom>
-															<Curve Name="" ID="{AB12D0F2-C1C4-4965-B71E-03016841F138}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="3"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>-200</YPos>
-																		<Flags>5</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>5.94059</XPos>
-																		<YPos>-7.33419</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>13.20132</XPos>
-																		<YPos>-6.9867</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>25.41254</XPos>
-																		<YPos>-200</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>100</XPos>
-																		<YPos>-200</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</Custom>
-													</Reference>
-												</ReferenceList>
-											</RTPC>
-										</Local>
-									</Reference>
-								</ObjectList>
-							</ObjectLists>
-							<ActiveSourceList>
-								<ActiveSource Name="sfx_powerup_voices" ID="{998EF856-DB6B-4ECD-B81F-F9887FA88635}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
 					</ChildrenList>
 					<ObjectLists>
 						<ObjectList Name="RTPC">
@@ -1941,7 +1725,7 @@
 										</PropertyList>
 										<ReferenceList>
 											<Reference Name="ControlInput">
-												<ObjectRef Name="sensor1" ID="{8A0125EA-B17C-4A07-A2AA-F4E92A932029}" WorkUnitID="{783EED98-38D9-4575-BE3B-51AB635CB706}"/>
+												<ObjectRef Name="sensor3" ID="{050AB711-2670-4DC2-B704-99F8F851564C}" WorkUnitID="{783EED98-38D9-4575-BE3B-51AB635CB706}"/>
 											</Reference>
 											<Reference Name="Curve">
 												<Custom>
@@ -1956,13 +1740,23 @@
 																<Flags>5</Flags>
 															</Point>
 															<Point>
-																<XPos>7.75578</XPos>
-																<YPos>336</YPos>
+																<XPos>11.07342</XPos>
+																<YPos>-133</YPos>
 																<Flags>0</Flags>
 															</Point>
 															<Point>
-																<XPos>16.17162</XPos>
-																<YPos>378</YPos>
+																<XPos>13.80131</XPos>
+																<YPos>-51</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>18.00648</XPos>
+																<YPos>-37</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>21.37954</XPos>
+																<YPos>-42</YPos>
 																<Flags>0</Flags>
 															</Point>
 															<Point>
@@ -1991,9 +1785,6 @@
 								</BlendTrackAssoc>
 								<BlendTrackAssoc>
 									<ItemRef Name="sfx_powerup_rumble" ID="{91695806-FD22-4C87-97E6-232CB98BA996}"/>
-								</BlendTrackAssoc>
-								<BlendTrackAssoc>
-									<ItemRef Name="sfx_powerup_voices" ID="{5816B928-CA54-44F5-8DF7-33B22C2FC347}"/>
 								</BlendTrackAssoc>
 							</BlendTrackAssocList>
 						</BlendTrack>

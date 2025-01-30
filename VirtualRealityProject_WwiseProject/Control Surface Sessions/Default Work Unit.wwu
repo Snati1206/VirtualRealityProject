@@ -127,6 +127,30 @@
 										</Reference>
 									</ReferenceList>
 								</ControlSurfaceBinding>
+								<ControlSurfaceBinding Name="Binding" ID="{547C641A-2C36-46C3-9CEA-4AE5768F5B5C}">
+									<PropertyList>
+										<Property Name="HardwareControllerKey" Type="string" Value="MaxMsp~Ch.1~CC~11"/>
+										<Property Name="TargetClassID" Type="int32" Value="1507344"/>
+										<Property Name="TargetName" Type="string" Value="SimulationValue"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="TargetObject">
+											<ObjectRef Name="activationStatus" ID="{8C7A1363-674B-41F9-B092-3E3C9F25B869}" WorkUnitID="{783EED98-38D9-4575-BE3B-51AB635CB706}"/>
+										</Reference>
+									</ReferenceList>
+								</ControlSurfaceBinding>
+								<ControlSurfaceBinding Name="Binding" ID="{B29D6B31-B82F-4CC4-9FEA-EF2DF7485AD3}">
+									<PropertyList>
+										<Property Name="HardwareControllerKey" Type="string" Value="MaxMsp~Ch.1~CC~13"/>
+										<Property Name="TargetName" Type="string" Value="TransportPlay"/>
+										<Property Name="TargetType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="TargetObject">
+											<ObjectRef Name="PowerUpsOn" ID="{A5C0E518-8767-4469-ABAB-F298406C6C25}" WorkUnitID="{8837BB41-6FC3-415B-85DD-91771863AD97}"/>
+										</Reference>
+									</ReferenceList>
+								</ControlSurfaceBinding>
 							</ChildrenList>
 						</ControlSurfaceBindingGroup>
 						<ControlSurfaceBindingGroup Name="Current Selection" ID="{7B0681D4-38CD-46A4-8651-486D351496DD}">
