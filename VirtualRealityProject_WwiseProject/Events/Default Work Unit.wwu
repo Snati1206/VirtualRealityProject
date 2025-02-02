@@ -343,6 +343,31 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
+						<Action Name="" ID="{A6329E15-34EE-463A-90A8-7FCA2FF62E12}" ShortID="849104855">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="whispers" ID="{73B61880-4FCC-4E1C-B7DD-B9398DF6C638}" WorkUnitID="{4E140D7F-62E4-4DAF-A811-B1E5FF1E146B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{954F5E30-AE0A-470A-88C6-6CBBB50E4CB0}" ShortID="396379115">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Ambiance" ID="{A143B276-DF92-4BBA-8949-54BED2AB4075}" WorkUnitID="{7FAE9102-D772-46A8-AA69-F6DB5B0BCD91}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Transition_01" ID="{075CA2B4-6524-4E4C-90AC-AE503EDAE170}">
+					<ChildrenList>
+						<Action Name="" ID="{73DF9DF9-1ABC-4BDB-B471-A6F0F2BFE0D8}" ShortID="232355963">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="mus_music_vr_drums" ID="{AAB6FAEF-631E-407F-9AF1-D9819AC83344}" WorkUnitID="{EF201BAD-857B-4AA6-993A-B9548624111E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 					</ChildrenList>
 				</Event>
 			</ChildrenList>

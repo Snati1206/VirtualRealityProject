@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{45D8302B-19E7-418B-B7D2-CDAC15D9EA71}",
     "Language": "SFX",
-    "Hash": "{2A94FCD7-97CA-3DCE-9A4C-DE43122E8D8E}",
+    "Hash": "{347BE2C8-2439-8DE2-238D-0238AF4454CC}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -253,7 +253,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "sfx_sensor_unlocked_pad.wav",
-      "CachePath": "9C/{9CAEE33B-F9E6-1987-C42F-51862F3DFE33}.wem"
+      "CachePath": "B4/{B42FEEE5-F7B3-43A9-53D0-32A96C46F6FE}.wem"
      },
      {
       "Id": "868510851",
@@ -1007,6 +1007,6 @@
     ]
    }
   ],
-  "FileHash": "{2C5F4AFB-3309-9A77-3C35-B0CB1F46983C}"
+  "FileHash": "{2CA184AE-6B94-FA93-9059-6EFA7B283DC8}"
  }
 }

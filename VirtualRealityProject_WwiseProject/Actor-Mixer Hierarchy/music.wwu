@@ -26,6 +26,23 @@
 							</MediaIDList>
 						</AudioFileSource>
 					</ChildrenList>
+					<ObjectLists>
+						<ObjectList Name="Effects">
+							<Reference>
+								<Local>
+									<EffectSlot Name="" ID="{712370D8-4427-4EA4-92C8-A803B4DADB22}" ShortID="1061425805">
+										<ReferenceList>
+											<Reference Name="Effect">
+												<Custom CreatedFrom="{EEBB1141-4845-43AA-945C-C0F638309ED3}">
+													<Effect Name="New_Time_Stretch (Custom)" ID="{FFE70777-2480-439C-83AA-804BF7C2AA24}" ShortID="636987280" PluginName="Wwise Time Stretch" CompanyID="0" PluginID="130" PluginType="3"/>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</EffectSlot>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
 					<ActiveSourceList>
 						<ActiveSource Name="mus_music_vr" ID="{9E6DC068-A1B0-4373-8090-AF26E80F91D0}" Platform="Linked"/>
 					</ActiveSourceList>

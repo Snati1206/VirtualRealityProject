@@ -26,6 +26,10 @@
 							<Position X="1" Y="1"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="PadsSensor3" ID="{936DA61C-AB9B-4169-A1AF-4085A09458CE}" WorkUnitID="{7FAE9102-D772-46A8-AA69-F6DB5B0BCD91}"/>
+							<Position X="1" Y="2"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="Sensor3Activated" ID="{88A957EF-9D5C-43E2-80D0-9528FDE8C673}" WorkUnitID="{8837BB41-6FC3-415B-85DD-91771863AD97}"/>
 							<Position X="2" Y="0"/>
 						</Module>
@@ -45,7 +49,7 @@
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
 							<GameParameterRef Name="activationStatus" ID="{8C7A1363-674B-41F9-B092-3E3C9F25B869}"/>
-							<Value>0</Value>
+							<Value>100</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="sensor2" ID="{64F8FD5A-7F09-4772-A48A-3629D18ECA60}"/>
@@ -53,7 +57,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="sensor1" ID="{8A0125EA-B17C-4A07-A2AA-F4E92A932029}"/>
-							<Value>3.93700787401575</Value>
+							<Value>100</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="sensor3" ID="{050AB711-2670-4DC2-B704-99F8F851564C}"/>

@@ -125,6 +125,13 @@
 							</DuckingList>
 						</Bus>
 						<Bus Name="Music Master" ID="{F66273E3-DE47-4C98-ADDF-303E7792642A}">
+							<PropertyList>
+								<Property Name="BusChannelConfig" Type="int32">
+									<ValueList>
+										<Value>768</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<DuckingList>
 								<DuckItem>
 									<BusRef Name="Ambiance Master" ID="{CCCF0DF9-24CC-4600-B821-E19884B16803}"/>

@@ -37,7 +37,7 @@
 							<ChildrenList>
 								<AudioFileSource Name="sfx_sensor_unlocked_pad" ID="{B8F29177-37D4-4FBC-AF2D-090EF5DC4F95}">
 									<PropertyList>
-										<Property Name="FadeInDuration" Type="Real64" Value="0.105934992802986"/>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.283939816051056"/>
 										<Property Name="FadeOutDuration" Type="Real64" Value="0.723889117487074"/>
 										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 										<Property Name="VolumeOffset" Type="Real64">
@@ -438,7 +438,7 @@
 						</Property>
 						<Property Name="UserAuxSendVolume0" Type="Real64">
 							<ValueList>
-								<Value>-7</Value>
+								<Value>-14</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>

@@ -585,7 +585,7 @@
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
 								<Property Name="InitialDelay" Type="Real64">
 									<ValueList>
-										<Value>7</Value>
+										<Value>3</Value>
 									</ValueList>
 									<ModifierList>
 										<ModifierInfo>
@@ -602,7 +602,7 @@
 								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 								<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
-								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="7.5">
+								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="4.5">
 									<ModifierList>
 										<ModifierInfo>
 											<Modifier Name="" ID="{80F8E6FF-00A1-4072-BA03-90818154FFDE}">
@@ -618,6 +618,11 @@
 								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 								<Property Name="RandomAvoidRepeating" Type="bool" Value="False"/>
 								<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="0"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>7</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
@@ -1234,9 +1239,6 @@
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Ambiance Master" ID="{CCCF0DF9-24CC-4600-B821-E19884B16803}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
-						</Reference>
-						<Reference Name="UserAuxSend0">
-							<ObjectRef Name="Reverb" ID="{568A8176-882E-40FC-A572-D3004C78AC10}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>

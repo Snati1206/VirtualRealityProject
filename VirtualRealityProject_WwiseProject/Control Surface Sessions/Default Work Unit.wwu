@@ -151,6 +151,18 @@
 										</Reference>
 									</ReferenceList>
 								</ControlSurfaceBinding>
+								<ControlSurfaceBinding Name="Binding" ID="{30605D48-B793-4933-B8EA-B44C6F16EFDD}">
+									<PropertyList>
+										<Property Name="HardwareControllerKey" Type="string" Value="MaxMsp~Ch.1~CC~15"/>
+										<Property Name="TargetName" Type="string" Value="TransportPlay"/>
+										<Property Name="TargetType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="TargetObject">
+											<ObjectRef Name="Transition_01" ID="{075CA2B4-6524-4E4C-90AC-AE503EDAE170}" WorkUnitID="{8837BB41-6FC3-415B-85DD-91771863AD97}"/>
+										</Reference>
+									</ReferenceList>
+								</ControlSurfaceBinding>
 							</ChildrenList>
 						</ControlSurfaceBindingGroup>
 						<ControlSurfaceBindingGroup Name="Current Selection" ID="{7B0681D4-38CD-46A4-8651-486D351496DD}">

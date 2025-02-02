@@ -4,6 +4,7 @@
 		<WorkUnit Name="Default Work Unit" ID="{22D8B069-5FC5-4219-A5FD-C2807912FC10}" PersistMode="Standalone">
 			<ChildrenList>
 				<Effect Name="New_iZotope_Trash_Filters" ID="{F28ACBC4-1881-44DC-9DCB-5B9E1FAF0F8B}" PluginName="iZotope Trash Filters" CompanyID="259" PluginID="6" PluginType="3"/>
+				<Effect Name="New_Time_Stretch" ID="{EEBB1141-4845-43AA-945C-C0F638309ED3}" PluginName="Wwise Time Stretch" CompanyID="0" PluginID="130" PluginType="3"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Effects>
