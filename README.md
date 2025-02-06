@@ -1,6 +1,7 @@
 # Mixed Reality Project Master RIM UJM
 
 Hello ! this is a mixed reality project in which we, Snati1206 and Marianne Sicari, a group of students from the Jean Monnet University have worked together.
+[You can see a demo of this project if you click on this link](https://drive.google.com/file/d/11V4E1r2pe5vJfmt2Lb1gqGeB0iU6vTL_/view?usp=sharing). 
 Our main idea behind this was to create an interactive Installation that mixed a **Virtual Reality World** with our **"Real World"**. In the following lines I'll share with you the main creative and technical steps.
 
 ## Arduino and ESP32
