@@ -258,8 +258,8 @@ MonoBehaviour:
         guid: b2251947b36cbc458184b20853065d36
       Path: Events/Default Work Unit/Alarm
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 5.92
+      minDuration: 5.92
     - name: AmbianceOff
       guid: ea7de7047924e7458022fb1161cd3052
       id: 2011814100
@@ -275,8 +275,8 @@ MonoBehaviour:
         guid: ea7de7047924e7458022fb1161cd3052
       Path: Events/Default Work Unit/AmbianceOff
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: AmbianceOn
       guid: 5102de0aaa8ed54587d6cea9f4467c9f
       id: 2661120974
@@ -292,8 +292,8 @@ MonoBehaviour:
         guid: 5102de0aaa8ed54587d6cea9f4467c9f
       Path: Events/Default Work Unit/AmbianceOn
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: Music
       guid: c99c2b6cba47a048a03df4c61bd281d3
       id: 3991942870
@@ -309,8 +309,8 @@ MonoBehaviour:
         guid: c99c2b6cba47a048a03df4c61bd281d3
       Path: Events/Default Work Unit/Music
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: PowerUpsOn
       guid: 18e5c0a567876944ababf298406c6c25
       id: 538312913
@@ -326,8 +326,8 @@ MonoBehaviour:
         guid: 18e5c0a567876944ababf298406c6c25
       Path: Events/Default Work Unit/PowerUpsOn
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: Reset
       guid: 19f9d5987e00e041bcf2c379723f61fa
       id: 4017455162
@@ -343,8 +343,8 @@ MonoBehaviour:
         guid: 19f9d5987e00e041bcf2c379723f61fa
       Path: Events/Default Work Unit/Reset
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: Sensor1Activated
       guid: 9d80135c9e2cee4197e77d32f4b3b9d5
       id: 2160358933
@@ -360,8 +360,8 @@ MonoBehaviour:
         guid: 9d80135c9e2cee4197e77d32f4b3b9d5
       Path: Events/Default Work Unit/Sensor1Activated
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: Sensor2Activated
       guid: 527f6eedc5b11745bc041b1e5bc3fbbf
       id: 996378512
@@ -377,8 +377,8 @@ MonoBehaviour:
         guid: 527f6eedc5b11745bc041b1e5bc3fbbf
       Path: Events/Default Work Unit/Sensor2Activated
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: Sensor3Activated
       guid: ef57a9885c9de24380d09528fde8c673
       id: 3742079315
@@ -394,8 +394,8 @@ MonoBehaviour:
         guid: ef57a9885c9de24380d09528fde8c673
       Path: Events/Default Work Unit/Sensor3Activated
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: SensorPowerUp1
       guid: 68085e2e053ad64797bbec53ef4ec22a
       id: 2555139182
@@ -411,8 +411,8 @@ MonoBehaviour:
         guid: 68085e2e053ad64797bbec53ef4ec22a
       Path: Events/Default Work Unit/SensorPowerUp1
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: SensorPowerUp2
       guid: eb566aad8b36f7478af0c15a4e78103a
       id: 2555139181
@@ -428,8 +428,8 @@ MonoBehaviour:
         guid: eb566aad8b36f7478af0c15a4e78103a
       Path: Events/Default Work Unit/SensorPowerUp2
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: SensorPowerUp3
       guid: 0c152687d60dfb45a1b4db2db608eeea
       id: 2555139180
@@ -445,8 +445,8 @@ MonoBehaviour:
         guid: 0c152687d60dfb45a1b4db2db608eeea
       Path: Events/Default Work Unit/SensorPowerUp3
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: Transition
       guid: ba5921ffe5a7834b9357d0ec8f81668c
       id: 1865857008
@@ -462,8 +462,8 @@ MonoBehaviour:
         guid: ba5921ffe5a7834b9357d0ec8f81668c
       Path: Events/Default Work Unit/Transition
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: Transition_01
       guid: b4a25c0724654c4e90acae503edae170
       id: 2728638438
@@ -496,8 +496,8 @@ MonoBehaviour:
         guid: cfd094928f809b4785ba82b381531b99
       Path: Events/Default Work Unit/VoicesHeadset
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
   RtpcWwu:
   - PhysicalPath: Game Parameters/Default Work Unit.wwu
     PathAndIcons:
