@@ -1,0 +1,3530 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfTypeDate xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <TypeDate>
+    <guid>2c0dea52dcdb16e4e9b13f8dacc1590f</guid>
+    <fileName>Assets/Plugins/AssetUsageDetector/Editor/AssetUsageDetector.cs</fileName>
+    <timeStamp>2025-02-26T12:20:39.9019357+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>71ea9a3fd0b82594d8130d882dbfc844</guid>
+    <fileName>Assets/Plugins/AssetUsageDetector/Editor/AssetUsageDetectorCache.cs</fileName>
+    <timeStamp>2025-02-26T12:20:39.9129364+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>93aaae685d4c3db44baeb91a0296855e</guid>
+    <fileName>Assets/Plugins/AssetUsageDetector/Editor/AssetUsageDetectorSearchFunctions.cs</fileName>
+    <timeStamp>2025-02-26T12:20:39.9249353+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>13295073724765e45aa3b77486e515f4</guid>
+    <fileName>Assets/Plugins/AssetUsageDetector/Editor/AssetUsageDetectorSettings.cs</fileName>
+    <timeStamp>2025-02-26T12:20:39.9439358+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>271a22c69c3d96c4dbdd04cca415a840</guid>
+    <fileName>Assets/Plugins/AssetUsageDetector/Editor/AssetUsageDetectorWindow.cs</fileName>
+    <timeStamp>2025-02-26T12:20:39.9619364+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>894047c47ce45cf40939dae24afcc72b</guid>
+    <fileName>Assets/Plugins/AssetUsageDetector/Editor/Enumerators.cs</fileName>
+    <timeStamp>2025-02-26T12:20:39.9709336+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>88a4a4e861026b2498a437ce1e12b054</guid>
+    <fileName>Assets/Plugins/AssetUsageDetector/Editor/ListDrawer.cs</fileName>
+    <timeStamp>2025-02-26T12:20:39.9809364+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>66d5a144a723fea40945afc069d4231d</guid>
+    <fileName>Assets/Plugins/AssetUsageDetector/Editor/ObjectToSearch.cs</fileName>
+    <timeStamp>2025-02-26T12:20:40.0019564+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>3d15ef8bd8f7c7c4e8d228c99713b7eb</guid>
+    <fileName>Assets/Plugins/AssetUsageDetector/Editor/SearchRefactoring.cs</fileName>
+    <timeStamp>2025-02-26T12:20:40.0289389+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>ca236e4f3c5a9f447be89f0e61e485fa</guid>
+    <fileName>Assets/Plugins/AssetUsageDetector/Editor/SearchResult.cs</fileName>
+    <timeStamp>2025-02-26T12:20:40.0509379+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>c8bd4351b5024324ca5974ebcad1dde3</guid>
+    <fileName>Assets/Plugins/AssetUsageDetector/Editor/SearchResultTooltip.cs</fileName>
+    <timeStamp>2025-02-26T12:20:40.0629389+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>b3903f1d3149e9b4990e49206f8255c8</guid>
+    <fileName>Assets/Plugins/AssetUsageDetector/Editor/SearchResultTreeView.cs</fileName>
+    <timeStamp>2025-02-26T12:20:40.0749366+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>52b272b7591fb90499916205261524e0</guid>
+    <fileName>Assets/Plugins/AssetUsageDetector/Editor/Utilities.cs</fileName>
+    <timeStamp>2025-02-26T12:20:40.0929355+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>9e94c83e8b850514ca0217aeff1491a6</guid>
+    <fileName>Assets/Plugins/AssetUsageDetector/Editor/VariableGetter.cs</fileName>
+    <timeStamp>2025-02-26T12:20:40.1039345+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>32002d92d362cd646ba029524a6827ed</guid>
+    <fileName>Assets/Plugins/UnitySweeper/Editor/AssetCollector.cs</fileName>
+    <timeStamp>2025-02-26T12:14:41.4096817+01:00</timeStamp>
+    <typeFullName>
+      <string>UnitySweeper.AssetCollector</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-Editor-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>bf8c30d11385ed44b8238e044bcf5eec</guid>
+    <fileName>Assets/Plugins/UnitySweeper/Editor/AssetReferenceCollection.cs</fileName>
+    <timeStamp>2025-02-26T12:14:41.4306819+01:00</timeStamp>
+    <typeFullName>
+      <string>UnitySweeper.AssetReferenceCollection</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-Editor-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>9127387228e1a604895fb44027890e3d</guid>
+    <fileName>Assets/Plugins/UnitySweeper/Editor/ClassReferenceCollection.cs</fileName>
+    <timeStamp>2025-02-26T12:14:41.4516841+01:00</timeStamp>
+    <typeFullName>
+      <string>UnitySweeper.ClassReferenceCollection</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-Editor-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>f90288a1ea129184484105e48e694f5e</guid>
+    <fileName>Assets/Plugins/UnitySweeper/Editor/CollectionData.cs</fileName>
+    <timeStamp>2025-02-26T12:14:41.4716821+01:00</timeStamp>
+    <typeFullName>
+      <string>UnitySweeper.CollectionData</string>
+      <string>UnitySweeper.TypeDate</string>
+      <string>UnitySweeper.IReferenceCollection</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-Editor-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>d52c210699a3ee447b0a3affae05b34c</guid>
+    <fileName>Assets/Plugins/UnitySweeper/Editor/FindUnusedAssetsWindow.cs</fileName>
+    <timeStamp>2025-02-26T12:14:41.4926834+01:00</timeStamp>
+    <typeFullName>
+      <string>UnitySweeper.FindUnusedAssetsWindow</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-Editor-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>4ba6813cf9b45b844bfef1320341f55d</guid>
+    <fileName>Assets/Plugins/UnitySweeper/Editor/ShaderReferenceCollection.cs</fileName>
+    <timeStamp>2025-02-26T12:14:41.5136848+01:00</timeStamp>
+    <typeFullName>
+      <string>UnitySweeper.ShaderReferenceCollection</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-Editor-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>55ec8f677c71a40baa14c28d65ce885c</guid>
+    <fileName>Assets/SkyboxColorChanger.cs</fileName>
+    <timeStamp>2025-01-30T09:57:45.4632986+01:00</timeStamp>
+    <typeFullName>
+      <string>SkyboxColorChanger</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>5cffbb3359028480aa32f3029cc8f0b0</guid>
+    <fileName>Assets/SkyboxRotator.cs</fileName>
+    <timeStamp>2025-01-30T09:57:45.4642958+01:00</timeStamp>
+    <typeFullName>
+      <string>SkyboxRotator</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>73c57c41aabb344f788c1c10dc9de486</guid>
+    <fileName>Assets/sky_tint.cs</fileName>
+    <timeStamp>2025-01-28T16:29:15.4595481+01:00</timeStamp>
+    <typeFullName>
+      <string>SkyboxColorAndExposureChanger</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>204ba3167fc944217968ae31d68e4b62</guid>
+    <fileName>Assets/water_effect.cs</fileName>
+    <timeStamp>2025-01-28T16:29:15.4722871+01:00</timeStamp>
+    <typeFullName>
+      <string>WaterColorChanger</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>257b0c875994a400e8982047ef5ca976</guid>
+    <fileName>Assets/extOSC/Scripts/OSCBind.cs</fileName>
+    <timeStamp>2020-12-10T17:34:18+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>ee922e2eef4a2f247a4e221269beac4b</guid>
+    <fileName>Assets/extOSC/Scripts/OSCBindBundle.cs</fileName>
+    <timeStamp>2020-12-10T17:35:24+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>38efe02dc8961bd4b9978b03019faa5e</guid>
+    <fileName>Assets/extOSC/Scripts/OSCBundle.cs</fileName>
+    <timeStamp>2020-12-10T17:34:23+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>090df38242862904c8541273c655829c</guid>
+    <fileName>Assets/extOSC/Scripts/OSCEnums.cs</fileName>
+    <timeStamp>2020-12-10T17:34:07+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>dbfd851c3be3a4354b99b88c19500bc6</guid>
+    <fileName>Assets/extOSC/Scripts/OSCMatchPattern.cs</fileName>
+    <timeStamp>2020-12-10T17:35:18+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>51a5ce6cec4bf2748b130430475b0b0d</guid>
+    <fileName>Assets/extOSC/Scripts/OSCMessage.cs</fileName>
+    <timeStamp>2020-12-10T17:34:30+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>62e1c0055b0084f73917cee1fa186c08</guid>
+    <fileName>Assets/extOSC/Scripts/OSCMidi.cs</fileName>
+    <timeStamp>2020-12-10T17:34:34+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>fbba286dc10e549b2bdec947ef8dbd3b</guid>
+    <fileName>Assets/extOSC/Scripts/OSCReceiver.cs</fileName>
+    <timeStamp>2020-12-10T17:35:28+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>464088183d2a1484ab8fb64e356c9f5c</guid>
+    <fileName>Assets/extOSC/Scripts/OSCTransmitter.cs</fileName>
+    <timeStamp>2020-12-10T17:34:27+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>5d7d8642e8a9b4546be434c9b93264c4</guid>
+    <fileName>Assets/extOSC/Scripts/OSCUtilities.cs</fileName>
+    <timeStamp>2020-12-10T17:34:33+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>3fac5ee4dfad2fe459895919625ca3ed</guid>
+    <fileName>Assets/extOSC/Scripts/OSCValue.cs</fileName>
+    <timeStamp>2020-12-10T17:34:25+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>a448b02e2f27db342839dcfeb705e02e</guid>
+    <fileName>Assets/Idyllic Fantasy Nature/Scripts/BushLeafTrigger.cs</fileName>
+    <timeStamp>2025-01-17T07:51:55.2260495+01:00</timeStamp>
+    <typeFullName>
+      <string>IdyllicFantasyNature.BushLeafTrigger</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>7b2d1c42e3127af4085a6e78ce29e663</guid>
+    <fileName>Assets/Idyllic Fantasy Nature/Scripts/ButterflySpawn.cs</fileName>
+    <timeStamp>2025-01-17T07:51:55.2270423+01:00</timeStamp>
+    <typeFullName>
+      <string>IdyllicFantasyNature.ButterflySpawn</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>f31b20a778ade6341b5b642f0ac7c8bf</guid>
+    <fileName>Assets/Idyllic Fantasy Nature/Scripts/ButterflySpawnArea.cs</fileName>
+    <timeStamp>2025-01-17T07:51:55.2270423+01:00</timeStamp>
+    <typeFullName>
+      <string>IdyllicFantasyNature.ButterflySpawnArea</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>e54e534ce9e48bc4ebad75722140db8d</guid>
+    <fileName>Assets/Idyllic Fantasy Nature/Scripts/CameraMovement.cs</fileName>
+    <timeStamp>2025-01-17T07:51:55.2280409+01:00</timeStamp>
+    <typeFullName>
+      <string>IdyllicFantasyNature.CameraMovement</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>a54f25c7d8be2c541975149df34ad000</guid>
+    <fileName>Assets/Idyllic Fantasy Nature/Scripts/ExitGame.cs</fileName>
+    <timeStamp>2025-01-17T07:51:55.2280409+01:00</timeStamp>
+    <typeFullName>
+      <string>IdyllicFantasyNature.ExitGame</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>050d43ced377b8649b46a5e630bf4a63</guid>
+    <fileName>Assets/Idyllic Fantasy Nature/Scripts/PlayerMovement.cs</fileName>
+    <timeStamp>2025-01-17T07:51:55.2280409+01:00</timeStamp>
+    <typeFullName>
+      <string>IdyllicFantasyNature.PlayerMovement</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>d80f2b6645798d6448f6ef9685e70783</guid>
+    <fileName>Assets/Idyllic Fantasy Nature/Scripts/VegetationBendControl.cs</fileName>
+    <timeStamp>2025-01-17T07:51:55.2290262+01:00</timeStamp>
+    <typeFullName>
+      <string>IdyllicFantasyNature.VegetationBendControl</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>11ea29587d5c61b4ba60eeb68eff3cdb</guid>
+    <fileName>Assets/Idyllic Fantasy Nature/Scripts/WindControl.cs</fileName>
+    <timeStamp>2025-01-17T07:51:55.2290262+01:00</timeStamp>
+    <typeFullName>
+      <string>IdyllicFantasyNature.WindControl</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>c04cb150db0a04af2a85b0e16b27a8ca</guid>
+    <fileName>Assets/SpaceSkies Free/Skybox_1/SkyboxColorInfluence.cs</fileName>
+    <timeStamp>2025-01-28T16:29:15.382444+01:00</timeStamp>
+    <typeFullName>
+      <string>SkyboxColorInfluence</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>fcf7219bab7fe46a1ad266029b2fee19</guid>
+    <fileName>Assets/TutorialInfo/Scripts/Readme.cs</fileName>
+    <timeStamp>2025-01-17T07:51:56.4107152+01:00</timeStamp>
+    <typeFullName>
+      <string>Readme</string>
+      <string>Readme+Section</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>dea054db99904747a106c67c43b175f7</guid>
+    <fileName>Assets/extOSC/Scripts/Attributes/OSCHostAttribute.cs</fileName>
+    <timeStamp>2020-12-10T17:35:20+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>91dd7141dfc54e66b79efeb7d583c7a0</guid>
+    <fileName>Assets/extOSC/Scripts/Attributes/OSCSelectorAttribute.cs</fileName>
+    <timeStamp>2020-12-10T17:34:51+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>f72d6f6070c24466a81bd99e594c6300</guid>
+    <fileName>Assets/extOSC/Scripts/Components/OSCComponent.cs</fileName>
+    <timeStamp>2020-12-10T17:35:27+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>e2fb5b3289934436eabcbd8811af3bf6</guid>
+    <fileName>Assets/extOSC/Scripts/Components/OSCReceiverComponent.cs</fileName>
+    <timeStamp>2020-12-10T17:35:21+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>f6b59c5b35e4f4c8caf0b870ad04ef00</guid>
+    <fileName>Assets/extOSC/Scripts/Components/OSCTransmitterComponent.cs</fileName>
+    <timeStamp>2020-12-10T17:35:27+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>fd7506036bb224e509cc9ceb7a5abb93</guid>
+    <fileName>Assets/extOSC/Scripts/Core/IOSCBind.cs</fileName>
+    <timeStamp>2020-12-10T17:35:29+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>025de14a0edc05e4387a82cf62b525f2</guid>
+    <fileName>Assets/extOSC/Scripts/Core/IOSCBindBundle.cs</fileName>
+    <timeStamp>2020-12-10T17:34:05+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>d75039caaf404c842903f64444a5e1ef</guid>
+    <fileName>Assets/extOSC/Scripts/Core/IOSCPacket.cs</fileName>
+    <timeStamp>2020-12-10T17:35:16+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>ed38c75da82e9d64882216c17f7a5c7d</guid>
+    <fileName>Assets/extOSC/Scripts/Core/OSCBase.cs</fileName>
+    <timeStamp>2020-12-10T17:35:24+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>9e2f0d6dc83194950bf278612483969a</guid>
+    <fileName>Assets/extOSC/Scripts/Core/OSCConsole.cs</fileName>
+    <timeStamp>2020-12-10T17:34:55+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>7f548c911ef704afe82bf35c3df7f6c0</guid>
+    <fileName>Assets/extOSC/Scripts/Core/OSCConsolePacket.cs</fileName>
+    <timeStamp>2020-12-10T17:34:43+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>68a784b2f13677b4a938ab3d421b0ad8</guid>
+    <fileName>Assets/extOSC/Scripts/Core/OSCConverter.cs</fileName>
+    <timeStamp>2020-12-10T17:34:36+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>845b1afcff0f33341832c26e85624a3d</guid>
+    <fileName>Assets/extOSC/Scripts/Editor/OSCDefinesManager.cs</fileName>
+    <timeStamp>2020-12-10T17:34:45+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>8509fc93f86664ccda53f6f4db03caeb</guid>
+    <fileName>Assets/extOSC/Scripts/Editor/OSCEditorInterface.cs</fileName>
+    <timeStamp>2020-12-10T17:34:46+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>3061fd876997e454494995de628c7863</guid>
+    <fileName>Assets/extOSC/Scripts/Editor/OSCEditorSettings.cs</fileName>
+    <timeStamp>2020-12-10T17:34:20+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>2de88436c3a44401eb096f4d68f9b213</guid>
+    <fileName>Assets/extOSC/Scripts/Editor/OSCEditorSprites.cs</fileName>
+    <timeStamp>2020-12-10T17:34:20+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>05660caf412eece44963bc12a067a710</guid>
+    <fileName>Assets/extOSC/Scripts/Editor/OSCEditorStyles.cs</fileName>
+    <timeStamp>2020-12-10T17:34:06+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>03320299af046a940a20cb48af0a5642</guid>
+    <fileName>Assets/extOSC/Scripts/Editor/OSCEditorTextures.cs</fileName>
+    <timeStamp>2020-12-10T17:34:05+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>c20e869ed0d4891458b150c58a78ec00</guid>
+    <fileName>Assets/extOSC/Scripts/Editor/OSCEditorUtils.cs</fileName>
+    <timeStamp>2020-12-10T17:35:08+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>143c74c330250714ea577a3855055adc</guid>
+    <fileName>Assets/extOSC/Scripts/Editor/OSCHierarchyIcon.cs</fileName>
+    <timeStamp>2020-12-10T17:34:13+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>90a9ad26ac37b479ea87d43f08ce4211</guid>
+    <fileName>Assets/extOSC/Scripts/Editor/OSCMenuOptions.cs</fileName>
+    <timeStamp>2020-12-10T17:34:49+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>a0c50b28acb12491ba112a436ef57f1d</guid>
+    <fileName>Assets/extOSC/Scripts/Editor/OSCSharpCode.cs</fileName>
+    <timeStamp>2020-12-10T17:34:56+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>aa4ced34fdca36e48abbc90d8dc7696b</guid>
+    <fileName>Assets/extOSC/Scripts/Editor/OSCWindowsStoreHelper.cs</fileName>
+    <timeStamp>2020-12-10T17:35:00+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>11c91d8cf45934d2094e4445cfb8833b</guid>
+    <fileName>Assets/extOSC/Scripts/Mapping/OSCMapBundle.cs</fileName>
+    <timeStamp>2020-12-10T17:34:12+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>6a3baaf0f75c5456eac4cc3073b76bf8</guid>
+    <fileName>Assets/extOSC/Scripts/Mapping/OSCMapEnum.cs</fileName>
+    <timeStamp>2020-12-10T17:34:36+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>22b414b648b3a4430b3f32ad593fbf22</guid>
+    <fileName>Assets/extOSC/Scripts/Mapping/OSCMapMessage.cs</fileName>
+    <timeStamp>2020-12-10T17:34:18+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>7de3568dfc6434131970e5a3395fbe53</guid>
+    <fileName>Assets/extOSC/Scripts/Mapping/OSCMapValue.cs</fileName>
+    <timeStamp>2020-12-10T17:34:42+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>8bda6702c8a55482f84f34ab90f2dea2</guid>
+    <fileName>Assets/extOSC/Scripts/UI/OSCButton.cs</fileName>
+    <timeStamp>2020-12-10T17:34:48+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>e86aad17287a44e36a8fbf632402c079</guid>
+    <fileName>Assets/extOSC/Scripts/UI/OSCControls.cs</fileName>
+    <timeStamp>2020-12-10T17:35:23+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>04ec8b873161b44309d39b02a1ef004f</guid>
+    <fileName>Assets/extOSC/Scripts/UI/OSCMultiplySliders.cs</fileName>
+    <timeStamp>2020-12-10T17:34:06+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>f0b17a7e5df8d421f94418aaf797527d</guid>
+    <fileName>Assets/extOSC/Scripts/UI/OSCPad.cs</fileName>
+    <timeStamp>2020-12-10T17:35:26+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>7fb3267db24fa41858833c6227337502</guid>
+    <fileName>Assets/extOSC/Scripts/UI/OSCRotary.cs</fileName>
+    <timeStamp>2020-12-10T17:34:43+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>32e1acb24f74d4ef7b0324cc638a6488</guid>
+    <fileName>Assets/extOSC/Scripts/UI/OSCSlider.cs</fileName>
+    <timeStamp>2020-12-10T17:34:21+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>9a3e5f51e31f79c4fb340e92ffc286e8</guid>
+    <fileName>Assets/SpaceSkies Free/Demo/Scripts/LookCamera.cs</fileName>
+    <timeStamp>2025-01-27T18:51:37.3364647+01:00</timeStamp>
+    <typeFullName>
+      <string>LookCamera</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>dca6002b33ac5bc48b39588e222296fb</guid>
+    <fileName>Assets/SpaceSkies Free/Demo/Scripts/SkyboxChanger.cs</fileName>
+    <timeStamp>2025-01-27T18:51:37.3369713+01:00</timeStamp>
+    <typeFullName>
+      <string>SkyboxChanger</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>41fa34e28ade78447ab116a11e6901e2</guid>
+    <fileName>Assets/trees/URP_Tree_Pack/Editor/AS_Offers.cs</fileName>
+    <timeStamp>2025-01-17T07:51:58.1702259+01:00</timeStamp>
+    <typeFullName>
+      <string>AS_Offers</string>
+      <string>Startup</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>d3bd79ff2f1d9a84eb53866be51506ee</guid>
+    <fileName>Assets/trees/URP_Tree_Pack/Editor/Rate_Me.cs</fileName>
+    <timeStamp>2025-01-17T07:51:58.1702259+01:00</timeStamp>
+    <typeFullName>
+      <string>Rate_Me</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>96cec0ad715c2a042bd9921922d2ed22</guid>
+    <fileName>Assets/trees/URP_Tree_Pack/Scripts/LB_CameraMove.cs</fileName>
+    <timeStamp>2025-01-17T07:51:58.290651+01:00</timeStamp>
+    <typeFullName>
+      <string>LB_CameraMove</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>476cc7d7cd9874016adc216baab94a0a</guid>
+    <fileName>Assets/TutorialInfo/Scripts/Editor/ReadmeEditor.cs</fileName>
+    <timeStamp>2025-01-17T07:51:56.4107152+01:00</timeStamp>
+    <typeFullName>
+      <string>ReadmeEditor</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>aa723ff83c70a0e408a9d26e76bb6013</guid>
+    <fileName>Assets/Wwise/API/Editor/AkSoundBankDirectoryWatcher.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.4469308+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>5ecd197ef183cfc47992adb3f5e58fd1</guid>
+    <fileName>Assets/Wwise/API/Runtime/AkUnitySoundEngine.extensions.cs</fileName>
+    <timeStamp>2025-01-13T22:19:56.224252+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>d221cb6a5c7319a40aa44446f9276241</guid>
+    <fileName>Assets/Wwise/MonoBehaviour/Editor/AkAmbientInspector.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.1803647+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>979b34be851c6b74c9ce29a39a9204d7</guid>
+    <fileName>Assets/Wwise/MonoBehaviour/Editor/AkAudioListenerInspector.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.1813594+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>124c5f6b8bc3a9f409ef841c36ba0f98</guid>
+    <fileName>Assets/Wwise/MonoBehaviour/Editor/AkBankInspector.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.1834365+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>74b4fd9e170657c48a4428c7710e4491</guid>
+    <fileName>Assets/Wwise/MonoBehaviour/Editor/AkBaseInspector.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.1844543+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>ac2bbe3f9ef18804ba485dad66952cb8</guid>
+    <fileName>Assets/Wwise/MonoBehaviour/Editor/AkEnvironmentInspector.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.1866611+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>2eb1bfca8d30afb4d9ca7cb4052bfdb7</guid>
+    <fileName>Assets/Wwise/MonoBehaviour/Editor/AkEnvironmentPortalInspector.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.1886214+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>cf912dc17d8f6394aa39539984b0e87c</guid>
+    <fileName>Assets/Wwise/MonoBehaviour/Editor/AkEventInspector.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.1906188+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>bb7f5e1a4dded7040bed2ae0f2f1d535</guid>
+    <fileName>Assets/Wwise/MonoBehaviour/Editor/AkGameObjectInspector.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.1931495+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>38552227d76f41f45934eabc59bdcb4c</guid>
+    <fileName>Assets/Wwise/MonoBehaviour/Editor/AkGameObjListenerListDrawer.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.1951562+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>54137b22347753247a7c20f4f7044a25</guid>
+    <fileName>Assets/Wwise/MonoBehaviour/Editor/AkPortalManager.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.196154+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>ff022842002d1bf4aa685ae22b4cb6a4</guid>
+    <fileName>Assets/Wwise/MonoBehaviour/Editor/AkRadialEmitterInspector.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.1986828+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>695101669e4d02c4db5483fba995b407</guid>
+    <fileName>Assets/Wwise/MonoBehaviour/Editor/AkRoomAwareObjectInspector.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.2006886+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>95b6a45e47dd9894e8dcd555f1e7df3d</guid>
+    <fileName>Assets/Wwise/MonoBehaviour/Editor/AkRoomInspector.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.2016868+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>a31314ebb72defb42944147d7313f7c9</guid>
+    <fileName>Assets/Wwise/MonoBehaviour/Editor/AkRoomPortalInspector.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.2026842+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>d7b5b78b2c156a04db58f19f2b117e77</guid>
+    <fileName>Assets/Wwise/MonoBehaviour/Editor/AkSpatialAudioListenerInspector.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.2036854+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>d85c87ab020f7be46be07a30499846fd</guid>
+    <fileName>Assets/Wwise/MonoBehaviour/Editor/AkStateInspector.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.2061878+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>14502fc405843e24c86fb76101deab16</guid>
+    <fileName>Assets/Wwise/MonoBehaviour/Editor/AkSurfaceReflectorInspector.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.2092038+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>045875f69a14f454690786fe11961d71</guid>
+    <fileName>Assets/Wwise/MonoBehaviour/Editor/AkSwitchInspector.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.2112036+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>8edbc9c4e0e5f0c48b9860f6e4b3d004</guid>
+    <fileName>Assets/Wwise/MonoBehaviour/Editor/AkUnityEventHandlerInspector.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.2127361+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>9151ecbfd9b9f2e479b4bbef94ea6c6a</guid>
+    <fileName>Assets/Wwise/MonoBehaviour/Editor/AkWwiseTriggerInspector.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.2147369+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>c90e55f86fabcfe40a6a07226e1b88cd</guid>
+    <fileName>Assets/Wwise/MonoBehaviour/Runtime/AkAmbient.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.2349437+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>84cc9a9e07791bd4c80a475e6b03c2ba</guid>
+    <fileName>Assets/Wwise/MonoBehaviour/Runtime/AkAmbientLargeModePositioner.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.2369109+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>935ed91782764ff42ba6cda483fe1591</guid>
+    <fileName>Assets/Wwise/MonoBehaviour/Runtime/AkAudioListener.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.2394446+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>c9e7b05a51c4cf349a2f5e782b99a708</guid>
+    <fileName>Assets/Wwise/MonoBehaviour/Runtime/AkBank.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.2404477+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>06f61214e5eb38a438a84527bf4d5982</guid>
+    <fileName>Assets/Wwise/MonoBehaviour/Runtime/AkEarlyReflections.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.2419641+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>eb51bb00f5d726a438e618c1176dcc47</guid>
+    <fileName>Assets/Wwise/MonoBehaviour/Runtime/AkEmitterObstructionOcclusion.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.2445009+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>7887925d3546ed047b34d5a937ba4259</guid>
+    <fileName>Assets/Wwise/MonoBehaviour/Runtime/AkEnvironment.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.2455246+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>70468fa2435de73408e106f2161b2af5</guid>
+    <fileName>Assets/Wwise/MonoBehaviour/Runtime/AkEnvironmentPortal.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.2475189+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>d4d6d2ca8f9d60d4e834402444cf94c5</guid>
+    <fileName>Assets/Wwise/MonoBehaviour/Runtime/AkEvent.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.2490613+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>560e3986ea3c60244bc6380d6e7567be</guid>
+    <fileName>Assets/Wwise/MonoBehaviour/Runtime/AkEventCallbackData.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.2510588+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>e54a906f1f3df404bb97d6192c57e6dd</guid>
+    <fileName>Assets/Wwise/MonoBehaviour/Runtime/AkGameObj.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.252599+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>89f674d7205d553498d52242d33b51a3</guid>
+    <fileName>Assets/Wwise/MonoBehaviour/Runtime/AkGameObjEnvironmentData.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.2551522+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>8187306a063996b46b2666281f43debb</guid>
+    <fileName>Assets/Wwise/MonoBehaviour/Runtime/AkGameObjListenerList.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.2573472+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>c4dfe9fe8a226bf48afceb53de8ad200</guid>
+    <fileName>Assets/Wwise/MonoBehaviour/Runtime/AkGameObjPositionData.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.2598654+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>9bfde4ebcdd27374488ce89cc7601ba1</guid>
+    <fileName>Assets/Wwise/MonoBehaviour/Runtime/AkGameObjPositionOffsetData.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.2619183+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>100289d042ff21d468728b51244c8c07</guid>
+    <fileName>Assets/Wwise/MonoBehaviour/Runtime/AkGameObjPosOffsetData.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.2634076+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>d880f07df861db04aae7a85db9a2fa9f</guid>
+    <fileName>Assets/Wwise/MonoBehaviour/Runtime/AkInitializer.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.2654264+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>9749e5daf6d7475408af280f07980b26</guid>
+    <fileName>Assets/Wwise/MonoBehaviour/Runtime/AkListenerDistanceProbe.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.2674299+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>9f265b0d240c0a84e91ac1b1499e90da</guid>
+    <fileName>Assets/Wwise/MonoBehaviour/Runtime/AkMemBankLoader.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.2699635+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>49ca32f21a4b2a0469ca4ba0dbb9990b</guid>
+    <fileName>Assets/Wwise/MonoBehaviour/Runtime/AkObstructionOcclusion.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.2709648+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>110d0121b7570e84794bfe99ba160d65</guid>
+    <fileName>Assets/Wwise/MonoBehaviour/Runtime/AkRadialEmitter.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.2725545+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>888460f0e1b0a454fbc02126e0b8701f</guid>
+    <fileName>Assets/Wwise/MonoBehaviour/Runtime/AkReverbZone.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.2745046+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>3bbbfa2db6e401647b8e2670f92b9ec6</guid>
+    <fileName>Assets/Wwise/MonoBehaviour/Runtime/AkRoom.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.276091+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>7659c9c5f9891ca459c08fc72fcca361</guid>
+    <fileName>Assets/Wwise/MonoBehaviour/Runtime/AkRoomAwareManager.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.2790416+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>46a910c221f54344d9bc449fd1ef126b</guid>
+    <fileName>Assets/Wwise/MonoBehaviour/Runtime/AkRoomAwareObject.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.2806734+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>f791908397f655148b5304fd1f893a35</guid>
+    <fileName>Assets/Wwise/MonoBehaviour/Runtime/AkRoomManager.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.2826903+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>6b0012014d5a5c64c9dfe70346d7ac41</guid>
+    <fileName>Assets/Wwise/MonoBehaviour/Runtime/AkRoomPortal.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.2842072+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>ab5308939b7b59d429acf8dbab451e19</guid>
+    <fileName>Assets/Wwise/MonoBehaviour/Runtime/AkRoomPortalObstruction.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.286228+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>cea24727a6cafd543bebe78c9ff7b9c4</guid>
+    <fileName>Assets/Wwise/MonoBehaviour/Runtime/AkSoundEngineController.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.2877972+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>a3aa8d01929b5694280c53c25d354430</guid>
+    <fileName>Assets/Wwise/MonoBehaviour/Runtime/AkSpatialAudioDebugDraw.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.2897602+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>54b5a4401c620b741ab3a15a87ce5cfd</guid>
+    <fileName>Assets/Wwise/MonoBehaviour/Runtime/AkSpatialAudioEmitter.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.2912767+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>0d5ca3d66609044408661187078ef8b1</guid>
+    <fileName>Assets/Wwise/MonoBehaviour/Runtime/AkSpatialAudioListener.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.2938227+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>acfbf7bf31b5a844899301dc016e03d6</guid>
+    <fileName>Assets/Wwise/MonoBehaviour/Runtime/AkState.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.2958414+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>cb21fa3e4eaf3e64fbd7d577c8198a7f</guid>
+    <fileName>Assets/Wwise/MonoBehaviour/Runtime/AkSurfaceReflector.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.2983594+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>50e59729ad7f48f4c9f2d91580ebebaa</guid>
+    <fileName>Assets/Wwise/MonoBehaviour/Runtime/AkSwitch.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.3003794+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>6cf7934dad9f93c4eacf35db9d561aa2</guid>
+    <fileName>Assets/Wwise/MonoBehaviour/Runtime/AkTerminator.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.3018985+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>7db2cfa40c30a894e97f13e83df936a2</guid>
+    <fileName>Assets/Wwise/MonoBehaviour/Runtime/AkTriggerBase.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.3039208+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>a076478ecb72a374b9b9515ac16eb2eb</guid>
+    <fileName>Assets/Wwise/MonoBehaviour/Runtime/AkTriggerCollisionEnter.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.3054335+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>31ed87a1a670a1843a3dea525885bd64</guid>
+    <fileName>Assets/Wwise/MonoBehaviour/Runtime/AkTriggerCollisionExit.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.3075251+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>2685bdb0f8f87734b8f8439ad7b48f6e</guid>
+    <fileName>Assets/Wwise/MonoBehaviour/Runtime/AkTriggerDisable.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.309523+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>528e1d8e54a2d0942ad8f4435aaf06c2</guid>
+    <fileName>Assets/Wwise/MonoBehaviour/Runtime/AkTriggerEnable.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.3110586+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>645e71332dd4bd14e8071c28d8680ed6</guid>
+    <fileName>Assets/Wwise/MonoBehaviour/Runtime/AkTriggerEnter.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.3130588+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>8b72b9a7e0b2ed34594b7b07826ad7b6</guid>
+    <fileName>Assets/Wwise/MonoBehaviour/Runtime/AkTriggerExit.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.3156028+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>81ea5acb240bb524db122cdcfab1bfa8</guid>
+    <fileName>Assets/Wwise/MonoBehaviour/Runtime/AkTriggerHandler.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.3165956+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>e8c4a687eafe8a64da80c479571b0aec</guid>
+    <fileName>Assets/Wwise/MonoBehaviour/Runtime/AkTriggerMouseDown.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.3185954+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>ea4d3a10dd1ff294e8108d4760f40453</guid>
+    <fileName>Assets/Wwise/MonoBehaviour/Runtime/AkTriggerMouseEnter.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.3201993+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>3d83b513cec30264e86b14f93431ead5</guid>
+    <fileName>Assets/Wwise/MonoBehaviour/Runtime/AkTriggerMouseExit.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.3222181+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>31c011a157e582b4eaa91c3a225446a7</guid>
+    <fileName>Assets/Wwise/MonoBehaviour/Runtime/AkTriggerMouseUp.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.3237389+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>d467c2853ea63064ca7397328087ab37</guid>
+    <fileName>Assets/Wwise/MonoBehaviour/Runtime/AkWwiseTrigger.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.325759+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>c1bcc2beac65ea24e8ce17101651b987</guid>
+    <fileName>Assets/Wwise/Timeline/Editor/AkEventPlayableInspector.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.5831302+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>9a76362f14081834b89155ca1e210d83</guid>
+    <fileName>Assets/Wwise/Timeline/Editor/AkRTPCPlayableInspector.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.5841151+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>20d818a6d3e39544daf19045dba6be71</guid>
+    <fileName>Assets/Wwise/Timeline/Editor/AkRTPCTrackInspector.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.5861869+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>6974b0c0619dd204c9e47d6ed40948c6</guid>
+    <fileName>Assets/Wwise/Timeline/Runtime/AkEventPlayable.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.5965006+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>9a8f85254bddbcc4e9171421cf3a8e19</guid>
+    <fileName>Assets/Wwise/Timeline/Runtime/AkEventPlayableBehavior.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.5985157+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>2e7bdd9137911bd4e9cc9eafd79ebb30</guid>
+    <fileName>Assets/Wwise/Timeline/Runtime/AkEventTrack.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.5995184+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>496fd02209336f34495586f36cb12502</guid>
+    <fileName>Assets/Wwise/Timeline/Runtime/AkRTPCPlayable.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.6005531+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>dd60795d52eef6c46be8c788e7e5c670</guid>
+    <fileName>Assets/Wwise/Timeline/Runtime/AkRTPCTrack.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.6025702+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>639b72b8c83f84e4eafb29a61ed89fc6</guid>
+    <fileName>Assets/Wwise/Timeline/Runtime/AkTimelineEventPlayable.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.6048126+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>b3f3a850a0fa6c3459752a79340fd925</guid>
+    <fileName>Assets/Wwise/Timeline/Runtime/AkTimelineEventTrack.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.6068088+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>073e7a04a85709241a35b16854cbfad5</guid>
+    <fileName>Assets/Wwise/Timeline/Runtime/AkTimelineRtpcPlayable.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.6083402+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>e6c9cf952134e404b9c2c0317fbb6bc7</guid>
+    <fileName>Assets/Wwise/Timeline/Runtime/AkTimelineRtpcTrack.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.6103396+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>0d4043274b57c4c039efe20febc16183</guid>
+    <fileName>Assets/extOSC/Examples/01) Getting Started/Scripts/SimpleMessageReceiver.cs</fileName>
+    <timeStamp>2020-12-10T17:34:08+01:00</timeStamp>
+    <typeFullName>
+      <string>extOSC.Examples.SimpleMessageReceiver</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>a5c2895b5c31a42cb95d36d019aeff5c</guid>
+    <fileName>Assets/extOSC/Examples/01) Getting Started/Scripts/SimpleMessageTransmitter.cs</fileName>
+    <timeStamp>2020-12-10T17:34:58+01:00</timeStamp>
+    <typeFullName>
+      <string>extOSC.Examples.SimpleMessageTransmitter</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>0e101aa33d9b34e1db6a2b8bf88723cb</guid>
+    <fileName>Assets/extOSC/Examples/02) Value Types/Scripts/ValueTypesExample.cs</fileName>
+    <timeStamp>2020-12-10T17:34:10+01:00</timeStamp>
+    <typeFullName>
+      <string>extOSC.Examples.ValueTypesExample</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>4527cc0486a6844de89b69417577a360</guid>
+    <fileName>Assets/extOSC/Examples/03) Events/Scripts/EventsExample.cs</fileName>
+    <timeStamp>2020-12-10T17:34:27+01:00</timeStamp>
+    <typeFullName>
+      <string>extOSC.Examples.EventsExample</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>70d6e6a02989740f6a826e757dd7a31a</guid>
+    <fileName>Assets/extOSC/Examples/04) Informers/Scripts/InformersExample.cs</fileName>
+    <timeStamp>2020-12-10T17:34:38+01:00</timeStamp>
+    <typeFullName>
+      <string>extOSC.Examples.InformersExample</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>a1312c29451cd4c919cbf3a6be088444</guid>
+    <fileName>Assets/extOSC/Examples/06) Mapping/Scripts/MappingExample.cs</fileName>
+    <timeStamp>2020-12-10T17:34:56+01:00</timeStamp>
+    <typeFullName>
+      <string>extOSC.Examples.MappingExample</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>5d3d1635b1c9a49739d3caf6ca892447</guid>
+    <fileName>Assets/extOSC/Examples/07) Scripting/Scripts/ScriptingExample.cs</fileName>
+    <timeStamp>2020-12-10T17:34:32+01:00</timeStamp>
+    <typeFullName>
+      <string>extOSC.Examples.ScriptingExample</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>c884655debff24624ab60039f43fe64e</guid>
+    <fileName>Assets/extOSC/Examples/09) Address Masks/Scripts/AddressMaskExample.cs</fileName>
+    <timeStamp>2020-12-10T17:35:10+01:00</timeStamp>
+    <typeFullName>
+      <string>extOSC.Examples.AddressMaskExample</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>f13c9cd32453e454a9a28c6b085661fb</guid>
+    <fileName>Assets/extOSC/Examples/10) Ping/Scripts/PingExample.cs</fileName>
+    <timeStamp>2020-12-10T17:35:26+01:00</timeStamp>
+    <typeFullName>
+      <string>extOSC.Examples.PingExample</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>4d0ccedf9e445454885d28b2a9c31d09</guid>
+    <fileName>Assets/extOSC/Examples/11) Array/Scripts/ArrayExample.cs</fileName>
+    <timeStamp>2020-12-10T17:34:29+01:00</timeStamp>
+    <typeFullName>
+      <string>extOSC.Examples.ArrayExample</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>0df008bf90846489c8bb05dd73575d73</guid>
+    <fileName>Assets/extOSC/Examples/12) Match Pattern/Scripts/MatchPatternExample.cs</fileName>
+    <timeStamp>2020-12-10T17:34:09+01:00</timeStamp>
+    <typeFullName>
+      <string>extOSC.Examples.MatchPatternExample</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>80920bbbb29084722ac4e8605f19e885</guid>
+    <fileName>Assets/extOSC/Examples/13) Marshalling/Scripts/MarshallingExample.cs</fileName>
+    <timeStamp>2020-12-10T17:34:44+01:00</timeStamp>
+    <typeFullName>
+      <string>extOSC.Examples.MarshallingStructure</string>
+      <string>extOSC.Examples.MarshallingExample</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>1ead6fe8076674e15b789526be81ac47</guid>
+    <fileName>Assets/extOSC/Scripts/Components/Events/OSCReceiverEvent.cs</fileName>
+    <timeStamp>2020-12-10T17:34:17+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>992aa880d8b09419f9d2757f68c61cc7</guid>
+    <fileName>Assets/extOSC/Scripts/Components/Events/OSCReceiverEventArray.cs</fileName>
+    <timeStamp>2020-12-10T17:34:53+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>584bc642ca8b0448e90bb0d9fe314781</guid>
+    <fileName>Assets/extOSC/Scripts/Components/Events/OSCReceiverEventBlob.cs</fileName>
+    <timeStamp>2020-12-10T17:34:31+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>813f76f3130a34f40b4330c253b361e1</guid>
+    <fileName>Assets/extOSC/Scripts/Components/Events/OSCReceiverEventBool.cs</fileName>
+    <timeStamp>2020-12-10T17:34:44+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>b77ca86e584e14f17a2ada43bc9bba9e</guid>
+    <fileName>Assets/extOSC/Scripts/Components/Events/OSCReceiverEventChar.cs</fileName>
+    <timeStamp>2020-12-10T17:35:05+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>15e4d77c061184627af5a52607f4c7d6</guid>
+    <fileName>Assets/extOSC/Scripts/Components/Events/OSCReceiverEventColor.cs</fileName>
+    <timeStamp>2020-12-10T17:34:15+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>14337cca2d5934a11bd665131f78fe88</guid>
+    <fileName>Assets/extOSC/Scripts/Components/Events/OSCReceiverEventDouble.cs</fileName>
+    <timeStamp>2020-12-10T17:34:13+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>8b117a0703b374103913db889311565f</guid>
+    <fileName>Assets/extOSC/Scripts/Components/Events/OSCReceiverEventFloat.cs</fileName>
+    <timeStamp>2020-12-10T17:34:48+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>0fb7744825800446bb402117c7cac5d8</guid>
+    <fileName>Assets/extOSC/Scripts/Components/Events/OSCReceiverEventImpulse.cs</fileName>
+    <timeStamp>2020-12-10T17:34:11+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>0f5937ce4de6a4254b9249339eea0c2a</guid>
+    <fileName>Assets/extOSC/Scripts/Components/Events/OSCReceiverEventInt.cs</fileName>
+    <timeStamp>2020-12-10T17:34:11+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>760ae93b15d024fc6986c6d3f57fe96c</guid>
+    <fileName>Assets/extOSC/Scripts/Components/Events/OSCReceiverEventLong.cs</fileName>
+    <timeStamp>2020-12-10T17:34:40+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>2b6729ebfc7bf403f9f3afb0c93ed10d</guid>
+    <fileName>Assets/extOSC/Scripts/Components/Events/OSCReceiverEventMessage.cs</fileName>
+    <timeStamp>2020-12-10T17:34:19+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>0e0215ea1a3bd4ac1a93a0bdea312198</guid>
+    <fileName>Assets/extOSC/Scripts/Components/Events/OSCReceiverEventMidi.cs</fileName>
+    <timeStamp>2020-12-10T17:34:09+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>9615fc7ed12d94699a85fc7648ad7215</guid>
+    <fileName>Assets/extOSC/Scripts/Components/Events/OSCReceiverEventNull.cs</fileName>
+    <timeStamp>2020-12-10T17:34:52+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>8d51ef013357a41a3bee2c26058b7bdd</guid>
+    <fileName>Assets/extOSC/Scripts/Components/Events/OSCReceiverEventQuaternion.cs</fileName>
+    <timeStamp>2020-12-10T17:34:48+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>0843aa8364db64d7fbd2695cae98d150</guid>
+    <fileName>Assets/extOSC/Scripts/Components/Events/OSCReceiverEventRect.cs</fileName>
+    <timeStamp>2020-12-10T17:34:07+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>bdbad2d6d94bf4c7fbce143744b3480e</guid>
+    <fileName>Assets/extOSC/Scripts/Components/Events/OSCReceiverEventString.cs</fileName>
+    <timeStamp>2020-12-10T17:35:07+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>a8dec63d2443844cda824c841b8aa8e7</guid>
+    <fileName>Assets/extOSC/Scripts/Components/Events/OSCReceiverEventTimeTag.cs</fileName>
+    <timeStamp>2020-12-10T17:35:00+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>0bd5d9dd86ec547978b81cc68cb1112a</guid>
+    <fileName>Assets/extOSC/Scripts/Components/Events/OSCReceiverEventVector2.cs</fileName>
+    <timeStamp>2020-12-10T17:34:08+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>ff8f7c1accdb041159bf664f07d5fb85</guid>
+    <fileName>Assets/extOSC/Scripts/Components/Events/OSCReceiverEventVector3.cs</fileName>
+    <timeStamp>2020-12-10T17:35:29+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>0fc479081765547d2a150f9e4dda3ae1</guid>
+    <fileName>Assets/extOSC/Scripts/Components/Events/OSCReceiverEventVector4.cs</fileName>
+    <timeStamp>2020-12-10T17:34:11+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>f80f00bbe567441e1a101c74bfcac2f4</guid>
+    <fileName>Assets/extOSC/Scripts/Components/Informers/OSCTransmitterInformer.cs</fileName>
+    <timeStamp>2020-12-10T17:35:28+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>8cfb44b8581f946d39ba8b5cc7af0310</guid>
+    <fileName>Assets/extOSC/Scripts/Components/Informers/OSCTransmitterInformerArray.cs</fileName>
+    <timeStamp>2020-12-10T17:34:48+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>5a70116166e4645c58c449c6cd2ec356</guid>
+    <fileName>Assets/extOSC/Scripts/Components/Informers/OSCTransmitterInformerBlob.cs</fileName>
+    <timeStamp>2020-12-10T17:34:32+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>9da87fb95f42e48b2b05b160c09ff113</guid>
+    <fileName>Assets/extOSC/Scripts/Components/Informers/OSCTransmitterInformerBool.cs</fileName>
+    <timeStamp>2020-12-10T17:34:55+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>cdf7f40c466754afd8a32082dd056c2f</guid>
+    <fileName>Assets/extOSC/Scripts/Components/Informers/OSCTransmitterInformerChar.cs</fileName>
+    <timeStamp>2020-12-10T17:35:13+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>413652edbc1984337954aa180b219021</guid>
+    <fileName>Assets/extOSC/Scripts/Components/Informers/OSCTransmitterInformerColor.cs</fileName>
+    <timeStamp>2020-12-10T17:34:26+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>d25125a04241f4f85a3e85f22c3c9e15</guid>
+    <fileName>Assets/extOSC/Scripts/Components/Informers/OSCTransmitterInformerDouble.cs</fileName>
+    <timeStamp>2020-12-10T17:35:15+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>68bb978b896e244e69cb32252ed8cf5b</guid>
+    <fileName>Assets/extOSC/Scripts/Components/Informers/OSCTransmitterInformerFloat.cs</fileName>
+    <timeStamp>2020-12-10T17:34:36+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>568bcbf90f3460449bac69c4b2fda9a4</guid>
+    <fileName>Assets/extOSC/Scripts/Components/Informers/OSCTransmitterInformerFloatToInt.cs</fileName>
+    <timeStamp>2020-12-10T17:34:31+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>a7829d4dd69f24ac6a93c5a51b67e54c</guid>
+    <fileName>Assets/extOSC/Scripts/Components/Informers/OSCTransmitterInformerInt.cs</fileName>
+    <timeStamp>2020-12-10T17:34:59+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>cfe0255d3980562418e0711265f06cc5</guid>
+    <fileName>Assets/extOSC/Scripts/Components/Informers/OSCTransmitterInformerIntToFloat.cs</fileName>
+    <timeStamp>2020-12-10T17:35:14+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>e7ef94b01bc4741138a6445b16d00d65</guid>
+    <fileName>Assets/extOSC/Scripts/Components/Informers/OSCTransmitterInformerLong.cs</fileName>
+    <timeStamp>2020-12-10T17:35:22+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>d78397610b8d4431baca0174b7db974a</guid>
+    <fileName>Assets/extOSC/Scripts/Components/Informers/OSCTransmitterInformerMidi.cs</fileName>
+    <timeStamp>2020-12-10T17:35:16+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>73d1fb28a575040f58df1f3c7794998e</guid>
+    <fileName>Assets/extOSC/Scripts/Components/Informers/OSCTransmitterInformerQuaternion.cs</fileName>
+    <timeStamp>2020-12-10T17:34:39+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>6bd46f50764184a8690e1ddc13950549</guid>
+    <fileName>Assets/extOSC/Scripts/Components/Informers/OSCTransmitterInformerRect.cs</fileName>
+    <timeStamp>2020-12-10T17:34:37+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>c5d31582afe4b495f8a509ea615cfbaf</guid>
+    <fileName>Assets/extOSC/Scripts/Components/Informers/OSCTransmitterInformerString.cs</fileName>
+    <timeStamp>2020-12-10T17:35:09+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>aa959726c0ada441a9b491ebb2816ca9</guid>
+    <fileName>Assets/extOSC/Scripts/Components/Informers/OSCTransmitterInformerTimeTag.cs</fileName>
+    <timeStamp>2020-12-10T17:35:00+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>7a32d72eebc1a4a0d9eb08e7cc2e64ab</guid>
+    <fileName>Assets/extOSC/Scripts/Components/Informers/OSCTransmitterInformerVector2.cs</fileName>
+    <timeStamp>2020-12-10T17:34:41+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>ca502f3ea46a24fb1b2f5a576883da03</guid>
+    <fileName>Assets/extOSC/Scripts/Components/Informers/OSCTransmitterInformerVector3.cs</fileName>
+    <timeStamp>2020-12-10T17:35:11+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>0d6aff875a47e4704aa987233894d61a</guid>
+    <fileName>Assets/extOSC/Scripts/Components/Informers/OSCTransmitterInformerVector4.cs</fileName>
+    <timeStamp>2020-12-10T17:34:09+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>b171448735e124653b5b009d6aff83a1</guid>
+    <fileName>Assets/extOSC/Scripts/Components/Misc/OSCReceiverGyro.cs</fileName>
+    <timeStamp>2020-12-10T17:35:03+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>c9a49a15924edb14da970025e1a02a29</guid>
+    <fileName>Assets/extOSC/Scripts/Components/Misc/OSCReceiverSkinnedMesh.cs</fileName>
+    <timeStamp>2020-12-10T17:35:11+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>df7ddf4f0ca2e4f8aabf5d8009768c68</guid>
+    <fileName>Assets/extOSC/Scripts/Components/Misc/OSCTransmitterPing.cs</fileName>
+    <timeStamp>2020-12-10T17:35:20+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>f1399076df366c14b8970ff8083eaf12</guid>
+    <fileName>Assets/extOSC/Scripts/Components/Misc/OSCTransmitterSeparateVector3.cs</fileName>
+    <timeStamp>2020-12-10T17:35:26+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>30acc69e16e97460c966233259186d33</guid>
+    <fileName>Assets/extOSC/Scripts/Components/Ping/OSCPingClient.cs</fileName>
+    <timeStamp>2020-12-10T17:34:21+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>b4e620750df9b4b48aa6c2f5e739ced0</guid>
+    <fileName>Assets/extOSC/Scripts/Components/Ping/OSCPingServer.cs</fileName>
+    <timeStamp>2020-12-10T17:35:04+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>6606b25d0ed8f4ceca6cf5a4e284053a</guid>
+    <fileName>Assets/extOSC/Scripts/Components/ReceiverReflection/OSCReceiverReflection.cs</fileName>
+    <timeStamp>2020-12-10T17:34:35+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>45cf0c0a61ecd4ac4b9990bb108b00c0</guid>
+    <fileName>Assets/extOSC/Scripts/Components/ReceiverReflection/OSCReceiverReflectionArray.cs</fileName>
+    <timeStamp>2020-12-10T17:34:27+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>e638fca5fc4eb413cbe6f4dbeedce9ba</guid>
+    <fileName>Assets/extOSC/Scripts/Components/ReceiverReflection/OSCReceiverReflectionBlob.cs</fileName>
+    <timeStamp>2020-12-10T17:35:22+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>a0894c1e252474d47bfd0213015a0a1d</guid>
+    <fileName>Assets/extOSC/Scripts/Components/ReceiverReflection/OSCReceiverReflectionBool.cs</fileName>
+    <timeStamp>2020-12-10T17:34:55+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>78ad65fe037da4c949a54d9af6a07538</guid>
+    <fileName>Assets/extOSC/Scripts/Components/ReceiverReflection/OSCReceiverReflectionChar.cs</fileName>
+    <timeStamp>2020-12-10T17:34:41+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>90a008cf1a59748399dbc031a04e5a4e</guid>
+    <fileName>Assets/extOSC/Scripts/Components/ReceiverReflection/OSCReceiverReflectionColor.cs</fileName>
+    <timeStamp>2020-12-10T17:34:49+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>8df654e1243df4d438a502618eb8c564</guid>
+    <fileName>Assets/extOSC/Scripts/Components/ReceiverReflection/OSCReceiverReflectionDouble.cs</fileName>
+    <timeStamp>2020-12-10T17:34:49+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>b103e34ab534146ad84a9b30057e6b26</guid>
+    <fileName>Assets/extOSC/Scripts/Components/ReceiverReflection/OSCReceiverReflectionFloat.cs</fileName>
+    <timeStamp>2020-12-10T17:35:02+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>9bb5b7b716d314753af44851b7c8f717</guid>
+    <fileName>Assets/extOSC/Scripts/Components/ReceiverReflection/OSCReceiverReflectionInt.cs</fileName>
+    <timeStamp>2020-12-10T17:34:54+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>d9e4b759057e54499b9b8d32e385f940</guid>
+    <fileName>Assets/extOSC/Scripts/Components/ReceiverReflection/OSCReceiverReflectionLong.cs</fileName>
+    <timeStamp>2020-12-10T17:35:17+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>bc2b034f673754cf1bc211d282f9102d</guid>
+    <fileName>Assets/extOSC/Scripts/Components/ReceiverReflection/OSCReceiverReflectionMidi.cs</fileName>
+    <timeStamp>2020-12-10T17:35:06+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>8382020c642464ed68516497d0465e1f</guid>
+    <fileName>Assets/extOSC/Scripts/Components/ReceiverReflection/OSCReceiverReflectionQuaternion.cs</fileName>
+    <timeStamp>2020-12-10T17:34:45+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>3888dbb450e0646209a8cc7ec89de434</guid>
+    <fileName>Assets/extOSC/Scripts/Components/ReceiverReflection/OSCReceiverReflectionRect.cs</fileName>
+    <timeStamp>2020-12-10T17:34:22+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>85004272452934ca79bb4b8a61eb2d4c</guid>
+    <fileName>Assets/extOSC/Scripts/Components/ReceiverReflection/OSCReceiverReflectionString.cs</fileName>
+    <timeStamp>2020-12-10T17:34:45+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>62d44b6f7f5eb46ba824524e2948fe44</guid>
+    <fileName>Assets/extOSC/Scripts/Components/ReceiverReflection/OSCReceiverReflectionTimeTag.cs</fileName>
+    <timeStamp>2020-12-10T17:34:34+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>3f8aaeb9700024a56b4607333885d062</guid>
+    <fileName>Assets/extOSC/Scripts/Components/ReceiverReflection/OSCReceiverReflectionVector2.cs</fileName>
+    <timeStamp>2020-12-10T17:34:25+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>bfc4255cff3d642d98cd2d58a1e6b144</guid>
+    <fileName>Assets/extOSC/Scripts/Components/ReceiverReflection/OSCReceiverReflectionVector3.cs</fileName>
+    <timeStamp>2020-12-10T17:35:07+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>93a273110c482455eb89ffab80bda339</guid>
+    <fileName>Assets/extOSC/Scripts/Components/ReceiverReflection/OSCReceiverReflectionVector4.cs</fileName>
+    <timeStamp>2020-12-10T17:34:51+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>10e1992a2f87749cf80de05c2da7a939</guid>
+    <fileName>Assets/extOSC/Scripts/Core/Events/OSCEventArray.cs</fileName>
+    <timeStamp>2020-12-10T17:34:12+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>993c4e003f1794ba0946ed1953dfad30</guid>
+    <fileName>Assets/extOSC/Scripts/Core/Events/OSCEventBlob.cs</fileName>
+    <timeStamp>2020-12-10T17:34:53+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>33467fa14201845fa8e78eac560d35a9</guid>
+    <fileName>Assets/extOSC/Scripts/Core/Events/OSCEventBool.cs</fileName>
+    <timeStamp>2020-12-10T17:34:21+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>134fab55212696d4bbeade2ce2b7ebea</guid>
+    <fileName>Assets/extOSC/Scripts/Core/Events/OSCEventBundle.cs</fileName>
+    <timeStamp>2020-12-10T17:34:12+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>c4219b966246048948cd0a91d6b5f357</guid>
+    <fileName>Assets/extOSC/Scripts/Core/Events/OSCEventChar.cs</fileName>
+    <timeStamp>2020-12-10T17:35:09+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>b49ed5f326e9a44e198eece10da93344</guid>
+    <fileName>Assets/extOSC/Scripts/Core/Events/OSCEventColor.cs</fileName>
+    <timeStamp>2020-12-10T17:35:04+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>cb1a6157107a1447aa5f08d917672d7d</guid>
+    <fileName>Assets/extOSC/Scripts/Core/Events/OSCEventDateTime.cs</fileName>
+    <timeStamp>2020-12-10T17:35:12+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>1c79573dd15a246758eedb9adb814edd</guid>
+    <fileName>Assets/extOSC/Scripts/Core/Events/OSCEventDouble.cs</fileName>
+    <timeStamp>2020-12-10T17:34:16+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>a8ccd52c126be41d9a6aaae11f80c507</guid>
+    <fileName>Assets/extOSC/Scripts/Core/Events/OSCEventFloat.cs</fileName>
+    <timeStamp>2020-12-10T17:35:00+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>0acf14c12363347ffbe4f30a846bcdb8</guid>
+    <fileName>Assets/extOSC/Scripts/Core/Events/OSCEventImpulse.cs</fileName>
+    <timeStamp>2020-12-10T17:34:07+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>4d540d2587bec4947abdcfe5626e15cc</guid>
+    <fileName>Assets/extOSC/Scripts/Core/Events/OSCEventInt.cs</fileName>
+    <timeStamp>2020-12-10T17:34:29+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>600735ba625eb4bc1bf54b20ea078aef</guid>
+    <fileName>Assets/extOSC/Scripts/Core/Events/OSCEventLong.cs</fileName>
+    <timeStamp>2020-12-10T17:34:33+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>ddaff9fbe950f4ac19f7363d49b834be</guid>
+    <fileName>Assets/extOSC/Scripts/Core/Events/OSCEventMessage.cs</fileName>
+    <timeStamp>2020-12-10T17:35:19+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>a27e3fe03fa7a4208a959e8e1f3e848c</guid>
+    <fileName>Assets/extOSC/Scripts/Core/Events/OSCEventMidi.cs</fileName>
+    <timeStamp>2020-12-10T17:34:57+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>e027b16b4897047cca2699c0e161f924</guid>
+    <fileName>Assets/extOSC/Scripts/Core/Events/OSCEventNull.cs</fileName>
+    <timeStamp>2020-12-10T17:35:21+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>d1031221889229e4eaa1719489b52225</guid>
+    <fileName>Assets/extOSC/Scripts/Core/Events/OSCEventPacket.cs</fileName>
+    <timeStamp>2020-12-10T17:35:15+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>680931baaf82740529db96460d93d390</guid>
+    <fileName>Assets/extOSC/Scripts/Core/Events/OSCEventQuaternion.cs</fileName>
+    <timeStamp>2020-12-10T17:34:36+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>dd2e8cc9e237e4a34bf294ddeb3dc7e1</guid>
+    <fileName>Assets/extOSC/Scripts/Core/Events/OSCEventRect.cs</fileName>
+    <timeStamp>2020-12-10T17:35:19+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>151a01b4ef7c44db2b5ba85b60768249</guid>
+    <fileName>Assets/extOSC/Scripts/Core/Events/OSCEventString.cs</fileName>
+    <timeStamp>2020-12-10T17:34:14+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>aaaf5810a27df4d99a1695ae1114c76e</guid>
+    <fileName>Assets/extOSC/Scripts/Core/Events/OSCEventVector2.cs</fileName>
+    <timeStamp>2020-12-10T17:35:01+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>f7132424d886c465db6f0725000a467e</guid>
+    <fileName>Assets/extOSC/Scripts/Core/Events/OSCEventVector3.cs</fileName>
+    <timeStamp>2020-12-10T17:35:27+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>0ed5a184d3f384242bd5f05aa2356aa8</guid>
+    <fileName>Assets/extOSC/Scripts/Core/Events/OSCEventVector4.cs</fileName>
+    <timeStamp>2020-12-10T17:34:10+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>67d52ed67ba5de442ac3a41e574ca9f1</guid>
+    <fileName>Assets/extOSC/Scripts/Core/Network/OSCReceiverBackend.cs</fileName>
+    <timeStamp>2020-12-10T17:34:35+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>1ecf4ebde7a98e84d93b48bd940142a2</guid>
+    <fileName>Assets/extOSC/Scripts/Core/Network/OSCReceiverStandaloneBackend.cs</fileName>
+    <timeStamp>2020-12-10T17:34:17+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>749de5c0c9206ab4aabdcf2dffe10ece</guid>
+    <fileName>Assets/extOSC/Scripts/Core/Network/OSCReceiverWindowsStoreBackend.cs</fileName>
+    <timeStamp>2020-12-10T17:34:40+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>e40dc655807004d90bdf76ea76b8b302</guid>
+    <fileName>Assets/extOSC/Scripts/Core/Network/OSCStandaloneManager.cs</fileName>
+    <timeStamp>2020-12-10T17:35:22+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>df9cc67942fd5d74da31457fa31f5393</guid>
+    <fileName>Assets/extOSC/Scripts/Core/Network/OSCTransmitterBackend.cs</fileName>
+    <timeStamp>2020-12-10T17:35:20+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>a572f26c0e0135c4d9359a1bbe6f7d57</guid>
+    <fileName>Assets/extOSC/Scripts/Core/Network/OSCTransmitterStandaloneBackend.cs</fileName>
+    <timeStamp>2020-12-10T17:34:57+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>aeaaced94851a474b820966fb6d95d08</guid>
+    <fileName>Assets/extOSC/Scripts/Core/Network/OSCTransmitterWindowsStoreBackend.cs</fileName>
+    <timeStamp>2020-12-10T17:35:02+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>ae67d1a36ce86724fa1949af06a5ef00</guid>
+    <fileName>Assets/extOSC/Scripts/Core/Packers/OSCPacker.cs</fileName>
+    <timeStamp>2020-12-10T17:35:01+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>7f383c5daa2a7ca4b8ee13c65349b0d6</guid>
+    <fileName>Assets/extOSC/Scripts/Core/Packers/OSCPackerBlob.cs</fileName>
+    <timeStamp>2020-12-10T17:34:43+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>badc9c71b19802b44bf5ab0d3384035b</guid>
+    <fileName>Assets/extOSC/Scripts/Core/Packers/OSCPackerChar.cs</fileName>
+    <timeStamp>2020-12-10T17:35:06+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>416e849e146124149af8207e39cc7ccd</guid>
+    <fileName>Assets/extOSC/Scripts/Core/Packers/OSCPackerColor.cs</fileName>
+    <timeStamp>2020-12-10T17:34:26+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>3b41da80cf39d804fb491f7729bd30ea</guid>
+    <fileName>Assets/extOSC/Scripts/Core/Packers/OSCPackerDouble.cs</fileName>
+    <timeStamp>2020-12-10T17:34:23+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>ddf5dea6136368146a4a39d19223b9e4</guid>
+    <fileName>Assets/extOSC/Scripts/Core/Packers/OSCPackerFalse.cs</fileName>
+    <timeStamp>2020-12-10T17:35:19+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>14519a5eb96524a47be95f8e379ed57e</guid>
+    <fileName>Assets/extOSC/Scripts/Core/Packers/OSCPackerFloat.cs</fileName>
+    <timeStamp>2020-12-10T17:34:14+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>746b107197baaa0429790787dbd44140</guid>
+    <fileName>Assets/extOSC/Scripts/Core/Packers/OSCPackerImpulse.cs</fileName>
+    <timeStamp>2020-12-10T17:34:39+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>1408363e43a68234dbb1e208b125e5ba</guid>
+    <fileName>Assets/extOSC/Scripts/Core/Packers/OSCPackerInt.cs</fileName>
+    <timeStamp>2020-12-10T17:34:13+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>f7fb82857e2583844bee209b3ff78c4f</guid>
+    <fileName>Assets/extOSC/Scripts/Core/Packers/OSCPackerLong.cs</fileName>
+    <timeStamp>2020-12-10T17:35:28+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>c743e4b26d87543f0bfed1fa38515244</guid>
+    <fileName>Assets/extOSC/Scripts/Core/Packers/OSCPackerMidi.cs</fileName>
+    <timeStamp>2020-12-10T17:35:10+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>0e15cb18a0297c8428ffbe7eefa5aa2c</guid>
+    <fileName>Assets/extOSC/Scripts/Core/Packers/OSCPackerNull.cs</fileName>
+    <timeStamp>2020-12-10T17:34:10+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>a82419efe5645a24b824bd69cca7e6ee</guid>
+    <fileName>Assets/extOSC/Scripts/Core/Packers/OSCPackerString.cs</fileName>
+    <timeStamp>2020-12-10T17:34:59+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>f50672be6bd22ad408bcde848d9324d6</guid>
+    <fileName>Assets/extOSC/Scripts/Core/Packers/OSCPackerTimeTag.cs</fileName>
+    <timeStamp>2020-12-10T17:35:26+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>bde0afb7e092dc84db9c79879f06ae25</guid>
+    <fileName>Assets/extOSC/Scripts/Core/Packers/OSCPackerTrue.cs</fileName>
+    <timeStamp>2020-12-10T17:35:07+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>0c04bd9476bfb442989733243c398811</guid>
+    <fileName>Assets/extOSC/Scripts/Core/Reflection/OSCReflection.cs</fileName>
+    <timeStamp>2020-12-10T17:34:08+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>612800da802ae4870a0ba5b7a5b4e8ac</guid>
+    <fileName>Assets/extOSC/Scripts/Core/Reflection/OSCReflectionMember.cs</fileName>
+    <timeStamp>2020-12-10T17:34:33+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>499e312369f7543b6aff7ac8e7e5a87a</guid>
+    <fileName>Assets/extOSC/Scripts/Core/Reflection/OSCReflectionProperty.cs</fileName>
+    <timeStamp>2020-12-10T17:34:28+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>ec99e44021c881043bd4c148cfab738a</guid>
+    <fileName>Assets/extOSC/Scripts/Editor/Drawers/OSCFilterDrawer.cs</fileName>
+    <timeStamp>2020-12-10T17:35:24+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>34bb02940ab532349a2081d2f028a53e</guid>
+    <fileName>Assets/extOSC/Scripts/Editor/Drawers/OSCHostDrawer.cs</fileName>
+    <timeStamp>2020-12-10T17:34:22+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>65bf936fa5ef7504783b7d4ea09593ce</guid>
+    <fileName>Assets/extOSC/Scripts/Editor/Drawers/OSCPacketDrawer.cs</fileName>
+    <timeStamp>2020-12-10T17:34:35+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>8740cb407a774ce891bb4c854fff8d88</guid>
+    <fileName>Assets/extOSC/Scripts/Editor/Drawers/OSCPacketEditableDrawer.cs</fileName>
+    <timeStamp>2020-12-10T17:34:46+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>f0a107162ce7a8745a8b3a435a6cd30d</guid>
+    <fileName>Assets/extOSC/Scripts/Editor/Drawers/OSCReflectionMemberDrawer.cs</fileName>
+    <timeStamp>2020-12-10T17:35:25+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>1b64e23fc130c2d45b56e85e4aaba6b4</guid>
+    <fileName>Assets/extOSC/Scripts/Editor/Drawers/OSCSelectorDrawer.cs</fileName>
+    <timeStamp>2020-12-10T17:34:15+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>71a548d7b90f04ffaa029874142f9350</guid>
+    <fileName>Assets/extOSC/Scripts/Editor/Editors/OSCMapBundleEditor.cs</fileName>
+    <timeStamp>2020-12-10T17:34:38+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>b06323053d52dc34280388782ac3c570</guid>
+    <fileName>Assets/extOSC/Scripts/Editor/Editors/OSCReceiverEditor.cs</fileName>
+    <timeStamp>2020-12-10T17:35:02+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>270b84788372efc49972352235b62f6b</guid>
+    <fileName>Assets/extOSC/Scripts/Editor/Editors/OSCTransmitterEditor.cs</fileName>
+    <timeStamp>2020-12-10T17:34:19+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>7055c87630fb94d64a0428d95feadf45</guid>
+    <fileName>Assets/extOSC/Scripts/Editor/Panels/OSCPanel.cs</fileName>
+    <timeStamp>2020-12-10T17:34:38+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>a5b6bf18c42b84ed39e6ef67656e3e2e</guid>
+    <fileName>Assets/extOSC/Scripts/Editor/Panels/OSCPanelConsole.cs</fileName>
+    <timeStamp>2020-12-10T17:34:58+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>c2559b134bcbd49b78f89bbc12f36329</guid>
+    <fileName>Assets/extOSC/Scripts/Editor/Panels/OSCPanelControlCreator.cs</fileName>
+    <timeStamp>2020-12-10T17:35:08+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>90d110a7bc88e489ea6794568d14c713</guid>
+    <fileName>Assets/extOSC/Scripts/Editor/Panels/OSCPanelControllers.cs</fileName>
+    <timeStamp>2020-12-10T17:34:50+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>2bf5968f77c2f4cf9a115b2be2d8e10a</guid>
+    <fileName>Assets/extOSC/Scripts/Editor/Panels/OSCPanelMapping.cs</fileName>
+    <timeStamp>2020-12-10T17:34:19+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>b5b4894787af1419d9e770639f34fe36</guid>
+    <fileName>Assets/extOSC/Scripts/Editor/Panels/OSCPanelPacket.cs</fileName>
+    <timeStamp>2020-12-10T17:35:04+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>dd043f96a1dc5484ba0726dee66c516a</guid>
+    <fileName>Assets/extOSC/Scripts/Editor/Panels/OSCPanelPacketEditor.cs</fileName>
+    <timeStamp>2020-12-10T17:35:18+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>9737c80136af4480e813baebdc5f8b8e</guid>
+    <fileName>Assets/extOSC/Scripts/Editor/Panels/OSCSplitPanel.cs</fileName>
+    <timeStamp>2020-12-10T17:34:53+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>b5bfb557717ba4743a618e9036fbd45f</guid>
+    <fileName>Assets/extOSC/Scripts/Editor/Windows/OSCWindow.cs</fileName>
+    <timeStamp>2020-12-10T17:35:05+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>358ed270e2f7648c282dc98db8a83f1a</guid>
+    <fileName>Assets/extOSC/Scripts/Editor/Windows/OSCWindowConsole.cs</fileName>
+    <timeStamp>2020-12-10T17:34:22+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>2f9f04a5070474468bee6f33331ecb22</guid>
+    <fileName>Assets/extOSC/Scripts/Editor/Windows/OSCWindowControlCreator.cs</fileName>
+    <timeStamp>2020-12-10T17:34:20+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>7a3eab6650d79433ab7cbcbd27d52abd</guid>
+    <fileName>Assets/extOSC/Scripts/Editor/Windows/OSCWindowDebug.cs</fileName>
+    <timeStamp>2020-12-10T17:34:42+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>d16ef0f242cbb4480b2cfaf91ca8fab5</guid>
+    <fileName>Assets/extOSC/Scripts/Editor/Windows/OSCWindowMapping.cs</fileName>
+    <timeStamp>2020-12-10T17:35:15+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>77df78c0e95864d4787c2f3fb05f5e65</guid>
+    <fileName>Assets/Wwise/API/Editor/WwiseTypes/AcousticTextureDrawer.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.4745538+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>71ad87c4dba507345b84acf1533ff75c</guid>
+    <fileName>Assets/Wwise/API/Editor/WwiseTypes/AuxBusDrawer.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.4762042+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>89bbf99e7c5617a4a808a7329bcf40ba</guid>
+    <fileName>Assets/Wwise/API/Editor/WwiseTypes/BankDrawer.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.477766+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>475b60ecd9a4f4c45a7333c08ffe4889</guid>
+    <fileName>Assets/Wwise/API/Editor/WwiseTypes/BaseTypeDrawer.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.4797644+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>70374af3760274d46886905b450546c0</guid>
+    <fileName>Assets/Wwise/API/Editor/WwiseTypes/EventDrawer.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.4814176+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>99c52643c064ef84badf23522bf981d4</guid>
+    <fileName>Assets/Wwise/API/Editor/WwiseTypes/RTPCDrawer.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.4839377+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>70662012506db5c4185cbebf43d4cd49</guid>
+    <fileName>Assets/Wwise/API/Editor/WwiseTypes/StateDrawer.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.4849572+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>77ba346d0bffc894ea039e43b5f10c35</guid>
+    <fileName>Assets/Wwise/API/Editor/WwiseTypes/SwitchDrawer.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.4874758+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>c75343df2991b3f4ca16b04ad7e48d1b</guid>
+    <fileName>Assets/Wwise/API/Editor/WwiseTypes/TriggerDrawer.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.4894914+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>040e2b0e3ffe5b249b0be55b2cf94551</guid>
+    <fileName>Assets/Wwise/API/Editor/WwiseWindows/AkWwiseComponentPicker.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.4925132+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>094fb5864c73d4444b6b7d848d0e66ea</guid>
+    <fileName>Assets/Wwise/API/Editor/WwiseWindows/AkWwiseJSONBuilder.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.4945143+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>bc5b932b1ad57a9438f4b4809c384c68</guid>
+    <fileName>Assets/Wwise/API/Editor/WwiseWindows/AkWwisePicker.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.4975123+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>f7d7f4f1c860ce14085b0861774e3640</guid>
+    <fileName>Assets/Wwise/API/Editor/WwiseWindows/AkWwiseProjectData.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.5002067+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>69468c966a9926a4dbf5951a7d149b11</guid>
+    <fileName>Assets/Wwise/API/Editor/WwiseWindows/AkWwiseProjectInfo.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.5022262+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>d12b6d952485ae94cb04cd1024f8ddd7</guid>
+    <fileName>Assets/Wwise/API/Editor/WwiseWindows/AkWwiseTreeDataSource.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.504763+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>d4056e4ced201a945819259337b9a7c9</guid>
+    <fileName>Assets/Wwise/API/Editor/WwiseWindows/AkWwiseTreeProjectDataSource.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.5072835+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>ef0dba408a656aa46ae4dc0844906920</guid>
+    <fileName>Assets/Wwise/API/Editor/WwiseWindows/AkWwiseTreeView.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.5098571+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>f89a5de50d8af1d44a09eae1e6863e82</guid>
+    <fileName>Assets/Wwise/API/Editor/WwiseWindows/AkWwiseTreeViewItem.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.5118813+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>56c409fe654166f4da556c9d78562230</guid>
+    <fileName>Assets/Wwise/API/Editor/WwiseWindows/AkWwiseTreeWAAPIDataSource.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.5154267+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>e7903ea37d24c1449a92a9ba4e33758d</guid>
+    <fileName>Assets/Wwise/API/Editor/WwiseWindows/AkWwiseWWUBuilder.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.5174285+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>1d34ab4691d4f934daa909c1ceef8874</guid>
+    <fileName>Assets/Wwise/MonoBehaviour/Editor/WwiseSetupWizard/AkBuildPreprocessor.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.2192831+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>f01a52ea3ba3d3b428c556a7b7c616ad</guid>
+    <fileName>Assets/Wwise/MonoBehaviour/Editor/WwiseSetupWizard/AkUnitySettingsParser.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.2212858+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>cb903d59a30598c4ca2cf4c488be0712</guid>
+    <fileName>Assets/Wwise/MonoBehaviour/Editor/WwiseSetupWizard/AkWwisePostImportCallbackSetup.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.2232835+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>7b2cd9a49865865468ece14f7b7b5560</guid>
+    <fileName>Assets/Wwise/MonoBehaviour/Editor/WwiseSetupWizard/AkWwiseSetupWizard.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.2248229+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>14362ca4a95829142aba5c8486e28a85</guid>
+    <fileName>Assets/Wwise/MonoBehaviour/Editor/WwiseSetupWizard/AkXboxOneUtils.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.2258541+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>643e1d84065294781ba11af4c3c5effe</guid>
+    <fileName>Assets/extOSC/Scripts/Editor/Editors/Components/OSCComponentEditor.cs</fileName>
+    <timeStamp>2020-12-10T17:34:34+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>102c7235959634032890f1c577ae278a</guid>
+    <fileName>Assets/extOSC/Scripts/Editor/Editors/Components/OSCPingClientEditor.cs</fileName>
+    <timeStamp>2020-12-10T17:34:12+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>a1de94d8c61da45f6abf17bb76057361</guid>
+    <fileName>Assets/extOSC/Scripts/Editor/Editors/Components/OSCPingServerEditor.cs</fileName>
+    <timeStamp>2020-12-10T17:34:56+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>8afb461b14b2d4081a6d84a580abdc55</guid>
+    <fileName>Assets/extOSC/Scripts/Editor/Editors/Components/OSCReceiverComponentEditor.cs</fileName>
+    <timeStamp>2020-12-10T17:34:47+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>1f14a77f73ad243f9b519c4dcc633203</guid>
+    <fileName>Assets/extOSC/Scripts/Editor/Editors/Components/OSCReceiverEventEditor.cs</fileName>
+    <timeStamp>2020-12-10T17:34:17+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>5ed8b9a7f470b4551a264f2fb8ed35ed</guid>
+    <fileName>Assets/extOSC/Scripts/Editor/Editors/Components/OSCReceiverGyroEditor.cs</fileName>
+    <timeStamp>2020-12-10T17:34:33+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>9d6774ffb97464a33bfe519c08f69d29</guid>
+    <fileName>Assets/extOSC/Scripts/Editor/Editors/Components/OSCReceiverReflectionEditor.cs</fileName>
+    <timeStamp>2020-12-10T17:34:54+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>1c310151a08364a09852d592846275d7</guid>
+    <fileName>Assets/extOSC/Scripts/Editor/Editors/Components/OSCTransmitterComponentEditor.cs</fileName>
+    <timeStamp>2020-12-10T17:34:16+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>542ab34793363418da1c9c590695f2f5</guid>
+    <fileName>Assets/extOSC/Scripts/Editor/Editors/Components/OSCTransmitterInformerEditor.cs</fileName>
+    <timeStamp>2020-12-10T17:34:30+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>b457888adb20a44429270cbb0a97e7e0</guid>
+    <fileName>Assets/extOSC/Scripts/Editor/Editors/Components/OSCTransmitterPingEditor.cs</fileName>
+    <timeStamp>2020-12-10T17:35:03+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>21b0ef81765029d4ca56f65997541d15</guid>
+    <fileName>Assets/extOSC/Scripts/Editor/Editors/Components/OSCTransmitterSeparateVector3Editor.cs</fileName>
+    <timeStamp>2020-12-10T17:34:17+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>0da75a683636e4748b0fa6d1554fc660</guid>
+    <fileName>Assets/extOSC/Scripts/Editor/Editors/UI/OSCButtonEditor.cs</fileName>
+    <timeStamp>2020-12-10T17:34:09+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>a51f3bf7fa30042b9b16261d14e1021f</guid>
+    <fileName>Assets/extOSC/Scripts/Editor/Editors/UI/OSCMultiplySlidersEditor.cs</fileName>
+    <timeStamp>2020-12-10T17:34:57+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>a8b24225d16b643149981a9c12185d84</guid>
+    <fileName>Assets/extOSC/Scripts/Editor/Editors/UI/OSCPadEditor.cs</fileName>
+    <timeStamp>2020-12-10T17:34:59+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>03ecbe6ce54fb4e8a8d417c3f37e7471</guid>
+    <fileName>Assets/extOSC/Scripts/Editor/Editors/UI/OSCRotaryEditor.cs</fileName>
+    <timeStamp>2020-12-10T17:34:06+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>911b5f5fc0eb14fd49e4bf64e1aa02ef</guid>
+    <fileName>Assets/extOSC/Scripts/Editor/Editors/UI/OSCSliderEditor.cs</fileName>
+    <timeStamp>2020-12-10T17:34:51+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>e766f86cb7d2461683eb37d8a971fb14</guid>
+    <fileName>Assets/Samples/XR Interaction Toolkit/3.0.7/Starter Assets/Scripts/ClimbTeleportDestinationIndicator.cs</fileName>
+    <timeStamp>2024-11-15T11:30:25.29+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>4a5f76f9ea8c80547973ab01877f9567</guid>
+    <fileName>Assets/Samples/XR Interaction Toolkit/3.0.7/Starter Assets/Scripts/ControllerAnimator.cs</fileName>
+    <timeStamp>2024-11-15T11:30:25.29+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>f9ac216f0eb04754b1d938aac6380b31</guid>
+    <fileName>Assets/Samples/XR Interaction Toolkit/3.0.7/Starter Assets/Scripts/ControllerInputActionManager.cs</fileName>
+    <timeStamp>2024-11-15T11:30:25.29+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>717c12e2a4cfe764ab2580b1135e10fd</guid>
+    <fileName>Assets/Samples/XR Interaction Toolkit/3.0.7/Starter Assets/Scripts/DestroySelf.cs</fileName>
+    <timeStamp>2024-11-15T11:30:25.29+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>9b1e8c997df241c1a67045eeac79b41b</guid>
+    <fileName>Assets/Samples/XR Interaction Toolkit/3.0.7/Starter Assets/Scripts/DynamicMoveProvider.cs</fileName>
+    <timeStamp>2024-11-15T11:30:25.29+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>6ef0e4723b64c884699a375196c13ac0</guid>
+    <fileName>Assets/Samples/XR Interaction Toolkit/3.0.7/Starter Assets/Scripts/GazeInputManager.cs</fileName>
+    <timeStamp>2024-11-15T11:30:25.29+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>e7883133e628dff4a86f50c082f77055</guid>
+    <fileName>Assets/Samples/XR Interaction Toolkit/3.0.7/Starter Assets/Scripts/MaterialPipelineHandler.cs</fileName>
+    <timeStamp>2024-11-15T11:30:25.29+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>956dd6cf70eaca449a45b6a95b96c8c1</guid>
+    <fileName>Assets/Samples/XR Interaction Toolkit/3.0.7/Starter Assets/Scripts/ObjectSpawner.cs</fileName>
+    <timeStamp>2024-11-15T11:30:25.29+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>4dd2e41114c62b44fbd334ca5b314352</guid>
+    <fileName>Assets/Samples/XR Interaction Toolkit/3.0.7/Starter Assets/Scripts/RotationAxisLockGrabTransformer.cs</fileName>
+    <timeStamp>2024-11-15T11:30:25.29+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>7da98a0edd844d83b9b4de3f91de030c</guid>
+    <fileName>Assets/Samples/XR Interaction Toolkit/3.0.7/Starter Assets/Scripts/TeleportVolumeAnchorAffordanceStateLink.cs</fileName>
+    <timeStamp>2024-11-15T11:30:25.29+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>07b3638c2f5db5b479ff24c2859713d4</guid>
+    <fileName>Assets/Samples/XR Interaction Toolkit/3.0.7/Starter Assets/Scripts/XRPokeFollowAffordance.cs</fileName>
+    <timeStamp>2024-11-15T11:30:25.29+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>493d96fa71e2d584fa70e003f480f89f</guid>
+    <fileName>Assets/Wwise/API/Editor/PluginActivator/Common/AkPlatformPluginActivator.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.4489464+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>f15726cbcf8cb434a9b16e32578110a5</guid>
+    <fileName>Assets/Wwise/API/Editor/PluginActivator/Common/AkPlatformPluginList.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.4499964+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>0d045cbb675142341bd220de1354c9f2</guid>
+    <fileName>Assets/Wwise/API/Editor/PluginActivator/Common/AkPluginActivator.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.4529474+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>fcd9d1fc7df1c8b42ba8a4e581d8edb3</guid>
+    <fileName>Assets/Wwise/API/Editor/PluginActivator/Common/AkPluginActivatorConstants.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.4544787+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>4cdf83f0942d44043be7ac5010f52139</guid>
+    <fileName>Assets/Wwise/API/Editor/PluginActivator/Common/AkPluginActivatorMenus.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.4554868+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>889bd85c7e63db8439485b5b66099e41</guid>
+    <fileName>Assets/Wwise/API/Editor/PluginActivator/Common/AkPluginInfo.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.4574813+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>f21e453964f1bda4d854c4c1602628c7</guid>
+    <fileName>Assets/Wwise/API/Editor/PluginActivator/Common/StaticPluginRegistration.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.4601345+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>e254431f7964261429e43591b7f98e0e</guid>
+    <fileName>Assets/Wwise/API/Editor/PluginActivator/Mac/AkMacPluginActivator.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.5199593+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>ad376faa65de2d04f99edef93d0b40a2</guid>
+    <fileName>Assets/Wwise/API/Editor/PluginActivator/Windows/AkWindowsPluginActivator.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.4627043+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>57de7b93f7123ed4db60c55d82e389be</guid>
+    <fileName>Assets/Wwise/API/Editor/WwiseMenu/Common/AkUnityBuilderBase.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.4647047+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>ed3814932b7af1848b2f6ece914b0a68</guid>
+    <fileName>Assets/Wwise/API/Editor/WwiseMenu/Common/AkUnityPluginInstallerBase.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.4669355+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>aa8cda11808f69b42b33f3b6dcd68df6</guid>
+    <fileName>Assets/Wwise/API/Editor/WwiseMenu/Common/AkWwiseIdConverter.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.469453+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>1eac91756c52eca41a7e599940180f55</guid>
+    <fileName>Assets/Wwise/API/Editor/WwiseMenu/Mac/AkWwiseMenu_Mac.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.5224659+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>5eba85e96c9713448acc7a72efca0a78</guid>
+    <fileName>Assets/Wwise/API/Editor/WwiseMenu/Windows/AkWwiseMenu_Windows.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.471598+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>ea165e1e69162a043b1403bb0ef2021c</guid>
+    <fileName>Assets/Wwise/API/Runtime/Generated/Common/Ak3DAudioSinkCapabilities.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.5694972+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>74af4baeca64aa540b707681e7bab82b</guid>
+    <fileName>Assets/Wwise/API/Runtime/Generated/Common/Ak3dData.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.5714944+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>1475f995d23e79741bfc9061f70423b7</guid>
+    <fileName>Assets/Wwise/API/Runtime/Generated/Common/Ak3DPositionType.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.574029+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>6e321fc9dac42bf4bb5f926fc556bb1e</guid>
+    <fileName>Assets/Wwise/API/Runtime/Generated/Common/Ak3DSpatializationMode.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.5760277+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>6a5b0df9a21cfab46b20402bd78e5f65</guid>
+    <fileName>Assets/Wwise/API/Runtime/Generated/Common/AkAcousticSurface.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.5785424+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>ed99ed338bcf9d14c8f5d22ccb7099a0</guid>
+    <fileName>Assets/Wwise/API/Runtime/Generated/Common/AkActionOnEventType.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.5815585+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>f18974fec3d37c549b85b69472af0c58</guid>
+    <fileName>Assets/Wwise/API/Runtime/Generated/Common/AkAttenuationCurveType.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.5840898+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>02c3842e28974a542a7c76b4f4f8703a</guid>
+    <fileName>Assets/Wwise/API/Runtime/Generated/Common/AkAudioDeviceState.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.598337+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>a3d45401e3657b7489677bc616e0a72b</guid>
+    <fileName>Assets/Wwise/API/Runtime/Generated/Common/AkAudioFormat.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.6008651+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>5b178bb8c7d86424d805afa4073ab9c3</guid>
+    <fileName>Assets/Wwise/API/Runtime/Generated/Common/AkAudioInterruptionCallbackInfo.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.6033743+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>03e8a021cb7021f49853baff0b7e2019</guid>
+    <fileName>Assets/Wwise/API/Runtime/Generated/Common/AkAudioObjectDestination.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.6063925+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>adb1acf359778664390eec6e00b1202e</guid>
+    <fileName>Assets/Wwise/API/Runtime/Generated/Common/AkAudioSettings.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.60891+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>7a6c2bd9f0529fc4fa6ebb5416b2bced</guid>
+    <fileName>Assets/Wwise/API/Runtime/Generated/Common/AkAudioSourceChangeCallbackInfo.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.6144799+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>1e53fd1b0cfcdc24a913216083edb1da</guid>
+    <fileName>Assets/Wwise/API/Runtime/Generated/Common/AkAuxSendValue.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.6170261+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>2d142be98e2c10244b9fa9c0ea287fe0</guid>
+    <fileName>Assets/Wwise/API/Runtime/Generated/Common/AkBankCallbackInfo.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.619027+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>cf4ffb5015b1e3540bdb7d59bb36a729</guid>
+    <fileName>Assets/Wwise/API/Runtime/Generated/Common/AkBankContent.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.6206676+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>b0043e6636d7e6f49b9e2310729b1183</guid>
+    <fileName>Assets/Wwise/API/Runtime/Generated/Common/AkBankTypeEnum.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.6236897+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>0e0988b5a2df46247bb97d96188b5fc7</guid>
+    <fileName>Assets/Wwise/API/Runtime/Generated/Common/AkBehavioralPositioningData.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.626236+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>a204355281667c74a9cd74c04665998b</guid>
+    <fileName>Assets/Wwise/API/Runtime/Generated/Common/AkCallbackInfo.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.6287761+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>d2759734a707b3f489b0a1fbbec3d14a</guid>
+    <fileName>Assets/Wwise/API/Runtime/Generated/Common/AkCallbackSerializer.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.6307756+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>5fa4f1922acef834f8d86251b8f25755</guid>
+    <fileName>Assets/Wwise/API/Runtime/Generated/Common/AkCallbackType.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.6323123+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>84a1551df3caa904cab9a22b0613567d</guid>
+    <fileName>Assets/Wwise/API/Runtime/Generated/Common/AkChannelConfig.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.63486+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>e9b7ede4fd8ca21419d9e622bfc8f24c</guid>
+    <fileName>Assets/Wwise/API/Runtime/Generated/Common/AkChannelConfigType.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.637384+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>1e046a3b662913e44a8d5e199dccab8e</guid>
+    <fileName>Assets/Wwise/API/Runtime/Generated/Common/AkChannelEmitter.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.6404061+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>e0ea4ff452158fd44856fde5a57e5bfe</guid>
+    <fileName>Assets/Wwise/API/Runtime/Generated/Common/AkChannelOrdering.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.6429256+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>f371b2ac294f9284e870bed21ab3c936</guid>
+    <fileName>Assets/Wwise/API/Runtime/Generated/Common/AkConnectionType.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.6449482+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>dbd6be564de87354c94196de17f88941</guid>
+    <fileName>Assets/Wwise/API/Runtime/Generated/Common/AkCurveInterpolation.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.6469466+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>854746b7d2f39aa4db6dd0d7adb5dc2f</guid>
+    <fileName>Assets/Wwise/API/Runtime/Generated/Common/AkDeviceDescription.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.6494945+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>5e32312038330fa4091593a69799bd40</guid>
+    <fileName>Assets/Wwise/API/Runtime/Generated/Common/AkDeviceSettings.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.6514917+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>abf24ee4923625b4aa98b83027f6e9f9</guid>
+    <fileName>Assets/Wwise/API/Runtime/Generated/Common/AkDiffractionPathInfo.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.6540303+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>3210404cea13c1e49aa08f16ff7ae674</guid>
+    <fileName>Assets/Wwise/API/Runtime/Generated/Common/AkDurationCallbackInfo.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.6555653+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>fcc68201acd7646479b1a45b9ff0bb91</guid>
+    <fileName>Assets/Wwise/API/Runtime/Generated/Common/AkDynamicSequenceItemCallbackInfo.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.6580894+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>8798195083d98c04fb620e0428154d60</guid>
+    <fileName>Assets/Wwise/API/Runtime/Generated/Common/AkDynamicSequenceType.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.6591113+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>848c9d1cc61730240a824a700d858a0b</guid>
+    <fileName>Assets/Wwise/API/Runtime/Generated/Common/AkEventCallbackInfo.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.6617194+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>3e44b554288af664395a4bc750380602</guid>
+    <fileName>Assets/Wwise/API/Runtime/Generated/Common/AkExtent.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.6636554+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>7e4db36192ea5ca418aa90d5a4c05268</guid>
+    <fileName>Assets/Wwise/API/Runtime/Generated/Common/AkExternalSourceInfo.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.6662582+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>1b53fc587332c20439014fa409b6d5f2</guid>
+    <fileName>Assets/Wwise/API/Runtime/Generated/Common/AkFloorPlane.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.6682762+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>0ab32399d6efe5042bd095a4a6190e89</guid>
+    <fileName>Assets/Wwise/API/Runtime/Generated/Common/AkGeometryInstanceParams.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.6708146+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>88f93b5390e060b4b9a7a52cc1eb89dd</guid>
+    <fileName>Assets/Wwise/API/Runtime/Generated/Common/AkGlobalCallbackLocation.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.6839852+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>131f2eed9dd8db24caac4696641764dd</guid>
+    <fileName>Assets/Wwise/API/Runtime/Generated/Common/AkGroupType.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.6855436+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>5c873db569199dd4ebc86785301ae7b4</guid>
+    <fileName>Assets/Wwise/API/Runtime/Generated/Common/AkImageSourceParams.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.6880589+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>fad14b8da48498b44a6e94a2c9c7fb74</guid>
+    <fileName>Assets/Wwise/API/Runtime/Generated/Common/AkImageSourceSettings.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.691077+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>d8f8bffe320dc424ea0e574fe1ef2320</guid>
+    <fileName>Assets/Wwise/API/Runtime/Generated/Common/AkInitializationSettings.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.6926158+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>df9142f6bbdcc1f40bd54f8f8c2a9b76</guid>
+    <fileName>Assets/Wwise/API/Runtime/Generated/Common/AkInitSettings.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.6981585+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>ec33315180e8e804eae6d1e925560dca</guid>
+    <fileName>Assets/Wwise/API/Runtime/Generated/Common/AkIterator.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.700703+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>a5e2280dad449aa42a712fc9ab9906db</guid>
+    <fileName>Assets/Wwise/API/Runtime/Generated/Common/AkMarkerCallbackInfo.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.702222+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>f0ab1fd7c8daf8e4dbd78c5bdbf7b152</guid>
+    <fileName>Assets/Wwise/API/Runtime/Generated/Common/AkMeteringFlags.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.7042421+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>fa0f6650d7925784592a8771bb37dfa4</guid>
+    <fileName>Assets/Wwise/API/Runtime/Generated/Common/AkMIDICcTypes.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.7062416+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>3de01122582b72247ab61d5372f5414b</guid>
+    <fileName>Assets/Wwise/API/Runtime/Generated/Common/AkMIDIEvent.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.7087827+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>6d6785463bf75fb46a264aa4769a99da</guid>
+    <fileName>Assets/Wwise/API/Runtime/Generated/Common/AkMIDIEventCallbackInfo.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.709782+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>c7f57e185bd9837449e744dfba6d1887</guid>
+    <fileName>Assets/Wwise/API/Runtime/Generated/Common/AkMIDIEventTypes.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.7123043+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>f2747ca542eb71544a49e20d8ae03436</guid>
+    <fileName>Assets/Wwise/API/Runtime/Generated/Common/AkMIDIPost.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.7143279+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>4a6ceffb22305a042b475453ae0ce56a</guid>
+    <fileName>Assets/Wwise/API/Runtime/Generated/Common/AkMixerInputInfo.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.7158494+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>c16b5948b8442174ea38f476c43c8d70</guid>
+    <fileName>Assets/Wwise/API/Runtime/Generated/Common/AkMonitorErrorCode.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.7178682+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>2944d2fc87eec3f418b538923f210e07</guid>
+    <fileName>Assets/Wwise/API/Runtime/Generated/Common/AkMonitorErrorLevel.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.7205058+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>0ed017d440a5f9741a1bc8adffd5efa7</guid>
+    <fileName>Assets/Wwise/API/Runtime/Generated/Common/AkMonitoringCallbackInfo.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.7225251+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>9830c00c9acaea34493ced065e3905e7</guid>
+    <fileName>Assets/Wwise/API/Runtime/Generated/Common/AkMultiPositionType.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.7250678+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>e13609891cd7c074ca7423940301d760</guid>
+    <fileName>Assets/Wwise/API/Runtime/Generated/Common/AkMusicPlaylistCallbackInfo.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.7277272+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>1a83147ab238cc344b97d615645e0829</guid>
+    <fileName>Assets/Wwise/API/Runtime/Generated/Common/AkMusicSettings.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.7296148+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>5fab0a6b4595bb2468122989d246e7a1</guid>
+    <fileName>Assets/Wwise/API/Runtime/Generated/Common/AkMusicSyncCallbackInfo.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.7316165+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>9874908243289244986ac5a5b32ed24b</guid>
+    <fileName>Assets/Wwise/API/Runtime/Generated/Common/AkObjectInfo.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.7331361+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>ae03f8bba6495f646b4d11ed7b793234</guid>
+    <fileName>Assets/Wwise/API/Runtime/Generated/Common/AkObstructionOcclusionValues.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.7351578+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>405bd5a1a2f3a8240af4a8292db3aabc</guid>
+    <fileName>Assets/Wwise/API/Runtime/Generated/Common/AkOutputSettings.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.7371585+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>1286a2cf46323d04ba45e57a372fe23a</guid>
+    <fileName>Assets/Wwise/API/Runtime/Generated/Common/AkPanningRule.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.7388466+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>b61a0cc855e6707408ed13c9e8aa2b6d</guid>
+    <fileName>Assets/Wwise/API/Runtime/Generated/Common/AkPlaylist.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.7407036+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>c9b4a6748680b284abb5cebf5901dbc0</guid>
+    <fileName>Assets/Wwise/API/Runtime/Generated/Common/AkPlaylistArray.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.7432414+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>934dd80886edfbc4f8b1d7e0d2342ec8</guid>
+    <fileName>Assets/Wwise/API/Runtime/Generated/Common/AkPlaylistItem.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.7457605+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>c8e1504709d7635438ce87d6c759481d</guid>
+    <fileName>Assets/Wwise/API/Runtime/Generated/Common/AkPluginType.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.7477834+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>ec11b68e64d2ca947b38879829aa616e</guid>
+    <fileName>Assets/Wwise/API/Runtime/Generated/Common/AkPositioningData.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.7498505+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>6d9e382d2c9f70e4e9337f536a7de02f</guid>
+    <fileName>Assets/Wwise/API/Runtime/Generated/Common/AkPositioningInfo.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.7514178+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>c4fc47f83a202bd4fa3e7d71bac5c01d</guid>
+    <fileName>Assets/Wwise/API/Runtime/Generated/Common/AkPreparationType.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.7539402+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>9e713a4904687cd489df2dd5eb4b5975</guid>
+    <fileName>Assets/Wwise/API/Runtime/Generated/Common/AkQueryRTPCValue.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.7559648+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>6ac9832a1ab598040beca0a244d00614</guid>
+    <fileName>Assets/Wwise/API/Runtime/Generated/Common/AkRamp.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.7584989+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>01d995234274ab742b44ea8c72da938a</guid>
+    <fileName>Assets/Wwise/API/Runtime/Generated/Common/AkReflectionPathInfo.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.7604999+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>3b8923ec621d3d840a336f2017bf0e29</guid>
+    <fileName>Assets/Wwise/API/Runtime/Generated/Common/AkResourceMonitorDataSummary.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.7625025+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>aad6a6f7cb59609429351381e55dbc5d</guid>
+    <fileName>Assets/Wwise/API/Runtime/Generated/Common/AKRESULT.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.7650473+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>06eedd59688172e49a43dd36f3d7b104</guid>
+    <fileName>Assets/Wwise/API/Runtime/Generated/Common/AkRoomParams.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.7670456+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>77d6eb806acf37441bff6a907be5cc7c</guid>
+    <fileName>Assets/Wwise/API/Runtime/Generated/Common/AkSegmentInfo.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.7695836+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>f52667ccafd041f44bc2f3e0e40735ae</guid>
+    <fileName>Assets/Wwise/API/Runtime/Generated/Common/AkSerializedCallbackHeader.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.7715946+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>dd707560c44991044aedd5ec23d14086</guid>
+    <fileName>Assets/Wwise/API/Runtime/Generated/Common/AkSetPositionFlags.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.7731359+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>9b0ccf262d7dcff41b19603c6aac3e87</guid>
+    <fileName>Assets/Wwise/API/Runtime/Generated/Common/AkSourceSettings.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.7756571+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>2c99ac9fb510f6c4c92bd0c39ae8c5ff</guid>
+    <fileName>Assets/Wwise/API/Runtime/Generated/Common/AkSpatialAudioInitSettings.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.7777692+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>ea4b6692bc6f09441896ff7f3fd2c31e</guid>
+    <fileName>Assets/Wwise/API/Runtime/Generated/Common/AkSpeakerPanningType.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.7797661+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>3519db6e81bb09a4688a95ebf51062fd</guid>
+    <fileName>Assets/Wwise/API/Runtime/Generated/Common/AkStdMovePolicy.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.7822904+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>a6d9faa7a8036824e8c52c3258ae21f8</guid>
+    <fileName>Assets/Wwise/API/Runtime/Generated/Common/AkStreamMgrSettings.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.7843146+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>a6315a833dfdeef48a45a366f52731bf</guid>
+    <fileName>Assets/Wwise/API/Runtime/Generated/Common/AkTransform.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.7858324+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>d81082f13aebdfa4681fbbe7f214e6fe</guid>
+    <fileName>Assets/Wwise/API/Runtime/Generated/Common/AkTransmissionOperation.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.7868552+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>5cb1f5b261f64b34c98af3abbb388a4d</guid>
+    <fileName>Assets/Wwise/API/Runtime/Generated/Common/AkTriangle.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.7888544+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>a7ce9625dd97b1c4ba24df2c61987aaf</guid>
+    <fileName>Assets/Wwise/API/Runtime/Generated/Common/AkTrivialStdMovePolicy.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.7904685+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>3d29e62428812774b937be61b253bd98</guid>
+    <fileName>Assets/Wwise/API/Runtime/Generated/Common/AkWorldTransform.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.7924897+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>7caa08f31db637742bbafd5746ac995d</guid>
+    <fileName>Assets/Wwise/API/Runtime/Generated/Common/MonitorErrorInfo.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.7950261+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>668b7c7839be9734982eba9aff4eba66</guid>
+    <fileName>Assets/Wwise/API/Runtime/Generated/Common/MsgContext.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.7976177+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>354ee1fedc4e4bc4cb6ca1d17f5302ea</guid>
+    <fileName>Assets/Wwise/API/Runtime/Generated/Mac/AkAudioAPI_Mac.cs</fileName>
+    <timeStamp>2025-01-30T12:15:32.0268107+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>326dea1ac38ea0e459dc5649abce412c</guid>
+    <fileName>Assets/Wwise/API/Runtime/Generated/Mac/AkCommunicationSettings_Mac.cs</fileName>
+    <timeStamp>2025-01-30T12:15:32.0222172+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>597c653c474e9f44dab1ce6a7da23683</guid>
+    <fileName>Assets/Wwise/API/Runtime/Generated/Mac/AkPlatformInitSettings_Mac.cs</fileName>
+    <timeStamp>2025-01-30T12:15:32.0278131+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>75b3256ef13af4347be67637b30c3055</guid>
+    <fileName>Assets/Wwise/API/Runtime/Generated/Mac/AkThreadProperties_Mac.cs</fileName>
+    <timeStamp>2025-01-30T12:15:32.0175803+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>eef42882027cfa64eb812557ca29c9dd</guid>
+    <fileName>Assets/Wwise/API/Runtime/Generated/Mac/AkUnitySoundEnginePINVOKE_Mac.cs</fileName>
+    <timeStamp>2025-01-30T12:15:32.0201968+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>82e70a1640099a54da170dfb7b20d94c</guid>
+    <fileName>Assets/Wwise/API/Runtime/Generated/Mac/AkUnitySoundEngine_Mac.cs</fileName>
+    <timeStamp>2025-01-30T12:15:32.0242109+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>b8d261e3d54510747a04b6e358cd6c14</guid>
+    <fileName>Assets/Wwise/API/Runtime/Generated/Windows/AkCommunicationSettings_Windows.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.8005615+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>a9883e96dafa83646b2f3e721908933a</guid>
+    <fileName>Assets/Wwise/API/Runtime/Generated/Windows/AkPlatformInitSettings_Windows.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.8030826+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>3f0f769b1cc41b141a35e16709c5ba88</guid>
+    <fileName>Assets/Wwise/API/Runtime/Generated/Windows/AkThreadProperties_Windows.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.8051078+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>68f54cfbdcbcf824e984ec4eff39f108</guid>
+    <fileName>Assets/Wwise/API/Runtime/Generated/Windows/AkUnitySoundEnginePINVOKE_Windows.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.8086294+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>5490f8a95b3b8ed42a750b78035c2eed</guid>
+    <fileName>Assets/Wwise/API/Runtime/Generated/Windows/AkUnitySoundEngine_Windows.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.8116533+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>67e457abc3c54a9419cb1a464b315fef</guid>
+    <fileName>Assets/Wwise/API/Runtime/Handwritten/Common/AkAudioInputManager.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.8131944+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>0f986700d73b90d49994997d137f667a</guid>
+    <fileName>Assets/Wwise/API/Runtime/Handwritten/Common/AkBankManager.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.815198+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>e525c3204741986438370eb753be62c6</guid>
+    <fileName>Assets/Wwise/API/Runtime/Handwritten/Common/AkBasePathGetter.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.8178406+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>6f395ecde9732564aa1d5d9b490fc1e0</guid>
+    <fileName>Assets/Wwise/API/Runtime/Handwritten/Common/AkCallbackManager.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.8198382+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>5905dd611e16988459d7e031d505041a</guid>
+    <fileName>Assets/Wwise/API/Runtime/Handwritten/Common/AkCommonPlatformSettings.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.8224213+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>c5f4faaded3be0442b6819732b1444fd</guid>
+    <fileName>Assets/Wwise/API/Runtime/Handwritten/Common/AkEnumFlagAttribute.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.82438+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>ea11e9415444d834686f22595331d852</guid>
+    <fileName>Assets/Wwise/API/Runtime/Handwritten/Common/AkLogger.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.8258989+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>74e0fcf3fdff77e44b43fed89c453fc0</guid>
+    <fileName>Assets/Wwise/API/Runtime/Handwritten/Common/AkShowOnlyAttribute.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.8289214+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>32c89ffbfbb5a474cbb41375e3ab7d4a</guid>
+    <fileName>Assets/Wwise/API/Runtime/Handwritten/Common/AkUnitySoundEngine.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.8315611+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>8a5d25af98bd1ae40944ebb3e5c6b079</guid>
+    <fileName>Assets/Wwise/API/Runtime/Handwritten/Common/AkUnitySoundEngineInitialization.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.8325599+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>44775ebb13c065d4faf2d291f2fa4ace</guid>
+    <fileName>Assets/Wwise/API/Runtime/Handwritten/Common/AkUtilities.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.835102+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>5847b80b21ed76d42a33962272672f4b</guid>
+    <fileName>Assets/Wwise/API/Runtime/Handwritten/Common/AkVector.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.8371+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>26791cf1b4cfda748a9fb3cbe67f827a</guid>
+    <fileName>Assets/Wwise/API/Runtime/Handwritten/Common/AkVector64.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.8406326+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>4765a964e3fb6e24399afe0f867f2639</guid>
+    <fileName>Assets/Wwise/API/Runtime/Handwritten/Common/AkVertex.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.8421446+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>1b4117bede5a25348baba05a8403a128</guid>
+    <fileName>Assets/Wwise/API/Runtime/Handwritten/Common/AkWwiseEditorSettings.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.844164+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>fe95b0a769e8cef47acc1f3ab1747e85</guid>
+    <fileName>Assets/Wwise/API/Runtime/Handwritten/Common/AkWwiseInitializationSettings.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.8467492+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>a00615adac20f0f48b80e420801f202b</guid>
+    <fileName>Assets/Wwise/API/Runtime/Handwritten/Mac/AkMacBasePathGetter.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.5184287+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>3a24db2dfc5cefb42ada86d945c928eb</guid>
+    <fileName>Assets/Wwise/API/Runtime/Handwritten/Mac/AkMacSettings.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.5144269+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>b12efde0b3a532d47bbe12d6a173aad7</guid>
+    <fileName>Assets/Wwise/API/Runtime/Handwritten/Mac/AkUnitySoundEngine.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.5164272+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>959793310fc56fe4c85e8abf42b522df</guid>
+    <fileName>Assets/Wwise/API/Runtime/Handwritten/WAAPI/AkWaapiClient.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.900517+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>b147824b4f815c545b3c8f67dc457c97</guid>
+    <fileName>Assets/Wwise/API/Runtime/Handwritten/WAAPI/AkWaapiHelper.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.9030396+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>c5bfc0753b8c76f46868c134439a8163</guid>
+    <fileName>Assets/Wwise/API/Runtime/Handwritten/WAAPI/AkWaapiUtilities.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.906061+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>a6b1f089071e50b439a9793c2aa41ce7</guid>
+    <fileName>Assets/Wwise/API/Runtime/Handwritten/WAAPI/Uri.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.9080585+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>2194e71e8cced0946baf7aa1d65cd9fb</guid>
+    <fileName>Assets/Wwise/API/Runtime/Handwritten/WAAPI/Wamp.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.909599+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>c2daf2a037852674582bed751e5365dc</guid>
+    <fileName>Assets/Wwise/API/Runtime/Handwritten/Windows/AkUnitySoundEngine.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.9121083+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>dd045a59d4e6be64b86503e20d472210</guid>
+    <fileName>Assets/Wwise/API/Runtime/Handwritten/Windows/AkWindowsBasePathGetter.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.9147583+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>d1686e36b97dae347b0336be81c00898</guid>
+    <fileName>Assets/Wwise/API/Runtime/Handwritten/Windows/AkWindowsSettings.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.9166691+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>22e2b26fe683fb645a7e10182b22e348</guid>
+    <fileName>Assets/Wwise/API/Runtime/WwiseTypes/WwiseObjects/WwiseAcousticTextureReference.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.1209551+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>94fd39055d99a48469587f3f57732a11</guid>
+    <fileName>Assets/Wwise/API/Runtime/WwiseTypes/WwiseObjects/WwiseAuxBusReference.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.1224427+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>2c4b9ff299fa5a34da4ed99e37bac116</guid>
+    <fileName>Assets/Wwise/API/Runtime/WwiseTypes/WwiseObjects/WwiseBankReference.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.1244976+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>877f4e433db82944eb6395c8eab47961</guid>
+    <fileName>Assets/Wwise/API/Runtime/WwiseTypes/WwiseObjects/WwiseEventReference.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.1254916+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>73804c23d05267042bb1b15ffd19082b</guid>
+    <fileName>Assets/Wwise/API/Runtime/WwiseTypes/WwiseObjects/WwiseObjectReference.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.128156+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>338ff15fdabbb2743bd828dfb9968fa0</guid>
+    <fileName>Assets/Wwise/API/Runtime/WwiseTypes/WwiseObjects/WwiseObjectType.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.1301092+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>4c976b37da8300047b4891edf78e419d</guid>
+    <fileName>Assets/Wwise/API/Runtime/WwiseTypes/WwiseObjects/WwiseRtpcReference.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.1312421+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>2d9ce402db4f69146a676eb759ed426c</guid>
+    <fileName>Assets/Wwise/API/Runtime/WwiseTypes/WwiseObjects/WwiseStateGroupReference.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.1332582+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>dee4237136dd4a04eb62d7f1ad75fdd2</guid>
+    <fileName>Assets/Wwise/API/Runtime/WwiseTypes/WwiseObjects/WwiseStateReference.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.1357818+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>6340bbcb8a070bb49b5dd60a0cc75d5b</guid>
+    <fileName>Assets/Wwise/API/Runtime/WwiseTypes/WwiseObjects/WwiseSwitchGroupReference.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.1383689+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>3c40acc0a90693d4e8926994ffccec9b</guid>
+    <fileName>Assets/Wwise/API/Runtime/WwiseTypes/WwiseObjects/WwiseSwitchReference.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.1398823+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>4cd3d4a444174334cb696c08b7f17475</guid>
+    <fileName>Assets/Wwise/API/Runtime/WwiseTypes/WwiseObjects/WwiseTriggerReference.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.1409041+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>ff5a69c55c488af46a5fea52d94fdfbd</guid>
+    <fileName>Assets/Wwise/API/Runtime/WwiseTypes/WwiseObjectsManagers/WwiseEventReferencesManager.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.141898+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>e26257599a356a146aca3eb5e5fc11ba</guid>
+    <fileName>Assets/Wwise/API/Runtime/WwiseTypes/WwiseTypes/AkWwiseAcousticTexture.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.1449055+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>2f71ff851373af8429da9bbfe4c46e0a</guid>
+    <fileName>Assets/Wwise/API/Runtime/WwiseTypes/WwiseTypes/AkWwiseAuxBus.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.146902+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>6a85501c8693bf742ae5dbae557efc93</guid>
+    <fileName>Assets/Wwise/API/Runtime/WwiseTypes/WwiseTypes/AkWwiseBank.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.1494135+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>f71a089d88781ac4faa3a6de9415fd75</guid>
+    <fileName>Assets/Wwise/API/Runtime/WwiseTypes/WwiseTypes/AkWwiseBaseGroupType.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.1504958+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>7ae4ad7f98162e64594e40a1dcb76e8b</guid>
+    <fileName>Assets/Wwise/API/Runtime/WwiseTypes/WwiseTypes/AkWwiseBaseType.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.1535118+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>9b6c33c6fd2dccf4e8ddffa33b25390b</guid>
+    <fileName>Assets/Wwise/API/Runtime/WwiseTypes/WwiseTypes/AkWwiseCallbackFlags.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.154513+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>7c628b31d8bd70044a2633a0e53b0554</guid>
+    <fileName>Assets/Wwise/API/Runtime/WwiseTypes/WwiseTypes/AkWwiseEvent.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.1569619+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>8c8b2bf5eadc80448bfdfd20cb26827a</guid>
+    <fileName>Assets/Wwise/API/Runtime/WwiseTypes/WwiseTypes/AkWwiseRtpc.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.1589772+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>9c9c7d91a0c0c624197521430b6a275f</guid>
+    <fileName>Assets/Wwise/API/Runtime/WwiseTypes/WwiseTypes/AkWwiseState.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.1608803+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>0bbf91de25154a044811534d814a5029</guid>
+    <fileName>Assets/Wwise/API/Runtime/WwiseTypes/WwiseTypes/AkWwiseSwitch.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.1628997+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>191406252a58b7d4f802c10439774df3</guid>
+    <fileName>Assets/Wwise/API/Runtime/WwiseTypes/WwiseTypes/AkWwiseTrigger.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.1649007+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>180b6059b9bc60c499ca5a3293f8053e</guid>
+    <fileName>Assets/Wwise/API/Runtime/WwiseTypes/WwiseTypes/AkWwiseTypeMigration.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.1670783+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>b99149726e338954186cccf6f46a6ed0</guid>
+    <fileName>Assets/Wwise/MonoBehaviour/Editor/EditorPlatformHelpers/Mac/AkMacBuildPreprocessor.cs</fileName>
+    <timeStamp>2025-01-30T12:15:31.9543009+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>83376b5ad46989341b42cf285a36caf8</guid>
+    <fileName>Assets/Wwise/MonoBehaviour/Editor/EditorPlatformHelpers/Windows/AkWindowsBuildPreprocessor.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.216738+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>042245dc5b2dbef48895d0846dfb558d</guid>
+    <fileName>Assets/Wwise/ProjectDatabase/Runtime/Handwritten/Common/WwiseEventRef.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.3312848+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>78bc9d20e19fbc6438868779bd32c15e</guid>
+    <fileName>Assets/Wwise/ProjectDatabase/Runtime/Handwritten/Common/WwiseEventRefArray.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.3328041+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>c3edd4781fceed1438cb92d986d1ebb1</guid>
+    <fileName>Assets/Wwise/ProjectDatabase/Runtime/Handwritten/Common/WwiseEventRefMediaArray.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.334847+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>4e762cc48240ddf429f489274756f993</guid>
+    <fileName>Assets/Wwise/ProjectDatabase/Runtime/Handwritten/Common/WwiseMediaRef.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.3368287+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>1ee9379ef58c31348922e5a793b7e7a8</guid>
+    <fileName>Assets/Wwise/ProjectDatabase/Runtime/Handwritten/Common/WwiseMediaRefArray.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.3383485+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>8ee58ea05fda395428c5741052426326</guid>
+    <fileName>Assets/Wwise/ProjectDatabase/Runtime/Handwritten/Common/WwisePlatformRef.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.34037+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>0595b50771ffaac4f918f0397ec9263e</guid>
+    <fileName>Assets/Wwise/ProjectDatabase/Runtime/Handwritten/Common/WwisePluginRef.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.341896+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>f1d2ee533b3f73e40aa5415cef064ad0</guid>
+    <fileName>Assets/Wwise/ProjectDatabase/Runtime/Handwritten/Common/WwisePluginRefArray.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.3429193+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>f001076019a58844f9cb8aac5a74ff73</guid>
+    <fileName>Assets/Wwise/ProjectDatabase/Runtime/Handwritten/Common/WwiseProjectDataBase.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.3449208+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>c75cb01a07f9196489a51a44632a7909</guid>
+    <fileName>Assets/Wwise/ProjectDatabase/Runtime/Handwritten/Common/WwiseSoundBankRef.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.346546+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>5a2236e06e4b31b4e88fd107025600e7</guid>
+    <fileName>Assets/Wwise/ProjectDatabase/Runtime/Handwritten/Common/WwiseSoundBankRefArray.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.3485665+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>aa7d1fd323e5acc44be1bac75af477bb</guid>
+    <fileName>Assets/Wwise/ProjectDatabase/Runtime/Handwritten/Mac/WwiseProjectDataBasePINVOKE_Mac.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.3511037+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>12adad5087109a94692caee81266842a</guid>
+    <fileName>Assets/Wwise/ProjectDatabase/Runtime/Handwritten/Mac/WwiseProjectDataBase_Mac.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.3531054+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>3fd83397aad0d414294cd9ca19a53bb8</guid>
+    <fileName>Assets/Wwise/ProjectDatabase/Runtime/Handwritten/Windows/WwiseProjectDataBasePINVOKE_Windows.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.3546481+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>ecd4e8bf00663b642ae0fa51939e3cbc</guid>
+    <fileName>Assets/Wwise/ProjectDatabase/Runtime/Handwritten/Windows/WwiseProjectDatabase_Windows.cs</fileName>
+    <timeStamp>2025-01-30T12:15:43.3566481+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>ba6ff5e7c92519444bc2a7ca46558963</guid>
+    <fileName>Assets/Samples/XR Interaction Toolkit/3.0.7/Starter Assets/DemoSceneAssets/Scripts/IncrementUIText.cs</fileName>
+    <timeStamp>2024-11-15T11:30:25.29+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>e001d3dc91354f8f8c590b4e1d1d3da9</guid>
+    <fileName>Assets/Samples/XR Interaction Toolkit/3.0.7/Starter Assets/DemoSceneAssets/Scripts/MultiAnchorTeleportReticle.cs</fileName>
+    <timeStamp>2024-11-15T11:30:25.29+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>ef67ceb22b2224643a2d5004fc2a678a</guid>
+    <fileName>Assets/Samples/XR Interaction Toolkit/3.0.7/Starter Assets/Editor/Scripts/StarterAssetsSampleProjectValidation.cs</fileName>
+    <timeStamp>2024-11-15T11:30:25.29+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>362df53a079d5c346a987e532748e277</guid>
+    <fileName>Assets/Wwise/API/Runtime/Handwritten/Common/Arrays/AkAcousticSurfaceArray.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.8487632+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>28301147332de3c4ebe0a827dda953d8</guid>
+    <fileName>Assets/Wwise/API/Runtime/Handwritten/Common/Arrays/AkAuxSendArray.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.8517617+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>561d97133cc27f34c861dd491c4a98b9</guid>
+    <fileName>Assets/Wwise/API/Runtime/Handwritten/Common/Arrays/AkBaseArray.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.8542897+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>6ebfed2265630ec43b6d84403b24f5a8</guid>
+    <fileName>Assets/Wwise/API/Runtime/Handwritten/Common/Arrays/AkChannelEmitterArray.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.8568225+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>adbae52cf0b4c464ab5dce24f182b301</guid>
+    <fileName>Assets/Wwise/API/Runtime/Handwritten/Common/Arrays/AkDeviceDescriptionArray.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.87206+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>135932e398e805441aff2616e89729fb</guid>
+    <fileName>Assets/Wwise/API/Runtime/Handwritten/Common/Arrays/AkDiffractionPathInfoArray.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.8740778+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>e4baf53886fb29b42b65a39302ea4b62</guid>
+    <fileName>Assets/Wwise/API/Runtime/Handwritten/Common/Arrays/AkExternalSourceInfoArray.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.8766927+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>9f442b85735a8924c8191ca688b225e2</guid>
+    <fileName>Assets/Wwise/API/Runtime/Handwritten/Common/Arrays/AkMIDIPostArray.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.8797155+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>d3c0284ae0f533e43a24354e855f23af</guid>
+    <fileName>Assets/Wwise/API/Runtime/Handwritten/Common/Arrays/AkObjectInfoArray.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.8842481+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>3fa6abf446f5ba140833e3a83cd61f77</guid>
+    <fileName>Assets/Wwise/API/Runtime/Handwritten/Common/Arrays/AkObstructionOcclusionValuesArray.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.8867944+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>7d5c5b62d1260754c968db969c1c9a3c</guid>
+    <fileName>Assets/Wwise/API/Runtime/Handwritten/Common/Arrays/AkPositionArray.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.8893064+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>94d7469e5dc8eb8499f44a1d2ae5fcb0</guid>
+    <fileName>Assets/Wwise/API/Runtime/Handwritten/Common/Arrays/AkReflectionPathInfoArray.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.8914452+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>7081c2de8f3974b4388cafa2f184cd11</guid>
+    <fileName>Assets/Wwise/API/Runtime/Handwritten/Common/Arrays/AkSourceSettingsArray.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.8939671+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>b51216217029f4e4b9249fb3b3d10362</guid>
+    <fileName>Assets/Wwise/API/Runtime/Handwritten/Common/Arrays/AkTriangleArray.cs</fileName>
+    <timeStamp>2025-01-30T12:15:37.8959868+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+</ArrayOfTypeDate>
