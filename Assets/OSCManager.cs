@@ -1,5 +1,6 @@
 using UnityEngine;
 using extOSC;
+using System;
 
 public class OSCManager : MonoBehaviour
 
@@ -41,6 +42,10 @@ public class OSCManager : MonoBehaviour
         {
             sensor1 = value;
         }
+        else
+        {
+            Debug.LogError("OSC message not recognized.");
+        }
     }
 
     private void OnReceiveSensor2(OSCMessage message)
@@ -49,6 +54,10 @@ public class OSCManager : MonoBehaviour
         {
             sensor2 = value;
         }
+         else
+        {
+            Debug.LogError("OSC message not recognized.");
+        }
     }
 
     private void OnReceiveSensor3(OSCMessage message)
@@ -56,6 +65,10 @@ public class OSCManager : MonoBehaviour
         if (message.ToFloat(out float value))
         {
             sensor3 = value;
+        }
+        else
+        {
+            Debug.LogError("OSC message not recognized.");
         }
     }
 }
