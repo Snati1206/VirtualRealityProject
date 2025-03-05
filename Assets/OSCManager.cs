@@ -44,6 +44,7 @@ public class OSCManager : MonoBehaviour
         }
         else
         {
+            sensor1 = 100f;
             Debug.LogError("OSC message not recognized.");
         }
     }
@@ -56,6 +57,7 @@ public class OSCManager : MonoBehaviour
         }
          else
         {
+            sensor2 = 100f;
             Debug.LogError("OSC message not recognized.");
         }
     }
@@ -68,6 +70,7 @@ public class OSCManager : MonoBehaviour
         }
         else
         {
+            sensor3 = 100f;
             Debug.LogError("OSC message not recognized.");
         }
     }

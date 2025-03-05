@@ -1,4 +1,5 @@
 using System.Runtime.CompilerServices;
+using Unity.Mathematics;
 using UnityEngine;
 
 
@@ -7,15 +8,16 @@ public class SkyControlScript : MonoBehaviour
 
     public OSCManager oscManager;
     public Material skyMaterial;
-    public float skySpeed = 1.0f;
+    [SerializeField] float skySpeed = 0.1f;
 
-    public float skyLuminosity = 1.0f;
-    public float oscillateIntensity = 0.1f;
-    public float freqOscillation = 1.0f;
+    [SerializeField] float skyLuminosity = 1.2f;
+    [SerializeField] float oscillateIntensity = 0.60f;
+    [SerializeField] float freqOscillation = 0.8f;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+
         if (skyMaterial == null)
         {
             Debug.LogError("No sky material have been asigned !");
@@ -50,9 +52,9 @@ public class SkyControlScript : MonoBehaviour
     {
         // Change the luminosity of the skybox
         float freq = freqOscillation * Time.time;
-        float timeToRadians = freq * Mathf.Deg2Rad;
-        float oscLuminosity = luminosity + Mathf.Sin(timeToRadians) * oscillateIntensity;
+        float oscLuminosity = luminosity + Mathf.Sin(freq%360) * oscillateIntensity;
         material.SetFloat("_Exposure", oscLuminosity);
+//        Debug.Log(oscLuminosity);
     }
 }
 
