@@ -1424,6 +1424,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2064502505}
   - component: {fileID: 2064502504}
+  - component: {fileID: 2064502506}
   m_Layer: 0
   m_Name: LogicManager
   m_TagString: Untagged
@@ -1444,9 +1445,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   oscManager: {fileID: 521394784}
-  isPaint1On: 0
-  isPaint2On: 0
-  isPaint3On: 0
+  isPaintingOn: 000000
+  eventTriggered: 000000
   areAllPaintingsOn: 0
 --- !u!4 &2064502505
 Transform:
@@ -1463,6 +1463,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2064502506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2064502503}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74afca0f799ba314fb700e28e5cf3e18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2037433153115511642
 PrefabInstance:
   m_ObjectHideFlags: 0
