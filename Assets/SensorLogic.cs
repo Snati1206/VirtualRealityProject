@@ -1,30 +1,30 @@
+using AK.Wwise;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class SensorLogic : MonoBehaviour
 {
     public OSCManager oscManager;
-    public bool isPaint1On = false;
-    public bool isPaint2On = false;
-    public bool isPaint3On = false;
+    public bool[] isPaintingOn = new bool[3] { false, false, false };
+    public bool[] eventTriggered = new bool[3] { false, false, false };
     public bool areAllPaintingsOn = false;
-
-    private float currentTime1 = 0f;
-    private float currentTime2 = 0f;
-    private float currentTime3 = 0f;
+    private float[] currentTime = new float[3] { 0f, 0f, 0f };
+    private string[] wwisePaintsOn = new string[3] { "Sensor1Activated", "Sensor2Activated", "Sensor3Activated" };
 
 
-    [SerializeField] private bool Event1Triggered = false;
-    [SerializeField] private bool Event2Triggered = false;
-    [SerializeField] private bool Event3Triggered = false;
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         if (oscManager == null)
         {
-            Debug.LogError("OSCManager not initialized.");
+            Debug.LogError("OSCManager not assigned.");
             return;
+        }
+        else
+        {
+            Debug.Log("OSCManager assigned.");
         }
         
     }
@@ -32,8 +32,13 @@ public class SensorLogic : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        sensorActivated(oscManager, 5f, 14f, 5f);
-        if (isPaint1On && isPaint2On && isPaint3On)
+        //Calling the sensorActivated function for each sensor that sends data between 10 and 15 cm for 5 seconds
+
+        sensorActivated(0, oscManager.sensor1, 10f, 15f, 5f);
+        sensorActivated(1, oscManager.sensor2, 10f, 15f, 5f);
+        sensorActivated(2, oscManager.sensor3, 10f, 15f, 5f);
+
+        if (isPaintingOn[0] == true && isPaintingOn[1] == true && isPaintingOn[2] == true)
         {
             areAllPaintingsOn = true;
         }
@@ -44,89 +49,29 @@ public class SensorLogic : MonoBehaviour
         
     }
 
-    void sensorActivated(OSCManager oscManager,  float minDistance, float maxDistance, float time)
+    void sensorActivated(int index, float sensor,  float minDistance, float maxDistance, float time)
     {
-        //Values from the sensors and bools to check if the event has been triggered    
-        float sensor1 = oscManager.sensor1;
-        float sensor2 = oscManager.sensor2;
-        float sensor3 = oscManager.sensor3;
+ 
 
-
-
-       //Logic to activate the sensors and post the Wwise event only once 
-        if (oscManager == null)
+        if (sensor >= minDistance && sensor <= maxDistance)
         {
-            Debug.LogError("OSCManager not initialized.");
-            return;
+            currentTime[index] += Time.deltaTime;
+            if (currentTime[index] >= time)
+            {
+                isPaintingOn[index] = true;
+                if (!eventTriggered[index])
+                {
+                    AkUnitySoundEngine.PostEvent(wwisePaintsOn[index], gameObject);
+                    eventTriggered[index] = true;
+                }
+            }
         }
         else
         {
-            //Sensor 1 Logic
-            if (sensor1 >= minDistance && sensor1 <= maxDistance)
-            {
-                currentTime1 += Time.deltaTime;
-                if (currentTime1 >= time)
-                {
-                    isPaint1On = true;
-                    if (!Event1Triggered)
-                    {
-                        AkUnitySoundEngine.PostEvent("Sensor1Activated", gameObject);
-                        Event1Triggered = true;
-                    }
-                }
-            }
-            else
-            {
-            //    isPaint1On = false;
-                currentTime1 = 0f;
-            //    Event1Triggered = false;
-            }
-
-            //Sensor 2 Logic
-            if (sensor2 >= minDistance && sensor2 <= maxDistance)
-            {
-                currentTime2 += Time.deltaTime;
-                if (currentTime2 >= time)
-                {
-                    isPaint2On = true;
-                    if (!Event2Triggered)
-                    {
-                        AkUnitySoundEngine.PostEvent("Sensor2Activated", gameObject);
-                        Event2Triggered = true;
-                    }
-
-                }
-            }
-            else
-            {
-            //    isPaint2On = false;
-                currentTime2 = 0f;
-            //    Event2Triggered = false;
-            }
-
-            //Sensor 3 Logic
-            if (sensor3 >= minDistance && sensor3 <= maxDistance)
-            {
-                currentTime3 += Time.deltaTime;
-                if (currentTime3 >= time)
-                {
-                    isPaint3On = true;
-                    if (!Event3Triggered)
-                    {
-                        AkUnitySoundEngine.PostEvent("Sensor3Activated", gameObject);
-                        Event3Triggered = true;
-                    }
-                }
-            }
-            else
-            {
-            //    isPaint3On = false;
-                currentTime3 = 0f;
-            //    Event3Triggered = false;
-            }
-        
-            
-        }
+        //    isPaint1On = false;
+            currentTime[index] = 0f;
+         //    Event1Triggered = false;
+        }    
         return;
     }
 }
