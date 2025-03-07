@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class SkyColorOsc : MonoBehaviour
 {
-    public OSCManager oscManager;
+
     public Material skyMaterial;
     [SerializeField] int blue = 208;
     [SerializeField] int red = 231; 
@@ -14,11 +14,6 @@ public class SkyColorOsc : MonoBehaviour
         if (skyMaterial == null)    
         {
             Debug.LogError("No sky material have been asigned !");
-            return;
-        }
-        if (oscManager == null)
-        {
-            Debug.LogError("No OSCManager have been asigned !");
             return;
         }
         else
@@ -33,7 +28,7 @@ public class SkyColorOsc : MonoBehaviour
     {
         if (skyMaterial != null)
         {
-            SkyColorChanger(oscManager, skyMaterial, red, green, blue, alpha);
+            SkyColorChanger( skyMaterial, red, green, blue, alpha);
         }
 
 
@@ -42,11 +37,11 @@ public class SkyColorOsc : MonoBehaviour
 
 
 
-    void SkyColorChanger(OSCManager osc, Material material, float r, float g, float b, float a)
+    void SkyColorChanger( Material material, float r, float g, float b, float a)
     {
-        float newRed = r + osc.sensor1/2f; 
-        float newGreen = g + osc.sensor2/2f;
-        float newBlue = b + osc.sensor3/2f;
+        float newRed = r + OSCManager.sensor1/2f; 
+        float newGreen = g + OSCManager.sensor2/2f;
+        float newBlue = b + OSCManager.sensor3/2f;
         // Change the color of the skybox
         material.SetColor("_Tint", new Color(newRed/255f, newGreen/255f, newBlue/255f, a/255f));
 

@@ -7,9 +7,11 @@ public class OSCManager : MonoBehaviour
 {
     public string networkIP = "127.0.0.1";
     public int port = 8000;
-    public float sensor1;
-    public float sensor2;
-    public float sensor3;
+    public static float sensor1;
+    public static float sensor2;
+    public static float sensor3;
+
+    public bool oscOn = false;
 
     private OSCReceiver receiver;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -26,14 +28,7 @@ public class OSCManager : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
-        if (receiver == null) 
-        {
-            Debug.LogError("OSCReceiver not initialized.");
-            return;
-        }
-
-        
+    {        
     }
 
     private void OnReceiveSensor1(OSCMessage message)
@@ -45,7 +40,7 @@ public class OSCManager : MonoBehaviour
         else
         {
             sensor1 = 100f;
-            Debug.LogError("OSC message not recognized.");
+            Debug.LogError("OSC message out borders.");
         }
     }
 
@@ -58,7 +53,7 @@ public class OSCManager : MonoBehaviour
          else
         {
             sensor2 = 100f;
-            Debug.LogError("OSC message not recognized.");
+            Debug.LogError("OSC message out borders.");
         }
     }
 
@@ -71,7 +66,7 @@ public class OSCManager : MonoBehaviour
         else
         {
             sensor3 = 100f;
-            Debug.LogError("OSC message not recognized.");
+            Debug.LogError("OSC message out borders.");
         }
     }
 }

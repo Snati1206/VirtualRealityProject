@@ -1,15 +1,16 @@
+using System;
 using AK.Wwise;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class SensorLogic : MonoBehaviour
 {
-    public OSCManager oscManager;
     public bool[] isPaintingOn = new bool[3] { false, false, false };
     public bool[] eventTriggered = new bool[3] { false, false, false };
-    public bool areAllPaintingsOn = false;
+    public static bool areAllPaintingsOn = false;
     private float[] currentTime = new float[3] { 0f, 0f, 0f };
     private string[] wwisePaintsOn = new string[3] { "Sensor1Activated", "Sensor2Activated", "Sensor3Activated" };
+    public static event Action OnAllPaintingsOn;
 
 
 
@@ -17,15 +18,6 @@ public class SensorLogic : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        if (oscManager == null)
-        {
-            Debug.LogError("OSCManager not assigned.");
-            return;
-        }
-        else
-        {
-            Debug.Log("OSCManager assigned.");
-        }
         
     }
 
@@ -34,25 +26,21 @@ public class SensorLogic : MonoBehaviour
     {
         //Calling the sensorActivated function for each sensor that sends data between 10 and 15 cm for 5 seconds
 
-        sensorActivated(0, oscManager.sensor1, 10f, 15f, 5f);
-        sensorActivated(1, oscManager.sensor2, 10f, 15f, 5f);
-        sensorActivated(2, oscManager.sensor3, 10f, 15f, 5f);
+        sensorActivated(0, OSCManager.sensor1, 10f, 15f, 5f);
+        sensorActivated(1, OSCManager.sensor2, 10f, 15f, 5f);
+        sensorActivated(2, OSCManager.sensor3, 10f, 15f, 5f);
 
-        if (isPaintingOn[0] == true && isPaintingOn[1] == true && isPaintingOn[2] == true)
+        if (isPaintingOn[0] == true && isPaintingOn[1] == true && isPaintingOn[2] == true && !areAllPaintingsOn)
         {
             areAllPaintingsOn = true;
+            Debug.Log("All paintings are on");
+            OnAllPaintingsOn?.Invoke(); // Triggers the eventTimers coroutine
         }
-        else
-        {
-            areAllPaintingsOn = false;
-        }
-        
+     
     }
 
     void sensorActivated(int index, float sensor,  float minDistance, float maxDistance, float time)
     {
- 
-
         if (sensor >= minDistance && sensor <= maxDistance)
         {
             currentTime[index] += Time.deltaTime;

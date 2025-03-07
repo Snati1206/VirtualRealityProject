@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{45D8302B-19E7-418B-B7D2-CDAC15D9EA71}",
     "Language": "SFX",
-    "Hash": "{23EE2566-D1F6-D3B6-86C2-DD3E51A3068F}",
+    "Hash": "{F0597B30-D9D1-8A7E-A01C-B325E06C9BE1}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -85,7 +85,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "mus_music_vr.wav",
-      "CachePath": "2D/{2D795937-201A-C2BF-7731-B3DDD1885A0B}.wem"
+      "CachePath": "90/{90A371CC-4B64-9A6A-8531-A0D562055D13}.wem"
      },
      {
       "Id": "211319641",
@@ -340,6 +340,14 @@
        "LibId": "9043971"
       },
       {
+       "Id": "636987280",
+       "Name": "New_Time_Stretch (Custom)",
+       "ObjectPath": "\\Actor-Mixer Hierarchy\\Default Work Unit\\music\\mus_music_vr\\[Effect Slot [0]: (Time Stretch)]\\New_Time_Stretch (Custom)",
+       "GUID": "{FFE70777-2480-439C-83AA-804BF7C2AA24}",
+       "LibName": "Wwise Time Stretch",
+       "LibId": "8519683"
+      },
+      {
        "Id": "886273627",
        "Name": "Have_U_Ever_Been_Outside (Custom)",
        "ObjectPath": "\\Actor-Mixer Hierarchy\\Default Work Unit\\amb\\Ambiance\\[Effect Slot [0]: (RoomVerb)]\\Have_U_Ever_Been_Outside (Custom)",
@@ -552,17 +560,12 @@
        "Custom": [
         {
          "Id": "175393484"
+        },
+        {
+         "Id": "636987280"
         }
        ]
-      },
-      "AuxBusRefs": [
-       {
-        "Id": "348963605",
-        "Name": "Reverb",
-        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Reverb",
-        "GUID": "{568A8176-882E-40FC-A572-D3004C78AC10}"
-       }
-      ]
+      }
      },
      {
       "Id": "538312913",
@@ -572,7 +575,28 @@
       "DurationType": "Infinite",
       "MediaRefs": [
        {
+        "Id": "56029158"
+       },
+       {
+        "Id": "89892199"
+       },
+       {
+        "Id": "181926460"
+       },
+       {
+        "Id": "196160818"
+       },
+       {
+        "Id": "293933914"
+       },
+       {
+        "Id": "326334206"
+       },
+       {
         "Id": "516061011"
+       },
+       {
+        "Id": "621973919"
        },
        {
         "Id": "623889076"
@@ -581,9 +605,31 @@
         "Id": "626024965"
        },
        {
+        "Id": "630766008"
+       },
+       {
         "Id": "652838272"
+       },
+       {
+        "Id": "959841215"
+       },
+       {
+        "Id": "1014557919"
+       },
+       {
+        "Id": "1064833642"
+       },
+       {
+        "Id": "1073305620"
        }
       ],
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "886273627"
+        }
+       ]
+      },
       "AuxBusRefs": [
        {
         "Id": "348963605",
@@ -1007,6 +1053,6 @@
     ]
    }
   ],
-  "FileHash": "{7FB2BAD3-3767-FB11-213A-76942AB77F84}"
+  "FileHash": "{E5E1819B-485E-69C7-AA4B-E7367C43ED4A}"
  }
 }

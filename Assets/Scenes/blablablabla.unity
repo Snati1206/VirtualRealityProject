@@ -1362,7 +1362,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d392217803493b844854f66544f1389b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  oscManager: {fileID: 521394784}
   skyMaterial: {fileID: 2100000, guid: 3e8bc5155c4c9ed46a63ac64c06408f3, type: 2}
   blue: 191
   red: 183
@@ -1444,10 +1443,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9db2e0f5a5bac84db0df46929652369, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  oscManager: {fileID: 521394784}
   isPaintingOn: 000000
   eventTriggered: 000000
-  areAllPaintingsOn: 0
 --- !u!4 &2064502505
 Transform:
   m_ObjectHideFlags: 0
@@ -1475,6 +1472,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74afca0f799ba314fb700e28e5cf3e18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  transitionTimer: 30
+  musicTimer: 20
+  resetTimer: 390
+  alarmTimer: 10
 --- !u!1001 &2037433153115511642
 PrefabInstance:
   m_ObjectHideFlags: 0

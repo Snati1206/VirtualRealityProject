@@ -28,7 +28,7 @@ public class PositionTransformer : MonoBehaviour
     {
         if (cube != null && oscManager != null)
         {
-            cube.transform.rotation = Quaternion.Euler(oscManager.sensor1, oscManager.sensor2, oscManager.sensor3);
+            cube.transform.rotation = Quaternion.Euler(OSCManager.sensor1, OSCManager.sensor2, OSCManager.sensor3);
         }
         
     }

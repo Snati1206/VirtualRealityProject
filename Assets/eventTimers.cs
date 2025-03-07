@@ -12,28 +12,37 @@ using UnityEngine;
 public class EventCoroutine : MonoBehaviour
 {
     Coroutine linealSequenceCorroutine;
-    public bool paintingsOn;
     public float transitionTimer = 30f;
     public float musicTimer = 20f;
-    public float resetTimer = 390f;
+    public float resetTimer = 10f;
     public float alarmTimer = 10f;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    void OnEnable()
     {
-        StopAllCoroutines();
-        paintingsOn = GetComponent<SensorLogic>().areAllPaintingsOn;
+        SensorLogic.OnAllPaintingsOn += StartCoroutine;
+    }
 
-        if (paintingsOn == true)
+    void OnDisable()
+    {
+        SensorLogic.OnAllPaintingsOn -= StartCoroutine;
+
+    }
+
+    void StartCoroutine()
+    {
+        if (linealSequenceCorroutine == null)
         {
             linealSequenceCorroutine = StartCoroutine(coroutine(transitionTimer, alarmTimer, musicTimer, resetTimer));
             Debug.Log("Coroutine started");
         }
     }
 
+
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     IEnumerator coroutine(float toTransition,float toAlarm, float toMusic, float toReset)
     {
+
         //Seconds before launching the transition
         yield return new WaitForSeconds(toTransition);
         AkUnitySoundEngine.PostEvent("Transition", gameObject);
@@ -55,10 +64,29 @@ public class EventCoroutine : MonoBehaviour
         Debug.Log("Reset event launched");
 
         //Resets all the booleans to false
-        GetComponent<SensorLogic>().isPaintingOn[0] = false;
-        GetComponent<SensorLogic>().isPaintingOn[1] = false;
-        GetComponent<SensorLogic>().isPaintingOn[2] = false;
-        GetComponent<SensorLogic>().areAllPaintingsOn = false;
+        ResetPaintings();
+        Debug.Log("All events reseted");
+    }
+
+        void ResetPaintings()
+    {
+        SensorLogic sensorLogic = GetComponent<SensorLogic>();
+        if (sensorLogic != null)
+        {
+            sensorLogic.isPaintingOn[0] = false;
+            sensorLogic.isPaintingOn[1] = false;
+            sensorLogic.isPaintingOn[2] = false;
+            SensorLogic.areAllPaintingsOn = false;
+            Debug.Log("Paintings reset");
+        }
+        else
+        {
+            Debug.LogError("SensorLogic component not found");
+        }
+
+        // Reset the coroutine reference
+        linealSequenceCorroutine = null;
+        Debug.Log("Coroutine stopped");
     }
 
 }
