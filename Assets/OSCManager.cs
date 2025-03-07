@@ -15,7 +15,7 @@ public class OSCManager : MonoBehaviour
 
     private OSCReceiver receiver;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    void Awake()
     {
         receiver = gameObject.AddComponent<OSCReceiver>();
         receiver.LocalHost = networkIP;
