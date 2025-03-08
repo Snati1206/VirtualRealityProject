@@ -28,15 +28,11 @@ Material:
   - _ALPHATEST_ON
   - _COLOR_OVERLAY_UV
   - _SPECULAR_SETUP
-  m_InvalidKeywords:
-  - _BEND_WIND_OVERLAY_VERTEX_POSITION
-  - _OVERLAY_B
-  - _OVERLAY_UV
-  - _WIND_OVERLAY_UV
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 1
-  m_CustomRenderQueue: 2450
+  m_CustomRenderQueue: -1
   stringTagMap:
     RenderType: TransparentCutout
   disabledShaderPasses:
@@ -50,6 +46,10 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ClearCoatMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -69,11 +69,23 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _ExtraTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _GlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -85,12 +97,24 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _ShadowOffset:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _SpecGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SubsurfaceTex:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Texture:
         m_Texture: {fileID: 2800000, guid: abe554664dc628d439bfd4c3004ddc41, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TranslucencyMap:
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
@@ -107,7 +131,11 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - Backface_Normal_Mode: 0
+    - EFFECT_EXTRA_TEX: 1
+    - _AddPrecomputedVelocity: 0
     - _AlphaClip: 1
+    - _AlphaClipThreshold: 0.1
     - _AlphaCutoff: 0.5
     - _AlphaToMask: 1
     - _Alpha_Cutoff: 0.5
@@ -115,32 +143,49 @@ Material:
     - _BOOLEAN_1: 0
     - _Bend: 0
     - _Bend_Strength: 0
+    - _BillboardKwToggle: 0
     - _Blend: 0
     - _BlendHeight: 1.29
     - _BlendModePreserveSpecular: 0
+    - _BlendOp: 0
     - _Blend_Height: 0.304
     - _BumpScale: 1
     - _CAST_SHADOWS: 0
     - _CAST_SHADOWS_OFF: 0
     - _COLOR_OVERLAY: 1
+    - _CameraFadingEnabled: 0
+    - _CameraFarFadeDistance: 2
+    - _CameraNearFadeDistance: 1
     - _CastShadows: 1
+    - _ClearCoat: 0
     - _ClearCoatMask: 0
     - _ClearCoatSmoothness: 0
+    - _ColorMode: 0
     - _Cull: 0
     - _CustomColor: 1
     - _Custom_Color: 1
     - _Cutoff: 0.5
     - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
+    - _DistortionBlend: 0.5
+    - _DistortionEnabled: 0
+    - _DistortionStrength: 1
+    - _DistortionStrengthScaled: 0.1
     - _DstBlend: 0
+    - _DstBlendAlpha: 0
     - _Enable_Top_Color: 1
     - _EnvironmentReflections: 1
+    - _FlipbookBlending: 0
+    - _FlipbookMode: 0
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
+    - _HueVariationKwToggle: 1
     - _Metallic: 0
+    - _Mode: 0
     - _NoiseScale: 0.16
     - _Noise_Scale: 0.205
+    - _NormalMapKwToggle: 1
     - _NormalY: 0
     - _OVERLAY: 1
     - _ObjectBendRange: 0
@@ -152,16 +197,31 @@ Material:
     - _RECEIVE_SHADOWS_OFF: 0
     - _Range: 0
     - _ReceiveShadows: 1
+    - _SampleGI: 0
+    - _Shininess: 0.078125
     - _Smoothness: 0.5
     - _SmoothnessTextureChannel: 0
+    - _SoftParticlesEnabled: 0
+    - _SoftParticlesFarFadeDistance: 1
+    - _SoftParticlesNearFadeDistance: 0
     - _SpecularHighlights: 1
+    - _SquashAmount: 1
     - _SrcBlend: 1
+    - _SrcBlendAlpha: 1
     - _Start_Bend_Range: 0
     - _Start_to_bend_range: 0
+    - _SubsurfaceIndirect: 0.25
+    - _SubsurfaceKwToggle: 0
     - _Surface: 0
     - _Value: 0
+    - _WIND_BRANCH1: 0
+    - _WIND_BRANCH2: 0
     - _WIND_OVERLAY: 1
+    - _WIND_RIPPLE: 0
+    - _WIND_SHARED: 0
+    - _WIND_SHIMMER: 0
     - _Wave_Scale: 0.5
+    - _WindQuality: 0
     - _WindSpeed: 2
     - _WindStrength: 1
     - _Wind_Direction: 0
@@ -174,14 +234,22 @@ Material:
     - _ZWriteControl: 0
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
+    - _BaseColorAddSubDiff: {r: 0, g: 0, b: 0, a: 0}
     - _BottomColor: {r: 0.51857907, g: 0.5377358, b: 0.0025364957, a: 0}
     - _Bottom_Color: {r: 0.84916025, g: 0.5424528, b: 1, a: 1}
+    - _CameraFadeParams: {r: 0, g: 0, b: 0, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _HueVariation: {r: 1, g: 0.5, b: 0, a: 0.1}
+    - _HueVariationColor: {r: 1, g: 0.5, b: 0, a: 0.2}
     - _Player_Position: {r: 0, g: 0, b: 0, a: 0}
+    - _SoftParticleFadeParams: {r: 0, g: 0, b: 0, a: 0}
     - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
+    - _SubsurfaceColor: {r: 1, g: 1, b: 1, a: 1}
     - _TopColor: {r: 0.58158517, g: 0.754717, b: 0, a: 0}
     - _Top_Color: {r: 0.70935524, g: 0.48794055, b: 0.8018868, a: 1}
+    - _TreeInstanceColor: {r: 1, g: 1, b: 1, a: 1}
+    - _TreeInstanceScale: {r: 1, g: 1, b: 1, a: 1}
     - _WindDirection: {r: 0.1, g: 0.1, b: 0, a: 0}
     - _Wind_Direction: {r: 0.1, g: 0.1, b: 0, a: 0}
   m_BuildTextureStacks: []

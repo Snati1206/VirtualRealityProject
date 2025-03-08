@@ -183,6 +183,14 @@ PrefabInstance:
       propertyPath: m_DynamicOccludee
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4405370891570736717, guid: af43153991420fe4fac16a0543fd9e2d, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4405370891570736717, guid: af43153991420fe4fac16a0543fd9e2d, type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 10483612dc26c1041b3d6687bd972505, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -344,7 +352,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 7ef83f3e33d874b638748fd9ed8cdfba, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
     - target: {fileID: 919132149155446097, guid: 7ef83f3e33d874b638748fd9ed8cdfba, type: 3}
       propertyPath: m_Name
       value: structure1
@@ -1002,12 +1010,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 65d2a16f0630c4f8b9bdff9c7eb61950, type: 3}
       propertyPath: m_Materials.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 65d2a16f0630c4f8b9bdff9c7eb61950, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2100000, guid: ab61c0621a61a5444b9574069f8d58d9, type: 2}
     - target: {fileID: 919132149155446097, guid: 65d2a16f0630c4f8b9bdff9c7eb61950, type: 3}
       propertyPath: m_Name
       value: structure_top
@@ -1387,9 +1395,49 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2504443043031940954, guid: 882c737d77cc33a40b15201d54d06e81, type: 3}
+      propertyPath: m_ReceiveGI
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2504443043031940954, guid: 882c737d77cc33a40b15201d54d06e81, type: 3}
+      propertyPath: m_MaterialTemplate
+      value: 
+      objectReference: {fileID: 2100000, guid: b6dbbf7ca34aca441973248faa8f6284, type: 2}
+    - target: {fileID: 2504443043031940954, guid: 882c737d77cc33a40b15201d54d06e81, type: 3}
+      propertyPath: m_ShadowCastingMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2504443043031940954, guid: 882c737d77cc33a40b15201d54d06e81, type: 3}
+      propertyPath: m_LightmapParameters
+      value: 
+      objectReference: {fileID: 15203, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 2504443043031940954, guid: 882c737d77cc33a40b15201d54d06e81, type: 3}
+      propertyPath: m_RenderingLayerMask
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2504443043031940954, guid: 882c737d77cc33a40b15201d54d06e81, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2504443043031940954, guid: 882c737d77cc33a40b15201d54d06e81, type: 3}
+      propertyPath: m_IgnoreQualitySettings
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3923138731045705871, guid: 882c737d77cc33a40b15201d54d06e81, type: 3}
       propertyPath: m_Name
       value: Terrain
+      objectReference: {fileID: 0}
+    - target: {fileID: 3923138731045705871, guid: 882c737d77cc33a40b15201d54d06e81, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 127
+      objectReference: {fileID: 0}
+    - target: {fileID: 7303975381337640512, guid: 882c737d77cc33a40b15201d54d06e81, type: 3}
+      propertyPath: m_TerrainData
+      value: 
+      objectReference: {fileID: 15600000, guid: d0b3af24403114c9b971130efc4d3b73, type: 2}
+    - target: {fileID: 7303975381337640512, guid: 882c737d77cc33a40b15201d54d06e81, type: 3}
+      propertyPath: m_LayerOverridePriority
+      value: 14
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1569,13 +1617,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1580862808478546456, guid: 585f7e42a31b3c54c83dd39bf7a5d6ac, type: 3}
+      propertyPath: m_CustomShadowLayers
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6670147153658830118, guid: 585f7e42a31b3c54c83dd39bf7a5d6ac, type: 3}
       propertyPath: m_Name
       value: Directional Light
       objectReference: {fileID: 0}
     - target: {fileID: 6670147153658830118, guid: 585f7e42a31b3c54c83dd39bf7a5d6ac, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6824056562839905276, guid: 585f7e42a31b3c54c83dd39bf7a5d6ac, type: 3}
       propertyPath: m_LocalPosition.x
