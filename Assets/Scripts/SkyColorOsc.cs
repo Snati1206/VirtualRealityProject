@@ -4,6 +4,7 @@ public class SkyColorOsc : MonoBehaviour
 {
 
     public Material skyMaterial;
+    public Light mainLight;
     [SerializeField] int blue = 208;
     [SerializeField] int red = 231; 
     [SerializeField] int green = 144;
@@ -11,14 +12,15 @@ public class SkyColorOsc : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        if (skyMaterial == null)    
+        if (skyMaterial == null && mainLight == null)    
         {
-            Debug.LogError("No sky material have been asigned !");
+            Debug.LogError("Assign the lights and the skybox !");
             return;
         }
         else
         {
             skyMaterial.SetColor("_Tint", new Color((float)red/255f, (float)green/255f, (float)blue/255f, (float)alpha/255f));
+            mainLight.color = new Color((float)red/255f, (float)green/255f, (float)blue/255f, (float)alpha/255f);
         }
 
     }
@@ -44,6 +46,7 @@ public class SkyColorOsc : MonoBehaviour
         float newBlue = b + OSCManager.sensor3/2f;
         // Change the color of the skybox
         material.SetColor("_Tint", new Color(newRed/255f, newGreen/255f, newBlue/255f, a/255f));
+        mainLight.color = new Color(newRed/255f, newGreen/255f, newBlue/255f, a/255f);
 
     }
 

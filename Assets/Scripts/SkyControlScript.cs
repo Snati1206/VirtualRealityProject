@@ -8,6 +8,7 @@ public class SkyControlScript : MonoBehaviour
 
     public OSCManager oscManager;
     public Material skyMaterial;
+    public Light mainLight;
     [SerializeField] float skySpeed = 0.1f;
 
     [SerializeField] float skyLuminosity = 1.2f;
@@ -27,6 +28,10 @@ public class SkyControlScript : MonoBehaviour
         {
             Debug.LogError("No OSCManager have been asigned !");
         }
+        if (mainLight == null)
+        {
+            Debug.LogError("No main light have been asigned !");
+        }
 
  
     }
@@ -34,7 +39,7 @@ public class SkyControlScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (skyMaterial != null )
+        if (skyMaterial != null && mainLight != null)
         {
             SkyRotator(skyMaterial, skySpeed);
             SkyLuminosity(skyMaterial, skyLuminosity);
@@ -54,6 +59,7 @@ public class SkyControlScript : MonoBehaviour
         float freq = freqOscillation * Time.time;
         float oscLuminosity = luminosity + Mathf.Sin(freq%360) * oscillateIntensity;
         material.SetFloat("_Exposure", oscLuminosity);
+        mainLight.intensity = oscLuminosity/5;
 //        Debug.Log(oscLuminosity);
     }
 }
