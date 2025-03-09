@@ -51,6 +51,7 @@ public class SkyControlScript : MonoBehaviour
         // Rotate the skybox
         float rotation = (Time.time * speed) % 360;
         material.SetFloat("_Rotation", rotation);
+        
     }
 
     private void SkyLuminosity(Material material, float luminosity)
