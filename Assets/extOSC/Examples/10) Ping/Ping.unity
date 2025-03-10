@@ -1798,20 +1798,20 @@ MonoBehaviour:
   m_Text: 'This example shows how does work OSCTransmitterPing. This can be useful
     to maintain to monitor that app is still running.
 
-    
 
-    You can see how
-    these scripts work in "OSC Console":
 
-    <color=grey>> Tools > extOSC > Console
-    Window</color>.
+    You can see how these
+    scripts work in "OSC Console":
 
-    
+    <color=grey>> Tools > extOSC > Console Window</color>.
 
-    OSCTransmitterPing can be found here:
 
-    <color=grey>>
-    Add Component > extOSC > Components > Misc > Ping</color>.'
+
+    OSCTransmitterPing
+    can be found here:
+
+    <color=grey>> Add Component > extOSC > Components > Misc
+    > Ping</color>.'
 --- !u!222 &2111890087
 CanvasRenderer:
   m_ObjectHideFlags: 0

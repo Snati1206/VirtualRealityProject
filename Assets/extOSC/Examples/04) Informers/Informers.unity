@@ -3617,18 +3617,18 @@ MonoBehaviour:
   m_Text: 'This example shows how to use Informers-components. Informers-components
     allow you to bind components with OSC.
 
-    
 
-    Notice that "Use Bundle"
-    in OSCTransmitter is enabled. This allows OSCTransmitter to send only one bundle
-    (instead of three) per frame.
 
-    
+    Notice that "Use Bundle" in OSCTransmitter
+    is enabled. This allows OSCTransmitter to send only one bundle (instead of three)
+    per frame.
 
-    Informers-components can be found
-    here:
 
-    <color=grey>> Add Component > extOSC > Components > Transmitter</color>.'
+
+    Informers-components can be found here:
+
+    <color=grey>>
+    Add Component > extOSC > Components > Transmitter</color>.'
 --- !u!222 &2111890087
 CanvasRenderer:
   m_ObjectHideFlags: 0
