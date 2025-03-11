@@ -1744,6 +1744,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7584574399766760722, guid: 4ad5f6f1b616b724397f0c3dcb53d6d2, type: 3}
+      propertyPath: port
+      value: 9999
+      objectReference: {fileID: 0}
+    - target: {fileID: 7584574399766760722, guid: 4ad5f6f1b616b724397f0c3dcb53d6d2, type: 3}
+      propertyPath: networkIP
+      value: 192.168.0.164
+      objectReference: {fileID: 0}
     - target: {fileID: 7819741731656903347, guid: 4ad5f6f1b616b724397f0c3dcb53d6d2, type: 3}
       propertyPath: m_Name
       value: OSCManager
