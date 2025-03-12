@@ -28,11 +28,14 @@ public class OSCManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {     
-   
+        Debug.Log("Sensor 1: " + sensor1);
+        Debug.Log("Sensor 2: " + sensor2);
+        Debug.Log("Sensor 3: " + sensor3);
     }
 
     private void OnReceiveSensor1(OSCMessage message)
     {
+
         if (message.ToFloat(out float value))
         {
             sensor1 = value;
@@ -59,7 +62,7 @@ public class OSCManager : MonoBehaviour
 
     private void OnReceiveSensor3(OSCMessage message)
     {
-
+        Debug.Log("Sensor 3: " + message);
         if (message.ToFloat(out float value))
         {
             sensor3 = value;

@@ -241,7 +241,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 41bb3788c36f5b4185dd91771863ad97
     GuidInternal: 
-    m_lastTime: -8584630705679922626
+    m_lastTime: -8584598914294339526
     List:
     - name: Alarm
       guid: b2251947b36cbc458184b20853065d36
@@ -294,6 +294,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: Init
+      guid: 18e5c0a567876944ababf298406c6c25
+      id: 1355168291
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 41bb3788c36f5b4185dd91771863ad97
+      - ElementName: Init
+        ObjectType: 3
+        guid: 18e5c0a567876944ababf298406c6c25
+      Path: Events\Default Work Unit\Init
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: Music
       guid: c99c2b6cba47a048a03df4c61bd281d3
       id: 3991942870
@@ -308,23 +325,6 @@ MonoBehaviour:
         ObjectType: 3
         guid: c99c2b6cba47a048a03df4c61bd281d3
       Path: Events\Default Work Unit\Music
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
-    - name: PowerUpsOn
-      guid: 18e5c0a567876944ababf298406c6c25
-      id: 538312913
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 41bb3788c36f5b4185dd91771863ad97
-      - ElementName: PowerUpsOn
-        ObjectType: 3
-        guid: 18e5c0a567876944ababf298406c6c25
-      Path: Events\Default Work Unit\PowerUpsOn
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -510,7 +510,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 98ed3e78d9387545be3b51ab635cb706
     GuidInternal: 
-    m_lastTime: -8584633644249462807
+    m_lastTime: -8584598976776649354
     List:
     - name: activationStatus
       guid: 63137a8c4b67f941b0923e3c9f25b869
@@ -610,7 +610,7 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8584633644249319236
     List: []
-  ExpandedFileSystemItemIds: 02000000030000001800000019000000
+  ExpandedFileSystemItemIds: 0200000003000000170000001800000019000000
   ExpandedWaapiItemIds: 1800000019000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1

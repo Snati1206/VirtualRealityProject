@@ -16,8 +16,8 @@ namespace AK
         static const AkUniqueID ALARM = 855317084U;
         static const AkUniqueID AMBIANCEOFF = 2011814100U;
         static const AkUniqueID AMBIANCEON = 2661120974U;
+        static const AkUniqueID INIT = 1355168291U;
         static const AkUniqueID MUSIC = 3991942870U;
-        static const AkUniqueID POWERUPSON = 538312913U;
         static const AkUniqueID RESET = 4017455162U;
         static const AkUniqueID SENSOR1ACTIVATED = 2160358933U;
         static const AkUniqueID SENSOR2ACTIVATED = 996378512U;

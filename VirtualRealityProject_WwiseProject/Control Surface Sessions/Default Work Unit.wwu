@@ -147,7 +147,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="TargetObject">
-											<ObjectRef Name="PowerUpsOn" ID="{A5C0E518-8767-4469-ABAB-F298406C6C25}" WorkUnitID="{8837BB41-6FC3-415B-85DD-91771863AD97}"/>
+											<ObjectRef Name="Init" ID="{A5C0E518-8767-4469-ABAB-F298406C6C25}" WorkUnitID="{8837BB41-6FC3-415B-85DD-91771863AD97}"/>
 										</Reference>
 									</ReferenceList>
 								</ControlSurfaceBinding>

@@ -1,7 +1,7 @@
 Event	ID	Name			Wwise Object Path	Notes
-	538312913	PowerUpsOn			\Default Work Unit\PowerUpsOn	
 	855317084	Alarm			\Default Work Unit\Alarm	
 	996378512	Sensor2Activated			\Default Work Unit\Sensor2Activated	
+	1355168291	Init			\Default Work Unit\Init	
 	1865857008	Transition			\Default Work Unit\Transition	
 	2011814100	AmbianceOff			\Default Work Unit\AmbianceOff	
 	2160358933	Sensor1Activated			\Default Work Unit\Sensor1Activated	
@@ -33,7 +33,6 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	187480084	amb_bird_5_weird	C:\Users\joseb\Documents\GitHub\VirtualRealityProject\VirtualRealityProject_WwiseProject\.cache\3C\{3C4E637A-1634-2A71-F3DB-AD87C6B29665}.wem		\Actor-Mixer Hierarchy\Default Work Unit\amb\PadsSensor3\birds_weird\New Random Container_02\amb_bird_5_weird		490143
 	189253345	amb_bird_1	C:\Users\joseb\Documents\GitHub\VirtualRealityProject\VirtualRealityProject_WwiseProject\.cache\A5\{A5AD14A5-2906-F41F-B119-6428C7A60B63}.wem		\Actor-Mixer Hierarchy\Default Work Unit\amb\PadsSensor3\birds_normal\New Random Container\amb_bird_1		432241
 	196160818	amb_creek	C:\Users\joseb\Documents\GitHub\VirtualRealityProject\VirtualRealityProject_WwiseProject\.cache\3C\{3C209B34-B479-1297-CE43-A345753C171C}.wem		\Actor-Mixer Hierarchy\Default Work Unit\amb\Ambiance\amb_creek		330829
-	198555096	mus_music_vr	C:\Users\joseb\Documents\GitHub\VirtualRealityProject\VirtualRealityProject_WwiseProject\.cache\9F\{9FE9CBC7-940C-11FE-33BD-980BD7ABC64F}.wem		\Actor-Mixer Hierarchy\Default Work Unit\music\mus_music_vr		1898015
 	211319641	amb_bird_5	C:\Users\joseb\Documents\GitHub\VirtualRealityProject\VirtualRealityProject_WwiseProject\.cache\87\{873DF818-0B83-C154-DA76-121C7B28E683}.wem		\Actor-Mixer Hierarchy\Default Work Unit\amb\PadsSensor3\birds_normal\New Random Container_02\amb_bird_5		563497
 	268901580	mus_pads_scary_melody	C:\Users\joseb\Documents\GitHub\VirtualRealityProject\VirtualRealityProject_WwiseProject\.cache\5C\{5CE54BE1-3811-6AFF-198F-8D8BDCCF487E}.wem		\Actor-Mixer Hierarchy\Default Work Unit\amb\PadsSensor1\mus_pads_scary_melody		785912
 	288241684	mus_pads_melody	C:\Users\joseb\Documents\GitHub\VirtualRealityProject\VirtualRealityProject_WwiseProject\.cache\B4\{B41EB7F6-C540-DFF6-0C4C-3A308B842431}.wem		\Actor-Mixer Hierarchy\Default Work Unit\amb\PadsSensor1\mus_pads_melody		796240
@@ -54,7 +53,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	630766008	amb_wind_strong-003	C:\Users\joseb\Documents\GitHub\VirtualRealityProject\VirtualRealityProject_WwiseProject\.cache\FD\{FDC182A4-3D28-90A9-0D48-BA0FC6484C5A}.wem		\Actor-Mixer Hierarchy\Default Work Unit\amb\Ambiance\amb_wind_wild\amb_wind_strong-003		120823
 	652838272	sfx_powerup_perc	C:\Users\joseb\Documents\GitHub\VirtualRealityProject\VirtualRealityProject_WwiseProject\.cache\88\{8816468A-5DEA-AAFE-B6F8-2C7F91DA39CF}.wem		\Actor-Mixer Hierarchy\Default Work Unit\sfx\powerUp1\sfx_powerup_perc		254008
 	704704544	amb_bird_6_weird	C:\Users\joseb\Documents\GitHub\VirtualRealityProject\VirtualRealityProject_WwiseProject\.cache\D0\{D060B90F-D3ED-8023-150D-F336A5CFB9DC}.wem		\Actor-Mixer Hierarchy\Default Work Unit\amb\PadsSensor3\birds_weird\New Random Container_02\amb_bird_6_weird		479452
-	849966493	sfx_sensor_activated	C:\Users\joseb\Documents\GitHub\VirtualRealityProject\VirtualRealityProject_WwiseProject\.cache\B4\{B42FEEE5-F7B3-43A9-53D0-32A96C46F6FE}.wem		\Actor-Mixer Hierarchy\Default Work Unit\sfx\powerUpHit\sfx_sensor_activated		120654
+	849966493	sfx_sensor_activated	C:\Users\joseb\Documents\GitHub\VirtualRealityProject\VirtualRealityProject_WwiseProject\.cache\22\{2232058E-3AF5-5284-E455-3F7050F81487}.wem		\Actor-Mixer Hierarchy\Default Work Unit\sfx\powerUpHit\sfx_sensor_activated		113416
 	868510851	amb_bird_6	C:\Users\joseb\Documents\GitHub\VirtualRealityProject\VirtualRealityProject_WwiseProject\.cache\32\{32459F15-36FC-1A58-44E7-A585B00AD080}.wem		\Actor-Mixer Hierarchy\Default Work Unit\amb\PadsSensor3\birds_normal\New Random Container_02\amb_bird_6		551033
 	958267533	amb_bird_2	C:\Users\joseb\Documents\GitHub\VirtualRealityProject\VirtualRealityProject_WwiseProject\.cache\89\{8959C55E-3137-ED8E-9F46-57507E17E8FC}.wem		\Actor-Mixer Hierarchy\Default Work Unit\amb\PadsSensor3\birds_normal\New Random Container\amb_bird_2		433580
 	959841215	amb_wind_calm	C:\Users\joseb\Documents\GitHub\VirtualRealityProject\VirtualRealityProject_WwiseProject\.cache\CE\{CE007053-6F82-5ECA-4CB4-2A3E7346A9A0}.wem		\Actor-Mixer Hierarchy\Default Work Unit\amb\Ambiance\amb_wind\amb_wind_calm		87577

@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{45D8302B-19E7-418B-B7D2-CDAC15D9EA71}",
     "Language": "SFX",
-    "Hash": "{F0597B30-D9D1-8A7E-A01C-B325E06C9BE1}",
+    "Hash": "{19A3FE21-4F26-72E6-C1CC-3960D5926B5D}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -78,14 +78,6 @@
       "Location": "Memory",
       "ShortName": "amb_creek.wav",
       "CachePath": "04/{04AE6978-8DB2-EF38-79D1-33A5FA44346D}.wem"
-     },
-     {
-      "Id": "198555096",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "mus_music_vr.wav",
-      "CachePath": "90/{90A371CC-4B64-9A6A-8531-A0D562055D13}.wem"
      },
      {
       "Id": "211319641",
@@ -253,7 +245,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "sfx_sensor_unlocked_pad.wav",
-      "CachePath": "AD/{ADDB6BDE-7909-D931-1977-7DA58E107B45}.wem"
+      "CachePath": "04/{0440C61E-014D-7347-FA63-6735BA8FF2BA}.wem"
      },
      {
       "Id": "868510851",
@@ -338,14 +330,6 @@
        "GUID": "{CB23F1C5-79AC-49A1-8C6A-D60A92E42952}",
        "LibName": "Wwise Harmonizer",
        "LibId": "9043971"
-      },
-      {
-       "Id": "636987280",
-       "Name": "New_Time_Stretch (Custom)",
-       "ObjectPath": "\\Actor-Mixer Hierarchy\\Default Work Unit\\music\\mus_music_vr\\[Effect Slot [0]: (Time Stretch)]\\New_Time_Stretch (Custom)",
-       "GUID": "{FFE70777-2480-439C-83AA-804BF7C2AA24}",
-       "LibName": "Wwise Time Stretch",
-       "LibId": "8519683"
       },
       {
        "Id": "886273627",
@@ -510,67 +494,9 @@
       ]
      },
      {
-      "Id": "3991942870",
-      "Name": "Music",
-      "ObjectPath": "\\Events\\Default Work Unit\\Music",
-      "GUID": "{6C2B9CC9-47BA-48A0-A03D-F4C61BD281D3}",
-      "DurationType": "Infinite",
-      "MediaRefs": [
-       {
-        "Id": "187480084"
-       },
-       {
-        "Id": "189253345"
-       },
-       {
-        "Id": "198555096"
-       },
-       {
-        "Id": "211319641"
-       },
-       {
-        "Id": "315644122"
-       },
-       {
-        "Id": "397949216"
-       },
-       {
-        "Id": "426481905"
-       },
-       {
-        "Id": "441835573"
-       },
-       {
-        "Id": "541488690"
-       },
-       {
-        "Id": "704704544"
-       },
-       {
-        "Id": "868510851"
-       },
-       {
-        "Id": "958267533"
-       },
-       {
-        "Id": "1037117347"
-       }
-      ],
-      "PluginRefs": {
-       "Custom": [
-        {
-         "Id": "175393484"
-        },
-        {
-         "Id": "636987280"
-        }
-       ]
-      }
-     },
-     {
-      "Id": "538312913",
-      "Name": "PowerUpsOn",
-      "ObjectPath": "\\Events\\Default Work Unit\\PowerUpsOn",
+      "Id": "1355168291",
+      "Name": "Init",
+      "ObjectPath": "\\Events\\Default Work Unit\\Init",
       "GUID": "{A5C0E518-8767-4469-ABAB-F298406C6C25}",
       "DurationType": "Infinite",
       "MediaRefs": [
@@ -644,6 +570,58 @@
         "GUID": "{7A99EF7A-6B7D-43B7-B065-79464E51DCAB}"
        }
       ]
+     },
+     {
+      "Id": "3991942870",
+      "Name": "Music",
+      "ObjectPath": "\\Events\\Default Work Unit\\Music",
+      "GUID": "{6C2B9CC9-47BA-48A0-A03D-F4C61BD281D3}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "187480084"
+       },
+       {
+        "Id": "189253345"
+       },
+       {
+        "Id": "211319641"
+       },
+       {
+        "Id": "315644122"
+       },
+       {
+        "Id": "397949216"
+       },
+       {
+        "Id": "426481905"
+       },
+       {
+        "Id": "441835573"
+       },
+       {
+        "Id": "541488690"
+       },
+       {
+        "Id": "704704544"
+       },
+       {
+        "Id": "868510851"
+       },
+       {
+        "Id": "958267533"
+       },
+       {
+        "Id": "1037117347"
+       }
+      ],
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "175393484"
+        }
+       ]
+      }
      },
      {
       "Id": "4017455162",
@@ -1053,6 +1031,6 @@
     ]
    }
   ],
-  "FileHash": "{E5E1819B-485E-69C7-AA4B-E7367C43ED4A}"
+  "FileHash": "{0D34DCFA-6482-C927-4CDC-C32769D874A0}"
  }
 }

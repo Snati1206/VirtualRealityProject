@@ -58,7 +58,7 @@ public class SensorLogic : MonoBehaviour
         {
         //    isPaint1On = false;
             currentTime[index] = 0f;
-         //    Event1Triggered = false;
+        //    Event1Triggered = false;
         }    
         return;
     }
