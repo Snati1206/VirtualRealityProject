@@ -21,6 +21,7 @@ public class Parameters : MonoBehaviour
 
         AkUnitySoundEngine.PostEvent("Init", gameObject);
         
+        
     }
 
     // Update is called once per frame
@@ -46,5 +47,11 @@ public class Parameters : MonoBehaviour
             i++;
             
         }
+    }
+
+    public void WeirdRtpcUpdate (float paramValue)
+    {
+        // Assigning the value to the ActivationStatus RTPC in Wwise
+        AkUnitySoundEngine.SetRTPCValue("ActivationStatus", paramValue);
     }
 }

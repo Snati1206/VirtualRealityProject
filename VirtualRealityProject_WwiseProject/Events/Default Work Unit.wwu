@@ -59,13 +59,6 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
-						<Action Name="" ID="{85C4FA3C-1A76-4333-A86F-49EFE6AB8B39}" ShortID="1030921591">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="mus_music_vr" ID="{E880849C-6548-4A9F-A6E0-6671B7BDFA14}" WorkUnitID="{ABB6BD34-6969-466B-92FD-2113713FBC8B}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
 					</ChildrenList>
 				</Event>
 				<Event Name="Reset" ID="{98D5F919-007E-41E0-BCF2-C379723F61FA}">
@@ -322,27 +315,6 @@
 				</Event>
 				<Event Name="Init" ID="{A5C0E518-8767-4469-ABAB-F298406C6C25}">
 					<ChildrenList>
-						<Action Name="" ID="{F486FD0A-5623-412A-B184-8B0CF52FCE65}" ShortID="138584727">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="powerUp1" ID="{85742A46-EDE1-4A32-88CC-4F4517079F6E}" WorkUnitID="{4E140D7F-62E4-4DAF-A811-B1E5FF1E146B}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{0DEB974F-B3F7-49F0-B9D0-6D045A809D08}" ShortID="687815161">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="powerUp2" ID="{3F83824E-29BE-4ED1-AD11-43DD08F7D49A}" WorkUnitID="{4E140D7F-62E4-4DAF-A811-B1E5FF1E146B}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{D537C0D9-9BAD-43B8-80F2-55E8A76FFB86}" ShortID="672024721">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="powerUp3" ID="{96FB7318-6C07-4CB4-9625-8D542D056564}" WorkUnitID="{4E140D7F-62E4-4DAF-A811-B1E5FF1E146B}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
 						<Action Name="" ID="{A6329E15-34EE-463A-90A8-7FCA2FF62E12}" ShortID="849104855">
 							<ReferenceList>
 								<Reference Name="Target">
@@ -365,6 +337,51 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="mus_music_vr_drums" ID="{AAB6FAEF-631E-407F-9AF1-D9819AC83344}" WorkUnitID="{EF201BAD-857B-4AA6-993A-B9548624111E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="StopSensor1" ID="{FDC94E5F-0B0F-4FF9-9F88-10677425552A}">
+					<ChildrenList>
+						<Action Name="" ID="{B5790861-D9E3-4D6C-9467-A5E83C3A5C46}" ShortID="423467503">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="powerUp1" ID="{85742A46-EDE1-4A32-88CC-4F4517079F6E}" WorkUnitID="{4E140D7F-62E4-4DAF-A811-B1E5FF1E146B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="StopSensor2" ID="{DAF94592-067D-45F5-ADC8-40CABB981B9A}">
+					<ChildrenList>
+						<Action Name="" ID="{C5EF0B81-51DF-4BE7-B2FC-BA9EB056927B}" ShortID="966121996">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="powerUp2" ID="{3F83824E-29BE-4ED1-AD11-43DD08F7D49A}" WorkUnitID="{4E140D7F-62E4-4DAF-A811-B1E5FF1E146B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="StopSensor3" ID="{3E524785-1068-439D-AC98-8ECD53A2509B}">
+					<ChildrenList>
+						<Action Name="" ID="{FEB20EA1-F882-48B2-BDCA-981054920F4D}" ShortID="994125513">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="powerUp3" ID="{96FB7318-6C07-4CB4-9625-8D542D056564}" WorkUnitID="{4E140D7F-62E4-4DAF-A811-B1E5FF1E146B}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

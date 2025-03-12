@@ -14,7 +14,7 @@ public class EventCoroutine : MonoBehaviour
     Coroutine linealSequenceCorroutine;
     public float transitionTimer = 30f;
     public float musicTimer = 20f;
-    public float resetTimer = 10f;
+    public float resetTimer = 100f;
     public float alarmTimer = 10f;
 
     void OnEnable()
@@ -42,26 +42,36 @@ public class EventCoroutine : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     IEnumerator coroutine(float toTransition,float toAlarm, float toMusic, float toReset)
     {
-
+        #region
         //Seconds before launching the transition
         yield return new WaitForSeconds(toTransition);
         AkUnitySoundEngine.PostEvent("Transition", gameObject);
-        Debug.Log("Transition event launched");
 
+        //Sets the weird RTPC to 100 at the start of experience
+        GetComponent<Parameters>().WeirdRtpcUpdate(100f);
+        Debug.Log("Transition event launched");
+        #endregion
+
+        #region
         //Seconds before launching the alarm
         yield return new WaitForSeconds(toAlarm);
         AkUnitySoundEngine.PostEvent("Alarm", gameObject);
         Debug.Log("Alarm event launched");
+        GetComponent<Parameters>().WeirdRtpcUpdate(50f);
+        #endregion
 
+        #region
         //waits for the alarm to finish to launch the music
         yield return new WaitForSeconds(toMusic);
         AkUnitySoundEngine.PostEvent("Music", gameObject);
         Debug.Log("Music event launched");
-
+        GetComponent<Parameters>().WeirdRtpcUpdate(0f);
+        #endregion
         //waits for the music to finish to reset everything
         yield return new WaitForSeconds(toReset);
         AkUnitySoundEngine.PostEvent("Reset", gameObject);
         Debug.Log("Reset event launched");
+        GetComponent<Parameters>().WeirdRtpcUpdate(50f);
 
         //Resets all the booleans to false
         ResetPaintings();

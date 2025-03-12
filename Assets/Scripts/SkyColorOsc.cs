@@ -41,9 +41,9 @@ public class SkyColorOsc : MonoBehaviour
 
     void SkyColorChanger( Material material, float r, float g, float b, float a)
     {
-        float newRed = r + OSCManager.sensor1/2f; 
-        float newGreen = g + OSCManager.sensor2/2f;
-        float newBlue = b + OSCManager.sensor3/2f;
+        float newRed = r; 
+        float newGreen = g;
+        float newBlue = b;
         // Change the color of the skybox
         material.SetColor("_Tint", new Color(newRed/255f, newGreen/255f, newBlue/255f, a/255f));
         mainLight.color = new Color(newRed/255f, newGreen/255f, newBlue/255f, a/255f);

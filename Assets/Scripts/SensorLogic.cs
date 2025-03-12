@@ -6,13 +6,12 @@ using UnityEngine.InputSystem;
 public class SensorLogic : MonoBehaviour
 {
     public bool[] isPaintingOn = new bool[3] { false, false, false };
-    public bool[] eventTriggered = new bool[3] { false, false, false };
+    private bool[] eventTriggered = new bool[3] { false, false, false };
     public static bool areAllPaintingsOn = false;
-    private float[] currentTime = new float[3] { 0f, 0f, 0f };
     private string[] wwisePaintsOn = new string[3] { "Sensor1Activated", "Sensor2Activated", "Sensor3Activated" };
+    private string[] wwisePaintsOff = new string[3] { "StopSensor1", "StopSensor2", "StopSensor3" };
     public static event Action OnAllPaintingsOn;
-
-
+    private float[] currentTime = new float[3] { 0f, 0f, 0f };
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -24,11 +23,15 @@ public class SensorLogic : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Calling the sensorActivated function for each sensor that sends data between 10 and 15 cm for 5 seconds
+        //Calling the SensorActivated function for each sensor that sends data between 10 and 15 cm for 5 seconds
+        SensorActivated(0, OSCManager.sensor1, 10f, 15f, 5f);
+        SensorActivated(1, OSCManager.sensor2, 10f, 15f, 5f);
+        SensorActivated(2, OSCManager.sensor3, 10f, 15f, 5f);
 
-        sensorActivated(0, OSCManager.sensor1, 10f, 15f, 5f);
-        sensorActivated(1, OSCManager.sensor2, 10f, 15f, 5f);
-        sensorActivated(2, OSCManager.sensor3, 10f, 15f, 5f);
+        //Checking if a painting has been activated to stop the sensor loop in wwise
+        DeactivatePortal(0);
+        DeactivatePortal(1);
+        DeactivatePortal(2);    
 
         if (isPaintingOn[0] == true && isPaintingOn[1] == true && isPaintingOn[2] == true && !areAllPaintingsOn)
         {
@@ -39,7 +42,7 @@ public class SensorLogic : MonoBehaviour
      
     }
 
-    void sensorActivated(int index, float sensor,  float minDistance, float maxDistance, float time)
+    void SensorActivated(int index, float sensor,  float minDistance, float maxDistance, float time)
     {
         if (sensor >= minDistance && sensor <= maxDistance)
         {
@@ -62,4 +65,12 @@ public class SensorLogic : MonoBehaviour
         }    
         return;
     }
+    //Method to deactivate a portal after it has been activated
+    public void DeactivatePortal(int index)
+    {
+        isPaintingOn[index] = false;
+        eventTriggered[index] = false;
+        AkUnitySoundEngine.PostEvent(wwisePaintsOff[index], gameObject);
+    }
+
 }

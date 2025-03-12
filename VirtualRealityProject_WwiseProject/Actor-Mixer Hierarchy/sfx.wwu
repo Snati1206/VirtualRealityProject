@@ -95,7 +95,7 @@
 				</ActorMixer>
 				<BlendContainer Name="powerUp1" ID="{85742A46-EDE1-4A32-88CC-4F4517079F6E}" ShortID="548491813">
 					<PropertyList>
-						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
 						<Property Name="BlendBehavior" Type="int16" Value="1"/>
 						<Property Name="EnableAttenuation" Type="bool" Value="False"/>
 					</PropertyList>
@@ -1019,7 +1019,7 @@
 				</RandomSequenceContainer>
 				<BlendContainer Name="powerUp2" ID="{3F83824E-29BE-4ED1-AD11-43DD08F7D49A}" ShortID="501565415">
 					<PropertyList>
-						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
 						<Property Name="BlendBehavior" Type="int16" Value="1"/>
 						<Property Name="EnableAttenuation" Type="bool" Value="False"/>
 					</PropertyList>
@@ -1410,6 +1410,7 @@
 				</BlendContainer>
 				<BlendContainer Name="powerUp3" ID="{96FB7318-6C07-4CB4-9625-8D542D056564}" ShortID="715053013">
 					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
 						<Property Name="BlendBehavior" Type="int16" Value="1"/>
 					</PropertyList>
 					<ReferenceList>

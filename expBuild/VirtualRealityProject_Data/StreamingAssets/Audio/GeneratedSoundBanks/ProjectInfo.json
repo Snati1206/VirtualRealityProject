@@ -1,0 +1,36 @@
+{
+ "ProjectInfo": {
+  "Project": {
+   "Name": "VirtualRealityProject_WwiseProject",
+   "GUID": "{E6D1C610-DD2E-40DE-BD29-377201F9D5D7}",
+   "Generator": "2024.1.0.8669"
+  },
+  "CacheRoot": "../../../../VirtualRealityProject_WwiseProject/.cache",
+  "Platforms": [
+   {
+    "Name": "Mac",
+    "GUID": "{367AA995-6C5E-4DA3-BE36-0E57F8A19C72}",
+    "BasePlatform": "Mac",
+    "BasePlatformGUID": "{9C6217D5-DD11-4795-87C1-6CE02853C540}",
+    "Path": "../../../../VirtualRealityProject_WwiseProject/GeneratedSoundBanks/Mac"
+   },
+   {
+    "Name": "Windows",
+    "GUID": "{AE939F56-CC1C-4001-B834-3DE32D41BBD5}",
+    "BasePlatform": "Windows",
+    "BasePlatformGUID": "{6E0CB257-C6C8-4C5C-8366-2740DFC441EB}",
+    "Path": "../../../../VirtualRealityProject_WwiseProject/GeneratedSoundBanks/Windows"
+   }
+  ],
+  "Languages": [
+   {
+    "Name": "English(US)",
+    "Id": "684519430",
+    "GUID": "{2B353B0E-39AF-493F-945A-032169D4514D}",
+    "Default": "true",
+    "UseAsStandIn": "true"
+   }
+  ],
+  "FileHash": "{36F3C374-7FC2-6665-C569-CA0CAACF432F}"
+ }
+}

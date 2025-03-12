@@ -41,12 +41,14 @@ public class SkyControlScript : MonoBehaviour
     {
         if (skyMaterial != null && mainLight != null)
         {
-            SkyRotator(skyMaterial, skySpeed);
+            SkyRotator(skyMaterial, skySpeed, mainLight);
             SkyLuminosity(skyMaterial, skyLuminosity);
         }
         
     }
-    private void SkyRotator(Material material, float speed)
+
+    // Rotates the skybox and assigns the rotation to the main world light
+    private void SkyRotator(Material material, float speed, Light lightWorld)
     {
         // Rotate the skybox
         float rotation = (Time.time * speed) % 360;
