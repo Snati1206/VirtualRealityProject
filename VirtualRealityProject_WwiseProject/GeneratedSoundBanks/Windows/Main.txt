@@ -13,6 +13,9 @@ Event	ID	Name			Wwise Object Path	Notes
 	3742079315	Sensor3Activated			\Default Work Unit\Sensor3Activated	
 	3991942870	Music			\Default Work Unit\Music	
 	4017455162	Reset			\Default Work Unit\Reset	
+	4214593048	StopSensor1			\Default Work Unit\StopSensor1	
+	4214593050	StopSensor3			\Default Work Unit\StopSensor3	
+	4214593051	StopSensor2			\Default Work Unit\StopSensor2	
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	2078519427	activationStatus			\Default Work Unit\activationStatus	

@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{45D8302B-19E7-418B-B7D2-CDAC15D9EA71}",
     "Language": "SFX",
-    "Hash": "{57EF5803-99A8-A81C-6A76-C2A49F63FD7D}",
+    "Hash": "{9324F9CD-2750-EAC2-A1EF-443B8054DD09}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -519,22 +519,10 @@
         "Id": "326334206"
        },
        {
-        "Id": "516061011"
-       },
-       {
         "Id": "621973919"
        },
        {
-        "Id": "623889076"
-       },
-       {
-        "Id": "626024965"
-       },
-       {
         "Id": "630766008"
-       },
-       {
-        "Id": "652838272"
        },
        {
         "Id": "959841215"
@@ -973,6 +961,111 @@
       ]
      },
      {
+      "Id": "4214593048",
+      "Name": "StopSensor1",
+      "ObjectPath": "\\Events\\Default Work Unit\\StopSensor1",
+      "GUID": "{FDC94E5F-0B0F-4FF9-9F88-10677425552A}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0",
+      "MediaRefs": [
+       {
+        "Id": "623889076"
+       },
+       {
+        "Id": "626024965"
+       },
+       {
+        "Id": "652838272"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "348963605",
+        "Name": "Reverb",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Reverb",
+        "GUID": "{568A8176-882E-40FC-A572-D3004C78AC10}"
+       },
+       {
+        "Id": "696369880",
+        "Name": "LFE",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\LFE",
+        "GUID": "{7A99EF7A-6B7D-43B7-B065-79464E51DCAB}"
+       }
+      ]
+     },
+     {
+      "Id": "4214593051",
+      "Name": "StopSensor2",
+      "ObjectPath": "\\Events\\Default Work Unit\\StopSensor2",
+      "GUID": "{DAF94592-067D-45F5-ADC8-40CABB981B9A}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0",
+      "MediaRefs": [
+       {
+        "Id": "516061011"
+       },
+       {
+        "Id": "623889076"
+       },
+       {
+        "Id": "652838272"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "348963605",
+        "Name": "Reverb",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Reverb",
+        "GUID": "{568A8176-882E-40FC-A572-D3004C78AC10}"
+       },
+       {
+        "Id": "696369880",
+        "Name": "LFE",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\LFE",
+        "GUID": "{7A99EF7A-6B7D-43B7-B065-79464E51DCAB}"
+       }
+      ]
+     },
+     {
+      "Id": "4214593050",
+      "Name": "StopSensor3",
+      "ObjectPath": "\\Events\\Default Work Unit\\StopSensor3",
+      "GUID": "{3E524785-1068-439D-AC98-8ECD53A2509B}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0",
+      "MediaRefs": [
+       {
+        "Id": "516061011"
+       },
+       {
+        "Id": "623889076"
+       },
+       {
+        "Id": "652838272"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "348963605",
+        "Name": "Reverb",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Reverb",
+        "GUID": "{568A8176-882E-40FC-A572-D3004C78AC10}"
+       },
+       {
+        "Id": "696369880",
+        "Name": "LFE",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\LFE",
+        "GUID": "{7A99EF7A-6B7D-43B7-B065-79464E51DCAB}"
+       }
+      ]
+     },
+     {
       "Id": "1865857008",
       "Name": "Transition",
       "ObjectPath": "\\Events\\Default Work Unit\\Transition",
@@ -1031,6 +1124,6 @@
     ]
    }
   ],
-  "FileHash": "{FBD59129-8472-BC3F-EAA5-5BE971F53CB5}"
+  "FileHash": "{27994E3C-16AE-5411-1136-5B462EB9659F}"
  }
 }

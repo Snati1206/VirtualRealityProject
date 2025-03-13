@@ -25,6 +25,9 @@ namespace AK
         static const AkUniqueID SENSORPOWERUP1 = 2555139182U;
         static const AkUniqueID SENSORPOWERUP2 = 2555139181U;
         static const AkUniqueID SENSORPOWERUP3 = 2555139180U;
+        static const AkUniqueID STOPSENSOR1 = 4214593048U;
+        static const AkUniqueID STOPSENSOR2 = 4214593051U;
+        static const AkUniqueID STOPSENSOR3 = 4214593050U;
         static const AkUniqueID TRANSITION = 1865857008U;
         static const AkUniqueID VOICESHEADSET = 3107780790U;
     } // namespace EVENTS
