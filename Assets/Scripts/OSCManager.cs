@@ -42,9 +42,9 @@ public class OSCManager : MonoBehaviour
         sensor2 = CalculateAverage(sensor2Values);
         sensor3 = CalculateAverage(sensor3Values);
         
-        Debug.Log("Sensor 1: " + sensor1);
-        Debug.Log("Sensor 2: " + sensor2);
-        Debug.Log("Sensor 3: " + sensor3);
+    //    Debug.Log("Sensor 1: " + sensor1);
+    //    Debug.Log("Sensor 2: " + sensor2);
+    //    Debug.Log("Sensor 3: " + sensor3);
     }
 
     private void OnReceiveSensor1(OSCMessage message)
@@ -55,10 +55,6 @@ public class OSCManager : MonoBehaviour
             if (value > 100f)
             {
                 value = 100f;
-            }
-            if (value < 3f)
-            {
-                value = 3f;
             }
             AddValueList(sensor1Values, value);
         }
@@ -76,10 +72,7 @@ public class OSCManager : MonoBehaviour
             {
                 value = 100f;
             }
-            if (value < 3f)
-            {
-                value = 3f;
-            }
+
             AddValueList(sensor2Values, value);          
         }
          else
@@ -90,17 +83,14 @@ public class OSCManager : MonoBehaviour
 
     private void OnReceiveSensor3(OSCMessage message)
     {
-        Debug.Log("Sensor 3: " + message);
+
         if (message.ToFloat(out float value))
         {
             if (value > 100f)
             {
                 value = 100f;
             }
-            if (value < 3f)
-            {
-                value = 3f;
-            }
+
             AddValueList(sensor3Values, value);
 
         }
@@ -122,9 +112,9 @@ public class OSCManager : MonoBehaviour
 
     private float CalculateAverage(List<float> values)
     {
-        if (values.Count == 0)
+        if (values.Count == 0f)
         {
-            return 0;
+            return 100f;
         }
 
         return values.Average();

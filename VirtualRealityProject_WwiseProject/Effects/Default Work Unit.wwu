@@ -6,6 +6,8 @@
 				<Effect Name="New_iZotope_Trash_Filters" ID="{F28ACBC4-1881-44DC-9DCB-5B9E1FAF0F8B}" PluginName="iZotope Trash Filters" CompanyID="259" PluginID="6" PluginType="3"/>
 				<Effect Name="New_Time_Stretch" ID="{EEBB1141-4845-43AA-945C-C0F638309ED3}" PluginName="Wwise Time Stretch" CompanyID="0" PluginID="130" PluginType="3"/>
 				<Effect Name="New_Pitch_Shifter" ID="{C4EEDB35-D833-425E-B560-1EAD6BD9EF90}" PluginName="Wwise Pitch Shifter" CompanyID="0" PluginID="136" PluginType="3"/>
+				<Effect Name="New_Time_Stretch_01" ID="{4F63BC5A-AADE-442C-A7A9-9AE226863B90}" PluginName="Wwise Time Stretch" CompanyID="0" PluginID="130" PluginType="3"/>
+				<Effect Name="New_Flanger" ID="{568DFED5-8606-45CD-9B6B-3DC347682660}" PluginName="Wwise Flanger" CompanyID="0" PluginID="125" PluginType="3"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Effects>

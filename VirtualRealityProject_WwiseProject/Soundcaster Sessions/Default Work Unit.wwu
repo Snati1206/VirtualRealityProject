@@ -38,6 +38,10 @@
 							<Position X="2" Y="1"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="powerUp3" ID="{96FB7318-6C07-4CB4-9625-8D542D056564}" WorkUnitID="{4E140D7F-62E4-4DAF-A811-B1E5FF1E146B}"/>
+							<Position X="2" Y="2"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="Sensor2Activated" ID="{ED6E7F52-B1C5-4517-BC04-1B1E5BC3FBBF}" WorkUnitID="{8837BB41-6FC3-415B-85DD-91771863AD97}"/>
 							<Position X="3" Y="0"/>
 						</Module>
@@ -61,7 +65,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="sensor3" ID="{050AB711-2670-4DC2-B704-99F8F851564C}"/>
-							<Value>100</Value>
+							<Value>35.0935622317596</Value>
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true"/>

@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 435.0, 263.0, 640.0, 480.0 ],
+		"rect" : [ 480.0, 238.0, 717.0, 480.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -46,7 +46,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 115.0, 241.0, 24.0, 24.0 ]
+					"patching_rect" : [ 21.0, 238.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -58,7 +58,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 220.0, 17.0, 24.0, 24.0 ]
+					"patching_rect" : [ 103.0, 15.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -70,7 +70,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 220.0, 95.0, 24.0, 24.0 ]
+					"patching_rect" : [ 103.0, 93.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -81,7 +81,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 220.0, 56.0, 63.0, 22.0 ],
+					"patching_rect" : [ 103.0, 54.0, 63.0, 22.0 ],
 					"text" : "metro 100"
 				}
 
@@ -95,7 +95,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 442.0, 151.0, 50.0, 22.0 ]
+					"patching_rect" : [ 325.0, 149.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -108,7 +108,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 322.0, 155.0, 50.0, 22.0 ]
+					"patching_rect" : [ 205.0, 153.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -119,8 +119,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 437.0, 203.0, 102.0, 22.0 ],
-					"text" : "prepend /sensor3"
+					"patching_rect" : [ 320.0, 201.0, 114.0, 22.0 ],
+					"text" : "prepend /distance/3"
 				}
 
 			}
@@ -131,8 +131,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 322.0, 203.0, 102.0, 22.0 ],
-					"text" : "prepend /sensor2"
+					"patching_rect" : [ 205.0, 201.0, 114.0, 22.0 ],
+					"text" : "prepend /distance/2"
 				}
 
 			}
@@ -145,7 +145,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 210.0, 155.0, 50.0, 22.0 ]
+					"patching_rect" : [ 93.0, 153.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -156,8 +156,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 205.0, 203.0, 102.0, 22.0 ],
-					"text" : "prepend /sensor1"
+					"patching_rect" : [ 88.0, 201.0, 114.0, 22.0 ],
+					"text" : "prepend /distance/1"
 				}
 
 			}
@@ -167,7 +167,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 179.0, 314.0, 165.0, 22.0 ],
+					"patching_rect" : [ 98.0, 373.0, 165.0, 22.0 ],
 					"text" : "udpsend 192.168.0.164 9999"
 				}
 

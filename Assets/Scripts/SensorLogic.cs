@@ -6,7 +6,7 @@ using UnityEngine.InputSystem;
 public class SensorLogic : MonoBehaviour
 {
     public bool[] isPaintingOn = new bool[3] { false, false, false };
-    private bool[] eventTriggered = new bool[3] { false, false, false };
+    public bool[] eventTriggered = new bool[3] { false, false, false };
     public static bool areAllPaintingsOn = false;
     private string[] wwisePaintsOn = new string[3] { "Sensor1Activated", "Sensor2Activated", "Sensor3Activated" };
     private string[] wwisePaintsOff = new string[3] { "StopSensor1", "StopSensor2", "StopSensor3" };
@@ -24,14 +24,15 @@ public class SensorLogic : MonoBehaviour
     void Update()
     {
         //Calling the SensorActivated function for each sensor that sends data between 10 and 15 cm for 5 seconds
-        SensorActivated(0, OSCManager.sensor1, 10f, 15f, 5f);
-        SensorActivated(1, OSCManager.sensor2, 10f, 15f, 5f);
-        SensorActivated(2, OSCManager.sensor3, 10f, 15f, 5f);
+        SensorActivated(0, OSCManager.sensor1, 3f, 10f, 3f);
+        SensorActivated(1, OSCManager.sensor2, 3f, 10f, 3f);
+        SensorActivated(2, OSCManager.sensor3, 3f, 10f, 3f);
 
         //Checking if a painting has been activated to stop the sensor loop in wwise
-        DeactivatePortal(0);
-        DeactivatePortal(1);
-        DeactivatePortal(2);    
+    //    DeactivatePortal(0);
+    
+    //    DeactivatePortal(1);
+    //    DeactivatePortal(2);    
 
         if (isPaintingOn[0] == true && isPaintingOn[1] == true && isPaintingOn[2] == true && !areAllPaintingsOn)
         {
@@ -54,6 +55,7 @@ public class SensorLogic : MonoBehaviour
                 {
                     AkUnitySoundEngine.PostEvent(wwisePaintsOn[index], gameObject);
                     eventTriggered[index] = true;
+                    currentTime[index] = 0f;
                 }
             }
         }
@@ -65,11 +67,38 @@ public class SensorLogic : MonoBehaviour
         }    
         return;
     }
+
+    // void SensorActivatedAlt(int index, float sensor, float minDistance, float time)
+    // {
+    //     if (sensor <= minDistance)
+    //     {
+    //         currentTime[index] += Time.deltaTime;
+    //         if (currentTime[index] >= time)
+    //         {
+    //             isPaintingOn[index] = true;
+    //             if (!eventTriggered[index])
+    //             {
+    //                 AkUnitySoundEngine.PostEvent(wwisePaintsOn[index], gameObject);
+                    
+    //                 eventTriggered[index] = true;
+    //                 currentTime[index] = 0f;
+    //                 AkUnitySoundEngine.PostEvent(wwisePaintsOff[index], gameObject);
+
+    //             }
+    //         }
+    //     }
+    //     else
+    //     {
+    //         currentTime[index] = 0f;
+    //     }
+    //     return;
+    // }
+    
     //Method to deactivate a portal after it has been activated
     public void DeactivatePortal(int index)
     {
         isPaintingOn[index] = false;
-        eventTriggered[index] = false;
+        eventTriggered[index] = true;
         AkUnitySoundEngine.PostEvent(wwisePaintsOff[index], gameObject);
     }
 

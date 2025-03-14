@@ -14,7 +14,7 @@ public class EventCoroutine : MonoBehaviour
     Coroutine linealSequenceCorroutine;
     public float transitionTimer = 30f;
     public float musicTimer = 20f;
-    public float resetTimer = 100f;
+    public float resetTimer = 30f;
     public float alarmTimer = 10f;
 
     void OnEnable()
@@ -48,7 +48,7 @@ public class EventCoroutine : MonoBehaviour
         AkUnitySoundEngine.PostEvent("Transition", gameObject);
 
         //Sets the weird RTPC to 100 at the start of experience
-        GetComponent<Parameters>().WeirdRtpcUpdate(100f);
+    //    GetComponent<Parameters>().WeirdRtpcUpdate(100f);
         Debug.Log("Transition event launched");
         #endregion
 
@@ -57,7 +57,7 @@ public class EventCoroutine : MonoBehaviour
         yield return new WaitForSeconds(toAlarm);
         AkUnitySoundEngine.PostEvent("Alarm", gameObject);
         Debug.Log("Alarm event launched");
-        GetComponent<Parameters>().WeirdRtpcUpdate(50f);
+    //    GetComponent<Parameters>().WeirdRtpcUpdate(50f);
         #endregion
 
         #region
@@ -65,13 +65,13 @@ public class EventCoroutine : MonoBehaviour
         yield return new WaitForSeconds(toMusic);
         AkUnitySoundEngine.PostEvent("Music", gameObject);
         Debug.Log("Music event launched");
-        GetComponent<Parameters>().WeirdRtpcUpdate(0f);
+    //    GetComponent<Parameters>().WeirdRtpcUpdate(0f);
         #endregion
         //waits for the music to finish to reset everything
         yield return new WaitForSeconds(toReset);
         AkUnitySoundEngine.PostEvent("Reset", gameObject);
         Debug.Log("Reset event launched");
-        GetComponent<Parameters>().WeirdRtpcUpdate(50f);
+    //    GetComponent<Parameters>().WeirdRtpcUpdate(50f);
 
         //Resets all the booleans to false
         ResetPaintings();
@@ -87,6 +87,9 @@ public class EventCoroutine : MonoBehaviour
             sensorLogic.isPaintingOn[1] = false;
             sensorLogic.isPaintingOn[2] = false;
             SensorLogic.areAllPaintingsOn = false;
+            sensorLogic.eventTriggered[0] = false;
+            sensorLogic.eventTriggered[1] = false;
+            sensorLogic.eventTriggered[2] = false;
             Debug.Log("Paintings reset");
         }
         else

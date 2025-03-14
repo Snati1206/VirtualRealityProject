@@ -59,6 +59,13 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
+						<Action Name="" ID="{3874230C-D3F7-442D-A988-01F8F043ED57}" ShortID="314813796">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="New Music Playlist Container" ID="{FE73E15A-8316-46A9-A872-581936CEA4F3}" WorkUnitID="{3969133B-495F-4C6C-B046-C1C10473CEDB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 					</ChildrenList>
 				</Event>
 				<Event Name="Reset" ID="{98D5F919-007E-41E0-BCF2-C379723F61FA}">
@@ -104,9 +111,22 @@
 							</ReferenceList>
 						</Action>
 						<Action Name="" ID="{A77B5F8D-DD1C-4B05-8485-8FF883F57D1E}" ShortID="356760856">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Ambiance" ID="{A143B276-DF92-4BBA-8949-54BED2AB4075}" WorkUnitID="{7FAE9102-D772-46A8-AA69-F6DB5B0BCD91}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{B53F7A2A-3845-491C-88F9-E4D17793E64C}" ShortID="282023773">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="38"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="activationStatus" ID="{8C7A1363-674B-41F9-B092-3E3C9F25B869}" WorkUnitID="{783EED98-38D9-4575-BE3B-51AB635CB706}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -138,8 +158,9 @@
 					<ChildrenList>
 						<Action Name="" ID="{249ADCDA-4C7E-447A-93B5-DEFC9E38E074}" ShortID="243536196">
 							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="ActionType" Type="int16" Value="7"/>
 								<Property Name="FadeTime" Type="Real64" Value="1"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
@@ -203,9 +224,10 @@
 					<ChildrenList>
 						<Action Name="" ID="{9EE58C75-398F-4BDB-83B8-356C868DDC0A}" ShortID="137759206">
 							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="ActionType" Type="int16" Value="7"/>
 								<Property Name="FadeOutCurve" Type="int16" Value="1"/>
 								<Property Name="FadeTime" Type="Real64" Value="2"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
@@ -244,8 +266,9 @@
 					<ChildrenList>
 						<Action Name="" ID="{858B21DE-1FA8-47D9-84DE-637428586A97}" ShortID="637727254">
 							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="ActionType" Type="int16" Value="7"/>
 								<Property Name="FadeTime" Type="Real64" Value="1"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
@@ -326,62 +349,6 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Ambiance" ID="{A143B276-DF92-4BBA-8949-54BED2AB4075}" WorkUnitID="{7FAE9102-D772-46A8-AA69-F6DB5B0BCD91}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Transition_01" ID="{075CA2B4-6524-4E4C-90AC-AE503EDAE170}">
-					<ChildrenList>
-						<Action Name="" ID="{73DF9DF9-1ABC-4BDB-B471-A6F0F2BFE0D8}" ShortID="232355963">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="mus_music_vr_drums" ID="{AAB6FAEF-631E-407F-9AF1-D9819AC83344}" WorkUnitID="{EF201BAD-857B-4AA6-993A-B9548624111E}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="StopSensor1" ID="{FDC94E5F-0B0F-4FF9-9F88-10677425552A}">
-					<ChildrenList>
-						<Action Name="" ID="{B5790861-D9E3-4D6C-9467-A5E83C3A5C46}" ShortID="423467503">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="2"/>
-								<Property Name="FadeTime" Type="Real64" Value="2"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="powerUp1" ID="{85742A46-EDE1-4A32-88CC-4F4517079F6E}" WorkUnitID="{4E140D7F-62E4-4DAF-A811-B1E5FF1E146B}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="StopSensor2" ID="{DAF94592-067D-45F5-ADC8-40CABB981B9A}">
-					<ChildrenList>
-						<Action Name="" ID="{C5EF0B81-51DF-4BE7-B2FC-BA9EB056927B}" ShortID="966121996">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="2"/>
-								<Property Name="FadeTime" Type="Real64" Value="2"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="powerUp2" ID="{3F83824E-29BE-4ED1-AD11-43DD08F7D49A}" WorkUnitID="{4E140D7F-62E4-4DAF-A811-B1E5FF1E146B}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="StopSensor3" ID="{3E524785-1068-439D-AC98-8ECD53A2509B}">
-					<ChildrenList>
-						<Action Name="" ID="{FEB20EA1-F882-48B2-BDCA-981054920F4D}" ShortID="994125513">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="2"/>
-								<Property Name="FadeTime" Type="Real64" Value="2"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="powerUp3" ID="{96FB7318-6C07-4CB4-9625-8D542D056564}" WorkUnitID="{4E140D7F-62E4-4DAF-A811-B1E5FF1E146B}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

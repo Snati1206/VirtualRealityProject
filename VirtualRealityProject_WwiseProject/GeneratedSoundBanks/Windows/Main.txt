@@ -13,9 +13,6 @@ Event	ID	Name			Wwise Object Path	Notes
 	3742079315	Sensor3Activated			\Default Work Unit\Sensor3Activated	
 	3991942870	Music			\Default Work Unit\Music	
 	4017455162	Reset			\Default Work Unit\Reset	
-	4214593048	StopSensor1			\Default Work Unit\StopSensor1	
-	4214593050	StopSensor3			\Default Work Unit\StopSensor3	
-	4214593051	StopSensor2			\Default Work Unit\StopSensor2	
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	2078519427	activationStatus			\Default Work Unit\activationStatus	
@@ -44,8 +41,11 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	326334206	amb_leaves-004	C:\Users\joseb\Documents\GitHub\VirtualRealityProject\VirtualRealityProject_WwiseProject\.cache\8F\{8FCD5C24-3341-A162-C2CA-4A8F6636F719}.wem		\Actor-Mixer Hierarchy\Default Work Unit\amb\Ambiance\amb_leaves\amb_leaves-004		559
 	346838675	sfx_alarm	C:\Users\joseb\Documents\GitHub\VirtualRealityProject\VirtualRealityProject_WwiseProject\.cache\9A\{9A87246F-D3D8-82FC-8E84-E71BBE71DFAE}.wem		\Actor-Mixer Hierarchy\Default Work Unit\sfx\sfx_alarm		1244
 	397949216	amb_bird_3	C:\Users\joseb\Documents\GitHub\VirtualRealityProject\VirtualRealityProject_WwiseProject\.cache\73\{7303F820-7D3F-32C1-BE12-71B4EB2B9E17}.wem		\Actor-Mixer Hierarchy\Default Work Unit\amb\PadsSensor3\birds_normal\New Random Container_01\amb_bird_3		204258
+	406643427	gaita-004	C:\Users\joseb\Documents\GitHub\VirtualRealityProject\VirtualRealityProject_WwiseProject\.cache\94\{94A95B87-12E0-3E43-9331-5235D3BD5661}.wem		\Interactive Music Hierarchy\Default Work Unit\Music\New Music Playlist Container\Gaitas\gaita-004		55924
+	409873660	gaita-002	C:\Users\joseb\Documents\GitHub\VirtualRealityProject\VirtualRealityProject_WwiseProject\.cache\A1\{A1B4122C-6C8E-61F6-9868-1CFCDC3357AC}.wem		\Interactive Music Hierarchy\Default Work Unit\Music\New Music Playlist Container\Gaitas\gaita-002		54288
 	426481905	amb_bird_4_weird	C:\Users\joseb\Documents\GitHub\VirtualRealityProject\VirtualRealityProject_WwiseProject\.cache\3C\{3CEB9E67-4DF4-F88E-32AD-194DE2264FD7}.wem		\Actor-Mixer Hierarchy\Default Work Unit\amb\PadsSensor3\birds_weird\New Random Container_01\amb_bird_4_weird		256188
 	441835573	amb_bird_3_weird	C:\Users\joseb\Documents\GitHub\VirtualRealityProject\VirtualRealityProject_WwiseProject\.cache\BD\{BDB75BB5-C329-8DDD-96DA-4C4602504C4A}.wem		\Actor-Mixer Hierarchy\Default Work Unit\amb\PadsSensor3\birds_weird\New Random Container_01\amb_bird_3_weird		181656
+	496289263	gaita-003	C:\Users\joseb\Documents\GitHub\VirtualRealityProject\VirtualRealityProject_WwiseProject\.cache\E6\{E6CE396F-ECA8-58FF-E5FC-C7C50A6158DB}.wem		\Interactive Music Hierarchy\Default Work Unit\Music\New Music Playlist Container\Gaitas\gaita-003		57636
 	516061011	sfx_powerup_rumble	C:\Users\joseb\Documents\GitHub\VirtualRealityProject\VirtualRealityProject_WwiseProject\.cache\21\{212CCF23-705F-B28B-14D9-C9887A6AF626}.wem		\Actor-Mixer Hierarchy\Default Work Unit\sfx\powerUp3\sfx_powerup_rumble		1791
 	526174884	sfx_powerup_loaded_hit	C:\Users\joseb\Documents\GitHub\VirtualRealityProject\VirtualRealityProject_WwiseProject\.cache\06\{06AB50A1-6587-40AC-643E-B8A310D9A41C}.wem		\Actor-Mixer Hierarchy\Default Work Unit\sfx\powerUpHit\sfx_powerup_loaded_hit		105955
 	541488690	amb_bird_4	C:\Users\joseb\Documents\GitHub\VirtualRealityProject\VirtualRealityProject_WwiseProject\.cache\DD\{DD4E97F6-ABC7-98FD-C0BF-2A2391A5E74A}.wem		\Actor-Mixer Hierarchy\Default Work Unit\amb\PadsSensor3\birds_normal\New Random Container_01\amb_bird_4		311012
@@ -58,6 +58,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	704704544	amb_bird_6_weird	C:\Users\joseb\Documents\GitHub\VirtualRealityProject\VirtualRealityProject_WwiseProject\.cache\C9\{C91311C4-E0FD-15C5-B8D6-FED0CB1D41FD}.wem		\Actor-Mixer Hierarchy\Default Work Unit\amb\PadsSensor3\birds_weird\New Random Container_02\amb_bird_6_weird		288138
 	849966493	sfx_sensor_activated	C:\Users\joseb\Documents\GitHub\VirtualRealityProject\VirtualRealityProject_WwiseProject\.cache\04\{0440C61E-014D-7347-FA63-6735BA8FF2BA}.wem		\Actor-Mixer Hierarchy\Default Work Unit\sfx\powerUpHit\sfx_sensor_activated		101692
 	868510851	amb_bird_6	C:\Users\joseb\Documents\GitHub\VirtualRealityProject\VirtualRealityProject_WwiseProject\.cache\5F\{5FDC2D41-1DAF-F267-3B49-7E69B8AD6AAA}.wem		\Actor-Mixer Hierarchy\Default Work Unit\amb\PadsSensor3\birds_normal\New Random Container_02\amb_bird_6		339287
+	888046109	gaita-001	C:\Users\joseb\Documents\GitHub\VirtualRealityProject\VirtualRealityProject_WwiseProject\.cache\D5\{D5771273-7D85-E5CF-8F03-A1666AD3177A}.wem		\Interactive Music Hierarchy\Default Work Unit\Music\New Music Playlist Container\Gaitas\gaita-001		58636
 	958267533	amb_bird_2	C:\Users\joseb\Documents\GitHub\VirtualRealityProject\VirtualRealityProject_WwiseProject\.cache\85\{85B7A4B3-8C7B-286E-AC4F-897AF37B752A}.wem		\Actor-Mixer Hierarchy\Default Work Unit\amb\PadsSensor3\birds_normal\New Random Container\amb_bird_2		266257
 	959841215	amb_wind_calm	C:\Users\joseb\Documents\GitHub\VirtualRealityProject\VirtualRealityProject_WwiseProject\.cache\EB\{EB9D6753-F13A-C352-DC1D-EBB9FC0D27B9}.wem		\Actor-Mixer Hierarchy\Default Work Unit\amb\Ambiance\amb_wind\amb_wind_calm		1326
 	979599441	mus_pads_chords_loop	C:\Users\joseb\Documents\GitHub\VirtualRealityProject\VirtualRealityProject_WwiseProject\.cache\8E\{8EA9F578-CBC6-C570-C5D8-C3778C424D01}.wem		\Actor-Mixer Hierarchy\Default Work Unit\amb\PadsSensor1\mus_pads_chords\mus_pads_chords_loop		1034651

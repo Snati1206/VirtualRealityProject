@@ -150,28 +150,15 @@
 																<PointList>
 																	<Point>
 																		<XPos>0</XPos>
-																		<YPos>-200</YPos>
+																		<YPos>-0.09493</YPos>
 																		<Flags>5</Flags>
+																		<SegmentShape>Log2</SegmentShape>
 																	</Point>
 																	<Point>
-																		<XPos>6.79555</XPos>
-																		<YPos>-11.59567</YPos>
+																		<XPos>9.31101</XPos>
+																		<YPos>-0.07073</YPos>
 																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>10.19667</XPos>
-																		<YPos>-0.29173</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>17.97433</XPos>
-																		<YPos>-0.2067</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>23.2816</XPos>
-																		<YPos>-6.33084</YPos>
-																		<Flags>0</Flags>
+																		<SegmentShape>Log1</SegmentShape>
 																	</Point>
 																	<Point>
 																		<XPos>42.24422</XPos>
@@ -210,6 +197,7 @@
 						<Sound Name="sfx_powerup_perc" ID="{D2112B65-DE92-4A54-9D48-0545F5CC0AA7}" ShortID="105716617">
 							<PropertyList>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="OverrideEffect" Type="bool" Value="True"/>
 								<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
 								<Property Name="UserAuxSendVolume0" Type="Real64">
 									<ValueList>
@@ -238,6 +226,29 @@
 								</AudioFileSource>
 							</ChildrenList>
 							<ObjectLists>
+								<ObjectList Name="Effects">
+									<Reference>
+										<Local>
+											<EffectSlot Name="" ID="{0133FB54-DE14-45B0-BF70-237B64AA3F97}" ShortID="606138888">
+												<ReferenceList>
+													<Reference Name="Effect">
+														<Custom>
+															<Effect Name="Guitar Distortion (Custom)" ID="{35834513-C14D-4D92-AB90-78313CE4EB2E}" ShortID="294848710" PluginName="Wwise Guitar Distortion" CompanyID="0" PluginID="126" PluginType="3">
+																<PropertyList>
+																	<Property Name="DistortionDrive" Type="Real32" Value="44"/>
+																	<Property Name="DistortionType" Type="int32" Value="3"/>
+																	<Property Name="OutputLevel" Type="Real32" Value="-2.5"/>
+																	<Property Name="PreEQBand1Enable" Type="bool" Value="True"/>
+																	<Property Name="WetDryMix" Type="Real32" Value="62"/>
+																</PropertyList>
+															</Effect>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</EffectSlot>
+										</Local>
+									</Reference>
+								</ObjectList>
 								<ObjectList Name="RTPC">
 									<Reference>
 										<Local>
@@ -258,38 +269,64 @@
 																<PointList>
 																	<Point>
 																		<XPos>0</XPos>
-																		<YPos>-200</YPos>
+																		<YPos>-0.19091</YPos>
 																		<Flags>5</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>8.11189</XPos>
-																		<YPos>-14.28965</YPos>
+																		<XPos>8.74058</XPos>
+																		<YPos>0.23634</YPos>
 																		<Flags>0</Flags>
+																		<SegmentShape>Exp2</SegmentShape>
 																	</Point>
 																	<Point>
-																		<XPos>10.53507</XPos>
-																		<YPos>-0.07653</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>15.35823</XPos>
-																		<YPos>0.06955</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>21.79777</XPos>
-																		<YPos>-13.81673</YPos>
+																		<XPos>14.41624</XPos>
+																		<YPos>-3.65383</YPos>
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
 																		<XPos>41.35937</XPos>
-																		<YPos>-200</YPos>
+																		<YPos>-18.92249</YPos>
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
 																		<XPos>100</XPos>
 																		<YPos>-200</YPos>
 																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{97655FDF-F42F-4A91-AFC4-C57F8A2CC7A1}" ShortID="325761713">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Pitch"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="New Modulator LFO" ID="{C04CDB49-A246-4818-A729-26583900D2C4}" WorkUnitID="{CFE6E83D-50CF-45DF-8BB3-3F7454081564}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{5433E0A9-D2AD-4EB4-85B2-6B86D7920AC7}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-732</YPos>
+																		<Flags>21</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>-848</YPos>
+																		<Flags>53</Flags>
 																	</Point>
 																</PointList>
 															</Curve>
@@ -370,23 +407,23 @@
 																		<Flags>5</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>7.42375</XPos>
-																		<YPos>-17.61627</YPos>
+																		<XPos>1.90904</XPos>
+																		<YPos>-9.39277</YPos>
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>10.66313</XPos>
-																		<YPos>-1E-05</YPos>
+																		<XPos>2.69535</XPos>
+																		<YPos>-0.33412</YPos>
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>16.0627</XPos>
-																		<YPos>0.15373</YPos>
+																		<XPos>9.26123</XPos>
+																		<YPos>-0.17719</YPos>
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>20.11277</XPos>
-																		<YPos>-14.28965</YPos>
+																		<XPos>10.63969</XPos>
+																		<YPos>-9.76079</YPos>
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
@@ -1074,27 +1111,17 @@
 																<PointList>
 																	<Point>
 																		<XPos>0</XPos>
-																		<YPos>-200</YPos>
+																		<YPos>-0.3861</YPos>
 																		<Flags>5</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>7.25455</XPos>
-																		<YPos>-18.93386</YPos>
+																		<XPos>9.19435</XPos>
+																		<YPos>-0.35917</YPos>
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>10.21137</XPos>
-																		<YPos>-0.33686</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>15.89386</XPos>
-																		<YPos>-0.44399</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>18.30709</XPos>
-																		<YPos>-14.28964</YPos>
+																		<XPos>17.0263</XPos>
+																		<YPos>-14.50205</YPos>
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
@@ -1124,6 +1151,7 @@
 						<Sound Name="sfx_powerup_perc" ID="{8DB83BE4-FC0D-470D-B2BA-AAE5472900AC}" ShortID="784268230">
 							<PropertyList>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="OverrideEffect" Type="bool" Value="True"/>
 								<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
 								<Property Name="UserAuxSendVolume0" Type="Real64">
 									<ValueList>
@@ -1152,6 +1180,138 @@
 								</AudioFileSource>
 							</ChildrenList>
 							<ObjectLists>
+								<ObjectList Name="Effects">
+									<Reference>
+										<Local>
+											<EffectSlot Name="" ID="{AA9F8E98-BC8F-4C70-9197-5BA6FF2BCADF}" ShortID="296416881">
+												<ReferenceList>
+													<Reference Name="Effect">
+														<Custom CreatedFrom="{3B09A271-D9D4-4A4E-B545-F681E8313E5F}">
+															<Effect Name="Fast_LF_Tremolo (Custom)" ID="{350CBE82-2994-4181-9BBA-9F6ACC6E1CD2}" ShortID="192090959" PluginName="Wwise Tremolo" CompanyID="0" PluginID="131" PluginType="3">
+																<PropertyList>
+																	<Property Name="ModFrequency" Type="Real32" Value="12.8"/>
+																	<Property Name="ModPWM" Type="Real32" Value="34"/>
+																	<Property Name="ModPhaseOffset" Type="Real32" Value="87"/>
+																	<Property Name="ModPhaseSpread" Type="Real32" Value="115"/>
+																	<Property Name="ModSmoothing" Type="Real32" Value="27"/>
+																	<Property Name="ModWaveform" Type="int32" Value="3"/>
+																</PropertyList>
+																<ObjectLists>
+																	<ObjectList Name="RTPC">
+																		<Reference>
+																			<Local>
+																				<RTPC Name="" ID="{BAD03D92-424D-4E1C-9F23-6DFBDE8338D0}" ShortID="106046475">
+																					<PropertyList>
+																						<Property Name="PropertyName" Type="string" Value="ModDepth"/>
+																					</PropertyList>
+																					<ReferenceList>
+																						<Reference Name="ControlInput">
+																							<ObjectRef Name="sensor2" ID="{64F8FD5A-7F09-4772-A48A-3629D18ECA60}" WorkUnitID="{783EED98-38D9-4575-BE3B-51AB635CB706}"/>
+																						</Reference>
+																						<Reference Name="Curve">
+																							<Custom>
+																								<Curve Name="" ID="{B2A17D62-0D45-4EC0-A873-B8C38334A893}">
+																									<PropertyList>
+																										<Property Name="Flags" Type="int32" Value="1"/>
+																									</PropertyList>
+																									<PointList>
+																										<Point>
+																											<XPos>0</XPos>
+																											<YPos>94.73684</YPos>
+																											<Flags>5</Flags>
+																										</Point>
+																										<Point>
+																											<XPos>100</XPos>
+																											<YPos>-87.7193</YPos>
+																											<Flags>37</Flags>
+																										</Point>
+																									</PointList>
+																								</Curve>
+																							</Custom>
+																						</Reference>
+																					</ReferenceList>
+																				</RTPC>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</Effect>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</EffectSlot>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<EffectSlot Name="" ID="{33D5C183-AB91-4FAB-A806-7F29EDBC32D0}" ShortID="226642470">
+												<ReferenceList>
+													<Reference Name="Effect">
+														<Custom CreatedFrom="{A1F17D99-0801-4F32-B74E-ADB2D9ACC556}">
+															<Effect Name="Fear_no_Evil (Custom)" ID="{5B00CCCA-3D1D-4409-AFF7-65C25550D7B9}" ShortID="687367586" PluginName="Wwise Harmonizer" CompanyID="0" PluginID="138" PluginType="3">
+																<PropertyList>
+																	<Property Name="DryLevel" Type="Real32" Value="-3"/>
+																	<Property Name="Voice1Pitch" Type="Real32" Value="200"/>
+																	<Property Name="Voice2Enable" Type="bool" Value="True"/>
+																	<Property Name="Voice2Pitch" Type="Real32" Value="-300"/>
+																</PropertyList>
+																<ObjectLists>
+																	<ObjectList Name="RTPC">
+																		<Reference>
+																			<Local>
+																				<RTPC Name="" ID="{12C8C616-3B62-4276-A7B9-021C24EC9D09}" ShortID="617458842">
+																					<PropertyList>
+																						<Property Name="PropertyName" Type="string" Value="WetLevel"/>
+																					</PropertyList>
+																					<ReferenceList>
+																						<Reference Name="ControlInput">
+																							<ObjectRef Name="sensor2" ID="{64F8FD5A-7F09-4772-A48A-3629D18ECA60}" WorkUnitID="{783EED98-38D9-4575-BE3B-51AB635CB706}"/>
+																						</Reference>
+																						<Reference Name="Curve">
+																							<Custom>
+																								<Curve Name="" ID="{A99E498F-3E25-43C0-A7A9-53AB55B3F893}">
+																									<PropertyList>
+																										<Property Name="Flags" Type="int32" Value="3"/>
+																									</PropertyList>
+																									<PointList>
+																										<Point>
+																											<XPos>0</XPos>
+																											<YPos>2.84042</YPos>
+																											<Flags>5</Flags>
+																										</Point>
+																										<Point>
+																											<XPos>10.10639</XPos>
+																											<YPos>3.09522</YPos>
+																											<Flags>0</Flags>
+																										</Point>
+																										<Point>
+																											<XPos>35.28369</XPos>
+																											<YPos>-12.1265</YPos>
+																											<Flags>0</Flags>
+																										</Point>
+																										<Point>
+																											<XPos>100</XPos>
+																											<YPos>-120</YPos>
+																											<Flags>37</Flags>
+																										</Point>
+																									</PointList>
+																								</Curve>
+																							</Custom>
+																						</Reference>
+																					</ReferenceList>
+																				</RTPC>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</Effect>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</EffectSlot>
+										</Local>
+									</Reference>
+								</ObjectList>
 								<ObjectList Name="RTPC">
 									<Reference>
 										<Local>
@@ -1172,27 +1332,17 @@
 																<PointList>
 																	<Point>
 																		<XPos>0</XPos>
-																		<YPos>-200</YPos>
+																		<YPos>-0.22562</YPos>
 																		<Flags>5</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>8.01504</XPos>
-																		<YPos>-12.51083</YPos>
+																		<XPos>9.21319</XPos>
+																		<YPos>0.02883</YPos>
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>11.01852</XPos>
-																		<YPos>-0.05459</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>17.88314</XPos>
-																		<YPos>0.06955</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>21.98641</XPos>
-																		<YPos>-15.36929</YPos>
+																		<XPos>15.77951</XPos>
+																		<YPos>-13.26897</YPos>
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
@@ -1285,27 +1435,17 @@
 																<PointList>
 																	<Point>
 																		<XPos>0</XPos>
-																		<YPos>-200</YPos>
+																		<YPos>-0.3861</YPos>
 																		<Flags>5</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>7.83134</XPos>
-																		<YPos>-18.21553</YPos>
+																		<XPos>9.19409</XPos>
+																		<YPos>-0.00379</YPos>
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>10.41631</XPos>
-																		<YPos>-0.20932</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>16.61458</XPos>
-																		<YPos>0.18703</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>20.3019</XPos>
-																		<YPos>-15.56303</YPos>
+																		<XPos>11.82133</XPos>
+																		<YPos>-12.69459</YPos>
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
@@ -1333,65 +1473,6 @@
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
-					<ObjectLists>
-						<ObjectList Name="RTPC">
-							<Reference>
-								<Local>
-									<RTPC Name="" ID="{5E42577B-06A7-40C4-86BB-AA4F2E231326}" ShortID="1048585588">
-										<PropertyList>
-											<Property Name="PropertyName" Type="string" Value="Pitch"/>
-										</PropertyList>
-										<ReferenceList>
-											<Reference Name="ControlInput">
-												<ObjectRef Name="sensor2" ID="{64F8FD5A-7F09-4772-A48A-3629D18ECA60}" WorkUnitID="{783EED98-38D9-4575-BE3B-51AB635CB706}"/>
-											</Reference>
-											<Reference Name="Curve">
-												<Custom>
-													<Curve Name="" ID="{A8E39D17-3ED6-4B91-BA1E-439B12D73889}">
-														<PropertyList>
-															<Property Name="Flags" Type="int32" Value="65537"/>
-														</PropertyList>
-														<PointList>
-															<Point>
-																<XPos>0</XPos>
-																<YPos>-43</YPos>
-																<Flags>5</Flags>
-															</Point>
-															<Point>
-																<XPos>7.61523</XPos>
-																<YPos>-43</YPos>
-																<Flags>0</Flags>
-															</Point>
-															<Point>
-																<XPos>10.76178</XPos>
-																<YPos>192</YPos>
-																<Flags>0</Flags>
-															</Point>
-															<Point>
-																<XPos>17.17586</XPos>
-																<YPos>151</YPos>
-																<Flags>0</Flags>
-															</Point>
-															<Point>
-																<XPos>20.84168</XPos>
-																<YPos>-126</YPos>
-																<Flags>0</Flags>
-															</Point>
-															<Point>
-																<XPos>100</XPos>
-																<YPos>-126</YPos>
-																<Flags>37</Flags>
-															</Point>
-														</PointList>
-													</Curve>
-												</Custom>
-											</Reference>
-										</ReferenceList>
-									</RTPC>
-								</Local>
-							</Reference>
-						</ObjectList>
-					</ObjectLists>
 					<BlendTrackList>
 						<BlendTrack Name="powerup" ID="{EB21563D-CEC6-4949-844C-6320200A8AAA}" ShortID="411900795">
 							<BlendTrackAssocList>
@@ -1464,32 +1545,18 @@
 																<PointList>
 																	<Point>
 																		<XPos>0</XPos>
-																		<YPos>-200</YPos>
+																		<YPos>0</YPos>
 																		<Flags>5</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>6.93951</XPos>
-																		<YPos>-12.10676</YPos>
+																		<XPos>9.67582</XPos>
+																		<YPos>-0.23684</YPos>
 																		<Flags>0</Flags>
+																		<SegmentShape>Log3</SegmentShape>
 																	</Point>
 																	<Point>
-																		<XPos>11.65775</XPos>
-																		<YPos>-0.33686</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>17.93762</XPos>
-																		<YPos>-0.17332</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>20.64128</XPos>
-																		<YPos>-13.1793</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>42.24422</XPos>
-																		<YPos>-24.23614</YPos>
+																		<XPos>41.17126</XPos>
+																		<YPos>-21.63603</YPos>
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
@@ -1514,7 +1581,13 @@
 						<Sound Name="sfx_powerup_perc" ID="{33F83E7E-62D7-49ED-95CD-987D1DE4CE8E}" ShortID="1010449793">
 							<PropertyList>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="OverrideEffect" Type="bool" Value="True"/>
 								<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>-2100</Value>
+									</ValueList>
+								</Property>
 								<Property Name="UserAuxSendVolume0" Type="Real64">
 									<ValueList>
 										<Value>-16</Value>
@@ -1562,43 +1635,60 @@
 																<PointList>
 																	<Point>
 																		<XPos>0</XPos>
-																		<YPos>-200</YPos>
+																		<YPos>-0.12498</YPos>
 																		<Flags>5</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>9.73296</XPos>
-																		<YPos>-13.03166</YPos>
+																		<XPos>9.6922</XPos>
+																		<YPos>-0.16854</YPos>
 																		<Flags>0</Flags>
+																		<SegmentShape>Log3</SegmentShape>
 																	</Point>
 																	<Point>
-																		<XPos>11.92327</XPos>
-																		<YPos>-0.34415</YPos>
+																		<XPos>47.53219</XPos>
+																		<YPos>-23.06535</YPos>
 																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>17.84671</XPos>
-																		<YPos>-0.10551</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>20.45429</XPos>
-																		<YPos>-7.01106</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>25.65825</XPos>
-																		<YPos>-15.01774</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>39.83743</XPos>
-																		<YPos>-19.01498</YPos>
-																		<Flags>0</Flags>
+																		<SegmentShape>Exp3</SegmentShape>
 																	</Point>
 																	<Point>
 																		<XPos>100</XPos>
 																		<YPos>-200</YPos>
 																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{9B9F5087-0CF0-415D-8FD5-7A314A86AFA2}" ShortID="218110841">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Pitch"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="New Modulator LFO_01" ID="{2B5BFBFE-1FE2-48C2-8478-8367D7D24C3E}" WorkUnitID="{CFE6E83D-50CF-45DF-8BB3-3F7454081564}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{1CE96525-495E-45F8-9603-8191890F6E17}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-1714</YPos>
+																		<Flags>21</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>-1132</YPos>
+																		<Flags>53</Flags>
 																	</Point>
 																</PointList>
 															</Curve>
@@ -1674,23 +1764,14 @@
 																<PointList>
 																	<Point>
 																		<XPos>0</XPos>
-																		<YPos>-200</YPos>
+																		<YPos>-0.18815</YPos>
 																		<Flags>5</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>8.86725</XPos>
-																		<YPos>-13.08059</YPos>
+																		<XPos>9.33379</XPos>
+																		<YPos>-0.06886</YPos>
 																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>12.45106</XPos>
-																		<YPos>0.13161</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>18.13207</XPos>
-																		<YPos>-0.13162</YPos>
-																		<Flags>0</Flags>
+																		<SegmentShape>Log3</SegmentShape>
 																	</Point>
 																	<Point>
 																		<XPos>23.32014</XPos>

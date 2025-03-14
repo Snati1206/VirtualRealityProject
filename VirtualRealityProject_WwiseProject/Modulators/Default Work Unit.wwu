@@ -1,6 +1,119 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{CFE6E83D-50CF-45DF-8BB3-3F7454081564}" SchemaVersion="123">
 	<Modulators>
-		<WorkUnit Name="Default Work Unit" ID="{CFE6E83D-50CF-45DF-8BB3-3F7454081564}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{CFE6E83D-50CF-45DF-8BB3-3F7454081564}" PersistMode="Standalone">
+			<ChildrenList>
+				<ModulatorLfo Name="New Modulator LFO" ID="{C04CDB49-A246-4818-A729-26583900D2C4}" ShortID="747276995">
+					<PropertyList>
+						<Property Name="LfoFrequency" Type="Real64" Value="1220.1">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{1C82DD03-9648-47C7-AA98-B1AF9377868A}"/>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="LfoWaveform" Type="int32" Value="5"/>
+					</PropertyList>
+					<ObjectLists>
+						<ObjectList Name="RTPC">
+							<Reference>
+								<Local>
+									<RTPC Name="" ID="{8F6B0D7E-E74A-4CA4-932D-9514ABFC2EA4}" ShortID="845356077">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="LfoDepth"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="sensor1" ID="{8A0125EA-B17C-4A07-A2AA-F4E92A932029}" WorkUnitID="{783EED98-38D9-4575-BE3B-51AB635CB706}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{6A01396F-DEF5-4E5B-82CA-CA8A89D17976}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="1"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>100</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>6.55577</XPos>
+																<YPos>100</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>37.86693</XPos>
+																<YPos>30.12038</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>-0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
+				</ModulatorLfo>
+				<ModulatorLfo Name="New Modulator LFO_01" ID="{2B5BFBFE-1FE2-48C2-8478-8367D7D24C3E}" ShortID="844788865">
+					<PropertyList>
+						<Property Name="LfoFrequency" Type="Real64" Value="0.22"/>
+					</PropertyList>
+					<ObjectLists>
+						<ObjectList Name="RTPC">
+							<Reference>
+								<Local>
+									<RTPC Name="" ID="{068AF344-7BA7-4760-98F0-518C13D7BC46}" ShortID="323557533">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="LfoFrequency"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="sensor3" ID="{050AB711-2670-4DC2-B704-99F8F851564C}" WorkUnitID="{783EED98-38D9-4575-BE3B-51AB635CB706}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{940EECEA-0F78-4080-B764-3D58C24C830A}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="5"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>12.12159</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>2.93333</XPos>
+																<YPos>9.89139</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>1</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
+				</ModulatorLfo>
+			</ChildrenList>
+		</WorkUnit>
 	</Modulators>
 </WwiseDocument>

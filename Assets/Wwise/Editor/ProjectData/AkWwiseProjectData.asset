@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 4ec30404cd03cc49bfe9a6396411430e
     GuidInternal: 
-    m_lastTime: -8584632720954589317
+    m_lastTime: -8584596906578307770
     List:
     - name: Ambiance Master
       guid: f90dcfcccc240046b821e19884b16803
@@ -143,13 +143,13 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 4ec30404cd03cc49bfe9a6396411430e
-      - ElementName: Master Audio Bus
+      - ElementName: Master VR Bus
         ObjectType: 2
-        guid: d8a41415a61d2a41a17e75ca0c2149f3
+        guid: df8e088515341748bb681ba901f2bd37
       - ElementName: Music Master
         ObjectType: 2
         guid: e37362f647de984caddf303e7792642a
-      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Music Master
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master VR Bus\Music Master
     - name: Reverb
       guid: 76818a562e88fc40a572d3004c78ac10
       id: 348963605
@@ -213,7 +213,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: d03a737d39c5994d84b683908e8dd5aa
     GuidInternal: 
-    m_lastTime: -8584633644250438804
+    m_lastTime: -8584597264445387428
     List:
     - name: Main
       guid: 2b30d845e7198b41b7d2cdac15d9ea71
@@ -241,7 +241,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 41bb3788c36f5b4185dd91771863ad97
     GuidInternal: 
-    m_lastTime: -8584597943298327600
+    m_lastTime: -8584596932188836209
     List:
     - name: Alarm
       guid: b2251947b36cbc458184b20853065d36
@@ -447,57 +447,6 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
-    - name: StopSensor1
-      guid: 5f4ec9fd0f0bf94f9f8810677425552a
-      id: 4214593048
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 41bb3788c36f5b4185dd91771863ad97
-      - ElementName: StopSensor1
-        ObjectType: 3
-        guid: 5f4ec9fd0f0bf94f9f8810677425552a
-      Path: Events\Default Work Unit\StopSensor1
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: StopSensor2
-      guid: 9245f9da7d06f545adc840cabb981b9a
-      id: 4214593051
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 41bb3788c36f5b4185dd91771863ad97
-      - ElementName: StopSensor2
-        ObjectType: 3
-        guid: 9245f9da7d06f545adc840cabb981b9a
-      Path: Events\Default Work Unit\StopSensor2
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: StopSensor3
-      guid: 8547523e68109d43ac988ecd53a2509b
-      id: 4214593050
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 41bb3788c36f5b4185dd91771863ad97
-      - ElementName: StopSensor3
-        ObjectType: 3
-        guid: 8547523e68109d43ac988ecd53a2509b
-      Path: Events\Default Work Unit\StopSensor3
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
     - name: Transition
       guid: ba5921ffe5a7834b9357d0ec8f81668c
       id: 1865857008
@@ -515,23 +464,6 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
-    - name: Transition_01
-      guid: b4a25c0724654c4e90acae503edae170
-      id: 2728638438
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 41bb3788c36f5b4185dd91771863ad97
-      - ElementName: Transition_01
-        ObjectType: 3
-        guid: b4a25c0724654c4e90acae503edae170
-      Path: Events\Default Work Unit\Transition_01
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
     - name: VoicesHeadset
       guid: cfd094928f809b4785ba82b381531b99
       id: 3107780790
@@ -561,7 +493,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 98ed3e78d9387545be3b51ab635cb706
     GuidInternal: 
-    m_lastTime: -8584598976776649354
+    m_lastTime: -8584596932188751090
     List:
     - name: activationStatus
       guid: 63137a8c4b67f941b0923e3c9f25b869
@@ -662,8 +594,8 @@ MonoBehaviour:
     m_lastTime: -8584633644249319236
     List: []
   ExpandedFileSystemItemIds: 0200000003000000170000001800000019000000
-  ExpandedWaapiItemIds: 1800000019000000
+  ExpandedWaapiItemIds: 0200000003000000170000001800000019000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
-  currentDataSource: 1
+  currentDataSource: 0
   CurrentPluginConfig: 
