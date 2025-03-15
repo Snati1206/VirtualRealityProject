@@ -5,8 +5,8 @@
 			<ChildrenList>
 				<GameParameter Name="sensor1" ID="{8A0125EA-B17C-4A07-A2AA-F4E92A932029}">
 					<PropertyList>
-						<Property Name="FilterTimeDown" Type="Real64" Value="12"/>
-						<Property Name="FilterTimeUp" Type="Real64" Value="19"/>
+						<Property Name="FilterTimeDown" Type="Real64" Value="15"/>
+						<Property Name="FilterTimeUp" Type="Real64" Value="15"/>
 						<Property Name="InitialValue" Type="Real64" Value="0"/>
 						<Property Name="SlewRateDown" Type="Real64" Value="40"/>
 						<Property Name="SlewRateUp" Type="Real64" Value="93"/>
@@ -14,8 +14,8 @@
 				</GameParameter>
 				<GameParameter Name="sensor2" ID="{64F8FD5A-7F09-4772-A48A-3629D18ECA60}">
 					<PropertyList>
-						<Property Name="FilterTimeDown" Type="Real64" Value="12"/>
-						<Property Name="FilterTimeUp" Type="Real64" Value="19"/>
+						<Property Name="FilterTimeDown" Type="Real64" Value="15"/>
+						<Property Name="FilterTimeUp" Type="Real64" Value="15"/>
 						<Property Name="InitialValue" Type="Real64" Value="0"/>
 						<Property Name="SlewRateDown" Type="Real64" Value="40"/>
 						<Property Name="SlewRateUp" Type="Real64" Value="93"/>
@@ -23,9 +23,10 @@
 				</GameParameter>
 				<GameParameter Name="sensor3" ID="{050AB711-2670-4DC2-B704-99F8F851564C}">
 					<PropertyList>
-						<Property Name="FilterTimeDown" Type="Real64" Value="12"/>
-						<Property Name="FilterTimeUp" Type="Real64" Value="19"/>
+						<Property Name="FilterTimeDown" Type="Real64" Value="15"/>
+						<Property Name="FilterTimeUp" Type="Real64" Value="15"/>
 						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="RTPCRamping" Type="int16" Value="2"/>
 						<Property Name="SlewRateDown" Type="Real64" Value="40"/>
 						<Property Name="SlewRateUp" Type="Real64" Value="93"/>
 					</PropertyList>

@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{45D8302B-19E7-418B-B7D2-CDAC15D9EA71}",
     "Language": "SFX",
-    "Hash": "{8AC1A201-FA57-D4EF-8AE5-A9163563DCC1}",
+    "Hash": "{951384BC-251D-629B-8AD7-00178C1FF0FB}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -133,7 +133,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "sfx_alarm.wav",
-      "CachePath": "9C/{9CFDB1CA-29B6-8585-75E8-4E3C647EDEA5}.wem"
+      "CachePath": "73/{7346ABD1-63E0-7999-95C0-2410F8716DD6}.wem"
      },
      {
       "Id": "397949216",
@@ -142,22 +142,6 @@
       "Location": "Memory",
       "ShortName": "amb_bird_3.wav",
       "CachePath": "8F/{8F88D968-A0E1-9137-813C-CB6571FE47BE}.wem"
-     },
-     {
-      "Id": "406643427",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "gaita-004.wav",
-      "CachePath": "20/{202DCCAF-6E12-F43E-9E61-D7AE45F66AF2}.wem"
-     },
-     {
-      "Id": "409873660",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "gaita-002.wav",
-      "CachePath": "3E/{3E2BB8B4-87B6-AAD8-B25D-1A8858FD7F2A}.wem"
      },
      {
       "Id": "426481905",
@@ -176,14 +160,6 @@
       "CachePath": "7E/{7EB47739-81C5-160D-E56F-53DC39172A94}.wem"
      },
      {
-      "Id": "496289263",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "gaita-003.wav",
-      "CachePath": "3F/{3F25337D-2E2B-6E41-7179-4D9CE393A394}.wem"
-     },
-     {
       "Id": "516061011",
       "Language": "SFX",
       "Streaming": "false",
@@ -197,7 +173,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "sfx_powerup_loaded_hit.wav",
-      "CachePath": "0F/{0F7E5887-E398-BE26-A8BF-0D8AD3A401FC}.wem"
+      "CachePath": "8E/{8E4BE767-B60A-8613-F329-B0A487ADC2B7}.wem"
      },
      {
       "Id": "541488690",
@@ -280,14 +256,6 @@
       "CachePath": "32/{32459F15-36FC-1A58-44E7-A585B00AD080}.wem"
      },
      {
-      "Id": "888046109",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "gaita-001.wav",
-      "CachePath": "D8/{D8225CD0-1815-51D5-4BD1-2F5B2F75E628}.wem"
-     },
-     {
       "Id": "958267533",
       "Language": "SFX",
       "Streaming": "false",
@@ -318,7 +286,7 @@
       "Location": "Loose",
       "ShortName": "amb_pad_guitar.wav",
       "Path": "Media/1006396274.wem",
-      "CachePath": "5B/{5B10E45C-4C6F-EC89-8848-8F6BCC13C1FE}.wem"
+      "CachePath": "DD/{DD8053F3-604C-23E9-8E82-7E99931D53DC}.wem"
      },
      {
       "Id": "1014557919",
@@ -356,6 +324,14 @@
     "Plugins": {
      "Custom": [
       {
+       "Id": "19479934",
+       "Name": "Three_Voices (Custom)",
+       "ObjectPath": "\\Actor-Mixer Hierarchy\\Default Work Unit\\sfx\\whispers\\[Effect Slot [0]: (Harmonizer)]\\Three_Voices (Custom)",
+       "GUID": "{1671EDCD-C196-41BE-87F4-B7EAB3A34A4F}",
+       "LibName": "Wwise Harmonizer",
+       "LibId": "9043971"
+      },
+      {
        "Id": "175393484",
        "Name": "Three_Voices (Custom)",
        "ObjectPath": "\\Actor-Mixer Hierarchy\\Default Work Unit\\amb\\PadsSensor3\\[Effect Slot [0]: (Harmonizer)]\\Three_Voices (Custom)",
@@ -364,12 +340,28 @@
        "LibId": "9043971"
       },
       {
-       "Id": "886273627",
-       "Name": "Have_U_Ever_Been_Outside (Custom)",
-       "ObjectPath": "\\Actor-Mixer Hierarchy\\Default Work Unit\\amb\\Ambiance\\[Effect Slot [0]: (RoomVerb)]\\Have_U_Ever_Been_Outside (Custom)",
-       "GUID": "{C694A6B9-785C-413A-8770-B28F49125C89}",
-       "LibName": "Wwise RoomVerb",
-       "LibId": "7733251"
+       "Id": "192090959",
+       "Name": "Fast_LF_Tremolo (Custom)",
+       "ObjectPath": "\\Actor-Mixer Hierarchy\\Default Work Unit\\sfx\\powerUp2\\sfx_powerup_perc\\[Effect Slot [0]: (Tremolo)]\\Fast_LF_Tremolo (Custom)",
+       "GUID": "{350CBE82-2994-4181-9BBA-9F6ACC6E1CD2}",
+       "LibName": "Wwise Tremolo",
+       "LibId": "8585219"
+      },
+      {
+       "Id": "294848710",
+       "Name": "Guitar Distortion (Custom)",
+       "ObjectPath": "\\Actor-Mixer Hierarchy\\Default Work Unit\\sfx\\powerUp1\\sfx_powerup_perc\\[Effect Slot [0]: (Guitar Distortion)]\\Guitar Distortion (Custom)",
+       "GUID": "{35834513-C14D-4D92-AB90-78313CE4EB2E}",
+       "LibName": "Wwise Guitar Distortion",
+       "LibId": "8257539"
+      },
+      {
+       "Id": "687367586",
+       "Name": "Fear_no_Evil (Custom)",
+       "ObjectPath": "\\Actor-Mixer Hierarchy\\Default Work Unit\\sfx\\powerUp2\\sfx_powerup_perc\\[Effect Slot [1]: (Harmonizer)]\\Fear_no_Evil (Custom)",
+       "GUID": "{5B00CCCA-3D1D-4409-AFF7-65C25550D7B9}",
+       "LibName": "Wwise Harmonizer",
+       "LibId": "9043971"
       }
      ]
     },
@@ -380,11 +372,32 @@
       "ObjectPath": "\\Events\\Default Work Unit\\Alarm",
       "GUID": "{471925B2-6CB3-45BC-8184-B20853065D36}",
       "DurationType": "OneShot",
-      "DurationMin": "5.92",
-      "DurationMax": "5.92",
+      "DurationMin": "52.61749",
+      "DurationMax": "83.04399",
       "MediaRefs": [
        {
+        "Id": "138764880"
+       },
+       {
+        "Id": "175958417"
+       },
+       {
+        "Id": "268901580"
+       },
+       {
+        "Id": "288241684"
+       },
+       {
         "Id": "346838675"
+       },
+       {
+        "Id": "608934966"
+       },
+       {
+        "Id": "979599441"
+       },
+       {
+        "Id": "1006396274"
        }
       ],
       "AuxBusRefs": [
@@ -440,13 +453,6 @@
         "Id": "1073305620"
        }
       ],
-      "PluginRefs": {
-       "Custom": [
-        {
-         "Id": "886273627"
-        }
-       ]
-      },
       "AuxBusRefs": [
        {
         "Id": "348963605",
@@ -503,13 +509,6 @@
         "Id": "1073305620"
        }
       ],
-      "PluginRefs": {
-       "Custom": [
-        {
-         "Id": "886273627"
-        }
-       ]
-      },
       "AuxBusRefs": [
        {
         "Id": "348963605",
@@ -572,7 +571,7 @@
       "PluginRefs": {
        "Custom": [
         {
-         "Id": "886273627"
+         "Id": "19479934"
         }
        ]
       },
@@ -596,64 +595,7 @@
       "Name": "Music",
       "ObjectPath": "\\Events\\Default Work Unit\\Music",
       "GUID": "{6C2B9CC9-47BA-48A0-A03D-F4C61BD281D3}",
-      "DurationType": "Infinite",
-      "MediaRefs": [
-       {
-        "Id": "187480084"
-       },
-       {
-        "Id": "189253345"
-       },
-       {
-        "Id": "211319641"
-       },
-       {
-        "Id": "315644122"
-       },
-       {
-        "Id": "397949216"
-       },
-       {
-        "Id": "406643427"
-       },
-       {
-        "Id": "409873660"
-       },
-       {
-        "Id": "426481905"
-       },
-       {
-        "Id": "441835573"
-       },
-       {
-        "Id": "496289263"
-       },
-       {
-        "Id": "541488690"
-       },
-       {
-        "Id": "704704544"
-       },
-       {
-        "Id": "868510851"
-       },
-       {
-        "Id": "888046109"
-       },
-       {
-        "Id": "958267533"
-       },
-       {
-        "Id": "1037117347"
-       }
-      ],
-      "PluginRefs": {
-       "Custom": [
-        {
-         "Id": "175393484"
-        }
-       ]
-      }
+      "DurationType": "Infinite"
      },
      {
       "Id": "4017455162",
@@ -711,7 +653,13 @@
       "PluginRefs": {
        "Custom": [
         {
-         "Id": "886273627"
+         "Id": "192090959"
+        },
+        {
+         "Id": "294848710"
+        },
+        {
+         "Id": "687367586"
         }
        ]
       },
@@ -771,6 +719,13 @@
         "Id": "979599441"
        }
       ],
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "294848710"
+        }
+       ]
+      },
       "AuxBusRefs": [
        {
         "Id": "348963605",
@@ -791,7 +746,9 @@
       "Name": "Sensor2Activated",
       "ObjectPath": "\\Events\\Default Work Unit\\Sensor2Activated",
       "GUID": "{ED6E7F52-B1C5-4517-BC04-1B1E5BC3FBBF}",
-      "DurationType": "Infinite",
+      "DurationType": "OneShot",
+      "DurationMin": "13.112207",
+      "DurationMax": "23.703125",
       "MediaRefs": [
        {
         "Id": "516061011"
@@ -812,6 +769,16 @@
         "Id": "1006396274"
        }
       ],
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "192090959"
+        },
+        {
+         "Id": "687367586"
+        }
+       ]
+      },
       "AuxBusRefs": [
        {
         "Id": "348963605",
@@ -925,6 +892,13 @@
         "Id": "652838272"
        }
       ],
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "294848710"
+        }
+       ]
+      },
       "AuxBusRefs": [
        {
         "Id": "348963605",
@@ -948,6 +922,9 @@
       "DurationType": "Infinite",
       "MediaRefs": [
        {
+        "Id": "346838675"
+       },
+       {
         "Id": "516061011"
        },
        {
@@ -957,6 +934,16 @@
         "Id": "652838272"
        }
       ],
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "192090959"
+        },
+        {
+         "Id": "687367586"
+        }
+       ]
+      },
       "AuxBusRefs": [
        {
         "Id": "348963605",
@@ -1015,10 +1002,49 @@
       "DurationMax": "0",
       "MediaRefs": [
        {
-        "Id": "526174884"
+        "Id": "56029158"
        },
        {
-        "Id": "849966493"
+        "Id": "516061011"
+       },
+       {
+        "Id": "623889076"
+       },
+       {
+        "Id": "626024965"
+       },
+       {
+        "Id": "652838272"
+       }
+      ],
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "19479934"
+        },
+        {
+         "Id": "192090959"
+        },
+        {
+         "Id": "294848710"
+        },
+        {
+         "Id": "687367586"
+        }
+       ]
+      },
+      "AuxBusRefs": [
+       {
+        "Id": "348963605",
+        "Name": "Reverb",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Reverb",
+        "GUID": "{568A8176-882E-40FC-A572-D3004C78AC10}"
+       },
+       {
+        "Id": "696369880",
+        "Name": "LFE",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\LFE",
+        "GUID": "{7A99EF7A-6B7D-43B7-B065-79464E51DCAB}"
        }
       ]
      },
@@ -1032,7 +1058,14 @@
        {
         "Id": "56029158"
        }
-      ]
+      ],
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "19479934"
+        }
+       ]
+      }
      }
     ],
     "GameParameters": [
@@ -1063,6 +1096,6 @@
     ]
    }
   ],
-  "FileHash": "{12985BD6-49F5-6B4B-4B0C-DB927372BA81}"
+  "FileHash": "{7F5983F8-FB2B-6030-E84D-DF3B0C4B9389}"
  }
 }

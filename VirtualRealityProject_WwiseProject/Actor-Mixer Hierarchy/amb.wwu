@@ -29,6 +29,12 @@
 								<Property Name="EnableAttenuation" Type="bool" Value="False"/>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 								<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
+								<Property Name="OverrideEffect" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>-710</Value>
+									</ValueList>
+								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
 										<Value>-2</Value>
@@ -119,7 +125,7 @@
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-6</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -268,6 +274,50 @@
 												</Point>
 											</PointList>
 										</Path2D>
+										<Path2D Name="amb_wind_Path_02" ID="{0C43D2E8-9466-450C-8B5B-7914F4E32B4E}">
+											<PointList>
+												<Point>
+													<XPos>69.82456</XPos>
+													<YPos>65.41156</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+												<Point>
+													<XPos>-59.64912</XPos>
+													<YPos>-57.61821</YPos>
+													<Flags>0</Flags>
+													<Time>5000</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="amb_wind_Path_03" ID="{D6433022-C6B8-4566-93DC-95AAE83744A7}">
+											<PointList>
+												<Point>
+													<XPos>0</XPos>
+													<YPos>50</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+												<Point>
+													<XPos>78.24561</XPos>
+													<YPos>-68.47636</YPos>
+													<Flags>0</Flags>
+													<Time>1666</Time>
+												</Point>
+												<Point>
+													<XPos>-22.8070175438597</XPos>
+													<YPos>-58.6690017513135</YPos>
+													<Flags>0</Flags>
+													<Time>3333</Time>
+												</Point>
+												<Point>
+													<XPos>-58.9473684210526</XPos>
+													<YPos>17.338003502627</YPos>
+													<Flags>0</Flags>
+													<Time>5000</Time>
+												</Point>
+											</PointList>
+										</Path2D>
 									</ChildrenList>
 								</Position>
 							</PositioningInfo>
@@ -328,11 +378,6 @@
 								<Property Name="UserAuxSendVolume0" Type="Real64">
 									<ValueList>
 										<Value>12</Value>
-									</ValueList>
-								</Property>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-7</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -552,14 +597,14 @@
 													<Time>0</Time>
 												</Point>
 												<Point>
-													<XPos>-3.50877</XPos>
-													<YPos>0.17513</YPos>
+													<XPos>-85.96491</XPos>
+													<YPos>-52.71454</YPos>
 													<Flags>0</Flags>
 													<Time>5000</Time>
 												</Point>
 												<Point>
-													<XPos>-2.45614</XPos>
-													<YPos>76.88266</YPos>
+													<XPos>68.07018</XPos>
+													<YPos>61.82136</YPos>
 													<Flags>0</Flags>
 													<Time>10000</Time>
 												</Point>
@@ -583,6 +628,7 @@
 							<PropertyList>
 								<Property Name="3DPosition" Type="int16" Value="2"/>
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="AttenuationDistanceScaling" Type="Real32" Value="1.2"/>
 								<Property Name="InitialDelay" Type="Real64">
 									<ValueList>
 										<Value>3</Value>
@@ -872,46 +918,6 @@
 					<PositioningInfo>
 						<Position Name="" ID="{7E20FE08-5F68-4628-B46F-CF0FC0AC08F3}"/>
 					</PositioningInfo>
-					<ObjectLists>
-						<ObjectList Name="Effects">
-							<Reference>
-								<Local>
-									<EffectSlot Name="" ID="{CD59363C-9720-481D-9954-DFE27A6C4ACF}" ShortID="105575407">
-										<ReferenceList>
-											<Reference Name="Effect">
-												<Custom CreatedFrom="{FE29AE8D-FD86-4652-A95D-68D32F5760EC}">
-													<Effect Name="Have_U_Ever_Been_Outside (Custom)" ID="{C694A6B9-785C-413A-8770-B28F49125C89}" ShortID="886273627" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
-														<PropertyList>
-															<Property Name="DecayTime" Type="Real32" Value="3.6"/>
-															<Property Name="Density" Type="Real32" Value="50"/>
-															<Property Name="Diffusion" Type="Real32" Value="67"/>
-															<Property Name="DryLevel" Type="Real32" Value="-0.3"/>
-															<Property Name="ERLevel" Type="Real32" Value="-19"/>
-															<Property Name="ERPattern" Type="int32" Value="28"/>
-															<Property Name="Filter1Freq" Type="Real32" Value="210"/>
-															<Property Name="Filter1Gain" Type="Real32" Value="1.5"/>
-															<Property Name="Filter2Freq" Type="Real32" Value="6830"/>
-															<Property Name="Filter2Gain" Type="Real32" Value="-7.5"/>
-															<Property Name="Filter2Q" Type="Real32" Value="0.65"/>
-															<Property Name="Filter3Freq" Type="Real32" Value="8440"/>
-															<Property Name="Filter3Gain" Type="Real32" Value="-4"/>
-															<Property Name="HFDamping" Type="Real32" Value="3.9"/>
-															<Property Name="LFELevel" Type="Real32" Value="-18.3"/>
-															<Property Name="PreDelay" Type="Real32" Value="122"/>
-															<Property Name="Quality" Type="int32" Value="12"/>
-															<Property Name="ReverbLevel" Type="Real32" Value="-19"/>
-															<Property Name="RoomSize" Type="Real32" Value="94"/>
-															<Property Name="StereoWidth" Type="Real32" Value="68"/>
-														</PropertyList>
-													</Effect>
-												</Custom>
-											</Reference>
-										</ReferenceList>
-									</EffectSlot>
-								</Local>
-							</Reference>
-						</ObjectList>
-					</ObjectLists>
 					<BlendTrackList>
 						<BlendTrack Name="Ambiance Calm" ID="{FC976730-1FC4-4E37-A473-3A5B4ED2047F}" ShortID="92811754">
 							<PropertyList>
@@ -2573,11 +2579,23 @@
 				</BlendContainer>
 				<Sound Name="PadsSensor2" ID="{DA48C7F3-C4EC-4CDA-8536-10E48CC6AAD6}" ShortID="976045426">
 					<PropertyList>
-						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="IsLoopingInfinite" Type="bool" Value="False"/>
 						<Property Name="IsStreamingEnabled" Type="bool">
 							<ValueList>
 								<Value>True</Value>
 							</ValueList>
+						</Property>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{E087C9FC-A814-4873-A2B7-86C27D43B47B}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Min" Type="Real64" Value="-1025"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
 						</Property>
 						<Property Name="UserAuxSendVolume0" Type="Real64">
 							<ValueList>
@@ -2586,7 +2604,7 @@
 						</Property>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-8</Value>
+								<Value>-3</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -2603,6 +2621,12 @@
 					</ReferenceList>
 					<ChildrenList>
 						<AudioFileSource Name="amb_pad_guitar" ID="{19848BF1-122C-4E40-A239-FB7622770E76}">
+							<PropertyList>
+								<Property Name="FadeInDuration" Type="Real64" Value="0.15805445776622"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimBegin" Type="Real64" Value="25.504071362414"/>
+								<Property Name="TrimEnd" Type="Real64" Value="38.6162790697674"/>
+							</PropertyList>
 							<Language>SFX</Language>
 							<AudioFile>amb_pad_guitar.wav</AudioFile>
 							<MediaIDList>

@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{69CBA4F1-F118-6618-08F3-A24B8C4775B5}",
+    "Hash": "{6F4EBDFB-B7F6-2C67-35C0-837104CDDD36}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -82,7 +82,7 @@
      {
       "Id": "79554116",
       "Name": "Music Master",
-      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Music Master",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master VR Bus\\VRHeadset\\Music Master",
       "GUID": "{F66273E3-DE47-4C98-ADDF-303E7792642A}"
      },
      {
@@ -213,6 +213,6 @@
     ]
    }
   ],
-  "FileHash": "{17FCE2BD-3E26-F6B8-BA9D-A777FDBB3690}"
+  "FileHash": "{AA50159E-9681-08EF-C67E-DE63A75A9F56}"
  }
 }

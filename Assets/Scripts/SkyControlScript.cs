@@ -1,3 +1,4 @@
+using System;
 using System.Runtime.CompilerServices;
 using Unity.Mathematics;
 using UnityEngine;
@@ -11,9 +12,9 @@ public class SkyControlScript : MonoBehaviour
     public Light mainLight;
     [SerializeField] float skySpeed = 0.1f;
 
-    [SerializeField] float skyLuminosity = 1.2f;
-    [SerializeField] float oscillateIntensity = 0.60f;
-    [SerializeField] float freqOscillation = 0.8f;
+    [SerializeField] float skyLuminosity = 0.2f;
+    [SerializeField] float oscillateIntensity = 0.3f;
+    [SerializeField] float freqOscillation = 0.2f;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -41,6 +42,16 @@ public class SkyControlScript : MonoBehaviour
     {
         if (skyMaterial != null && mainLight != null)
         {
+            if (EventCoroutine.alarm == true)
+            {
+                SkySpeed( Mathf.Lerp(skySpeed, 0.5f, Time.deltaTime*0.005f));
+                skyLuminosity = Mathf.Lerp(skyLuminosity, 15f, Time.deltaTime*0.0004f);
+            }
+            else
+            {
+                SkySpeed(Mathf.Lerp(skySpeed, 0.2f, Time.deltaTime*3f));
+                skyLuminosity = Mathf.Lerp(skyLuminosity, 0.2f, Time.deltaTime);
+            }
             SkyRotator(skyMaterial, skySpeed, mainLight);
             SkyLuminosity(skyMaterial, skyLuminosity);
         }
@@ -64,6 +75,12 @@ public class SkyControlScript : MonoBehaviour
         material.SetFloat("_Exposure", oscLuminosity);
         mainLight.intensity = oscLuminosity/5;
 //        Debug.Log(oscLuminosity);
+    }
+
+    public float SkySpeed(float speed)
+    {
+        skySpeed = speed;
+        return speed;
     }
 }
 

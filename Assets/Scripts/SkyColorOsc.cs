@@ -41,9 +41,9 @@ public class SkyColorOsc : MonoBehaviour
 
     void SkyColorChanger( Material material, float r, float g, float b, float a)
     {
-        float newRed = r; 
-        float newGreen = g;
-        float newBlue = b;
+        float newRed = r + XboxController.bButtonValue; 
+        float newGreen = g + XboxController.aButtonValue;
+        float newBlue = b + XboxController.xButtonValue;
         // Change the color of the skybox
         material.SetColor("_Tint", new Color(newRed/255f, newGreen/255f, newBlue/255f, a/255f));
         mainLight.color = new Color(newRed/255f, newGreen/255f, newBlue/255f, a/255f);

@@ -1,5 +1,5 @@
 Audio Bus	ID	Name			Wwise Object Path	Notes
-	79554116	Music Master			\Default Work Unit\Master Audio Bus\Music Master	
+	79554116	Music Master			\Default Work Unit\Master VR Bus\VRHeadset\Music Master	
 	896672153	Ambiance Master			\Default Work Unit\Master Audio Bus\Ambiance Master	
 	1833644823	Master VR Bus			\Default Work Unit\Master VR Bus	
 	2355230746	Auxiliar Binaural Bus			\Default Work Unit\Auxiliar Binaural Bus	

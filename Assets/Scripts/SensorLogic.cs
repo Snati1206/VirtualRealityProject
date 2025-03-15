@@ -24,9 +24,9 @@ public class SensorLogic : MonoBehaviour
     void Update()
     {
         //Calling the SensorActivated function for each sensor that sends data between 10 and 15 cm for 5 seconds
-        SensorActivated(0, OSCManager.sensor1, 3f, 10f, 3f);
-        SensorActivated(1, OSCManager.sensor2, 3f, 10f, 3f);
-        SensorActivated(2, OSCManager.sensor3, 3f, 10f, 3f);
+        SensorActivated(0, OSCManager.sensor1, 0f, 5f, 3f);
+        SensorActivated(1, OSCManager.sensor2, 0f, 5f, 3f);
+        SensorActivated(2, OSCManager.sensor3, 0f, 5f, 3f);
 
         //Checking if a painting has been activated to stop the sensor loop in wwise
     //    DeactivatePortal(0);
@@ -68,31 +68,6 @@ public class SensorLogic : MonoBehaviour
         return;
     }
 
-    // void SensorActivatedAlt(int index, float sensor, float minDistance, float time)
-    // {
-    //     if (sensor <= minDistance)
-    //     {
-    //         currentTime[index] += Time.deltaTime;
-    //         if (currentTime[index] >= time)
-    //         {
-    //             isPaintingOn[index] = true;
-    //             if (!eventTriggered[index])
-    //             {
-    //                 AkUnitySoundEngine.PostEvent(wwisePaintsOn[index], gameObject);
-                    
-    //                 eventTriggered[index] = true;
-    //                 currentTime[index] = 0f;
-    //                 AkUnitySoundEngine.PostEvent(wwisePaintsOff[index], gameObject);
-
-    //             }
-    //         }
-    //     }
-    //     else
-    //     {
-    //         currentTime[index] = 0f;
-    //     }
-    //     return;
-    // }
     
     //Method to deactivate a portal after it has been activated
     public void DeactivatePortal(int index)

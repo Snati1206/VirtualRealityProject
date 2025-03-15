@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 4ec30404cd03cc49bfe9a6396411430e
     GuidInternal: 
-    m_lastTime: -8584596906578307770
+    m_lastTime: -8584595867696465356
     List:
     - name: Ambiance Master
       guid: f90dcfcccc240046b821e19884b16803
@@ -146,10 +146,14 @@ MonoBehaviour:
       - ElementName: Master VR Bus
         ObjectType: 2
         guid: df8e088515341748bb681ba901f2bd37
+      - ElementName: VRHeadset
+        ObjectType: 2
+        guid: 3641f539b92fee4b88684e6fde31586a
       - ElementName: Music Master
         ObjectType: 2
         guid: e37362f647de984caddf303e7792642a
-      Path: Master-Mixer Hierarchy\Default Work Unit\Master VR Bus\Music Master
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master VR Bus\VRHeadset\Music
+        Master
     - name: Reverb
       guid: 76818a562e88fc40a572d3004c78ac10
       id: 348963605
@@ -241,7 +245,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 41bb3788c36f5b4185dd91771863ad97
     GuidInternal: 
-    m_lastTime: -8584596932188836209
+    m_lastTime: -8584595867389492425
     List:
     - name: Alarm
       guid: b2251947b36cbc458184b20853065d36
@@ -258,8 +262,8 @@ MonoBehaviour:
         guid: b2251947b36cbc458184b20853065d36
       Path: Events\Default Work Unit\Alarm
       maxAttenuation: 0
-      maxDuration: 5.92
-      minDuration: 5.92
+      maxDuration: 83.04399
+      minDuration: 52.61749
     - name: AmbianceOff
       guid: ea7de7047924e7458022fb1161cd3052
       id: 2011814100
@@ -377,8 +381,8 @@ MonoBehaviour:
         guid: 527f6eedc5b11745bc041b1e5bc3fbbf
       Path: Events\Default Work Unit\Sensor2Activated
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: 23.703125
+      minDuration: 13.112207
     - name: Sensor3Activated
       guid: ef57a9885c9de24380d09528fde8c673
       id: 3742079315
@@ -493,7 +497,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 98ed3e78d9387545be3b51ab635cb706
     GuidInternal: 
-    m_lastTime: -8584596932188751090
+    m_lastTime: -8584595885155625203
     List:
     - name: activationStatus
       guid: 63137a8c4b67f941b0923e3c9f25b869
@@ -597,5 +601,5 @@ MonoBehaviour:
   ExpandedWaapiItemIds: 0200000003000000170000001800000019000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
-  currentDataSource: 0
+  currentDataSource: 1
   CurrentPluginConfig: 

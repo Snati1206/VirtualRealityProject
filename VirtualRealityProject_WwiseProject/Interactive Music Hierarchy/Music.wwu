@@ -4,6 +4,10 @@
 		<WorkUnit Name="Music" ID="{3969133B-495F-4C6C-B046-C1C10473CEDB}" OwnerID="{EF201BAD-857B-4AA6-993A-B9548624111E}" PersistMode="Nested">
 			<ChildrenList>
 				<MusicPlaylistContainer Name="New Music Playlist Container" ID="{FE73E15A-8316-46A9-A872-581936CEA4F3}" ShortID="498351983">
+					<PropertyList>
+						<Property Name="3DPosition" Type="int16" Value="2"/>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02AB0E9E-DC49-4D18-8206-2301BDC73EC0}"/>
@@ -49,7 +53,7 @@
 					<ChildrenList>
 						<MusicSegment Name="Gaitas" ID="{8FC53C7D-F2AD-4C67-B55C-A3A795EA06FD}" ShortID="804747282">
 							<PropertyList>
-								<Property Name="EndPosition" Type="Real64" Value="5106.3829787234"/>
+								<Property Name="EndPosition" Type="Real64" Value="20425.3958333333"/>
 								<Property Name="Tempo" Type="Real64" Value="94"/>
 							</PropertyList>
 							<ReferenceList>
@@ -60,216 +64,6 @@
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
 								</Reference>
 							</ReferenceList>
-							<ChildrenList>
-								<MusicTrack Name="gaita-001" ID="{00115F91-4A79-43BF-9654-3273F90D9CE6}" ShortID="181259191">
-									<ReferenceList>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
-										</Reference>
-										<Reference Name="TransitionRoot">
-											<Custom>
-												<MusicTransition Name="Root" ID="{D8475C74-3DD3-4B1D-BE38-46448165868F}">
-													<PropertyList>
-														<Property Name="IsFolder" Type="bool" Value="True"/>
-													</PropertyList>
-													<TransitionInfo/>
-												</MusicTransition>
-											</Custom>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="gaita-001" ID="{EF81B1E4-798D-4AB3-9A85-CEDDDB0C2F0A}">
-											<Language>SFX</Language>
-											<AudioFile>gaita-001.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="888046109"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists>
-										<ObjectList Name="Sequences">
-											<Reference>
-												<Local>
-													<MusicTrackSequence Name="" ID="{2D21AA0C-F40F-4712-A1D3-05D6C553A51B}">
-														<ObjectLists>
-															<ObjectList Name="Clips">
-																<Reference>
-																	<Local>
-																		<MusicClip Name="gaita-001" ID="{EBFC5568-5918-4663-A2CC-5EB609F6F952}">
-																			<PropertyList>
-																				<Property Name="EndTrimOffset" Type="Real64" Value="5106.375"/>
-																				<Property Name="FadeInMode" Type="int16" Value="0"/>
-																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
-																			</PropertyList>
-																			<AudioSourceRef Name="gaita-001" ID="{EF81B1E4-798D-4AB3-9A85-CEDDDB0C2F0A}"/>
-																		</MusicClip>
-																	</Local>
-																</Reference>
-															</ObjectList>
-														</ObjectLists>
-													</MusicTrackSequence>
-												</Local>
-											</Reference>
-										</ObjectList>
-									</ObjectLists>
-								</MusicTrack>
-								<MusicTrack Name="gaita-002" ID="{AD34AC7E-01CC-43B9-BB70-03BDFD01F7F7}" ShortID="815371087">
-									<ReferenceList>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
-										</Reference>
-										<Reference Name="TransitionRoot">
-											<Custom>
-												<MusicTransition Name="Root" ID="{E923716A-CBC3-4782-8EE2-9041770D5229}">
-													<PropertyList>
-														<Property Name="IsFolder" Type="bool" Value="True"/>
-													</PropertyList>
-													<TransitionInfo/>
-												</MusicTransition>
-											</Custom>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="gaita-002" ID="{551D85C0-503D-4DBA-8CC6-36AE1E4D440E}">
-											<Language>SFX</Language>
-											<AudioFile>gaita-002.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="409873660"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists>
-										<ObjectList Name="Sequences">
-											<Reference>
-												<Local>
-													<MusicTrackSequence Name="" ID="{C25F5CEA-FE71-48B4-85E7-6CB96E86A646}">
-														<ObjectLists>
-															<ObjectList Name="Clips">
-																<Reference>
-																	<Local>
-																		<MusicClip Name="gaita-002" ID="{32A33450-06B5-4B96-9867-3DAEB1ADF1A0}">
-																			<PropertyList>
-																				<Property Name="EndTrimOffset" Type="Real64" Value="5106.375"/>
-																				<Property Name="FadeInMode" Type="int16" Value="0"/>
-																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
-																			</PropertyList>
-																			<AudioSourceRef Name="gaita-002" ID="{551D85C0-503D-4DBA-8CC6-36AE1E4D440E}"/>
-																		</MusicClip>
-																	</Local>
-																</Reference>
-															</ObjectList>
-														</ObjectLists>
-													</MusicTrackSequence>
-												</Local>
-											</Reference>
-										</ObjectList>
-									</ObjectLists>
-								</MusicTrack>
-								<MusicTrack Name="gaita-003" ID="{713C4230-5CC3-40DE-9225-748A766DF98F}" ShortID="854506164">
-									<ReferenceList>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
-										</Reference>
-										<Reference Name="TransitionRoot">
-											<Custom>
-												<MusicTransition Name="Root" ID="{006ACCF0-D5D8-4326-890C-6A407F954599}">
-													<PropertyList>
-														<Property Name="IsFolder" Type="bool" Value="True"/>
-													</PropertyList>
-													<TransitionInfo/>
-												</MusicTransition>
-											</Custom>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="gaita-003" ID="{99CE077F-7163-4C99-93AC-2F628B9E07C4}">
-											<Language>SFX</Language>
-											<AudioFile>gaita-003.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="496289263"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists>
-										<ObjectList Name="Sequences">
-											<Reference>
-												<Local>
-													<MusicTrackSequence Name="" ID="{0A4AE0CD-A12B-4C30-BE11-18F3A193E4F3}">
-														<ObjectLists>
-															<ObjectList Name="Clips">
-																<Reference>
-																	<Local>
-																		<MusicClip Name="gaita-003" ID="{98081FE5-AB3C-4406-8AA6-9A2F10FE8134}">
-																			<PropertyList>
-																				<Property Name="EndTrimOffset" Type="Real64" Value="5106.375"/>
-																				<Property Name="FadeInMode" Type="int16" Value="0"/>
-																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
-																			</PropertyList>
-																			<AudioSourceRef Name="gaita-003" ID="{99CE077F-7163-4C99-93AC-2F628B9E07C4}"/>
-																		</MusicClip>
-																	</Local>
-																</Reference>
-															</ObjectList>
-														</ObjectLists>
-													</MusicTrackSequence>
-												</Local>
-											</Reference>
-										</ObjectList>
-									</ObjectLists>
-								</MusicTrack>
-								<MusicTrack Name="gaita-004" ID="{CFC7779A-C91C-47AB-89A1-E0F8544C40A7}" ShortID="259378124">
-									<ReferenceList>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0404C34E-03CD-49CC-BFE9-A6396411430E}"/>
-										</Reference>
-										<Reference Name="TransitionRoot">
-											<Custom>
-												<MusicTransition Name="Root" ID="{A3DBDE66-9362-4FD2-AA95-6456C950E72F}">
-													<PropertyList>
-														<Property Name="IsFolder" Type="bool" Value="True"/>
-													</PropertyList>
-													<TransitionInfo/>
-												</MusicTransition>
-											</Custom>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="gaita-004" ID="{8BB56ABA-A168-46D2-A114-B1064AF48DDB}">
-											<Language>SFX</Language>
-											<AudioFile>gaita-004.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="406643427"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists>
-										<ObjectList Name="Sequences">
-											<Reference>
-												<Local>
-													<MusicTrackSequence Name="" ID="{42DE69D0-F54E-4A08-92FE-6DC718CA33C0}">
-														<ObjectLists>
-															<ObjectList Name="Clips">
-																<Reference>
-																	<Local>
-																		<MusicClip Name="gaita-004" ID="{FB05F10A-067E-4B8B-B644-3FB14353A740}">
-																			<PropertyList>
-																				<Property Name="EndTrimOffset" Type="Real64" Value="5106.375"/>
-																				<Property Name="FadeInMode" Type="int16" Value="0"/>
-																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
-																			</PropertyList>
-																			<AudioSourceRef Name="gaita-004" ID="{8BB56ABA-A168-46D2-A114-B1064AF48DDB}"/>
-																		</MusicClip>
-																	</Local>
-																</Reference>
-															</ObjectList>
-														</ObjectLists>
-													</MusicTrackSequence>
-												</Local>
-											</Reference>
-										</ObjectList>
-									</ObjectLists>
-								</MusicTrack>
-							</ChildrenList>
 							<ObjectLists>
 								<ObjectList Name="Cues">
 									<Reference>
@@ -291,6 +85,93 @@
 							</ObjectLists>
 						</MusicSegment>
 					</ChildrenList>
+					<PositioningInfo>
+						<Position Name="" ID="{804EC354-8584-4394-807C-AA0EA5D24A72}">
+							<PropertyList>
+								<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+							</PropertyList>
+							<ChildrenList>
+								<Path2D Name="New Music Playlist Container_Path" ID="{C6946A17-08EE-48BB-935F-B4A7C8EB447C}">
+									<PropertyList>
+										<Property Name="Duration" Type="Uint32" Value="10000"/>
+									</PropertyList>
+									<PointList>
+										<Point>
+											<XPos>-1.40351</XPos>
+											<YPos>65.0613</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+										<Point>
+											<XPos>-67.719298245614</XPos>
+											<YPos>25.7443082311734</YPos>
+											<Flags>0</Flags>
+											<Time>1428</Time>
+										</Point>
+										<Point>
+											<XPos>-77.8947368421053</XPos>
+											<YPos>-39.4045534150613</YPos>
+											<Flags>0</Flags>
+											<Time>2857</Time>
+										</Point>
+										<Point>
+											<XPos>-22.8070175438597</XPos>
+											<YPos>-71.6287215411559</YPos>
+											<Flags>0</Flags>
+											<Time>4285</Time>
+										</Point>
+										<Point>
+											<XPos>61.0526315789474</XPos>
+											<YPos>-56.5674255691769</YPos>
+											<Flags>0</Flags>
+											<Time>5714</Time>
+										</Point>
+										<Point>
+											<XPos>83.5087719298245</XPos>
+											<YPos>44.6584938704028</YPos>
+											<Flags>0</Flags>
+											<Time>7142</Time>
+										</Point>
+										<Point>
+											<XPos>29.8245614035088</XPos>
+											<YPos>76.8826619964974</YPos>
+											<Flags>0</Flags>
+											<Time>8571</Time>
+										</Point>
+										<Point>
+											<XPos>-1.75438596491229</XPos>
+											<YPos>68.8266199649737</YPos>
+											<Flags>0</Flags>
+											<Time>10000</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+								<Path2D Name="New Music Playlist Container_Path_01" ID="{8F54524F-BF74-49E5-AEBB-0F20B27B2E08}">
+									<PointList>
+										<Point>
+											<XPos>0</XPos>
+											<YPos>50</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+										<Point>
+											<XPos>-83.5087719298246</XPos>
+											<YPos>-79.3345008756567</YPos>
+											<Flags>0</Flags>
+											<Time>2500</Time>
+										</Point>
+										<Point>
+											<XPos>69.8245614035088</XPos>
+											<YPos>-72.6795096322242</YPos>
+											<Flags>0</Flags>
+											<Time>5000</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+							</ChildrenList>
+						</Position>
+					</PositioningInfo>
 				</MusicPlaylistContainer>
 			</ChildrenList>
 		</WorkUnit>

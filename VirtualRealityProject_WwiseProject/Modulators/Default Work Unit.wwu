@@ -50,7 +50,7 @@
 															</Point>
 															<Point>
 																<XPos>100</XPos>
-																<YPos>-0</YPos>
+																<YPos>0</YPos>
 																<Flags>37</Flags>
 															</Point>
 														</PointList>
@@ -112,6 +112,43 @@
 							</Reference>
 						</ObjectList>
 					</ObjectLists>
+				</ModulatorLfo>
+				<ModulatorEnvelope Name="New Modulator Envelope" ID="{AFC84A3D-17E7-42EF-9E90-9EE6EE8C2D91}" ShortID="959359450">
+					<PropertyList>
+						<Property Name="EnvelopeAttackCurve" Type="Real64" Value="65"/>
+						<Property Name="EnvelopeAttackTime" Type="Real64" Value="0.255">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{0FF3E723-FBF6-4248-9425-16510B4A14B2}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Min" Type="Real64" Value="-1"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="EnvelopeDecayTime" Type="Real64" Value="0.502"/>
+						<Property Name="EnvelopeSustainLevel" Type="Real64" Value="72.9">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{0BC514C1-1C34-432B-BB66-4A6666CB4167}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="18"/>
+											<Property Name="Min" Type="Real64" Value="-19"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
+				</ModulatorEnvelope>
+				<ModulatorLfo Name="New Modulator LFO_02" ID="{D12D24C1-C584-4EAC-ABE7-8FA2CD7C50B3}" ShortID="761625526">
+					<PropertyList>
+						<Property Name="LfoFrequency" Type="Real64" Value="6.8"/>
+						<Property Name="LfoWaveform" Type="int32" Value="2"/>
+					</PropertyList>
 				</ModulatorLfo>
 			</ChildrenList>
 		</WorkUnit>

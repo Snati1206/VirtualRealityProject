@@ -17,8 +17,18 @@
 							<PropertyList>
 								<Property Name="Pitch" Type="int32">
 									<ValueList>
-										<Value>-680</Value>
+										<Value>-1820</Value>
 									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{D0117828-8096-4456-ACCC-8B3F60CA5ED4}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="1375"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
@@ -60,9 +70,15 @@
 						</Sound>
 						<Sound Name="sfx_powerup_loaded_hit" ID="{02BCCF10-FFD1-495E-B7C6-F42A468B70E9}" ShortID="934748163">
 							<PropertyList>
+								<Property Name="OverrideEffect" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>50</Value>
+									</ValueList>
+								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-6</Value>
+										<Value>-2</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -77,6 +93,7 @@
 							<ChildrenList>
 								<AudioFileSource Name="sfx_powerup_loaded_hit" ID="{140B5E14-29D7-4433-84E0-71623AB7C3B1}">
 									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="1.04764256366464"/>
 										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 										<Property Name="TrimBegin" Type="Real64" Value="0.218884729111243"/>
 									</PropertyList>
@@ -87,6 +104,45 @@
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{CAE20F2E-B5E5-4414-A725-038075F77E32}" ShortID="308751526">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Pitch"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="New Modulator Envelope" ID="{AFC84A3D-17E7-42EF-9E90-9EE6EE8C2D91}" WorkUnitID="{CFE6E83D-50CF-45DF-8BB3-3F7454081564}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{943E5E43-DE89-48C1-B527-E661263AC676}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-3780</YPos>
+																		<Flags>21</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>-510</YPos>
+																		<Flags>53</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
 							<ActiveSourceList>
 								<ActiveSource Name="sfx_powerup_loaded_hit" ID="{140B5E14-29D7-4433-84E0-71623AB7C3B1}" Platform="Linked"/>
 							</ActiveSourceList>
@@ -161,18 +217,8 @@
 																		<SegmentShape>Log1</SegmentShape>
 																	</Point>
 																	<Point>
-																		<XPos>42.24422</XPos>
-																		<YPos>-24.23614</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>49.80315</XPos>
-																		<YPos>-200</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>49.80415</XPos>
-																		<YPos>-200</YPos>
+																		<XPos>49.80215</XPos>
+																		<YPos>-9.44625</YPos>
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
@@ -276,16 +322,11 @@
 																		<XPos>8.74058</XPos>
 																		<YPos>0.23634</YPos>
 																		<Flags>0</Flags>
-																		<SegmentShape>Exp2</SegmentShape>
+																		<SegmentShape>Log1</SegmentShape>
 																	</Point>
 																	<Point>
-																		<XPos>14.41624</XPos>
-																		<YPos>-3.65383</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>41.35937</XPos>
-																		<YPos>-18.92249</YPos>
+																		<XPos>59.47796</XPos>
+																		<YPos>-16.84536</YPos>
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
@@ -422,13 +463,13 @@
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>10.63969</XPos>
-																		<YPos>-9.76079</YPos>
+																		<XPos>30.70142</XPos>
+																		<YPos>-6.99671</YPos>
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>49.49111</XPos>
-																		<YPos>-200</YPos>
+																		<XPos>65.54049</XPos>
+																		<YPos>-12.49846</YPos>
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
@@ -469,6 +510,28 @@
 				</BlendContainer>
 				<Sound Name="sfx_alarm" ID="{F51106EF-625F-4146-8C0A-33CD0C106D0C}" ShortID="1018370121">
 					<PropertyList>
+						<Property Name="3DPosition" Type="int16" Value="2"/>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+						<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="IsLoopingInfinite" Type="bool" Value="False"/>
+						<Property Name="LoopCount" Type="int32" Value="6"/>
+						<Property Name="Pitch" Type="int32">
+							<ValueList>
+								<Value>-1860</Value>
+							</ValueList>
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{2C5F9265-DFD7-49FB-BBE7-0041C92EB5BF}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="250"/>
+											<Property Name="Min" Type="Real64" Value="-650"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
 						<Property Name="UserAuxSendLPF0" Type="int16">
 							<ValueList>
 								<Value>59</Value>
@@ -493,6 +556,11 @@
 					</ReferenceList>
 					<ChildrenList>
 						<AudioFileSource Name="sfx_alarm" ID="{6BB39026-B38A-4916-AB39-AE288328B95C}">
+							<PropertyList>
+								<Property Name="ChannelConfigOverride" Type="int64" Value="8589935120"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimEnd" Type="Real64" Value="3.46016617328507"/>
+							</PropertyList>
 							<Language>SFX</Language>
 							<AudioFile>sfx_alarm.wav</AudioFile>
 							<MediaIDList>
@@ -500,15 +568,107 @@
 							</MediaIDList>
 						</AudioFileSource>
 					</ChildrenList>
+					<PositioningInfo>
+						<Position Name="" ID="{C136C558-BC66-4CBA-A938-976943E1B8F1}">
+							<PropertyList>
+								<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="PlayMechanismTransitionTime" Type="Real64" Value="0"/>
+							</PropertyList>
+							<ChildrenList>
+								<Path2D Name="sfx_alarm_Path" ID="{AC8FBED2-6EAE-43B0-A7C7-4D7A4F24A82B}">
+									<PointList>
+										<Point>
+											<XPos>84.91228</XPos>
+											<YPos>75.21891</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+								<Path2D Name="sfx_alarm_Path_01" ID="{46B933A5-99FB-4035-BB26-49F5C776222E}">
+									<PointList>
+										<Point>
+											<XPos>-82.80702</XPos>
+											<YPos>74.51839</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+								<Path2D Name="sfx_alarm_Path_02" ID="{988C4656-4941-45DB-9654-45A7C5F7DB3C}">
+									<PointList>
+										<Point>
+											<XPos>-78.24561</XPos>
+											<YPos>-78.54641</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+								<Path2D Name="sfx_alarm_Path_03" ID="{C4A2355D-EEE4-4D39-BB3D-6F208CA2ED86}">
+									<PointList>
+										<Point>
+											<XPos>83.85965</XPos>
+											<YPos>-76.7951</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+							</ChildrenList>
+						</Position>
+					</PositioningInfo>
+					<ObjectLists>
+						<ObjectList Name="RTPC">
+							<Reference>
+								<Local>
+									<RTPC Name="" ID="{8550D4EC-D2A4-4D1C-B9E4-68A4F61AA1B8}" ShortID="661449007">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="Pitch"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="New Modulator LFO_02" ID="{D12D24C1-C584-4EAC-ABE7-8FA2CD7C50B3}" WorkUnitID="{CFE6E83D-50CF-45DF-8BB3-3F7454081564}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{8EBCDE10-4E89-443C-BFB9-C4DD8CD5CC52}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="65537"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-933</YPos>
+																<Flags>21</Flags>
+															</Point>
+															<Point>
+																<XPos>1</XPos>
+																<YPos>638</YPos>
+																<Flags>53</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
 					<ActiveSourceList>
 						<ActiveSource Name="sfx_alarm" ID="{6BB39026-B38A-4916-AB39-AE288328B95C}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 				<RandomSequenceContainer Name="whispers" ID="{73B61880-4FCC-4E1C-B7DD-B9398DF6C638}" ShortID="1072049293">
 					<PropertyList>
+						<Property Name="3DPosition" Type="int16" Value="2"/>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-7</Value>
+								<Value>-5</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -538,7 +698,7 @@
 												<PropertyList>
 													<Property Name="Enabled" Type="bool" Value="True"/>
 													<Property Name="Max" Type="Real64" Value="525"/>
-													<Property Name="Min" Type="Real64" Value="-2025"/>
+													<Property Name="Min" Type="Real64" Value="-950"/>
 												</PropertyList>
 											</Modifier>
 										</ModifierInfo>
@@ -715,7 +875,7 @@
 												<PropertyList>
 													<Property Name="Enabled" Type="bool" Value="True"/>
 													<Property Name="Max" Type="Real64" Value="525"/>
-													<Property Name="Min" Type="Real64" Value="-2025"/>
+													<Property Name="Min" Type="Real64" Value="-1050"/>
 												</PropertyList>
 											</Modifier>
 										</ModifierInfo>
@@ -892,7 +1052,7 @@
 												<PropertyList>
 													<Property Name="Enabled" Type="bool" Value="True"/>
 													<Property Name="Max" Type="Real64" Value="525"/>
-													<Property Name="Min" Type="Real64" Value="-2025"/>
+													<Property Name="Min" Type="Real64" Value="-1100"/>
 												</PropertyList>
 											</Modifier>
 										</ModifierInfo>
@@ -1053,6 +1213,199 @@
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
+					<PositioningInfo>
+						<Position Name="" ID="{043FD0D9-441B-426D-9330-8490ADB8880A}">
+							<PropertyList>
+								<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+							</PropertyList>
+							<ChildrenList>
+								<Path2D Name="whispers_Path" ID="{E1D52744-55BC-4182-886F-DD4F68E7BDD2}">
+									<PointList>
+										<Point>
+											<XPos>0</XPos>
+											<YPos>50</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+										<Point>
+											<XPos>-48.421052631579</XPos>
+											<YPos>17.6882661996497</YPos>
+											<Flags>0</Flags>
+											<Time>1000</Time>
+										</Point>
+										<Point>
+											<XPos>-62.4561403508772</XPos>
+											<YPos>-53.7653239929948</YPos>
+											<Flags>0</Flags>
+											<Time>2000</Time>
+										</Point>
+										<Point>
+											<XPos>64.2105263157895</XPos>
+											<YPos>-42.2066549912434</YPos>
+											<Flags>0</Flags>
+											<Time>3000</Time>
+										</Point>
+										<Point>
+											<XPos>51.578947368421</XPos>
+											<YPos>32.0490367775832</YPos>
+											<Flags>0</Flags>
+											<Time>4000</Time>
+										</Point>
+										<Point>
+											<XPos>0.701754385964904</XPos>
+											<YPos>50.6129597197898</YPos>
+											<Flags>0</Flags>
+											<Time>5000</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+								<Path2D Name="whispers_Path_01" ID="{58038E43-DDC1-416E-B29D-B148273C1A1F}">
+									<PointList>
+										<Point>
+											<XPos>0</XPos>
+											<YPos>50</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+										<Point>
+											<XPos>-58.2456140350877</XPos>
+											<YPos>-17.6882661996497</YPos>
+											<Flags>0</Flags>
+											<Time>1000</Time>
+										</Point>
+										<Point>
+											<XPos>-58.2456140350877</XPos>
+											<YPos>61.1208406304729</YPos>
+											<Flags>0</Flags>
+											<Time>2000</Time>
+										</Point>
+										<Point>
+											<XPos>43.5087719298245</XPos>
+											<YPos>-15.9369527145359</YPos>
+											<Flags>0</Flags>
+											<Time>3000</Time>
+										</Point>
+										<Point>
+											<XPos>2.10526315789474</XPos>
+											<YPos>-61.4711033274956</YPos>
+											<Flags>0</Flags>
+											<Time>4000</Time>
+										</Point>
+										<Point>
+											<XPos>-33.6842105263158</XPos>
+											<YPos>-34.5008756567426</YPos>
+											<Flags>0</Flags>
+											<Time>5000</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+								<Path2D Name="whispers_Path_02" ID="{EDCB28A0-AFD9-4810-87F8-0EAE71047CBB}">
+									<PointList>
+										<Point>
+											<XPos>0</XPos>
+											<YPos>50</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+										<Point>
+											<XPos>-38.2456140350877</XPos>
+											<YPos>-36.6024518388791</YPos>
+											<Flags>0</Flags>
+											<Time>833</Time>
+										</Point>
+										<Point>
+											<XPos>71.2280701754386</XPos>
+											<YPos>-23.292469352014</YPos>
+											<Flags>0</Flags>
+											<Time>1666</Time>
+										</Point>
+										<Point>
+											<XPos>67.719298245614</XPos>
+											<YPos>70.9281961471103</YPos>
+											<Flags>0</Flags>
+											<Time>2500</Time>
+										</Point>
+										<Point>
+											<XPos>-60.3508771929825</XPos>
+											<YPos>75.4816112084063</YPos>
+											<Flags>0</Flags>
+											<Time>3333</Time>
+										</Point>
+										<Point>
+											<XPos>-67.0175438596491</XPos>
+											<YPos>-6.83012259194396</YPos>
+											<Flags>0</Flags>
+											<Time>4166</Time>
+										</Point>
+										<Point>
+											<XPos>25.6140350877193</XPos>
+											<YPos>-63.922942206655</YPos>
+											<Flags>0</Flags>
+											<Time>5000</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+								<Path2D Name="whispers_Path_03" ID="{17035F85-0A30-4C89-A3A5-CB8992D65035}">
+									<PointList>
+										<Point>
+											<XPos>0</XPos>
+											<YPos>50</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+										<Point>
+											<XPos>-58.2456140350877</XPos>
+											<YPos>-70.9281961471103</YPos>
+											<Flags>0</Flags>
+											<Time>1250</Time>
+										</Point>
+										<Point>
+											<XPos>80</XPos>
+											<YPos>-28.5464098073555</YPos>
+											<Flags>0</Flags>
+											<Time>2500</Time>
+										</Point>
+										<Point>
+											<XPos>43.859649122807</XPos>
+											<YPos>74.7810858143608</YPos>
+											<Flags>0</Flags>
+											<Time>3750</Time>
+										</Point>
+										<Point>
+											<XPos>-57.8947368421053</XPos>
+											<YPos>36.9527145359019</YPos>
+											<Flags>0</Flags>
+											<Time>5000</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+							</ChildrenList>
+						</Position>
+					</PositioningInfo>
+					<ObjectLists>
+						<ObjectList Name="Effects">
+							<Reference>
+								<Local>
+									<EffectSlot Name="" ID="{0CE6E617-7099-404B-995E-44E1BCA787B3}" ShortID="310376989">
+										<ReferenceList>
+											<Reference Name="Effect">
+												<Custom CreatedFrom="{71CA20BE-8C1D-4A0C-92AF-BFCE183D5651}">
+													<Effect Name="Three_Voices (Custom)" ID="{1671EDCD-C196-41BE-87F4-B7EAB3A34A4F}" ShortID="19479934" PluginName="Wwise Harmonizer" CompanyID="0" PluginID="138" PluginType="3">
+														<PropertyList>
+															<Property Name="DryLevel" Type="Real32" Value="-3"/>
+															<Property Name="Voice1Pitch" Type="Real32" Value="-1200"/>
+															<Property Name="Voice2Enable" Type="bool" Value="True"/>
+															<Property Name="Voice2Pitch" Type="Real32" Value="1300"/>
+														</PropertyList>
+													</Effect>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</EffectSlot>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
 				</RandomSequenceContainer>
 				<BlendContainer Name="powerUp2" ID="{3F83824E-29BE-4ED1-AD11-43DD08F7D49A}" ShortID="501565415">
 					<PropertyList>
@@ -1444,13 +1797,8 @@
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>11.82133</XPos>
-																		<YPos>-12.69459</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>39.17323</XPos>
-																		<YPos>-200</YPos>
+																		<XPos>80.8399</XPos>
+																		<YPos>-16.25827</YPos>
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
@@ -1555,8 +1903,8 @@
 																		<SegmentShape>Log3</SegmentShape>
 																	</Point>
 																	<Point>
-																		<XPos>41.17126</XPos>
-																		<YPos>-21.63603</YPos>
+																		<XPos>88.39348</XPos>
+																		<YPos>-19.82265</YPos>
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
@@ -1774,8 +2122,8 @@
 																		<SegmentShape>Log3</SegmentShape>
 																	</Point>
 																	<Point>
-																		<XPos>23.32014</XPos>
-																		<YPos>-18.85924</YPos>
+																		<XPos>78.56705</XPos>
+																		<YPos>-12.78739</YPos>
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>

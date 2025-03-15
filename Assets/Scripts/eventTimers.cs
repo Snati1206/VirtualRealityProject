@@ -12,10 +12,17 @@ using UnityEngine;
 public class EventCoroutine : MonoBehaviour
 {
     Coroutine linealSequenceCorroutine;
-    public float transitionTimer = 30f;
-    public float musicTimer = 20f;
-    public float resetTimer = 30f;
-    public float alarmTimer = 10f;
+    LightsControllerRed lightsControllerRed;
+    LightsControllerBlue lightsControllerBlue;
+    LightsControllerYellow lightsControllerYellow;
+    public float transitionTimer = 50f;
+    public float musicTimer = 25f;
+    public float resetTimer = 60f;
+    public float alarmTimer = 5f;
+    public static bool transition = false;
+    public static bool alarm = false;
+    public static bool music = false;
+    public static bool reset = false;
 
     void OnEnable()
     {
@@ -42,22 +49,24 @@ public class EventCoroutine : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     IEnumerator coroutine(float toTransition,float toAlarm, float toMusic, float toReset)
     {
+        reset = false;
         #region
         //Seconds before launching the transition
         yield return new WaitForSeconds(toTransition);
         AkUnitySoundEngine.PostEvent("Transition", gameObject);
-
-        //Sets the weird RTPC to 100 at the start of experience
-    //    GetComponent<Parameters>().WeirdRtpcUpdate(100f);
+        transition = true;
         Debug.Log("Transition event launched");
         #endregion
 
         #region
         //Seconds before launching the alarm
         yield return new WaitForSeconds(toAlarm);
+
         AkUnitySoundEngine.PostEvent("Alarm", gameObject);
         Debug.Log("Alarm event launched");
-    //    GetComponent<Parameters>().WeirdRtpcUpdate(50f);
+        alarm = true;
+        StopLights();
+
         #endregion
 
         #region
@@ -65,20 +74,23 @@ public class EventCoroutine : MonoBehaviour
         yield return new WaitForSeconds(toMusic);
         AkUnitySoundEngine.PostEvent("Music", gameObject);
         Debug.Log("Music event launched");
-    //    GetComponent<Parameters>().WeirdRtpcUpdate(0f);
+        music = true;
         #endregion
         //waits for the music to finish to reset everything
         yield return new WaitForSeconds(toReset);
         AkUnitySoundEngine.PostEvent("Reset", gameObject);
         Debug.Log("Reset event launched");
-    //    GetComponent<Parameters>().WeirdRtpcUpdate(50f);
-
+        reset = true;
+        transition = false;
+        alarm = false;
+        music = false;
         //Resets all the booleans to false
         ResetPaintings();
+        ResetLights();
         Debug.Log("All events reseted");
     }
 
-        void ResetPaintings()
+    void ResetPaintings()
     {
         SensorLogic sensorLogic = GetComponent<SensorLogic>();
         if (sensorLogic != null)
@@ -100,6 +112,42 @@ public class EventCoroutine : MonoBehaviour
         // Reset the coroutine reference
         linealSequenceCorroutine = null;
         Debug.Log("Coroutine stopped");
+
+
+    }
+
+    void StopLights()
+    {
+        if (lightsControllerRed != null && lightsControllerBlue != null && lightsControllerYellow != null)
+        {
+            lightsControllerRed.luminosity = Mathf.Lerp(lightsControllerRed.luminosity, 0f, Time.deltaTime * 0.005f);
+            lightsControllerBlue.luminosity = Mathf.Lerp(lightsControllerBlue.luminosity, 0f, Time.deltaTime * 0.005f);
+            lightsControllerYellow.luminosity = Mathf.Lerp(lightsControllerYellow.luminosity, 0f, Time.deltaTime * 0.005f);
+            lightsControllerRed.oscillation = Mathf.Lerp(lightsControllerRed.oscillation, 0f, Time.deltaTime * 0.05f);
+            lightsControllerBlue.oscillation = Mathf.Lerp(lightsControllerBlue.oscillation, 0f, Time.deltaTime * 0.05f);
+            lightsControllerYellow.oscillation = Mathf.Lerp(lightsControllerYellow.oscillation, 0f, Time.deltaTime * 0.05f);
+        }
+        else
+        {
+            Debug.LogError("One or more light controllers are not assigned.");
+        }
+    }
+
+    void ResetLights()
+    {
+        if (lightsControllerRed != null && lightsControllerBlue != null && lightsControllerYellow != null)
+        {
+            lightsControllerRed.luminosity = Mathf.Lerp(lightsControllerRed.luminosity, 12f, Time.deltaTime * 0.005f);
+            lightsControllerBlue.luminosity = Mathf.Lerp(lightsControllerBlue.luminosity, 12f, Time.deltaTime * 0.005f);
+            lightsControllerYellow.luminosity = Mathf.Lerp(lightsControllerYellow.luminosity, 12f, Time.deltaTime * 0.005f);
+            lightsControllerRed.oscillation = Mathf.Lerp(lightsControllerRed.oscillation, 1.5f, Time.deltaTime * 0.05f);
+            lightsControllerBlue.oscillation = Mathf.Lerp(lightsControllerBlue.oscillation, 2.5f, Time.deltaTime * 0.05f);
+            lightsControllerYellow.oscillation = Mathf.Lerp(lightsControllerYellow.oscillation, 2.5f, Time.deltaTime * 0.05f);
+        }
+        else
+        {
+            Debug.LogError("One or more light controllers are not assigned.");
+        }
     }
 
 }

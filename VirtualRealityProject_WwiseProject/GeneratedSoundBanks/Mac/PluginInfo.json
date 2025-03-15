@@ -25,6 +25,20 @@
     "StaticLib": "AkRoomVerbFX"
    },
    {
+    "LibName": "Wwise Guitar Distortion",
+    "LibId": "8257539",
+    "Type": "Effect",
+    "DLL": "AkGuitarDistortion",
+    "StaticLib": "AkGuitarDistortionFX"
+   },
+   {
+    "LibName": "Wwise Tremolo",
+    "LibId": "8585219",
+    "Type": "Effect",
+    "DLL": "AkTremolo",
+    "StaticLib": "AkTremoloFX"
+   },
+   {
     "LibName": "Wwise Harmonizer",
     "LibId": "9043971",
     "Type": "Effect",
@@ -42,6 +56,6 @@
     "Type": "AudioDevice"
    }
   ],
-  "FileHash": "{7AE16F43-0371-3D70-28EB-AEA1953BFF94}"
+  "FileHash": "{88D528E6-4FD2-9BB9-6A2A-2225E5E3F2A5}"
  }
 }

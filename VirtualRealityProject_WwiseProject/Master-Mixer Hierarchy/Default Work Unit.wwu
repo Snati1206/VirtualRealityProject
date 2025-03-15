@@ -15,7 +15,7 @@
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
 								<Property Name="BusChannelConfig" Type="int32">
 									<ValueList>
-										<Value>528</Value>
+										<Value>6304004</Value>
 									</ValueList>
 								</Property>
 								<Property Name="EnableAttenuation" Type="bool" Value="False"/>
@@ -130,7 +130,7 @@
 					<PropertyList>
 						<Property Name="BusVolume" Type="Real64">
 							<ValueList>
-								<Value>-13</Value>
+								<Value>-4</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -148,26 +148,28 @@
 									</ValueList>
 								</Property>
 							</PropertyList>
-						</Bus>
-						<Bus Name="Music Master" ID="{F66273E3-DE47-4C98-ADDF-303E7792642A}">
-							<PropertyList>
-								<Property Name="BusChannelConfig" Type="int32">
-									<ValueList>
-										<Value>768</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<DuckingList>
-								<DuckItem>
-									<BusRef Name="Ambiance Master" ID="{CCCF0DF9-24CC-4600-B821-E19884B16803}"/>
-									<DuckingParam>
-										<Volume>-9</Volume>
-										<FadeInTime>1</FadeInTime>
-										<FadeOutTime>1.5</FadeOutTime>
-										<FadeCurve>FadeLinear</FadeCurve>
-									</DuckingParam>
-								</DuckItem>
-							</DuckingList>
+							<ChildrenList>
+								<Bus Name="Music Master" ID="{F66273E3-DE47-4C98-ADDF-303E7792642A}">
+									<PropertyList>
+										<Property Name="BusChannelConfig" Type="int32">
+											<ValueList>
+												<Value>6304004</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<DuckingList>
+										<DuckItem>
+											<BusRef Name="Ambiance Master" ID="{CCCF0DF9-24CC-4600-B821-E19884B16803}"/>
+											<DuckingParam>
+												<Volume>-9</Volume>
+												<FadeInTime>1</FadeInTime>
+												<FadeOutTime>1.5</FadeOutTime>
+												<FadeCurve>FadeLinear</FadeCurve>
+											</DuckingParam>
+										</DuckItem>
+									</DuckingList>
+								</Bus>
+							</ChildrenList>
 						</Bus>
 					</ChildrenList>
 				</Bus>
